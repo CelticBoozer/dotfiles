@@ -1,0 +1,13 @@
+/*
+!.gitignore
+!.zshrc
+!.vimrc
+!/bin
+!/.wallpapers
+/.config/*
+!/.config
+!/.config/i3
+!/.config/alacritty
+!/.config/i3status
+!/.config/picom
+!README.md

@@ -1,0 +1,172 @@
+# Set Win key, as mod key.
+set $mod Mod4
+
+# Font for bar.
+font pango:Ubuntu:style=Medium 10
+
+# Use Mouse+$mod to drag floating windows to their wanted position.
+floating_modifier $mod
+
+# Start a terminal.
+bindsym $mod+Return exec --no-startup-id alacritty
+
+# Kill focused window.
+bindsym $mod+Shift+ q kill
+
+# Start dmenu.
+bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#2f343f' -sb '#42F593' -sf '#000000'"
+
+# Change focus.
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move focused window.
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Split in horizontal orientation.
+bindsym $mod+h split h
+
+# Split in vertical orientation.
+bindsym $mod+v split v
+
+# Enter fullscreen mode.
+bindsym $mod+f fullscreen toggle
+
+# Change container layout.
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Floating mode.
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between floating windows.
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container.
+bindsym $mod+a focus parent
+
+# Define names for default workspaces.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Switch to workspace.
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# Move focused container to workspace.
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# Reload the configuration file.
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace.
+bindsym $mod+Shift+r restart
+
+# Exit i3.
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# Resize window.
+mode "resize" {
+  # These bindings trigger as soon as you enter the resize mode.
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
+
+  # Back to normal.
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+r mode "default"
+}
+
+# Resize mode.
+bindsym $mod+r mode "resize"
+
+# Audio and brightness control.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
+
+# Custom programs hotkeys.
+bindsym $mod+F1 exec --no-startup-id firefox
+bindsym Print exec --no-startup-id flameshot gui
+bindsym $mod+Print exec --no-startup-id flameshot full -c
+bindsym $mod+l exec --no-startup-id sh $HOME/.config/i3/i3lock.sh
+
+# Monitor settings/desktop settings, default programs.
+exec --no-startup-id xrandr --output eDP-1 --mode 1920x1200 --pos 0x0
+exec --no-startup-id xrandr --output HDMI-1-1 --mode 1920x1080 --pos 1920x0
+exec --no-startup-id sh "$HOME/bin/wallpaper.sh"
+exec --no-startup-id picom -b
+exec --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
+exec --no-startup-id flameshot
+exec --no-startup-id setxkbmap us,ru -option 'grp:alt_shift_toggle'
+
+# Borders for windows.
+for_window [class=".*"] border pixel 2
+
+# Gaps.
+smart_gaps on
+smart_borders on
+gaps inner 10
+gaps outer -5
+
+# Color theme.
+# class                     border  backgr  text    indicator
+client.focused              #42f593 #42f593 #000000 #e39740
+client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f
+client.unfocused            #24272e #2f343f #d8dee8 #2f343f
+client.urgent               #2f343f #2f343f #d8dee8 #2f343f
+client.placeholder          #2f343f #2f343f #d8dee8 #2f343f
+client.background           #2f343f
+
+# i3bar configuration.  
+bar {
+  position top
+  status_command i3status
+  colors {
+    background #2f343f
+    statusline #34eb59 
+    separator  #42f593
+
+    focused_workspace  #000000 #42f593 #000000
+    active_workspace   #333333 #222222 #FFFFFF
+    inactive_workspace #333333 #383737 #888888
+    urgent_workspace   #2F343A #F40000 #FFFFFF
+  }
+}

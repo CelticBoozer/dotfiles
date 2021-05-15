@@ -1,0 +1,72 @@
+general {
+    colors = true
+    interval =  5
+    output_format = "i3bar"
+    markup = "pango"
+}
+
+# Modules order
+order += "volume master"
+order += "wireless _first_"
+order += "battery all"
+order += "memory"
+order += "cpu_usage"
+order += "cpu_temperature 0"
+order += "tztime local"
+
+# Volume control
+volume master {
+    format = " %volume"
+    format_muted = " %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+# Wi-Fi
+wireless _first_ {
+    format_up = "<span color='#34eb59'>%quality</span>"
+    format_down = "<span color='eb2121'>W: down</span>"
+}
+
+# Battery status
+battery all {
+    format = "%status %percentage"
+    
+    # true - 0 to 100
+    # false - 0 to n
+    last_full_capacity = true
+    format_down = "No battery"
+    status_chr = "" # charging status
+    status_bat = "" # battery status
+    status_unk = "? UNK" # unknown status
+    status_full = "" # full charge status
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    low_threshold = 10
+}
+
+# RAM
+memory {
+    format = " %used"
+    threshold_degraded = "1G"
+    threshold_critical = "200M"
+    format_degraded = "MEMORY < %available"
+}
+
+# CPU temperature
+cpu_temperature 0 {
+    format = " %degrees"
+    max_threshold = "80"
+    format_above_threshold = " %degrees"
+    path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+# CPU usage
+cpu_usage {
+    format = " %usage"
+}
+
+# Date and time
+tztime local {
+    format = " %d %b  %H:%M:%S"
+}
