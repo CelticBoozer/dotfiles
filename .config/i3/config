@@ -1,10 +1,11 @@
-# Set Win key, as mod key.
+###############################################################################
+############          Base i3wm hotkeys and rules                  ############
+###############################################################################
+
+# Win key, as mod key.
 set $mod Mod4
 
-# Font for bar.
-font pango:Ubuntu:style=Medium 10
-
-# Use Mouse+$mod to drag floating windows to their wanted position.
+# Mouse+$mod to drag floating windows.
 floating_modifier $mod
 
 # Start a terminal.
@@ -96,7 +97,9 @@ bindsym $mod+Shift+r restart
 # Exit i3.
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# Resize window.
+# Resize mode.
+bindsym $mod+r mode "resize"
+
 mode "resize" {
   # These bindings trigger as soon as you enter the resize mode.
   bindsym Left resize shrink width 10 px or 10 ppt
@@ -110,8 +113,9 @@ mode "resize" {
   bindsym $mod+r mode "default"
 }
 
-# Resize mode.
-bindsym $mod+r mode "resize"
+###############################################################################
+############              Custom hotkeys and execs                 ############
+###############################################################################
 
 # Audio and brightness control.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -122,17 +126,17 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
-# Custom programs hotkeys.
+# Hotkeys.
 bindsym $mod+F1 exec --no-startup-id firefox
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Print exec --no-startup-id flameshot full -c
-bindsym $mod+l exec --no-startup-id sh $HOME/.config/i3/i3lock.sh
+bindsym $mod+l exec --no-startup-id sh $HOME/bin/i3lock.sh
 
-# Monitor settings/desktop settings, default programs.
+# Autolaunch.
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1200 --pos 0x0
 exec --no-startup-id xrandr --output HDMI-1-1 --mode 1920x1080 --pos 1920x0
-exec --no-startup-id sh "$HOME/bin/wallpaper.sh"
 exec --no-startup-id picom -b
+exec --no-startup-id sh "$HOME/bin/wallpaper.sh"
 exec --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 exec --no-startup-id flameshot
 exec --no-startup-id setxkbmap us,ru -option 'grp:alt_shift_toggle'
@@ -146,12 +150,18 @@ smart_borders on
 gaps inner 10
 gaps outer -5
 
+title_align center
+
+# Font for bar.
+font pango:Ubuntu:style=Medium 10
+
+
 # Color theme.
-# class                     border  backgr  text    indicator
+#                           border  backgr  text    indicator
 client.focused              #42f593 #42f593 #000000 #e39740
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f
 client.unfocused            #24272e #2f343f #d8dee8 #2f343f
-client.urgent               #2f343f #2f343f #d8dee8 #2f343f
+client.urgent               #FF5555 #FF5555 #d8dee8 #2f343f
 client.placeholder          #2f343f #2f343f #d8dee8 #2f343f
 client.background           #2f343f
 
@@ -167,6 +177,6 @@ bar {
     focused_workspace  #000000 #42f593 #000000
     active_workspace   #333333 #222222 #FFFFFF
     inactive_workspace #333333 #383737 #888888
-    urgent_workspace   #2F343A #F40000 #FFFFFF
+    urgent_workspace   #FF5555 #FF5555 #000000
   }
 }

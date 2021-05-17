@@ -23,11 +23,11 @@ NTFS filesystem            | ntfs-3g                                            
 Wallpaper and image viewer | feh                                                                                          | +
 AUR helper                 | yay (AUR)                                                                                    | -
 System information tool    | neofetch                                                                                     | -
-Web browser                | firefox                                                                                      | +
+Web browser                | firefox-developer-edition                                                                    | +
 Messangers                 | slack-desktop (AUR); telegram-desktop                                                        | -
 Screenshot maker           | flameshot                                                                                    | +
 Console text editor        | vim                                                                                          | -
-Pdf viewer                 | qpdfview                                                                                     | -
+Pdf viewer                 | mupdf                                                                                        | -
 IDEs                       | intellij-idea-ultimate-edition (AUR)                                                         | -
 Mediaplayer                | vlc                                                                                          | -
 Protocols                  | freerdp; openssh                                                                             | -

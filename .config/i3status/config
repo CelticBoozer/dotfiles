@@ -1,8 +1,11 @@
 general {
-    colors = true
-    interval =  5
-    output_format = "i3bar"
-    markup = "pango"
+	colors = true
+  interval =  5
+  output_format = "i3bar"
+  markup = "pango"
+	color_good = "#34EB59"
+	color_degraded = "#EDBA00"
+	color_bad = "#FF5555"
 }
 
 # Modules order
@@ -25,8 +28,8 @@ volume master {
 
 # Wi-Fi
 wireless _first_ {
-    format_up = "<span color='#34eb59'>%quality</span>"
-    format_down = "<span color='eb2121'>W: down</span>"
+    format_up = "%quality"
+    format_down = "W: down"
 }
 
 # Battery status
