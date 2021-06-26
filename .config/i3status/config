@@ -3,7 +3,7 @@ general {
   interval =  5
   output_format = "i3bar"
   markup = "pango"
-	color_good = "#34EB59"
+	color_good = "#61caff"
 	color_degraded = "#EDBA00"
 	color_bad = "#FF5555"
 }

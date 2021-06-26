@@ -15,7 +15,7 @@ bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+Shift+ q kill
 
 # Start dmenu.
-bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#2f343f' -sb '#42F593' -sf '#000000'"
+bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#ffffff' -nb '#000000' -sb '#61caff' -sf '#000000'"
 
 # Change focus.
 bindsym $mod+Left focus left
@@ -127,10 +127,11 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
 
 # Hotkeys.
-bindsym $mod+F1 exec --no-startup-id firefox
+bindsym $mod+Shift+t exec --no-startup-id firefox-developer-edition 
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Print exec --no-startup-id flameshot full -c
 bindsym $mod+l exec --no-startup-id sh $HOME/bin/i3lock.sh
+bindsym $mod+Shift+p exec --no-startup-id firefox-developer-edition -private-window
 
 # Autolaunch.
 exec --no-startup-id xrandr --output eDP-1 --mode 1920x1200 --pos 0x0
@@ -158,7 +159,7 @@ font pango:Ubuntu:style=Medium 10
 
 # Color theme.
 #                           border  backgr  text    indicator
-client.focused              #42f593 #42f593 #000000 #e39740
+client.focused              #61caff #61caff #000000 #e39740
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f
 client.unfocused            #24272e #2f343f #d8dee8 #2f343f
 client.urgent               #FF5555 #FF5555 #d8dee8 #2f343f
@@ -170,13 +171,13 @@ bar {
   position top
   status_command i3status
   colors {
-    background #2f343f
-    statusline #34eb59 
-    separator  #42f593
+    background #000000
+    statusline #61caff
+    separator  #61caff
 
-    focused_workspace  #000000 #42f593 #000000
-    active_workspace   #333333 #222222 #FFFFFF
-    inactive_workspace #333333 #383737 #888888
-    urgent_workspace   #FF5555 #FF5555 #000000
+    focused_workspace  #000000 #61caff #000000
+    active_workspace   #333333 #222222 #ffffff
+    inactive_workspace #333333 #222222 #ffffff
+    urgent_workspace   #ff5555 #ff5555 #000000
   }
 }
