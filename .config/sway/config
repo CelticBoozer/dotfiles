@@ -149,7 +149,7 @@ input "1267:12474:ELAN1200:00_04F3:30BA_Touchpad" {
 # Keyboard:
 #
 input "1:1:AT_Translated_Set_2_keyboard" {
-		xkb_layout us,ru
+		xkb_layout us,ru,by
 		xkb_options grp:alt_shift_toggle
 }
 #
