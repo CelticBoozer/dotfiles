@@ -39,3 +39,4 @@ export ARCHFLAGS="-arch x86_64"
 
 # Personal aliases.
 alias vpniba="snx -s vpngate3.iba.by -u Rabau_D"
+export _JAVA_AWT_WM_NONREPARENTING=1

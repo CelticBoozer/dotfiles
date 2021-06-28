@@ -10,4 +10,6 @@
 !/.config/alacritty
 !/.config/i3status
 !/.config/picom
+!/.config/sway
+!/.config/waybar
 !README.md
