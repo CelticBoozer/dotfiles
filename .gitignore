@@ -6,10 +6,11 @@
 !/.wallpapers
 /.config/*
 !/.config
-!/.config/i3
 !/.config/alacritty
-!/.config/i3status
-!/.config/picom
 !/.config/sway
 !/.config/waybar
+!/.config/gtk-3.0
+!/.config/wofi
+!/.config/zathura
+!/.config/neofetch
 !README.md

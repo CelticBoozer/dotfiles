@@ -1,5 +1,5 @@
 set number
-set tabstop=2
+set tabstop=4
 
 call plug#begin()
 Plug 'preservim/nerdtree'
