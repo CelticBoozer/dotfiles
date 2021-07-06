@@ -119,34 +119,32 @@ mode "resize" {
 
 bindsym --to-code $mod+r mode "resize"
 #
-# Status Bar:
-#
-bar {
-		swaybar_command waybar
-}
-#
 # Special keys:
 #
-		bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
-		bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
-		bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-		bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-		bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-		bindsym XF86monBrightnessUp exec brightnessctl set +5%
-#
+	bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+	bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+	bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+	bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+	bindsym XF86monBrightnessUp exec brightnessctl set +5%
+
 ### General programs shortcuts and configs:
 #
 # Firefox:
 #
-		bindsym --to-code $mod+Shift+t exec firefox-developer-edition 
-		bindsym --to-code $mod+Shift+p exec firefox-developer-edition -private-window
+	bindsym --to-code $mod+Shift+t exec firefox-developer-edition 
+	bindsym --to-code $mod+Shift+p exec firefox-developer-edition -private-window
 #
 # Grimshot: 
 #
-		bindsym --to-code Print exec grimshot copy area
-		bindsym --to-code $mod+Print exec grimshot copy active
-		bindsym --to-code $mod+Shift+Print exec grimshot copy screen
+	bindsym --to-code Print exec grimshot copy area
+	bindsym --to-code $mod+Print exec grimshot copy active
+	bindsym --to-code $mod+Shift+Print exec grimshot copy screen
 #
+# Console system utils:
+#
+    bindsym --to-code $mod+t exec $term --command ranger
+
 ### Input configuration
 #
 # Touchpad:
@@ -161,45 +159,43 @@ input "1267:12474:ELAN1200:00_04F3:30BA_Touchpad" {
 # Keyboard:
 #
 input "1:1:AT_Translated_Set_2_keyboard" {
-		xkb_layout us,ru,by
-		xkb_options grp:alt_shift_toggle
+	xkb_layout us,ru,by
+	xkb_options grp:alt_shift_toggle
 }
-#
-### Output configuration
-#
-		# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-		output * bg ~/.wallpaper/wallpaper.jpg fill
-#
+
 ### Design configuration: 
+#
+# Wallpaper:
+    output * bg ~/.wallpaper/wallpaper.jpg fill
 #
 # Colors:
 #
-		# class                 border   background  text     indicator  child_border 
-		client.focused          #27d99e  #27d99e     #000000  #2e9ef4    #27d99e
-		client.focused_inactive #4a4747  #508c79     #000000  #484e50    #5f676a
-		client.unfocused        #333333  #222222     #888888  #292d2e    #222222
-		client.urgent           #2f343a  #c70e0e     #ffffff  #900000    #900000
-		client.placeholder      #000000  #0c0c0c     #ffffff  #000000    #0c0c0c
+	# class                 border   background  text     indicator  child_border 
+	client.focused          #60a3a2  #60a3a2     #000000  #2e9ef5    #60a3a2
+	client.focused_inactive #4a4747  #60a3a2     #000000  #484e50    #5f676a
+	client.unfocused        #3b4252  #3b4252     #c3c5c9  #292d2e    #222222
+	client.urgent           #2f343a  #c70e0e     #ffffff  #900000    #900000
+	client.placeholder      #000000  #0c0c0c     #ffffff  #000000    #0c0c0c
 #
 # Titlebar:
 #
-		titlebar_padding 1
-		title_align center
-		titlebar_border_thickness 1
+	titlebar_padding 1
+	title_align center
+	titlebar_border_thickness 1
 #
 # Borders:
-		default_border pixel 2
-		smart_borders no_gaps
+	default_border pixel 2
+	smart_borders on
 #
 # Gaps: 
 #
-		smart_gaps on
-		gaps inner 5
+	smart_gaps on
+	gaps inner 10
+	gaps outer 5
 #
 # Bar:
 #
-		bar {
-				#`sa
-				#ads
-		}
+bar {
+    swaybar_command waybar
+}
 include /etc/sway/config.d/*
