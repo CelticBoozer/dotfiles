@@ -1,0 +1,23 @@
+### Set global settings:
+#
+# Max count of notifications:
+max-history=4
+
+# Newest messages in bottom:
+sort=+time
+
+# Windows like notifications on bottom right:
+anchor=bottom-right
+
+### Set design options:
+#
+font=Monospace 10
+background-color=#3b4252
+text-color=#c3c5c9
+border-size=0
+
+### Notifications clean settings:
+#
+on-button-left=dismiss
+on-button-right=dismiss-all
+default-timeout=15000
