@@ -175,11 +175,10 @@ focus_follows_mouse no
 # Colors:
 #
     # class                 border   background  text     indicator  child_border 
-    client.focused          #60a3a2  #60a3a2     #000000  #2e9ef5    #60a3a2
-    client.focused_inactive #4a4747  #4a4747     #000000  #4a4747    #4a4747
-    client.unfocused        #3b4252  #3b4252     #c3c5c9  #3b4252    #3b4252
+    client.focused          #88c0d0  #88c0d0     #000000  #2e9ef5    #88c0d0
+    client.focused_inactive #757474  #757474     #000000  #757474    #757474
+    client.unfocused        #2e3440  #2e3440     #c3c5c9  #2e3440    #2e3440
     client.urgent           #bf4624  #bf4624     #ffffff  #900000    #bf4624
-    client.placeholder      #000000  #0c0c0c     #ffffff  #000000    #0c0c0c
 #
 # Titlebar:
 #
