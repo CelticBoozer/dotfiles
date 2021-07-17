@@ -39,10 +39,20 @@ focus_follows_mouse no
 #
 # Moving around:
 #
+    bindsym $mod+h focus left
+    bindsym $mod+j focus down
+    bindsym $mod+k focus up
+    bindsym $mod+l focus right
+
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
+
+    bindsym $mod+Shift+h move left
+    bindsym $mod+Shift+j move down
+    bindsym $mod+Shift+k move up
+    bindsym $mod+Shift+l move right
 
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -111,6 +121,11 @@ focus_follows_mouse no
         bindsym Up resize grow height 10px
         bindsym Right resize grow width 10px
 
+		bindsym h resize shrink width 10px
+        bindsym j resize shrink height 10px
+        bindsym k resize grow height 10px
+        bindsym l resize grow width 10px
+
         # Return to default mode
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -177,7 +192,7 @@ focus_follows_mouse no
     # class                 border   background  text     indicator  child_border 
     client.focused          #88c0d0  #88c0d0     #000000  #2e9ef5    #88c0d0
     client.focused_inactive #757474  #757474     #000000  #757474    #757474
-    client.unfocused        #2e3440  #2e3440     #c3c5c9  #2e3440    #2e3440
+    client.unfocused        #484e5c  #2e3440     #c3c5c9  #2e3440    #2e3440
     client.urgent           #bf4624  #bf4624     #ffffff  #900000    #bf4624
 #
 # Titlebar:

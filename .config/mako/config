@@ -15,6 +15,7 @@ font=Cozette 10
 background-color=#2e3440
 text-color=#c3c5c9
 border-size=0
+border-radius=5
 
 ### Notifications clean settings:
 #

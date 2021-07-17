@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker npm composer zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(composer zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -29,14 +29,13 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
 # Personal aliases.
-alias vpniba="snx -s vpngate3.iba.by -u Rabau_D"
 export _JAVA_AWT_WM_NONREPARENTING=1

@@ -1,8 +1,6 @@
 /*
 !.gitignore
 !.zshrc
-!.vimrc
-!/bin
 !/.wallpapers
 /.config/*
 !/.config
@@ -15,4 +13,5 @@
 !/.config/neofetch
 !/.config/ranger
 !/.config/mako
+!/.config/nvim
 !README.md

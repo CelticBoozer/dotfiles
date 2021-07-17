@@ -40,8 +40,3 @@ window {
 #text {
     margin: 2px;
 }
-
-/* Hide backspace icon */
-.right {
-    color: transparent;
-}
