@@ -39,3 +39,4 @@ export ARCHFLAGS="-arch x86_64"
 
 # Personal aliases.
 export _JAVA_AWT_WM_NONREPARENTING=1
+export MOZ_ENABLE_WAYLAND=1 firefox

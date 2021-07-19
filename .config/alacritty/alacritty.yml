@@ -1,9 +1,26 @@
 # Colors (Gruvbox dark)
+font:
+  normal:
+    family: Hack
+    style: Regular
+
+  bold:
+    family: Hack
+    style: Bold
+
+  italic:
+    family: Hack
+    style: Italic
+
+  bold_italic:
+    family: Hack
+    style: Bold Italic
+
+  size: 12
+
 colors:
   primary:
-    # hard contrast background - '#1d2021'
     background:        &gruvbox_dark_bg '#282828'
-    # soft contrast background - '#32302f'
     foreground:        '#ebdbb2'
     bright_foreground: '#fbf1c7'
     dim_foreground:    '#a89984'
@@ -40,3 +57,4 @@ colors:
     magenta: '#8f3f71'
     cyan:    '#427b58'
     white:   '#928374'
+background_opacity: 0.9
