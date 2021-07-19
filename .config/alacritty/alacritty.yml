@@ -23,7 +23,7 @@ colors:
     background:        &gruvbox_dark_bg '#282828'
     foreground:        '#ebdbb2'
     bright_foreground: '#fbf1c7'
-    dim_foreground:    '#a89984'
+    dim_foreground:    '#a89985'
   cursor:
     text:   CellBackground
     cursor: CellForeground
