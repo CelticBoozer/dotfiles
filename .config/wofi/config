@@ -1,7 +1,6 @@
 width=15%
 lines=10
-insensitive=true
 location=0
-halign=center
-content_halign=center
+insensitive=true
 line_wrap=char
+content_halign=center

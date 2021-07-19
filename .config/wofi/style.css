@@ -1,26 +1,23 @@
-* {
-    font-family: Cozette;
-    color: #e5e9f0;
+#window {
+    border-radius: 5%;
+    background-color: #282828;
+    border: 2px solid #d79921;
 }
-		
-window {
-    background-color: #2e3440;
-    border: 2px solid #88c0d0;
-}
-				
+
 #outer-box {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
-		
+
 #input {
+    color: #ffffff;
     border: none;
-    background-color: #2e3440;
+    background-color: #525252;
     margin: 7px;
     box-shadow: none; /* Remove blue "border" */
 }
 
 #inner-box {
-    background-color: #2e3440;
+    background-color: #282828;
     margin: 7px;
     margin-top: 0;
 }
@@ -34,9 +31,11 @@ window {
 }
 
 #entry:selected {
-    background-color: #44475a;
+    background-color: #454444;
 }
 
 #text {
+    font-family: Hack;
     margin: 2px;
+    color: #c3c5c9;
 }
