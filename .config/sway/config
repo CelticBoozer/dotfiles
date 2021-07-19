@@ -39,20 +39,20 @@ focus_follows_mouse no
 #
 # Moving around:
 #
-    bindsym $mod+h focus left
-    bindsym $mod+j focus down
-    bindsym $mod+k focus up
-    bindsym $mod+l focus right
+    bindsym --to-code $mod+h focus left
+    bindsym --to-code $mod+j focus down
+    bindsym --to-code $mod+k focus up
+    bindsym --to-code $mod+l focus right
 
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
-    bindsym $mod+Shift+h move left
-    bindsym $mod+Shift+j move down
-    bindsym $mod+Shift+k move up
-    bindsym $mod+Shift+l move right
+    bindsym --to-code $mod+Shift+h move left
+    bindsym --to-code $mod+Shift+j move down
+    bindsym --to-code $mod+Shift+k move up
+    bindsym --to-code $mod+Shift+l move right
 
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -121,10 +121,10 @@ focus_follows_mouse no
         bindsym Up resize grow height 10px
         bindsym Right resize grow width 10px
 
-		bindsym h resize shrink width 10px
-        bindsym j resize shrink height 10px
-        bindsym k resize grow height 10px
-        bindsym l resize grow width 10px
+        bindsym --to-code h resize shrink width 10px
+        bindsym --to-code j resize shrink height 10px
+        bindsym --to-code k resize grow height 10px
+        bindsym --to-code l resize grow width 10px
 
         # Return to default mode
         bindsym Return mode "default"
@@ -184,16 +184,26 @@ focus_follows_mouse no
 
 ### Design configuration: 
 #
+# Color binds:
+#
+    set $col_focused #d79921
+    set $col_focused_inactive #f7eab0
+    set $col_unfocused #282828
+    set $col_text_dark #000000
+    set $col_text_light #c3c5c9
+    set $col_urgent #fb4934
+#    
 # Wallpaper:
+#
     output * bg ~/.wallpaper/wallpaper.jpg fill
 #
 # Colors:
 #
-    # class                 border   background  text     indicator  child_border 
-    client.focused          #88c0d0  #88c0d0     #000000  #2e9ef5    #88c0d0
-    client.focused_inactive #757474  #757474     #000000  #757474    #757474
-    client.unfocused        #484e5c  #2e3440     #c3c5c9  #2e3440    #2e3440
-    client.urgent           #bf4624  #bf4624     #ffffff  #900000    #bf4624
+    # class                 border                 background             text             indicator              child_border 
+    client.focused          $col_focused           $col_focused           $col_text_dark   $col_focused           $col_focused
+    client.focused_inactive $col_focused_inactive  $col_focused_inactive  $col_text_dark   $col_focused_inactive  $col_focused_inactive
+    client.unfocused        $col_text_dark         $col_unfocused         $col_text_light  $col_unfocused         $col_unfocused
+    client.urgent           $col_urgent            $col_urgent            $col_text_dartk  $col_urgent            $col_urgent
 #
 # Titlebar:
 #
@@ -202,13 +212,14 @@ focus_follows_mouse no
     titlebar_border_thickness 1
 #
 # Borders:
-    default_border pixel 2
+#
+    default_border pixel 1
     smart_borders on
 #
 # Gaps: 
 #
     smart_gaps on
-    gaps inner 10
+    gaps inner 7
     gaps outer 5
 #
 # Bar:
