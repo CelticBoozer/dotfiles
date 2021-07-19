@@ -203,7 +203,7 @@ focus_follows_mouse no
     client.focused          $col_focused           $col_focused           $col_text_dark   $col_focused           $col_focused
     client.focused_inactive $col_focused_inactive  $col_focused_inactive  $col_text_dark   $col_focused_inactive  $col_focused_inactive
     client.unfocused        $col_text_dark         $col_unfocused         $col_text_light  $col_unfocused         $col_unfocused
-    client.urgent           $col_urgent            $col_urgent            $col_text_dartk  $col_urgent            $col_urgent
+    client.urgent           $col_urgent            $col_urgent            $col_text_dark   $col_urgent            $col_urgent
 #
 # Titlebar:
 #
