@@ -1,13 +1,13 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     font-size: 13px;
     min-height: 0;
 }
 
 #waybar {
-    background-color: rgba(43, 48, 59, 1);
+    background-color: #282828;
     color: #c3c5c9;
     transition-property: background-color;
     transition-duration: .5s;
@@ -44,9 +44,6 @@
 #tray,
 #mode,
 #language {
-    /* border: solid;
-    border-radius: 10px;
-    border-width: 2px; */
     padding: 0 5px;
     margin: 0 3px;
     border-color: #88c0d0;
