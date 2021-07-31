@@ -1,8 +1,3 @@
-# man 5 sway - sway config file commands
-# man 5 sway-input - sway input devices commands
-# swaymsg -t get_outputs - get all output devices
-# swaymsg -t get_inputs - get all input devices
-
 # Win key, as mod key
 set $mod Mod4
 
@@ -73,7 +68,7 @@ focus_follows_mouse no
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
  
-   # Move focused container to workspace
+    # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
     bindsym $mod+Shift+3 move container to workspace number 3
@@ -160,11 +155,15 @@ focus_follows_mouse no
 #
     bindsym --to-code $mod+t exec $term --command ranger
 #
+# Other programs:
+#
+    bindsym --to-code $mod+Shift+i exec intellij-idea-ultimate-edition
+#
 # All needed deamons:
 #
     exec mako
 
-### Input configuration
+### IO configuration:
 #
 # Touchpad:
 #
@@ -181,6 +180,12 @@ focus_follows_mouse no
         xkb_layout us,ru,by
         xkb_options grp:alt_shift_toggle
     }
+#    
+# Monitors:
+#
+    output eDP-1 pos 0 0
+    output HDMI-A-1 pos 1920 0
+    output * bg ~/.wallpaper/wallpaper.png fill
 
 ### Design configuration: 
 #
@@ -192,10 +197,6 @@ focus_follows_mouse no
     set $col_text_dark #000000
     set $col_text_light #c3c5c9
     set $col_urgent #fb4934
-#    
-# Wallpaper:
-#
-    output * bg ~/.wallpaper/wallpaper.jpg fill
 #
 # Colors:
 #
