@@ -37,7 +37,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "alacritty --command nmtui"
+	"on-click": "alacritty -e nmtui"
     },
 
     "cpu": {
