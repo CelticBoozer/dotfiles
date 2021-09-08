@@ -7,10 +7,8 @@
 !/.config/alacritty
 !/.config/sway
 !/.config/waybar
-!/.config/gtk-3.0
 !/.config/wofi
 !/.config/zathura
-!/.config/neofetch
 !/.config/ranger
 !/.config/mako
 !/.config/nvim
