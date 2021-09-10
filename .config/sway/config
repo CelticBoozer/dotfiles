@@ -189,11 +189,11 @@ focus_follows_mouse no
 #
 # Color binds:
 #
-    set $col_focused #d79921
-    set $col_focused_inactive #f7eab0
+    set $col_focused #fe8019
+    set $col_focused_inactive #fabd2f
     set $col_unfocused #282828
-    set $col_text_dark #000000
-    set $col_text_light #c3c5c9
+    set $col_text_dark #1d2021
+    set $col_text_light #bdae93
     set $col_urgent #fb4934
 #
 # Colors:
