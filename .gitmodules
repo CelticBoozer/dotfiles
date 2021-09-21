@@ -1,0 +1,3 @@
+[submodule "/home/celtic/.config/nvim"]
+	path = /home/celtic/.config/nvim
+	url = git@github.com:CelticBoozer/nvim.git
