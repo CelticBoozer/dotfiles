@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 25,
+    "height": 30,
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "sway/language", "tray"],
@@ -42,7 +42,8 @@
 
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": false,
+	"on-click": "alacritty -e bashtop"
     },
 
     "tray": {
