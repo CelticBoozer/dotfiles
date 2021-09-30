@@ -5,7 +5,7 @@ set $mod Mod4
 set $term alacritty
 
 # Application launcher
-set $menu wofi --show run
+set $menu fuzzel -f Hack -l 15 -x 20 -b 282828f0 -t bdae93ff -S 1d2021ff -C fe8019ff
 
 # Floating mod key
 floating_modifier $mod normal
@@ -34,20 +34,10 @@ focus_follows_mouse no
 #
 # Moving around:
 #
-    bindsym --to-code $mod+h focus left
-    bindsym --to-code $mod+j focus down
-    bindsym --to-code $mod+k focus up
-    bindsym --to-code $mod+l focus right
-
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
-
-    bindsym --to-code $mod+Shift+h move left
-    bindsym --to-code $mod+Shift+j move down
-    bindsym --to-code $mod+Shift+k move up
-    bindsym --to-code $mod+Shift+l move right
 
     bindsym $mod+Shift+Left move left
     bindsym $mod+Shift+Down move down
@@ -115,11 +105,6 @@ focus_follows_mouse no
         bindsym Down resize shrink height 10px
         bindsym Up resize grow height 10px
         bindsym Right resize grow width 10px
-
-        bindsym --to-code h resize shrink width 10px
-        bindsym --to-code j resize shrink height 10px
-        bindsym --to-code k resize grow height 10px
-        bindsym --to-code l resize grow width 10px
 
         # Return to default mode
         bindsym Return mode "default"
