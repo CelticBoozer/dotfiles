@@ -8,9 +8,8 @@
 !/.config/alacritty
 !/.config/sway
 !/.config/waybar
-!/.config/wofi
+!/.config/swaylock
 !/.config/zathura
 !/.config/ranger
 !/.config/mako
-!/.config/nvim
 !README.md

@@ -139,8 +139,14 @@ focus_follows_mouse no
 #
     bindsym --to-code $mod+t exec $term --command ranger
 #
-# Other programs:
+# Sway-lock
 #
+    bindsym --to-code $mod+l exec swaylock
+    exec swayidle -w \
+                timeout 600 'swaylock' \
+                timeout 900 'swaymsg "output * dpms off"' \
+                resume 'swaymsg "output * dpms on"' \
+                before-sleep 'swaylock'
 #
 # All needed deamons:
 #
