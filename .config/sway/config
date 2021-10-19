@@ -30,7 +30,7 @@ focus_follows_mouse no
     bindsym --to-code $mod+Shift+r reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym --to-code $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+    bindsym --to-code $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -b 'Yes' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -180,10 +180,11 @@ focus_follows_mouse no
 #
 # Keyboard:
 #
-    input "1:1:AT_Translated_Set_2_keyboard" {
+    input type:keyboard {
         xkb_layout us,ru,by
         xkb_options grp:alt_shift_toggle
     }
+
 #    
 # Monitors:
 #
