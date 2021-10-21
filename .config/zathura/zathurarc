@@ -27,7 +27,7 @@ set highlight-transparency 0.6
 set page-padding 10
 set recolor true
 set recolor-keephue true
-set recolor-darkcolor "#fbf1c7"
+set recolor-darkcolor "#d5c4a1"
 set recolor-lightcolor "#3c3836"
 set recolor-reverse-video true
 set show-directories true
