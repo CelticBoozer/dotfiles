@@ -5,7 +5,7 @@ set $mod Mod4
 set $term alacritty
 
 # Application launcher
-set $menu fuzzel -f ttf-hack -l 13 -x 20 -w 20 -b 282828f0 -t bdae93ff -S 1d2021ff -C fe8019ff
+set $menu rofi -show run
 
 # Floating mod key
 floating_modifier $mod normal

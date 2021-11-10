@@ -2,9 +2,17 @@
     "layer": "top",
     "position": "top",
     "height": 30,
-    "modules-left": ["sway/workspaces", "sway/mode"],
+    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "sway/language", "tray"],
+    "modules-right": ["custom/arrow-dark-on-bg-left", "pulseaudio",
+                      "custom/arrow-light-on-dark-left", "network",
+                      "custom/arrow-dark-on-light-left", "cpu",
+                      "custom/arrow-light-on-dark-left", "memory",
+                      "custom/arrow-dark-on-light-left", "temperature",
+                      "custom/arrow-light-on-dark-left", "backlight",
+                      "custom/arrow-dark-on-light-left", "battery",
+                      "custom/arrow-light-on-dark-left", "sway/language",
+                      "custom/arrow-dark-on-light-left", "tray"],
     
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -37,13 +45,13 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	"on-click": "alacritty -e nmtui"
+	    "on-click": "alacritty -e nmtui"
     },
 
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-	"on-click": "alacritty -e bashtop"
+	    "on-click": "alacritty -e bashtop"
     },
 
     "tray": {
@@ -75,5 +83,17 @@
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
-    }
+    },
+    "custom/arrow-dark-on-bg-left": {
+		"format": ""
+	},
+    "custom/arrow-dark-on-light-left": {
+		"format": ""
+	},
+	"custom/arrow-light-on-dark-left": {
+		"format": ""
+	},
+	"custom/arrow-dark-on-bg-right": {
+		"format": ""
+	}
 }

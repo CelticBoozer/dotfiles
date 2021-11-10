@@ -1,108 +1,69 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: sans-serif;
+    font-family: ttf-hack;
     font-size: 13px;
     min-height: 0;
 }
 
 #waybar {
     background-color: #282828;
-    color: #c3c5c9;
+    color: #fbf1c7;
     transition-property: background-color;
     transition-duration: .5s;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
-    box-shadow: inset 0 -3px transparent;
+    padding: 0 7px;
+    background-color: #3c3836;
+    color: #fbf1c7
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #504945;
     box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #fb4934;
 }
 
 #mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    background-color: #504945;
 }
 
-#battery,
 #cpu,
-#memory,
-#temperature,
-#backlight,
-#network,
 #pulseaudio,
-#tray,
-#mode,
-#language {
-    padding: 0 5px;
-    margin: 0 3px;
-    border-color: #88c0d0;
-}
-
-#window,
-#workspaces {
-    margin: 0 4px;
-}
-
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
+#temperature,
+#battery,
 #tray {
+    padding: 0 7px;
+    background: #3c3836;
 }
 
-#clock {
-}
-
-#battery {
-}
-
-#battery.charging, #battery.plugged {
-}
-
-#battery.critical:not(.charging) {
-}
-
-#cpu {
-}
-
-#memory {
-}
-
-#backlight {
-}
-
-#network {
-}
-
-#network.disconnected {
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
-}
-
-#temperature {
-}
-
-#temperature.critical {
-}
-
+#network,
+#memory,
+#backlight,
 #language {
+    padding: 0 7px;
+    background: #504945;
+}
+
+#custom-arrow-dark-on-bg-left,
+#custom-arrow-dark-on-bg-right {
+    font-size: 24px;
+    color: #3c3836;
+    background: #282828;
+}
+
+#custom-arrow-light-on-dark-left {
+    font-size: 24px;
+    color: #504945;
+    background: #3c3836;
+}
+
+#custom-arrow-dark-on-light-left {
+    font-size: 24px;
+    color: #3c3836;
+    background: #504945;
 }
