@@ -1,19 +1,17 @@
-### Set global settings:
-#
 # Max count of notifications:
 max-history=4
 
 # Newest messages in bottom:
 sort=+time
 
-# Windows like notifications on bottom right:
+# Notifications on bottom right:
 anchor=bottom-right
 
 ### Set design options:
 #
-font=Cozette 10
-background-color=#2e3440
-text-color=#c3c5c9
+font=Hack 10
+background-color=#504945
+text-color=#ebdbb2
 border-size=0
 border-radius=5
 

@@ -7,7 +7,7 @@
 }
 
 #waybar {
-    background-color: #282828;
+    background-color: #1d2021;
     color: #fbf1c7;
     transition-property: background-color;
     transition-duration: .5s;
@@ -51,19 +51,19 @@
 
 #custom-arrow-dark-on-bg-left,
 #custom-arrow-dark-on-bg-right {
-    font-size: 24px;
+    font-size: 20px;
     color: #3c3836;
-    background: #282828;
+    background: #1d2021;
 }
 
 #custom-arrow-light-on-dark-left {
-    font-size: 24px;
+    font-size: 20px;
     color: #504945;
     background: #3c3836;
 }
 
 #custom-arrow-dark-on-light-left {
-    font-size: 24px;
+    font-size: 20px;
     color: #3c3836;
     background: #504945;
 }

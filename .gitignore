@@ -2,6 +2,7 @@
 !bin
 !.gitignore
 !.zshrc
+!.fimrc
 !/.wallpapers
 /.config/*
 !/.config

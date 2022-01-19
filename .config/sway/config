@@ -5,7 +5,7 @@ set $mod Mod4
 set $term alacritty
 
 # Application launcher
-set $menu rofi -show run
+set $menu rofi -show drun
 
 # Floating mod key
 floating_modifier $mod normal
@@ -166,6 +166,7 @@ focus_follows_mouse no
 # All needed deamons:
 #
     exec mako
+    exec wlsunset
 
 ### IO configuration:
 #
