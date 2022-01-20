@@ -3,7 +3,7 @@
 !.gitignore
 !.zshrc
 !.fimrc
-!/.wallpapers
+!/.wallpaper
 /.config/*
 !/.config
 !/.config/alacritty
