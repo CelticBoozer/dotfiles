@@ -1,9 +1,9 @@
 /*
-!bin
+!.bin
 !.gitignore
 !.zshrc
 !.fimrc
-!/.wallpaper
+!.wallpaper
 /.config/*
 !/.config
 !/.config/alacritty
