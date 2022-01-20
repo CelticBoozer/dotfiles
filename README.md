@@ -41,3 +41,5 @@ Work cloud cli             | ibmcloud-cli (AUR)                                 
 Containerisaton            | docker                                                                                       | -
 Cloud storage              | yandex-disk (AUR)                                                                            | -
 ***
+
+Write about udev 30-monitors

@@ -15,12 +15,12 @@
 
 #workspaces button {
     padding: 0 7px;
-    background-color: #3c3836;
+    background-color: #282828;
     color: #fbf1c7
 }
 
 #workspaces button.focused {
-    background-color: #504945;
+    background-color: #3c3836;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -29,7 +29,7 @@
 }
 
 #mode {
-    background-color: #504945;
+    background-color: #3c3836;
 }
 
 #cpu,
@@ -38,7 +38,7 @@
 #battery,
 #tray {
     padding: 0 7px;
-    background: #3c3836;
+    background: #282828;
 }
 
 #network,
@@ -46,24 +46,24 @@
 #backlight,
 #language {
     padding: 0 7px;
-    background: #504945;
+    background: #3c3836;
 }
 
 #custom-arrow-dark-on-bg-left,
 #custom-arrow-dark-on-bg-right {
     font-size: 20px;
-    color: #3c3836;
+    color: #282828;
     background: #1d2021;
 }
 
 #custom-arrow-light-on-dark-left {
     font-size: 20px;
-    color: #504945;
-    background: #3c3836;
+    color: #3c3836;
+    background: #282828;
 }
 
 #custom-arrow-dark-on-light-left {
     font-size: 20px;
-    color: #3c3836;
-    background: #504945;
+    color: #282828;
+    background: #3c3836;
 }
