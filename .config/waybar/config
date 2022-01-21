@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 27,
+    "height": 25,
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-dark-on-bg-left", "pulseaudio",
@@ -28,12 +28,12 @@
         "scroll-step": 1,
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-bluetooth-muted": "  {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
+            "headphone": "",
             "headset": "",
             "default": ["", "", ""]
         },
@@ -50,8 +50,12 @@
 
     "cpu": {
         "format": "{usage}% ",
+	"states": {
+            "warning": 60,
+	    "critical": 80
+	},
         "tooltip": false,
-	    "on-click": "alacritty -e bashtop"
+	"on-click": "alacritty -e bashtop"
     },
 
     "tray": {
@@ -59,7 +63,11 @@
     },
 
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+	"states": {
+	    "warning": 60,
+	    "critical": 80
+        }
     },
 
     "temperature": {
@@ -75,8 +83,8 @@
 
     "battery": {
         "states": {
-            "warning": 30,
-            "critical": 15
+            "warning": 35,
+            "critical": 20
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",

@@ -32,6 +32,9 @@
     background-color: #3c3836;
 }
 
+/*
+ * General background config
+ */
 #cpu,
 #pulseaudio,
 #temperature,
@@ -49,6 +52,9 @@
     background: #3c3836;
 }
 
+/*
+ * Arrows config
+ */
 #custom-arrow-dark-on-bg-left,
 #custom-arrow-dark-on-bg-right {
     font-size: 20px;
@@ -66,4 +72,70 @@
     font-size: 20px;
     color: #282828;
     background: #3c3836;
+}
+
+/*
+ * Battery config
+ */
+#battery.warning {
+    color: #fabd2f;
+}
+
+#batter.critical {
+    color: #fb4934;
+}
+
+#battery.charging {
+    color: #b8bb26;
+}
+
+#battery.plugged {
+    color: #b8bb26;
+}
+
+/*
+ * Network config
+ */
+#network.disconnected {
+    color: #fb4934;
+}
+
+/*
+ * Audio config
+ */
+#pulseaudio.bluetooth {
+    color: #458588;
+}
+
+#pulseaudio.muted {
+    color: #fb4934;
+}
+
+/*
+ * CPU config
+ */
+#cpu.warning {
+    color: #fabd2f;
+}
+
+#cpu.critical {
+    color: #fb4934;
+}
+
+/*
+ * Temperature config
+ */
+#temperature.critical {
+    color: #fb4934;
+}
+
+/*
+ * Memory config
+ */
+#memory.warning {
+    color: #fabd2f;
+}
+
+#memory.critical {
+    color: #fb4934;
 }
