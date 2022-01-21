@@ -10,8 +10,8 @@ anchor=bottom-right
 ### Set design options:
 #
 font=Hack 10
-background-color=#504945
-text-color=#ebdbb2
+background-color=#282828
+text-color=#fbf1c7
 border-size=0
 border-radius=5
 
