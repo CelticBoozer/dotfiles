@@ -1,4 +1,4 @@
-# Max count of notifications:
+font=Hack 10
 max-history=4
 
 # Newest messages in bottom:
@@ -9,8 +9,7 @@ anchor=bottom-right
 
 ### Set design options:
 #
-font=Hack 10
-background-color=#282828
+background-color=#1d2021
 text-color=#fbf1c7
 border-size=0
 border-radius=5

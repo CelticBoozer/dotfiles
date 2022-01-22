@@ -1,0 +1,3 @@
+[submodule ".config/waybar/modules/crypto"]
+	path = .config/waybar/modules/crypto
+	url = git@github.com:Chadsr/waybar-crypto.git

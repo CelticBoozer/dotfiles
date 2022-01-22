@@ -47,7 +47,8 @@
 #network,
 #memory,
 #backlight,
-#language {
+#language,
+#custom-crypto {
     padding: 0 7px;
     background: #3c3836;
 }
@@ -55,8 +56,7 @@
 /*
  * Arrows config
  */
-#custom-arrow-dark-on-bg-left,
-#custom-arrow-dark-on-bg-right {
+#custom-arrow-dark-on-bg-left {
     font-size: 20px;
     color: #282828;
     background: #1d2021;
@@ -68,10 +68,17 @@
     background: #282828;
 }
 
-#custom-arrow-dark-on-light-left {
+#custom-arrow-dark-on-light-left,
+#custom-arrow-dark-on-light-right {
     font-size: 20px;
     color: #282828;
     background: #3c3836;
+}
+
+#custom-arrow-light-on-bg-right {
+    font-size: 20px;
+    color: #3c3836;
+    background: #1d2021;
 }
 
 /*
@@ -81,7 +88,7 @@
     color: #fabd2f;
 }
 
-#batter.critical {
+#battery.critical {
     color: #fb4934;
 }
 

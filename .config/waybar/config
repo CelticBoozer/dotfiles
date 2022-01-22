@@ -2,7 +2,7 @@
     "layer": "top",
     "position": "top",
     "height": 25,
-    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-bg-right", "sway/mode"],
+    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-dark-on-bg-left", "pulseaudio",
                       "custom/arrow-light-on-dark-left", "network",
@@ -13,11 +13,11 @@
                       "custom/arrow-dark-on-light-left", "battery",
                       "custom/arrow-light-on-dark-left", "sway/language",
                       "custom/arrow-dark-on-light-left", "tray"],
-    
+
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    
+
     "clock": {
         "timezone": "Europe/Minsk",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -38,7 +38,7 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    }, 
+    },
 
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -50,12 +50,12 @@
 
     "cpu": {
         "format": "{usage}% ",
-	"states": {
+	    "states": {
             "warning": 60,
-	    "critical": 80
-	},
+	        "critical": 80
+	    },
         "tooltip": false,
-	"on-click": "alacritty -e bashtop"
+	    "on-click": "alacritty -e bashtop"
     },
 
     "tray": {
@@ -64,9 +64,9 @@
 
     "memory": {
         "format": "{}% ",
-	"states": {
-	    "warning": 60,
-	    "critical": 80
+	    "states": {
+	        "warning": 60,
+	        "critical": 80
         }
     },
 
@@ -92,16 +92,32 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+
     "custom/arrow-dark-on-bg-left": {
 		"format": ""
 	},
+
     "custom/arrow-dark-on-light-left": {
 		"format": ""
 	},
+
 	"custom/arrow-light-on-dark-left": {
 		"format": ""
 	},
-	"custom/arrow-dark-on-bg-right": {
+
+	"custom/arrow-light-on-bg-right": {
 		"format": ""
-	}
+	},
+
+    "custom/arrow-dark-on-light-right": {
+		"format": ""
+	},
+
+    "custom/crypto": {
+        "format": "{}",
+        "interval": 600,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
+        "exec-if": "ping pro-api.coinmarketcap.com -c1"
+    }
 }
