@@ -45,7 +45,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-	    "on-click": "alacritty -e nmtui"
+	    "on-click": "kitty -e nmtui"
     },
 
     "cpu": {
@@ -55,7 +55,7 @@
 	        "critical": 80
 	    },
         "tooltip": false,
-	    "on-click": "alacritty -e bashtop"
+	    "on-click": "kitty -e bashtop"
     },
 
     "tray": {

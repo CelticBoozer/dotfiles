@@ -16,4 +16,5 @@
 !.config/bashtop/
 .config/bashtop/*
 !.config/bashtop/bashtop.cfg
+!.config/kitty/
 !README.md

@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 
 # Application launcher
 set $menu rofi -show drun
@@ -152,7 +152,7 @@ focus_follows_mouse no
 #
 # Console system utils:
 #
-    bindsym --to-code $mod+t exec $term --command ranger
+    bindsym --to-code $mod+t exec $term -e ranger
 #
 # Sway-lock
 #
