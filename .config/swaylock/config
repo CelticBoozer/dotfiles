@@ -1,14 +1,16 @@
 ignore-empty-password
+daemonize
 fade-in=0.7
 indicator
 clock
+datestr=%d/%m/%Y
 screenshots
 show-keyboard-layout
 indicator-caps-lock
 bs-hl-color=458588cc
 caps-lock-bs-hl-color=458588cc
 caps-lock-key-hl-color=d3869bcc
-font=Hack
+font=JetBrains Mono
 font-size=35
 indicator-idle-visible
 indicator-radius=100
@@ -33,5 +35,5 @@ text-clear-color=fbf1c7
 text-caps-lock-color=fbf1c7
 text-ver-color=fbf1c7
 text-wrong-color=fbf1c7
-effect-blur=7x5
+effect-blur=70x5
 effect-vignette=0.5:0.5

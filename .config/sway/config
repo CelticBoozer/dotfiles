@@ -166,7 +166,7 @@ focus_follows_mouse no
 # All needed deamons:
 #
     exec mako
-    exec wlsunset
+    exec wlsunset -s 00:00 -S 00:00
 
 ### IO configuration:
 #
@@ -190,7 +190,8 @@ focus_follows_mouse no
 # Monitors:
 #
     output eDP-1 pos 0 0
-    output HDMI-A-1 pos 1920 0
+    bindsym --to-code $mod+F9 output HDMI-A-1 pos 1920 0 res 1440x900 transform 0
+    bindsym --to-code $mod+Shift+F9 output HDMI-A-1 pos 1920 0 res 900x1440 transform 270
     exec sh ~/.bin/randomBackground.sh
 
 ### Design configuration: 
@@ -226,8 +227,8 @@ focus_follows_mouse no
 # Gaps: 
 #
     smart_gaps on
-    gaps inner 7
-    gaps outer 5
+    gaps inner 4
+    gaps outer 3
 #
 # Bar:
 #
