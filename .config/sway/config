@@ -29,7 +29,7 @@ focus_follows_mouse no
     # Reload the configuration file
     bindsym --to-code $mod+Shift+r reload
 
-    # Exit sway (logs you out of your Wayland session)
+    # Exit sway
     bindsym --to-code $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -b 'Yes' 'swaymsg exit'
 #
 # Moving around:
@@ -131,12 +131,14 @@ focus_follows_mouse no
 #
 # Special keys:
 #
+    set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
+    exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
     bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
-    bindsym XF86monBrightnessUp exec brightnessctl set +5%
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
+    bindsym XF86monBrightnessUp exec brightnessctl set +5% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 
 ### General programs shortcuts and configs:
 #
@@ -150,7 +152,7 @@ focus_follows_mouse no
     bindsym --to-code Print exec grimshot save area - | swappy -f -
     bindsym --to-code $mod+Print exec grimshot save screen - | swappy -f -
 #
-# Console system utils:
+# System utils:
 #
     bindsym --to-code $mod+t exec $term -e ranger
 #
@@ -172,7 +174,7 @@ focus_follows_mouse no
 #
 # Touchpad:
 #
-    input "1267:12474:ELAN1200:00_04F3:30BA_Touchpad" {
+    input type:touchpad {
         dwt enabled
         tap enabled
         natural_scroll enabled
