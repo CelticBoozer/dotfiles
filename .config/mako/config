@@ -1,21 +1,28 @@
-font=Hack 10
-max-history=4
-
-# Newest messages in bottom:
+# Global configuration options
+max-history=5
 sort=+time
 
-# Notifications on bottom right:
-anchor=bottom-right
-
-### Set design options:
-#
-background-color=#1d2021
-text-color=#fbf1c7
-border-size=0
-border-radius=5
-
-### Notifications clean settings:
-#
+# Binding options
 on-button-left=dismiss
 on-button-right=dismiss-all
+
+# Style options
+font=Hack 10
+background-color=#1d2021
+text-color=#fbf1c7
+width=300
+height=200
+margin=10
+padding=15
+border-size=0
+border-radius=5
+icons=1
+max-icon-size=128
+icon-location=left
+markup=1
+actions=1
+history=1
+text-alignment=left
 default-timeout=15000
+layer=top
+anchor=bottom-right

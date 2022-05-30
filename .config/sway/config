@@ -240,9 +240,8 @@ focus_follows_mouse no
 #
 # Floating windows
 #
-    for_window [app_id="nmtui"] floating enable, resize set 1200 800, position center
-    for_window [app_id="mpv"] floating enable, resize set 600 400, position center
-    for_window [app_id="bashtop"] floating enable, resize set 1200 800, position center
+    for_window [app_id="nmtui"] floating enable, resize set 1280 720, position center
+    for_window [app_id="bashtop"] floating enable, resize set 1280 720, position center
     for_window [title="Picture-in-Picture"] floating enable, resize set 500 300, position center
 
 include /etc/sway/config.d/*

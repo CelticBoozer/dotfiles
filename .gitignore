@@ -2,11 +2,9 @@
 !.bin
 !.gitignore
 !.zshrc
-!.fimrc
 !.wallpaper
 !.config/
 .config/*
-!.config/alacritty/
 !.config/sway/
 !.config/waybar/
 !.config/swaylock/
