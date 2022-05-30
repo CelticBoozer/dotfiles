@@ -38,7 +38,7 @@ focus_follows_mouse no
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
-    
+
     bindsym $mod+h focus left
     bindsym $mod+j focus down
     bindsym $mod+k focus up
@@ -48,7 +48,7 @@ focus_follows_mouse no
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
-    
+
     bindsym $mod+Shift+h move left
     bindsym $mod+Shift+j move down
     bindsym $mod+Shift+k move up
@@ -67,7 +67,7 @@ focus_follows_mouse no
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
- 
+
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
@@ -100,7 +100,7 @@ focus_follows_mouse no
 
     # Swap focus between the tiling area and the floating area
     bindsym $mod+space focus mode_toggle
-		
+
     # Focus parent container
     bindsym --to-code $mod+a focus parent
 
@@ -150,7 +150,8 @@ focus_follows_mouse no
 # Grimshot: 
 #
     bindsym --to-code Print exec grimshot save area - | swappy -f -
-    bindsym --to-code $mod+Print exec grimshot save screen - | swappy -f -
+    bindsym --to-code $mod+Print exec grimshot save active - | swappy -f -
+    bindsym --to-code $mod+Shift+Print exec grimshot save output - | swappy -f -
 #
 # System utils:
 #
@@ -167,7 +168,6 @@ focus_follows_mouse no
 #
 # All needed deamons:
 #
-    exec mako
     exec wlsunset -s 00:00 -S 00:00
 
 ### IO configuration:
@@ -185,7 +185,7 @@ focus_follows_mouse no
 #
     input type:keyboard {
         xkb_layout us,ru,by
-        xkb_options grp:alt_shift_toggle
+        xkb_options grp:toggle
     }
 
 #    
@@ -237,4 +237,12 @@ focus_follows_mouse no
     bar {
         swaybar_command waybar
     }
+#
+# Floating windows
+#
+    for_window [app_id="nmtui"] floating enable, resize set 1200 800, position center
+    for_window [app_id="mpv"] floating enable, resize set 600 400, position center
+    for_window [app_id="bashtop"] floating enable, resize set 1200 800, position center
+    for_window [title="Picture-in-Picture"] floating enable, resize set 500 300, position center
+
 include /etc/sway/config.d/*
