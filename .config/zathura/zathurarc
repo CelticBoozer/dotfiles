@@ -25,11 +25,6 @@ set highlight-fg "#1d2021"
 set highlight-active-color "#fe8019"
 set highlight-transparency 0.6
 set page-padding 10
-set recolor true
-set recolor-keephue true
-set recolor-darkcolor "#fbf1c7"
-set recolor-lightcolor "#1d2021"
-set recolor-reverse-video true
 set show-directories true
 set show-hidden true
 set show-recent 0
