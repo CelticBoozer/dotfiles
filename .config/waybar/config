@@ -21,7 +21,8 @@
     "clock": {
         "timezone": "Europe/Minsk",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
+        "format-alt": "{:%d-%m-%Y}",
+	"on-click": "kitty --class=calcurse -e calcurse"
     },
 
     "pulseaudio": {
@@ -37,6 +38,7 @@
             "headset": "",
             "default": ["", "", ""]
         },
+        "tooltip": false,
         "on-click": "pavucontrol"
     },
 
@@ -45,6 +47,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
+	"tooltip": false,
         "on-click": "kitty --class=nmtui -e nmtui"
     },
 
@@ -55,14 +58,16 @@
             "critical": 80
 	},
         "tooltip": false,
-	"on-click": "kitty --class=bashtop -e bashtop"
+	"on-click": "kitty --class=btop -e btop"
     },
 
     "tray": {
+        "tooltip": false,
         "spacing": 5
     },
 
     "memory": {
+       	"tooltip": false,
         "format": "{}% ",
         "states": {
 	    "warning": 60,
@@ -71,17 +76,20 @@
     },
 
     "temperature": {
+        "tooltip": false,  
         "critical-threshold": 80,
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
 
     "backlight": {
+        "tooltip": false,
         "format": "{percent}% {icon}",
         "format-icons": ["", ""]
     },
 
     "battery": {
+        "tooltip": false,
         "states": {
             "warning": 35,
             "critical": 20
@@ -93,23 +101,32 @@
         "format-icons": ["", "", "", "", ""]
     },
 
+    "language": {
+        "tooltip": false 
+    },
+
     "custom/arrow-dark-on-bg-left": {
+        "tooltip": false,
         "format": ""
     },
 
     "custom/arrow-dark-on-light-left": {
+        "tooltip": false,
         "format": ""
     },
 
     "custom/arrow-light-on-dark-left": {
+        "tooltip": false,
         "format": ""
     },
 
     "custom/arrow-light-on-bg-right": {
+        "tooltip": false,
         "format": ""
     },
 
     "custom/arrow-dark-on-light-right": {
+        "tooltip": false,
         "format": ""
     },
 

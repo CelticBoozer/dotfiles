@@ -11,8 +11,7 @@
 !.config/zathura/
 !.config/ranger/
 !.config/mako/
-!.config/bashtop/
-.config/bashtop/*
-!.config/bashtop/bashtop.cfg
+!.config/btop/
 !.config/kitty/
+!.config/calcurse/
 !README.md
