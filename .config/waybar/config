@@ -22,7 +22,7 @@
         "timezone": "Europe/Minsk",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d-%m-%Y}",
-	"on-click": "kitty --class=calcurse -e calcurse"
+	"on-click-right": "kitty --class=calcurse -e calcurse"
     },
 
     "pulseaudio": {
