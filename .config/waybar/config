@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 20,
+    "height": 24,
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-dark-on-bg-left", "pulseaudio",

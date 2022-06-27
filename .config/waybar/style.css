@@ -74,26 +74,26 @@
  * Arrows config
  */
 #custom-arrow-dark-on-bg-left {
-    font-size: 20px;
+    font-size: 24px;
     color: #282828;
     background: #1d2021;
 }
 
 #custom-arrow-light-on-dark-left {
-    font-size: 20px;
+    font-size: 24px;
     color: #3c3836;
     background: #282828;
 }
 
 #custom-arrow-dark-on-light-left,
 #custom-arrow-dark-on-light-right {
-    font-size: 20px;
+    font-size: 24px;
     color: #282828;
     background: #3c3836;
 }
 
 #custom-arrow-light-on-bg-right {
-    font-size: 20px;
+    font-size: 24px;
     color: #3c3836;
     background: #1d2021;
 }
