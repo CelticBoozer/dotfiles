@@ -39,7 +39,7 @@
             "default": ["", "", ""]
         },
         "tooltip": false,
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol --class=pavu"
     },
 
     "network": {
