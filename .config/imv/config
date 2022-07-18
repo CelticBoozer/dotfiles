@@ -1,0 +1,20 @@
+[options]
+background= 282828
+fullscreen = false
+width = 1280
+height = 720
+initial_pan = 50 50
+list_files_at_exit = false
+loop_input = true
+overlay = true
+overlay_font = Hack:10
+overlay_text_color = fbf1c7
+overlay_text_alpha = ff
+overlay_background_color = 1d2021
+overlay_background_alpha = 99
+overlay_position_bottom = false
+recursively = true
+scaling_mode = full
+slideshow_duration = 0
+suppress_default_binds = false
+upscaling_method = linear
