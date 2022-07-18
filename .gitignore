@@ -16,4 +16,5 @@
 !.config/calcurse/
 !.config/gtk-3.0/
 !.config/imv/
+!.config/electron-flags.conf
 !README.md
