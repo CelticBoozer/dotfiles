@@ -1,0 +1,7 @@
+[Default Applications]
+x-scheme-handler/tg=userapp-Kotatogram Desktop-D36SK1.desktop
+x-scheme-handler/notion=notion-app.desktop
+x-scheme-handler/postman=Postman.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-BXQXD1.desktop;userapp-Kotatogram Desktop-D36SK1.desktop;
