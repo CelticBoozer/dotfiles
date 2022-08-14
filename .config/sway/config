@@ -209,7 +209,7 @@ bar {
 # GTK settings
 set $gnome-schema org.gnome.desktop.interface
 
-seat seat0 xcursor_theme 'Bibata-Original-Amber'
+seat seat0 xcursor_theme 'Bibata-Original-Amber' 24
 exec_always {
     gsettings set $gnome-schema gtk-theme 'gruvbox-dark-gtk'
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'

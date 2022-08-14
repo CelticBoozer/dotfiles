@@ -17,6 +17,7 @@
 !.config/gtk-3.0/
 !.config/imv/
 !.config/paru/
+!.config/rofi/
 !.config/electron-flags.conf
 !.config/electron18-flags.conf
 !.config/mimeapps.list
