@@ -1,6 +1,6 @@
 configuration {
     threads: 0;
-    modi: "drun,calc,power-menu:rofi-power-menu,ssh";
+    modi: "drun,calc,power-menu:~/.bin/power-menu.sh,ssh";
     case-sensitive: false;
     cycle: true;
     scroll-method: 1;
