@@ -4,7 +4,7 @@ set -e
 set -u
 
 # All supported choices
-all=(suspend reboot hibernate shutdown logout)
+all=(suspend reboot shutdown logout)
 
 # By default, show all (i.e., just copy the array)
 show=("${all[@]}")
@@ -12,14 +12,12 @@ show=("${all[@]}")
 declare -A texts
 texts[logout]="log out"
 texts[suspend]="suspend"
-texts[hibernate]="hibernate"
 texts[reboot]="reboot"
 texts[shutdown]="shut down"
 
 declare -A icons
 icons[logout]=""
 icons[suspend]=""
-icons[hibernate]=""
 icons[reboot]=""
 icons[shutdown]=""
 icons[cancel]=""
@@ -27,7 +25,6 @@ icons[cancel]=""
 declare -A actions
 actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
 actions[suspend]="systemctl suspend"
-actions[hibernate]="systemctl hibernate"
 actions[reboot]="systemctl reboot"
 actions[shutdown]="systemctl poweroff"
 
