@@ -142,11 +142,7 @@ bindsym --to-code $mod+Shift+Return exec cool-retro-term
 
 # Sway-lock
 bindsym --to-code $mod+Escape exec swaylock
-exec swayidle -w \
-             timeout 600 'swaylock' \
-             timeout 900 'swaymsg "output * dpms off"' \
-             resume 'swaymsg "output * dpms on"' \
-             before-sleep 'swaylock'
+exec swayidle -w timeout 600 'swaylock' 
 
 # All needed deamons
 exec mako
