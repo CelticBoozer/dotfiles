@@ -18,6 +18,7 @@
 !.config/imv/
 !.config/paru/
 !.config/rofi/
+!.config/wob/
 !.config/electron-flags.conf
 !.config/electron18-flags.conf
 !.config/mimeapps.list
