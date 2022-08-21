@@ -19,6 +19,7 @@
 !.config/paru/
 !.config/rofi/
 !.config/wob/
+!.config/fontconfig/
 !.config/electron-flags.conf
 !.config/electron18-flags.conf
 !.config/mimeapps.list
