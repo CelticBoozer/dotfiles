@@ -24,7 +24,7 @@ configuration {
 
 * {
     background-color: #282828;
-    font: "JetBrains Mono 12";
+    font-family: "JetBrains Mono";
     text-color: #ebdbb2;
 }
 
