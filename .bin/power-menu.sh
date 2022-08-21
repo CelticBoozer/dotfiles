@@ -18,8 +18,8 @@ texts[shutdown]="shut down"
 declare -A icons
 icons[logout]=""
 icons[suspend]=""
-icons[reboot]=""
-icons[shutdown]=""
+icons[reboot]=""
+icons[shutdown]=""
 icons[cancel]=""
 
 declare -A actions
