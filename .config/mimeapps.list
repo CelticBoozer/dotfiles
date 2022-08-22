@@ -28,6 +28,7 @@ text/x-chdr=nvim.desktop
 text/x-c++hdr=nvim.desktop
 text/x-makefile=nvim.desktop
 text/plain=nvim.desktop
+text/json=nvim.desktop
 inode/directory=lf.desktop
 image/x-xbitmap=imv.desktop
 image/x-portable-pixmap=imv.desktop

@@ -127,9 +127,11 @@ bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2% && pa
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2% && pactl get-sink-volume @DEFAULT_SINK@ | head -n 1 | awk '{printf substr($5, 1, length($5)-1)} {print " 1d202100 a89984ff 8ec07cff"}' > $WOBSOCK
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 bindsym XF86monBrightnessUp exec brightnessctl set +5% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+bindsym XF86PowerOff exec systemctl suspend
 
 # Firefox
 bindsym --to-code $mod+Shift+t exec firefox-developer-edition 
@@ -146,7 +148,10 @@ bindsym --to-code $mod+Shift+Return exec cool-retro-term
 
 # Sway-lock
 bindsym --to-code $mod+Escape exec swaylock
-exec swayidle -w timeout 600 'swaylock' 
+exec swayidle -w \
+    timeout 900 'swaylock' \
+    timeout 1500 'systemctl suspend'
+
 
 # All needed deamons
 exec mako
