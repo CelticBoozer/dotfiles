@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/celtic/.oh-my-zsh"
+export ZSH="/usr/share/oh-my-zsh/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -18,7 +18,15 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-syntax-highlighting zsh-autosuggestions sudo copypath copyfile dirhistory archlinux vi-mode timer)
+plugins=(fast-syntax-highlighting 
+        zsh-autosuggestions
+        sudo
+        copypath
+        copyfile
+        dirhistory
+        archlinux
+        vi-mode
+        timer)
 
 source $ZSH/oh-my-zsh.sh
 
