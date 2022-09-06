@@ -18,7 +18,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-syntax-highlighting zsh-autosuggestions sudo copypath copyfile dirhistory)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions sudo copypath copyfile dirhistory archlinux vi-mode timer)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,6 +37,6 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
-# Personal aliases.
+# Personal environment variables
 export _JAVA_AWT_WM_NONREPARENTING=1
 export MOZ_ENABLE_WAYLAND=1 firefox
