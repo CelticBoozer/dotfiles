@@ -3,6 +3,7 @@
 !.gitignore
 !README.md
 !.wallpaper
+!.zshenv
 !.zshrc
 !.config/
 .config/*

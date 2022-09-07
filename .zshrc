@@ -1,8 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
-export ZSH="/usr/share/oh-my-zsh/"
+export ZSH="$HOME/.oh-my-zsh/"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -30,21 +26,9 @@ plugins=(fast-syntax-highlighting
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
 else
   export EDITOR='nvim'
 fi
-
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
-
-# Personal environment variables
-export _JAVA_AWT_WM_NONREPARENTING=1
-export MOZ_ENABLE_WAYLAND=1 firefox
