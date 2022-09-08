@@ -17,11 +17,11 @@ texts[reboot]="reboot"
 texts[shutdown]="shut down"
 
 declare -A icons
-icons[logout]=""
-icons[suspend]=""
-icons[reboot]=""
-icons[shutdown]=""
-icons[cancel]=""
+icons[logout]="\uf2f5"
+icons[suspend]="\uf186"
+icons[reboot]="\uf01e"
+icons[shutdown]="\uf011"
+icons[cancel]="\uf057"
 
 declare -A actions
 actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"

@@ -61,3 +61,7 @@ application/x-fictionbook+xml=org.pwmt.zathura.desktop
 application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=org.pwmt.zathura.desktop
 application/oxps=org.pwmt.zathura.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop
+
+[Added Associations]
+x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;

@@ -157,6 +157,7 @@ exec swayidle -w \
 exec mako
 exec wlsunset -s 00:00 -S 00:00
 exec swaykbdd
+exec easyeffects --gapplication-service
 
 # Touchpad
 input type:touchpad {
@@ -228,6 +229,8 @@ for_window [app_id="btop"] floating enable, resize set 1280 720, position center
 for_window [app_id="calcurse"] floating enable, resize set 1280 720, position center
 for_window [title="Picture-in-Picture"] floating enable, resize set 500 300, position center
 for_window [app_id="pavu"] floating enable, resize set 1280 720, position center
-for_window [title="imv - "] floating enable, resize set 1280 720, position center
+for_window [app_id="imv"] floating enable, resize set 1280 720, position center
+for_window [app_id="easyeffects"] floating enable, resize set 1280 720, position center
+
 
 include /etc/sway/config.d/*

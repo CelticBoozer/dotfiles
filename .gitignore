@@ -10,6 +10,7 @@
 .config/*
 !.config/btop/
 !.config/calcurse/
+!.config/easyeffects/
 !.config/electron18-flags.conf
 !.config/electron-flags.conf
 !.config/fontconfig/

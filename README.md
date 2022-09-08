@@ -4,7 +4,8 @@ This is my working Linux configs. I'm tried to create minimalistic and fast envi
 Note: before the configuration you chould to install Arch Linux.
 ***
 ***List of explicitly installed software:***
-
+https://github.com/JackHack96/EasyEffects-Presets - Bass Enhancing + Perfect EQ.json
+https://gist.github.com/MateusRodCosta/a10225eb132cdcb97d7c458526f93085 - input
 Description                | Package                                                                                      | Required by configs
 ---------------------------|----------------------------------------------------------------------------------------------|---------------------
 Display server             | xorg-server                                                                                  | +

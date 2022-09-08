@@ -39,7 +39,8 @@
             "default": ["", "", ""]
         },
         "tooltip": false,
-        "on-click": "pavucontrol --class=pavu"
+        "on-click": "pavucontrol --class=pavu",
+	"on-click-right": "easyeffects"
     },
 
     "network": {
