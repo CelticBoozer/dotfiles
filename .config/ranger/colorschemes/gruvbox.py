@@ -1,7 +1,4 @@
-# This file is part of ranger, the console file manager.
-# License: GNU GPL version 3, see the file "AUTHORS" for details.
-# This theme was greatly inspired by "RougarouTheme" for ranger
-# It can be found in: `https://github.com/RougarouTheme/ranger`
+# Ranger color theme. Gruvbox dark style.
 
 from __future__ import absolute_import, division, print_function
 
@@ -23,7 +20,7 @@ from ranger.gui.color import (
 )
 
 
-class Dracula(ColorScheme):
+class Gruvbox_dark(ColorScheme):
     progress_bar_color = 13
 
     def verify_browser(self, context, fg, bg, attr):
@@ -32,29 +29,29 @@ class Dracula(ColorScheme):
         else:
             attr = normal
         if context.empty or context.error:
-            bg = 1
-            fg = 0
+            bg = 160
+            fg = 232
         if context.border:
             fg = default
         if context.document:
             attr |= normal
-            fg = 13
+            fg = 223
         if context.media:
             if context.image:
                 attr |= normal
-                fg = 3
+                fg = 184
             elif context.video:
-                fg = 1
+                fg = 106
             elif context.audio:
-                fg = 6
+                fg = 135
             else:
-                fg = 10
+                fg = 106
         if context.container:
             attr |= bold
-            fg = 9
+            fg = 160
         if context.directory:
             attr |= bold
-            fg = 4
+            fg = 172
         elif context.executable and not any(
             (context.media, context.container, context.fifo, context.socket)
         ):
@@ -68,7 +65,7 @@ class Dracula(ColorScheme):
             if context.device:
                 attr |= bold
         if context.link:
-            fg = 6 if context.good else 13
+            fg = 111 if context.good else 13
         if context.tag_marker and not context.selected:
             attr |= bold
             if fg in (red, magenta):
@@ -76,7 +73,7 @@ class Dracula(ColorScheme):
             else:
                 fg = 15
         if not context.selected and (context.cut or context.copied):
-            fg = 8
+            fg = 244
             attr |= bold
         if context.main_column:
             if context.selected:
@@ -100,10 +97,11 @@ class Dracula(ColorScheme):
         if context.hostname:
             fg = 1 if context.bad else 2
         elif context.directory:
-            fg = 4
+            fg = 111
         elif context.tab:
             if context.good:
-                bg = 2
+                fg = 232
+                bg = 111
         elif context.link:
             fg = 6
 
@@ -112,30 +110,30 @@ class Dracula(ColorScheme):
     def verify_statusbar(self, context, fg, bg, attr):
         if context.permissions:
             if context.good:
-                fg = 2
+                fg = 106
             elif context.bad:
-                bg = 5
-                fg = 8
+                bg = 160
+                fg = 232
         if context.marked:
             attr |= bold | reverse
-            fg = 3
+            fg = 106
         if context.frozen:
             attr |= bold | reverse
-            fg = 6
+            fg = 111
         if context.message:
             if context.bad:
                 attr |= bold
-                fg = 1
+                fg = 160
         if context.loaded:
             bg = self.progress_bar_color
         if context.vcsinfo:
-            fg = 4
+            fg = 106
             attr &= ~bold
         if context.vcscommit:
-            fg = 3
+            fg = 106
             attr &= ~bold
         if context.vcsdate:
-            fg = 6
+            fg = 111
             attr &= ~bold
 
         return fg, bg, attr
@@ -158,15 +156,15 @@ class Dracula(ColorScheme):
     def verify_vcsfile(self, context, fg, bg, attr):
         attr &= ~bold
         if context.vcsconflict:
-            fg = 5
+            fg = 135
         elif context.vcschanged:
-            fg = 1
+            fg = 160
         elif context.vcsunknown:
-            fg = 1
+            fg = 160
         elif context.vcsstaged:
-            fg = 2
+            fg = 106
         elif context.vcssync:
-            fg = 2
+            fg = 106
         elif context.vcsignored:
             fg = default
 
