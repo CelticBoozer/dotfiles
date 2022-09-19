@@ -56,7 +56,7 @@ class Gruvbox_dark(ColorScheme):
             (context.media, context.container, context.fifo, context.socket)
         ):
             attr |= bold
-            fg = 2
+            fg = 99
         if context.socket:
             fg = 5
             attr |= bold
