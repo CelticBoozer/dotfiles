@@ -8,6 +8,7 @@
 # -----------------------------------------------------------------------------
 
 from __future__ import (absolute_import, division, print_function)
+from plugins.ranger_udisk_menu.mounter import mount
 
 # You can import any python module as needed.
 import os

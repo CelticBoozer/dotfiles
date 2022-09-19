@@ -62,6 +62,7 @@ application/pdf=org.pwmt.zathura.desktop
 application/epub+zip=org.pwmt.zathura.desktop
 application/oxps=org.pwmt.zathura.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop
+x-scheme-handler/postman=Postman.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;
