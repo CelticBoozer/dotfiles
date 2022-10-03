@@ -9,6 +9,7 @@
 !.config/
 .config/*
 !.config/btop/
+.config/btop/btop.log
 !.config/calcurse/
 !.config/easyeffects/
 !.config/electron18-flags.conf
