@@ -5,6 +5,8 @@ programs, I chose the [gruvbox](https://github.com/morhetz/gruvbox) because of t
 absence of acidic colors, because I have to work for hours every day.
 
 ![Entire screen](.doc-screens/entire-screen.png)
+
+[adsadadsassaasasdasd](#markdown-header-pacman)
 ***
 ## Distro
 I chose Arch Linux as a distribution because of its powerful pacman package manager, full customizability to my needs,
@@ -52,7 +54,7 @@ I chose [kitty](https://github.com/kovidgoyal/kitty) as the terminal emulator. T
 emulators in my opinion, besides it supports images preview and ligatures.
 
 ![kitty + oh-my-zsh](.doc-screens/kitty-zsh.png)
-## Sway
+## WM
 Sway configured with all needed daemons and hotkey configs.
 
 List of daemons/background tasks:
@@ -69,7 +71,7 @@ List of daemons/background tasks:
 [gruvbox-dark-gtk](https://github.com/jmattheis/gruvbox-dark-gtk) is used as gtk apps theme.
 
 ![Sway](.doc-screens/sway.png)
-## Waybar
+## Bar
 [Waybar](https://github.com/Alexays/Waybar) is the best Wayland native bar. Configured in gruvbox theme and airline
 style. Some of the plugins - is clickable.
 
@@ -90,11 +92,15 @@ List of plugins:
 To install the crypto plugin - clone the repo to ~/.config/waybar/modules/.
 
 ![Waybar](.doc-screens/waybar.png)
-## Mako
+## Notification daemon
 Mako is a well-known notification daemon. Very useful with any messanger/browser etc...
 
 ![Mako](.doc-screens/mako.png)
-## Wob
+## Overlay bar
 [Wob](https://github.com/francma/wob) - is overlay bar, to visualize volume/brightness changes.
 
 ![Wob](.doc-screens/wob.png)
+## Screen lock
+[Swaylock-effects](https://github.com/jirutka/swaylock-effects) - is a great screen locking utility.
+
+![Swaylock](.doc-screens/swaylock.png)
