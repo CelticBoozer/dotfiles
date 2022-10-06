@@ -217,11 +217,11 @@ bar {
 # GTK settings
 set $gnome-schema org.gnome.desktop.interface
 
-seat seat0 xcursor_theme 'Bibata-Original-Amber' 24
+seat seat0 xcursor_theme 'Simp1e-Gruvbox-Dark' 24
 exec_always {
     gsettings set $gnome-schema gtk-theme 'gruvbox-dark-gtk'
     gsettings set $gnome-schema icon-theme 'Papirus-Dark'
-    gsettings set $gnome-schema cursor-theme 'Bibata-Original-Amber'
+    gsettings set $gnome-schema cursor-theme 'Simp1e-Gruvbox-Dark'
     gsettings set $gnome-schema font-name 'Cantarell 12'
 }
 

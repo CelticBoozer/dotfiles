@@ -1,46 +1,35 @@
-# Linux configs
-
-This is my working Linux configs. I'm tried to create minimalistic and fast environment for development and daily usage.
-Note: before the configuration you chould to install Arch Linux.
+# My Linux dotfiles
+Greetings, thanks for stopping by here. I tried to make a lightweight system based on Arch Linux,
+[SwayWM](https://github.com/swaywm/sway) and Unix way(mostly) approach. As the main theme of the system and all
+programs, I chose the [gruvbox](https://github.com/morhetz/gruvbox) because of the pleasant palette for me and the
+absence of acidic colors, because I have to work for hours every day.
 ***
-***List of explicitly installed software:***
-https://github.com/JackHack96/EasyEffects-Presets - Bass Enhancing + Perfect EQ.json
-https://gist.github.com/MateusRodCosta/a10225eb132cdcb97d7c458526f93085 - input
-Description                | Package                                                                                      | Required by configs
----------------------------|----------------------------------------------------------------------------------------------|---------------------
-Display server             | xorg-server                                                                                  | +
-Display control            | xorg-xrandr                                                                                  | +
-Display server autolaunch  | xorg-xinit                                                                                   | +
-Windows Manager            | i3-gaps                                                                                      | +
-Screen saver               | i3lock-color (AUR)                                                                           | +
-Status bar                 | i3status                                                                                     | +
-Application menu           | dmenu                                                                                        | +
-Xorg compositor            | picom                                                                                        | +
-Terminal emulator          | alacritty                                                                                    | +
-Shell                      | zsh                                                                                          | +
-Sound server               | pulseaudio                                                                                   | +
-Sound control              | pavucontrol                                                                                  | +
-NTFS filesystem            | ntfs-3g                                                                                      | -
-Wallpaper and image viewer | feh                                                                                          | +
-AUR helper                 | yay (AUR)                                                                                    | -
-System information tool    | neofetch                                                                                     | -
-Web browser                | firefox-developer-edition                                                                    | +
-Messangers                 | slack-desktop (AUR); telegram-desktop                                                        | -
-Screenshot maker           | flameshot                                                                                    | +
-Console text editor        | vim                                                                                          | -
-Pdf viewer                 | mupdf                                                                                        | -
-IDEs                       | intellij-idea-ultimate-edition (AUR)                                                         | -
-Mediaplayer                | vlc                                                                                          | -
-Protocols                  | freerdp; openssh                                                                             | -
-Compilers, interpriers     | python; groovy; jdk11-openjdk; jdk8-openjdk                                                  | -
-Version control system     | git                                                                                          | -
-RDP GUI                    | remmina                                                                                      | -
-Fonts                      | noto-fonts; noto-fonts-cjk; noto-fonts-emoji; noto-fonts-cjk; noto-fonts-emoji; ttf-font-awesome; ttf-hack; ttf-liberation; ttf-ubuntu-font-family; terminus-font | +
-Work VPN                   | snx (AUR)                                                                                    | -
-Work password control      | 1password (AUR)                                                                              | -
-Work cloud cli             | ibmcloud-cli (AUR)                                                                           | -
-Containerisaton            | docker                                                                                       | -
-Cloud storage              | yandex-disk (AUR)                                                                            | -
-***
+## Distro
+I chose Arch Linux as a distribution because of its powerful pacman package manager, full customizability to my needs,
+strong community and rolling release model, thanks to which I receive continuous system updates.
+## Kernel
+I chose the [linux-zen](https://github.com/zen-kernel/zen-kernel) kernel, because it has a large number of patches that
+imperceptibly improve the system.
+## Pacman
+The basic configuration file of the pacman almost does not need customization, but I added a parameter
+  
+    Parallel Downloads = 5 
 
-Write about udev 30-monitors
+to the /etc/pacman.conf (options block), to support parallel package downloads.
+
+List of pacman repositories:
+- core;
+- extra;
+- community;
+- multilib.
+## AUR helper
+Most Arch Linux users use so-called AUR helpers to simplify the installation of packages from AUR. I chose
+[paru](https://github.com/Morganamilo/paru) because it is a very powerful AUR helper, its syntax is similar to the 
+syntax of the pacman itself, it is not abandoned and it is easy to customize.
+## Shell
+I replaced the base shell (bash) with zsh. sh contains a huge number of user interaction improvements such as themes, 
+plugins, etc.
+
+For the convenience of configuring the zsh, I use the framework [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
+
+List of
