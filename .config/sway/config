@@ -160,6 +160,8 @@ exec mako
 exec wlsunset -s 00:00 -S 00:00
 exec swaykbdd
 exec easyeffects --gapplication-service
+exec kanshi
+exec sh ~/.bin/randomBackground.sh
 
 # Touchpad
 input type:touchpad {
@@ -174,12 +176,6 @@ input type:keyboard {
     xkb_layout us,ru,by
     xkb_options grp:toggle
 }
-
-# Monitors
-output eDP-1 pos 0 0
-bindsym --to-code $mod+F9 output HDMI-A-1 pos 1920 0 res 1440x900 transform 0
-bindsym --to-code $mod+Shift+F9 output HDMI-A-1 pos 1920 0 res 900x1440 transform 270
-exec sh ~/.bin/randomBackground.sh
 
 # Color binds
 set $col_focused #fe8019

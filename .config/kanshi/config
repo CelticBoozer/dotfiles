@@ -1,0 +1,8 @@
+profile {
+    output "HDMI-A-1" mode 1920x1080 position 0,0
+    output eDP-1 mode 1920x1080 position 1920,0
+}
+
+profile laptop-only {
+    output eDP-1 mode 1920x1080 position 0,0
+}
