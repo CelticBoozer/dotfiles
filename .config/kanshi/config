@@ -1,8 +1,18 @@
-profile {
-    output "HDMI-A-1" mode 1920x1080 position 0,0
+profile left-full-hd {
+    output "Goldstar Company Ltd LG FULL HD " mode 1920x1080 position 0,0
     output eDP-1 mode 1920x1080 position 1920,0
+    exec swaymsg workspace 1, move workspace to output '"Goldstar Company Ltd LG FULL HD "'
+    exec swaymsg workspace 2, move workspace to output '"eDP-1"'
+}
+
+profile right-little {
+    output "Goldstar Company Ltd  0x00000389" mode 1440x900 position 1920,0
+    output eDP-1 mode 1920x1080 position 0,0
+    exec swaymsg workspace 1, move workspace to output '"eDP-1"'
+    exec swaymsg workspace 2, move workspace to output '"Goldstar Company Ltd  0x00000389"'
 }
 
 profile laptop-only {
     output eDP-1 mode 1920x1080 position 0,0
+    exec swaymsg workspace 1, move workspace to output '"eDP-1"'
 }
