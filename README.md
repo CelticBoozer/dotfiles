@@ -92,8 +92,6 @@ List of plugins:
 - sway/language;
 - tray;
 
-To install the crypto plugin - clone the repo to ~/.config/waybar/modules/.
-
 ![Waybar](.doc-screens/waybar.png)
 ## Notification daemon
 Mako is a well-known notification daemon. Very useful with any messanger/browser etc...
@@ -160,3 +158,4 @@ Grimshot + [swappy](https://github.com/jtheoof/swappy) - default sway screen cap
 [Imv](https://github.com/eXeC64/imv) - one of the best image vewers for Wayland.
 
 ![imv](.doc-screens/imv.png)
+
