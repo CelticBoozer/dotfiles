@@ -229,6 +229,8 @@ for_window [title="Picture-in-Picture"] floating enable, resize set 500 300, pos
 for_window [app_id="pavu"] floating enable, resize set 1280 720, position center
 for_window [app_id="imv"] floating enable, resize set 1280 720, position center
 for_window [app_id="easyeffects"] floating enable, resize set 1280 720, position center
+floating_minimum_size 640 x 480
+floating_maximum_size 1280 x 720
 
 
 include /etc/sway/config.d/*
