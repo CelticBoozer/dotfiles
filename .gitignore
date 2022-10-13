@@ -37,6 +37,9 @@
 !.config/swappy/
 !.config/sway/
 !.config/swaylock/
+!.config/transmission/
+.config/transmission/*
+!.config/transmission/settings.json
 !.config/waybar/
 !.config/wob/
 !.config/zathura/
