@@ -22,6 +22,7 @@
 !.config/kitty/
 !.config/mako/
 !.config/mimeapps.list
+!.config/mpv/
 !.config/neofetch/
 !.config/paru/
 !.config/ranger/
@@ -33,6 +34,7 @@
 !.config/slimbookbattery/
 .config/slimbookbattery/*
 !.config/slimbookbattery/slimbookbattery.conf
+!.config/swappy/
 !.config/sway/
 !.config/swaylock/
 !.config/waybar/
