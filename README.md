@@ -14,9 +14,11 @@ strong community and rolling release model, thanks to which I receive continuous
 I chose the [linux-zen](https://github.com/zen-kernel/zen-kernel) kernel, because it has a large number of patches that
 imperceptibly improve the system.
 ## Pacman
-Pacman configured. Enabled ParallelDownload, also created hook to create package list after every installation or 
-deinstatllation.
-Move .pacman/create-backup.hook to /usr/share/libalpm/hooks and .pacman/pacman.conf to /etc/pacman.conf
+Pacman configured.
+Move
+
+    .pacman/create-backup.hook to /usr/share/libalpm/hooks
+    .pacman/pacman.conf to /etc/pacman.conf
 Package list u can find in .pkglist.txt
 ## AUR helper
 Most Arch Linux users use so-called AUR helpers to simplify the installation of packages from AUR. I chose
