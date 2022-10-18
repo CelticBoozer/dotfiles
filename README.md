@@ -3,7 +3,7 @@ Greetings, thanks for stopping by here. I tried to make a lightweight system bas
 [SwayWM](https://github.com/swaywm/sway) and Unix way(mostly) approach. As the main theme of the system and all
 programs, I chose the [gruvbox](https://github.com/morhetz/gruvbox) because of the pleasant palette for me and the
 absence of acidic colors, because I have to work for hours every day. I have tried to make a similar control wherever
-I could.
+I could. To see full packages list - see .pkglist.txt.
 
 ![Entire screen](.doc-screens/entire-screen.png)
 ***
