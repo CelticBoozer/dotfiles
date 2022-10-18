@@ -160,8 +160,8 @@ exec mako
 exec wlsunset -s 00:00 -S 00:00
 exec swaykbdd
 exec easyeffects --gapplication-service
-exec kanshi
-exec sh ~/.bin/randomBackground.sh
+exec_always pkill kanshi; exec kanshi
+exec sh ~/.bin/random-background.sh
 
 # Touchpad
 input type:touchpad {
@@ -229,7 +229,7 @@ for_window [title="Picture-in-Picture"] floating enable, resize set 500 300, pos
 for_window [app_id="pavu"] floating enable, resize set 1280 720, position center
 for_window [app_id="imv"] floating enable, resize set 1280 720, position center
 for_window [app_id="easyeffects"] floating enable, resize set 1280 720, position center
-floating_minimum_size 640 x 480
+floating_minimum_size 320 x 240
 floating_maximum_size 1280 x 720
 
 

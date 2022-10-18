@@ -14,17 +14,10 @@ strong community and rolling release model, thanks to which I receive continuous
 I chose the [linux-zen](https://github.com/zen-kernel/zen-kernel) kernel, because it has a large number of patches that
 imperceptibly improve the system.
 ## Pacman
-The basic configuration file of the pacman almost does not need customization, but I added a parameter
-
-    Parallel Downloads = 5
-
-to the /etc/pacman.conf (options block), to support parallel package downloads.
-
-List of pacman repositories:
-- core;
-- extra;
-- community;
-- multilib.
+Pacman configured. Enabled ParallelDownload, also created hook to create package list after every installation or 
+deinstatllation.
+Move .pacman/create-backup.hook to /usr/share/libalpm/hooks and .pacman/pacman.conf to /etc/pacman.conf
+Package list u can find in .pkglist.txt
 ## AUR helper
 Most Arch Linux users use so-called AUR helpers to simplify the installation of packages from AUR. I chose
 [paru](https://github.com/Morganamilo/paru) because it is a very powerful AUR helper, its syntax is similar to the
@@ -158,4 +151,3 @@ Grimshot + [swappy](https://github.com/jtheoof/swappy) - default sway screen cap
 [Imv](https://github.com/eXeC64/imv) - one of the best image vewers for Wayland.
 
 ![imv](.doc-screens/imv.png)
-

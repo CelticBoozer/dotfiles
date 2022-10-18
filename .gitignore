@@ -3,6 +3,8 @@
 !.doc-screens
 !.gitignore
 !LICENSE
+!.pacman
+!.pkglist.txt
 !README.md
 !.wallpaper
 !.zshenv
