@@ -2,6 +2,7 @@
 !.bin
 !.doc-screens
 !.gitignore
+!.gitmodules
 !LICENSE
 !.pacman
 !.pkglist.txt
