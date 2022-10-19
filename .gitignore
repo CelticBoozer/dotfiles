@@ -3,6 +3,7 @@
 !.doc-screens
 !.gitignore
 !.gitmodules
+!.gtkrc-2.0
 !LICENSE
 !.pacman
 !.pkglist.txt
