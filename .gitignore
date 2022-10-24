@@ -4,6 +4,7 @@
 !.gitignore
 !.gitmodules
 !.gtkrc-2.0
+!.icons
 !LICENSE
 !.pacman
 !.pkglist.txt

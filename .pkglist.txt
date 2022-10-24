@@ -25,6 +25,7 @@ kitty
 libreoffice-fresh
 linux-zen
 lostfiles
+lxappearance
 man-db
 mpv
 neofetch
@@ -41,6 +42,7 @@ playerctl
 postman-bin
 python-requests
 ranger
+rmlint
 rofi-bluetooth-git
 rofi-calc
 slimbookbattery
