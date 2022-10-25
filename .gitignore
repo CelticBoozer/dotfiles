@@ -35,9 +35,6 @@
 .config/ranger/plugins/__pycache__/
 .config/ranger/plugins/__init__.py
 !.config/rofi/
-!.config/slimbookbattery/
-.config/slimbookbattery/*
-!.config/slimbookbattery/slimbookbattery.conf
 !.config/swappy/
 !.config/sway/
 !.config/swaylock/
