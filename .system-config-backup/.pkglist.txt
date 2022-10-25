@@ -45,10 +45,10 @@ ranger
 rmlint
 rofi-bluetooth-git
 rofi-calc
-slimbookbattery
 swappy
 swaykbdd
 telegram-desktop
+tlp-rdw
 transmission-gtk
 ttf-font-awesome
 ttf-hack

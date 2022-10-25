@@ -6,9 +6,8 @@
 !.gtkrc-2.0
 !.icons
 !LICENSE
-!.pacman
-!.pkglist.txt
 !README.md
+!.system-config-backup
 !.wallpaper
 !.zshenv
 !.zshrc

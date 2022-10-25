@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Renew packages list
+When = PostTransaction
+Exec = /bin/zsh -c 'comm -23 <(pacman -Qqt | sort) <({pacman -Qqg base-devel; expac -l '\n' '%E' base; } | sort -u) > /home/celtic/.system-config-backup/.pkglist.txt'
