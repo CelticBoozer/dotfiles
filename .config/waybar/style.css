@@ -1,24 +1,24 @@
 * {
+    all: unset;
     border: none;
     border-radius: 0;
     font-family: my-queue;
-    font-size: 13px;
-    padding: 0 0;
 }
 
 #waybar {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(40, 40, 40, 0.8);
 }
 
 #workspaces button {
-    background-color: #282828;
     color: #fbf1c7;
-    padding: 0 3;
+    background-color: #282828;
+    font-size: 13px;
+    padding: 0 7;
 }
 
 #workspaces button:hover {
-    background-color: #fabd2f;
     color: #282828;
+    background-color: #fabd2f;
 }
 
 #workspaces button.focused {
@@ -28,10 +28,10 @@
 
 #workspaces button.focused:hover {
     background-color: #3c3836;
-    color: #fbf1c7;
 }
 
 #workspaces button.urgent {
+    color: #282828;
     background-color: #fb4934;
 }
 
@@ -40,62 +40,72 @@
 }
 
 #workspaces button.visible:hover {
-    background-color: #fabd2f;
     color: #282828;
+    background-color: #fabd2f;
+}
+
+#custom-crypto {
+    color: #fbf1c7;
+    font-size: 13px;
+    background-color: #3c3836;
+    padding: 0 0 0 3;
 }
 
 #mode {
-    background-color: rgba(99, 99, 90, 0);
     color: #fbf1c7;
+    font-size: 13px;
+}
+
+#clock {
+    color: #fbf1c7;
+    font-size: 13px;
 }
 
 /*
  * General background config
  */
+#network,
+#memory,
+#backlight,
+#language {
+    color: #fbf1c7;
+    font-size: 13px;
+    background-color: #282828;
+    padding: 0 3 0 3;
+}
+
 #cpu,
 #pulseaudio,
 #temperature,
 #battery,
 #tray {
     color: #fbf1c7;
-    padding: 0 7px;
-    background: #282828;
-}
-
-#network,
-#memory,
-#backlight,
-#language,
-#custom-crypto {
+    font-size: 13px;
     background-color: #3c3836;
+    padding: 0 3 0 3;
 }
 
 /*
  * Arrows config
  */
-#custom-arrow-dark-on-bg-left {
-    font-size: 20px;
-    color: #282828;
-    background: #1d2021;
+#custom-arrow-light-on-bg-left,
+#custom-arrow-light-on-bg-right {
+    font-size: 15px;
+    color: #3c3836;
+    background-color: transparent;
 }
 
 #custom-arrow-light-on-dark-left {
-    font-size: 20px;
+    font-size: 15px;
     color: #3c3836;
     background: #282828;
 }
 
 #custom-arrow-dark-on-light-left,
 #custom-arrow-dark-on-light-right {
-    font-size: 20px;
+    font-size: 15px;
     color: #282828;
     background: #3c3836;
-}
-
-#custom-arrow-light-on-bg-right {
-    font-size: 20px;
-    color: #3c3836;
-    background: #1d2021;
 }
 
 /*
@@ -162,4 +172,10 @@
 
 #memory.critical {
     color: #fb4934;
+}
+
+tooltip {
+    color: #fbf1c7;
+    font-size: 13px;
+    background-color: #282828;
 }

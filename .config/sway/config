@@ -132,7 +132,6 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%- | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 bindsym XF86monBrightnessUp exec brightnessctl set +5% | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-bindsym XF86PowerOff exec systemctl suspend
 
 # Firefox
 bindsym --to-code $mod+Shift+t exec firefox-developer-edition 
@@ -147,13 +146,7 @@ bindsym --to-code $mod+Shift+Print exec grimshot save output - | swappy -f -
 bindsym --to-code $mod+t exec $term -e ranger
 bindsym --to-code $mod+Shift+Return exec cool-retro-term
 bindsym --to-code $mod+Shift+b exec rofi-bluetooth
-
-# Sway-lock
 bindsym --to-code $mod+Escape exec swaylock
-exec swayidle -w \
-    timeout 900 'swaylock' \
-    timeout 1500 'systemctl suspend'
-
 
 # All needed deamons
 exec mako
@@ -162,6 +155,7 @@ exec swaykbdd
 exec easyeffects --gapplication-service
 exec_always pkill kanshi; exec kanshi
 exec sh ~/.bin/random-background.sh
+exec swayidle
 
 # Touchpad
 input type:touchpad {
@@ -221,7 +215,7 @@ exec_always {
     gsettings set $gnome-schema font-name 'Cantarell 12'
 }
 
-# Floating windows
+# Window settings
 for_window [app_id="nmtui"] floating enable, resize set 1280 720, position center
 for_window [app_id="btop"] floating enable, resize set 1280 720, position center
 for_window [app_id="calcurse"] floating enable, resize set 1280 720, position center
@@ -231,6 +225,7 @@ for_window [app_id="imv"] floating enable, resize set 1280 720, position center
 for_window [app_id="easyeffects"] floating enable, resize set 1280 720, position center
 floating_minimum_size 320 x 240
 floating_maximum_size 1280 x 720
+for_window [app_id="."] inhibit_idle fullscreen
 
 
 include /etc/sway/config.d/*

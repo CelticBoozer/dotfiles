@@ -37,6 +37,7 @@
 !.config/rofi/
 !.config/swappy/
 !.config/sway/
+!.config/swayidle/
 !.config/swaylock/
 !.config/transmission/
 .config/transmission/*

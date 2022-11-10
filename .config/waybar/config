@@ -1,21 +1,35 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 20,
+    "height": 15,
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/arrow-dark-on-bg-left", "pulseaudio",
-                      "custom/arrow-light-on-dark-left", "network",
-                      "custom/arrow-dark-on-light-left", "cpu",
-                      "custom/arrow-light-on-dark-left", "memory",
-                      "custom/arrow-dark-on-light-left", "temperature",
-                      "custom/arrow-light-on-dark-left", "backlight",
-                      "custom/arrow-dark-on-light-left", "battery",
-                      "custom/arrow-light-on-dark-left", "sway/language",
-                      "custom/arrow-dark-on-light-left", "tray"],
+    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
+                      "custom/arrow-dark-on-light-left", "network",
+                      "custom/arrow-light-on-dark-left", "cpu",
+                      "custom/arrow-dark-on-light-left", "memory",
+                      "custom/arrow-light-on-dark-left", "temperature",
+                      "custom/arrow-dark-on-light-left", "backlight",
+                      "custom/arrow-light-on-dark-left", "battery",
+                      "custom/arrow-dark-on-light-left", "sway/language",
+                      "custom/arrow-light-on-dark-left", "tray"],
+
+    "sway/workspaces": {
+        "disable-scroll": true
+    },
+
+    "custom/crypto": {
+        "format": "{}",
+        "interval": 600,
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
+        "exec-if": "ping pro-api.coinmarketcap.com -c1",
+	"tooltip": false
+    },
 
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
+        "format": "<span style=\"italic\">{}</span>",
+	"tooltip": false
     },
 
     "clock": {
@@ -31,8 +45,8 @@
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "  {format_source}",
         "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source": " ",
+        "format-source-muted": " ",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -44,11 +58,12 @@
     },
 
     "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-	"tooltip": false,
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-linked": "",
+        "format-disconnected": "⚠",
+	"tooltip-format": "{essid}\n{ipaddr}/{cidr}",
+	"tooltip": true,
         "on-click": "kitty --class=nmtui -e nmtui"
     },
 
@@ -62,24 +77,20 @@
 	"on-click": "kitty --class=btop -e btop"
     },
 
-    "tray": {
-        "tooltip": false,
-        "spacing": 5
-    },
-
     "memory": {
-       	"tooltip": false,
+       	"tooltip": true,
         "format": "{}% ",
         "states": {
 	    "warning": 60,
 	    "critical": 80
-        }
+        },
+	"tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
     },
 
     "temperature": {
         "tooltip": false,  
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°{icon}",
         "format-icons": ["", "", ""]
     },
 
@@ -90,7 +101,8 @@
     },
 
     "battery": {
-        "tooltip": false,
+        "tooltip": true,
+	"tooltip-format": "{time}",
         "states": {
             "warning": 35,
             "critical": 20
@@ -98,15 +110,20 @@
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
 
-    "language": {
+    "sway/language": {
+        "format": "{shortDescription}",
         "tooltip": false 
     },
 
-    "custom/arrow-dark-on-bg-left": {
+    "tray": {
+        "tooltip": false,
+        "spacing": 5
+    },
+
+    "custom/arrow-light-on-bg-left": {
         "tooltip": false,
         "format": ""
     },
@@ -129,13 +146,5 @@
     "custom/arrow-dark-on-light-right": {
         "tooltip": false,
         "format": ""
-    },
-
-    "custom/crypto": {
-        "format": "{}",
-        "interval": 600,
-        "return-type": "json",
-        "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
-        "exec-if": "ping pro-api.coinmarketcap.com -c1"
     }
 }

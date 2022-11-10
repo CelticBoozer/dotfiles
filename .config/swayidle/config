@@ -1,0 +1,3 @@
+timeout 900 swaylock
+timeout 1800 systemctl suspend
+after-resume swaylock 
