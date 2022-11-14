@@ -50,6 +50,7 @@ swappy
 swaykbdd
 telegram-desktop
 tlp-rdw
+tlpui
 transmission-gtk
 ttf-font-awesome
 ttf-hack
