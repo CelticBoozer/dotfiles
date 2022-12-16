@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+Description = Renew AUR packages list
+When = PostTransaction
+Exec = /bin/zsh -c '(pacman -Qqm) > /home/celtic_boozer/.system-config-backup/aurpkglist.txt'
