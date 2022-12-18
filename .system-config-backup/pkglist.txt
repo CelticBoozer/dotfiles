@@ -82,6 +82,7 @@ neofetch
 neovim
 net-tools
 netctl
+ntfs-3g
 obsidian
 pacman
 pacman-contrib
@@ -107,7 +108,9 @@ reflector
 reiserfsprogs
 rmlint
 rofi-calc
+rust
 s-nail
+scdoc
 sed
 shadow
 sudo

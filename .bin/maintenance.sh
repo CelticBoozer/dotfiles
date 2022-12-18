@@ -8,3 +8,4 @@ paru -Syu
 sudo pacman -Rs $(pacman -Qtdq)
 sudo pacman -Scc
 paru -Sccd
+
