@@ -5,3 +5,4 @@ cp ../.system-config-backup/pacman/create-aur-backup.hook /usr/share/libalpm/hoo
 cp ../.system-config-backup/pacman/pacman.conf /etc/pacman.conf
 cp ../.system-config-backup/systemd/logind.conf /etc/systemd/logind.conf
 cp ../.system-config-backup/tlp.conf /etc/tlp.conf
+cp ../.system-config-backup/config.toml /etc/greetd/config.toml
