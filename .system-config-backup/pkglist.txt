@@ -99,6 +99,7 @@ pkgconf
 playerctl
 procps-ng
 psmisc
+pyside2
 python-pillow
 python-pip
 python-requests
@@ -108,9 +109,7 @@ reflector
 reiserfsprogs
 rmlint
 rofi-calc
-rust
 s-nail
-scdoc
 sed
 shadow
 sudo
@@ -118,6 +117,7 @@ swappy
 sway
 swaybg
 swayidle
+syncplay
 sysfsutils
 systemd
 systemd-sysvcompat
