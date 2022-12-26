@@ -52,8 +52,13 @@ intel-ucode
 iproute2
 iputils
 iw
+jdk-openjdk
+jdk11-openjdk
+jdk8-openjdk
 jfsutils
 jre-openjdk
+jre11-openjdk
+jre8-openjdk
 kanshi
 keepass
 kitty
@@ -146,4 +151,5 @@ xfsprogs
 xorg-xlsclients
 xorg-xwayland
 zathura
+zathura-pdf-mupdf
 zsh

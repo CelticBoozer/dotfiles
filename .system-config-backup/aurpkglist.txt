@@ -7,6 +7,7 @@ greetd-tuigreet
 grimshot
 gruvbox-dark-gtk
 intellij-idea-ultimate-edition
+intellij-idea-ultimate-edition-jre
 keepmenu
 paru
 pkgtools
