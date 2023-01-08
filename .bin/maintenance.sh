@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 
 # Upgrade system and packages
 sudo pacman -Syu

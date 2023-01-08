@@ -1,4 +1,5 @@
-#!/bin/zsh
+#!/bin/sh
 
-sudo pacman -S $(cat ../.system-config-backup/pkglist.txt)
-paru -S $(cat ../.system-config-backup/aurpkglist.txt)
+cd ~/.bin
+sudo pacman -S $(cat ~/.system-config-backup/pkglist.txt)
+paru -S $(cat ~/.system-config-backup/aurpkglist.txt)
