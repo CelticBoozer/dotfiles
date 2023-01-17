@@ -7,4 +7,4 @@ Target = *
 [Action]
 Description = Renew AUR packages list
 When = PostTransaction
-Exec = /bin/zsh -c '(pacman -Qqm) > /home/celtic_boozer/.system-config-backup/aurpkglist.txt'
+Exec = /bin/zsh -c '(pacman -Qqm) > /home/celtic/.system-config-backup/aurpkglist.txt'

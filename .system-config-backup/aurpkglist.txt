@@ -1,7 +1,5 @@
 binance
 ebtables
-enpass-bin
-google-chrome
 greetd
 greetd-tuigreet
 grimshot
@@ -14,9 +12,12 @@ pkgtools
 postman-bin
 python-pynput
 rofi-bluetooth-git
+rofi-lbonn-wayland-git
+silo-google-keep
+silos
 swaykbdd
 swaylock-effects
 wlsunset
-wob-git
+wob
 xcursor-simp1e-gruvbox-dark
 yandex-disk

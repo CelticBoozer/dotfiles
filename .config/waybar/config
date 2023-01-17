@@ -4,7 +4,7 @@
     "height": 15,
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
+    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio", "pulseaudio#pulse2",
                       "custom/arrow-dark-on-light-left", "network",
                       "custom/arrow-light-on-dark-left", "cpu",
                       "custom/arrow-dark-on-light-left", "memory",
@@ -41,17 +41,28 @@
 
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "  {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " ",
-        "format-source-muted": " ",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " ",
+        "format-muted": "",
         "format-icons": {
             "headphone": "",
             "headset": "",
             "default": ["", "", ""]
         },
+        "tooltip": false,
+        "on-click": "pavucontrol --class=pavu",
+	"on-click-right": "easyeffects"
+    },
+
+    "pulseaudio#pulse2": {
+        "scroll-step": 1,
+        "format": "{format_source}",
+        "format-bluetooth": "{format_source}",
+        "format-bluetooth-muted": "{format_source}",
+        "format-muted": "{format_source}",
+        "format-source": " ",
+        "format-source-muted": " ",
         "tooltip": false,
         "on-click": "pavucontrol --class=pavu",
 	"on-click-right": "easyeffects"

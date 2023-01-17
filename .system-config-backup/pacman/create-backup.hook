@@ -7,4 +7,4 @@ Target = *
 [Action]
 Description = Renew packages list
 When = PostTransaction
-Exec = /bin/zsh -c 'pacman -Qqe | grep -v "$(pacman -Qqm)" > /home/celtic_boozer/.system-config-backup/pkglist.txt'
+Exec = /bin/zsh -c 'pacman -Qqe | grep -v "$(pacman -Qqm)" > /home/celtic/.system-config-backup/pkglist.txt'
