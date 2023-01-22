@@ -73,6 +73,7 @@ application/x-extension-shtml=firefoxdeveloperedition.desktop
 application/xhtml+xml=firefoxdeveloperedition.desktop
 application/x-extension-xhtml=firefoxdeveloperedition.desktop
 application/x-extension-xht=firefoxdeveloperedition.desktop
+x-scheme-handler/mailspring=Mailspring.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;userapp-Telegram Desktop-KWPCW1.desktop;

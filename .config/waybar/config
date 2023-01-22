@@ -4,7 +4,7 @@
     "height": 15,
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio", "pulseaudio#pulse2",
+    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
                       "custom/arrow-dark-on-light-left", "network",
                       "custom/arrow-light-on-dark-left", "cpu",
                       "custom/arrow-dark-on-light-left", "memory",
@@ -24,27 +24,29 @@
         "return-type": "json",
         "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
         "exec-if": "ping pro-api.coinmarketcap.com -c1",
-	"tooltip": false
+	    "tooltip": false
     },
 
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>",
-	"tooltip": false
+	    "tooltip": false
     },
 
     "clock": {
         "timezone": "Europe/Minsk",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d-%m-%Y}",
-	"on-click-right": "kitty --class=calcurse -e calcurse"
+	    "on-click-right": "kitty --class=calcurse -e calcurse"
     },
 
     "pulseaudio": {
         "scroll-step": 1,
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": " ",
-        "format-muted": "",
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "<span foreground='#fb4934'>  {format_source}</span>",
+        "format-muted": "<span foreground='#fb4934'></span> {format_source}",
+        "format-source": " ",
+        "format-source-muted": " <span foreground='#fb4934'></span>",
         "format-icons": {
             "headphone": "",
             "headset": "",
@@ -52,20 +54,7 @@
         },
         "tooltip": false,
         "on-click": "pavucontrol --class=pavu",
-	"on-click-right": "easyeffects"
-    },
-
-    "pulseaudio#pulse2": {
-        "scroll-step": 1,
-        "format": "{format_source}",
-        "format-bluetooth": "{format_source}",
-        "format-bluetooth-muted": "{format_source}",
-        "format-muted": "{format_source}",
-        "format-source": " ",
-        "format-source-muted": " ",
-        "tooltip": false,
-        "on-click": "pavucontrol --class=pavu",
-	"on-click-right": "easyeffects"
+	    "on-click-right": "easyeffects"
     },
 
     "network": {
@@ -73,29 +62,29 @@
         "format-ethernet": "",
         "format-linked": "",
         "format-disconnected": "⚠",
-	"tooltip-format": "{essid}\n{ipaddr}/{cidr}",
-	"tooltip": true,
+	    "tooltip-format": "{essid}\n{ipaddr}/{cidr}",
+	    "tooltip": true,
         "on-click": "kitty --class=nmtui -e nmtui"
     },
 
     "cpu": {
         "format": "{usage}% ",
-	"states": {
+	    "states": {
             "warning": 60,
             "critical": 80
-	},
+	    },
         "tooltip": false,
-	"on-click": "kitty --class=btop -e btop"
+	    "on-click": "kitty --class=btop -e btop"
     },
 
     "memory": {
        	"tooltip": true,
         "format": "{}% ",
         "states": {
-	    "warning": 60,
-	    "critical": 80
+	        "warning": 60,
+	        "critical": 80
         },
-	"tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+	    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
     },
 
     "temperature": {
@@ -113,7 +102,7 @@
 
     "battery": {
         "tooltip": true,
-	"tooltip-format": "{time}",
+	    "tooltip-format": "{time}",
         "states": {
             "warning": 35,
             "critical": 20

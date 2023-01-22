@@ -1,3 +1,4 @@
+betterbird-bin
 binance
 ebtables
 greetd
@@ -6,11 +7,9 @@ grimshot
 gruvbox-dark-gtk
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
-keepmenu
 paru
 pkgtools
 postman-bin
-python-pynput
 rofi-bluetooth-git
 rofi-lbonn-wayland-git
 silo-google-keep

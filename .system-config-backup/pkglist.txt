@@ -27,7 +27,6 @@ file-roller
 findutils
 firefox-developer-edition
 flex
-foot
 gawk
 gcc
 gettext
@@ -71,6 +70,7 @@ man-db
 man-pages
 mdadm
 mpv
+msmtp-mta
 nano
 neofetch
 neovim
