@@ -24,19 +24,20 @@
         "return-type": "json",
         "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
         "exec-if": "ping pro-api.coinmarketcap.com -c1",
-	    "tooltip": false
+	"tooltip": false
     },
 
     "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>",
-	    "tooltip": false
+        "format": "<span style='italic'>{}</span>",
+	"tooltip": false
     },
 
     "clock": {
         "timezone": "Europe/Minsk",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"today-format": "<b><span background='#fe8019'><span foreground='#282828'>{}</span></span></b>",
         "format-alt": "{:%d-%m-%Y}",
-	    "on-click-right": "kitty --class=calcurse -e calcurse"
+	"on-click-right": "kitty --class=calcurse -e calcurse"
     },
 
     "pulseaudio": {
@@ -54,7 +55,8 @@
         },
         "tooltip": false,
         "on-click": "pavucontrol --class=pavu",
-	    "on-click-right": "easyeffects"
+	"on-click-right": "easyeffects",
+	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
     },
 
     "network": {
@@ -62,8 +64,8 @@
         "format-ethernet": "",
         "format-linked": "",
         "format-disconnected": "⚠",
-	    "tooltip-format": "{essid}\n{ipaddr}/{cidr}",
-	    "tooltip": true,
+	"tooltip-format": "{essid}\n{ipaddr}/{cidr}",
+	"tooltip": true,
         "on-click": "kitty --class=nmtui -e nmtui"
     },
 
@@ -74,17 +76,17 @@
             "critical": 80
 	    },
         "tooltip": false,
-	    "on-click": "kitty --class=btop -e btop"
+        "on-click": "kitty --class=btop -e btop"
     },
 
     "memory": {
-       	"tooltip": true,
+        "tooltip": true,
         "format": "{}% ",
         "states": {
-	        "warning": 60,
-	        "critical": 80
+            "warning": 60,
+            "critical": 80
         },
-	    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+        "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
     },
 
     "temperature": {
@@ -102,7 +104,7 @@
 
     "battery": {
         "tooltip": true,
-	    "tooltip-format": "{time}",
+	"tooltip-format": "{time}",
         "states": {
             "warning": 35,
             "critical": 20
