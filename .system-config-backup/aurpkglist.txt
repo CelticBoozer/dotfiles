@@ -7,6 +7,7 @@ grimshot
 gruvbox-dark-gtk
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
+mailspring
 paru
 pkgtools
 postman-bin
@@ -15,7 +16,7 @@ rofi-lbonn-wayland-git
 silo-google-keep
 silos
 swaykbdd
-swaylock-effects
+swaylock-effects-git
 wlsunset
 wob
 xcursor-simp1e-gruvbox-dark
