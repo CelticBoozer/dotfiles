@@ -31,7 +31,6 @@ flex
 gawk
 gcc
 gettext
-gimp
 git
 gnome-keyring
 go
@@ -54,6 +53,7 @@ jre8-openjdk
 kanshi
 keepassxc
 kitty
+krita
 ld-lsb
 lib32-libx11
 lib32-pam
