@@ -12,6 +12,7 @@ calcurse
 chromium
 code
 cool-retro-term
+ddcutil
 debugedit
 dhcpcd
 dialog
@@ -42,6 +43,7 @@ gzip
 imv
 inetutils
 intel-ucode
+intellij-idea-community-edition
 iw
 jdk-openjdk
 jdk11-openjdk
@@ -106,7 +108,6 @@ rofi-calc
 s-nail
 sed
 shotcut
-steam
 sudo
 swappy
 sway

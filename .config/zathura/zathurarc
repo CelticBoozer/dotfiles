@@ -29,3 +29,4 @@ set show-directories true
 set show-hidden true
 set show-recent 0
 set guioptions vs
+set selection-clipboard clipboard
