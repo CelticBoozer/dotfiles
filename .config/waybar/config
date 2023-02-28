@@ -1,7 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-dark-right", "custom/weather", "custom/arrow-dark-on-bg-right", "sway/mode"],
+    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right",
+                     "custom/crypto", "custom/arrow-light-on-dark-right",
+		     "custom/weather", "custom/arrow-dark-on-bg-right", 
+		     "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
                       "custom/arrow-dark-on-light-left", "network",
@@ -163,3 +166,4 @@
     }
 
 }
+
