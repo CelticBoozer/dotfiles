@@ -74,6 +74,7 @@ application/xhtml+xml=firefoxdeveloperedition.desktop
 application/x-extension-xhtml=firefoxdeveloperedition.desktop
 application/x-extension-xht=firefoxdeveloperedition.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;userapp-Telegram Desktop-KWPCW1.desktop;

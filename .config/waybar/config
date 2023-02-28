@@ -1,8 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 15,
-    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-bg-right", "sway/mode"],
+    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right", "custom/crypto", "custom/arrow-light-on-dark-right", "custom/weather", "custom/arrow-dark-on-bg-right", "sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
                       "custom/arrow-dark-on-light-left", "network",
@@ -25,6 +24,14 @@
         "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
         "exec-if": "ping pro-api.coinmarketcap.com -c1",
 	"tooltip": false
+    },
+
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "python ~/.config/waybar/waybar-wttr.py",
+        "return-type": "json"
     },
 
     "sway/mode": {
@@ -104,7 +111,7 @@
 
     "battery": {
         "tooltip": true,
-	"tooltip-format": "{time}",
+        "tooltip-format": "{time}",
         "states": {
             "warning": 35,
             "critical": 20
@@ -140,7 +147,7 @@
         "format": ""
     },
 
-    "custom/arrow-light-on-bg-right": {
+    "custom/arrow-dark-on-bg-right": {
         "tooltip": false,
         "format": ""
     },
@@ -148,5 +155,11 @@
     "custom/arrow-dark-on-light-right": {
         "tooltip": false,
         "format": ""
+    },
+
+    "custom/arrow-light-on-dark-right": {
+        "tooltip": false,
+        "format": ""
     }
+
 }

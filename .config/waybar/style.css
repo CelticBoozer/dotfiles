@@ -1,5 +1,4 @@
 * {
-    all: unset;
     border: none;
     border-radius: 0;
     font-family: my-queue;
@@ -13,10 +12,11 @@
     color: #fbf1c7;
     background-color: #282828;
     font-size: 13px;
-    padding: 0 7;
 }
 
-#workspaces button:hover {
+#workspaces button:hover,
+#workspaces button.focused:hover,
+#workspaces button.visible:hover {
     color: #282828;
     background-color: #fabd2f;
 }
@@ -24,10 +24,6 @@
 #workspaces button.focused {
     background-color: #3c3836;
     box-shadow: inset 0 -3px #d65d0e;
-}
-
-#workspaces button.focused:hover {
-    background-color: #3c3836;
 }
 
 #workspaces button.urgent {
@@ -39,64 +35,24 @@
     background-color: #3c3836;
 }
 
-#workspaces button.visible:hover {
-    color: #282828;
-    background-color: #fabd2f;
-}
-
-#custom-crypto {
-    color: #fbf1c7;
-    font-size: 13px;
-    background-color: #3c3836;
-    padding: 0 0 0 3;
-}
-
-#mode {
-    color: #fbf1c7;
-    font-size: 13px;
-    background-color: #fb4934;
-}
-
-#clock {
-    color: #fbf1c7;
-    font-size: 13px;
-}
-
 /*
- * General background config
+ * Arrows
  */
-#network,
-#memory,
-#backlight,
-#language {
-    color: #fbf1c7;
-    font-size: 13px;
-    background-color: #282828;
-    padding: 0 3 0 3;
-}
-
-#cpu,
-#pulseaudio,
-#temperature,
-#battery,
-#tray {
-    color: #fbf1c7;
-    font-size: 13px;
-    background-color: #3c3836;
-    padding: 0 3 0 3;
-}
-
-/*
- * Arrows config
- */
-#custom-arrow-light-on-bg-left,
-#custom-arrow-light-on-bg-right {
+#custom-arrow-light-on-bg-left {
     font-size: 15px;
     color: #3c3836;
     background-color: transparent;
 }
 
-#custom-arrow-light-on-dark-left {
+#custom-arrow-dark-on-bg-right {
+    font-size: 15px;
+    color: #282828;
+    background-color: transparent;
+   
+}
+
+#custom-arrow-light-on-dark-left,
+#custom-arrow-light-on-dark-right {
     font-size: 15px;
     color: #3c3836;
     background: #282828;
@@ -110,14 +66,60 @@
 }
 
 /*
- * Battery config
+ * General background
  */
+#network,
+#memory,
+#backlight,
+#language,
+#custom-weather {
+    color: #fbf1c7;
+    font-size: 13px;
+    background-color: #282828;
+    padding: 0 3 0 3;
+}
+
+#cpu,
+#pulseaudio,
+#temperature,
+#battery,
+#tray,
+#custom-crypto {
+    color: #fbf1c7;
+    font-size: 13px;
+    background-color: #3c3836;
+    padding: 0 3 0 3;
+}
+
+/*
+ * Warning plugins state
+ */
+#memory.warning,
+#cpu.warning,
 #battery.warning {
     color: #fabd2f;
 }
 
-#battery.critical {
+/*
+ * Critical plugins state
+ */
+#cpu.critical,
+#temperature.critical,
+#memory.critical,
+#battery.critical,
+#network.disconnected {
     color: #fb4934;
+}
+
+#mode {
+    color: #282828;
+    font-size: 13px;
+    background-color: #fb4934;
+}
+
+#clock {
+    color: #fbf1c7;
+    font-size: 13px;
 }
 
 #battery.charging {
@@ -125,50 +127,11 @@
 }
 
 #battery.plugged {
-    color: #b8bb26;
-}
-
-/*
- * Network config
- */
-#network.disconnected {
-    color: #fb4934;
-}
-
-/*
- * Audio config
- */
-#pulseaudio.bluetooth {
     color: #458588;
 }
 
-/*
- * CPU config
- */
-#cpu.warning {
-    color: #fabd2f;
-}
-
-#cpu.critical {
-    color: #fb4934;
-}
-
-/*
- * Temperature config
- */
-#temperature.critical {
-    color: #fb4934;
-}
-
-/*
- * Memory config
- */
-#memory.warning {
-    color: #fabd2f;
-}
-
-#memory.critical {
-    color: #fb4934;
+#pulseaudio.bluetooth {
+    color: #458588;
 }
 
 tooltip {
@@ -176,3 +139,4 @@ tooltip {
     font-size: 13px;
     background-color: #282828;
 }
+

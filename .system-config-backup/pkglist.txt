@@ -9,9 +9,10 @@ blueberry
 brightnessctl
 btop
 calcurse
-chromium
 code
 cool-retro-term
+dbeaver
+dbeaver-plugin-svg-format
 ddcutil
 debugedit
 dhcpcd
@@ -95,6 +96,7 @@ pipewire-pulse
 pkgconf
 playerctl
 polkit
+postgresql
 pyside2
 python-pillow
 python-pip
@@ -108,6 +110,7 @@ rofi-calc
 s-nail
 sed
 shotcut
+sqlfluff
 sudo
 swappy
 sway
@@ -128,12 +131,14 @@ ttf-ubuntu-font-family
 unrar
 usbutils
 vde2
+vi
 virtualbox
 virtualbox-host-dkms
 waybar
 which
 wl-clipboard
 wqy-microhei
+xdg-desktop-portal
 xf86-input-synaptics
 xf86-video-intel
 xfsprogs

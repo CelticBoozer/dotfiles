@@ -1,5 +1,6 @@
 binance
 ebtables
+google-chrome
 greetd
 greetd-tuigreet
 grimshot
@@ -10,8 +11,15 @@ mailspring
 paru
 pkgtools
 postman-bin
+protonvpn
+protonvpn-cli
+protonvpn-gui
+python-proton-client
+python-protonvpn-nm-lib
+python-pystray
 rofi-bluetooth-git
 rofi-lbonn-wayland-git
+silo-google-calendar
 silo-google-keep
 silos
 swaykbdd

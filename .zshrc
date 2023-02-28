@@ -33,5 +33,3 @@ else
   export EDITOR='nvim'
 fi
 
-alias maint="sh $HOME/.bin/maintenance.sh"
-
