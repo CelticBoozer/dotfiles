@@ -87,6 +87,7 @@ obsidian
 openssh
 pacman
 pacman-contrib
+pacutils
 papirus-icon-theme
 patch
 pavucontrol
@@ -106,6 +107,7 @@ ranger
 reflector
 reiserfsprogs
 rmlint
+rmlint-shredder
 rofi-calc
 s-nail
 sed

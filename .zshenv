@@ -15,5 +15,5 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export BROWSER="firefox-developer-edition"
 export QT_QPA_PLATFORMTHEME=gtk3
 alias maint="sh $HOME/.bin/maintenance.sh"
-alias sysupg="sh $HOME/.bin/sysupg.sh"
+alias sysupg="sh $HOME/.bin/upgrade-system.sh"
 
