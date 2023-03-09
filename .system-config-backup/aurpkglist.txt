@@ -1,4 +1,5 @@
 binance
+droidcam
 ebtables
 google-chrome
 greetd
@@ -23,6 +24,7 @@ silo-google-keep
 silos
 swaykbdd
 swaylock-effects-git
+v4l2loopback-dc-dkms
 wlsunset
 wob
 xcursor-simp1e-gruvbox-dark
