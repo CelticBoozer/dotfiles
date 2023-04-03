@@ -14,6 +14,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export BROWSER="firefox-developer-edition"
 export QT_QPA_PLATFORMTHEME=gtk3
+export TTV_USERNAME=celticboozer359
 alias maint="sh $HOME/.bin/maintenance.sh"
 alias sysupg="sh $HOME/.bin/upgrade-system.sh"
 

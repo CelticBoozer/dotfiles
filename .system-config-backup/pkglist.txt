@@ -9,6 +9,7 @@ blueberry
 brightnessctl
 btop
 calcurse
+calibre
 code
 cool-retro-term
 dbeaver
@@ -122,7 +123,7 @@ telegram-desktop
 terminus-font
 texinfo
 tlp-rdw
-transmission-gtk
+transmission-qt
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
@@ -130,6 +131,7 @@ ttf-jetbrains-mono
 ttf-nerd-fonts-symbols-1000-em
 ttf-ubuntu-font-family
 unrar
+unzip
 usbutils
 vde2
 vi
@@ -146,5 +148,7 @@ xfsprogs
 xorg-xlsclients
 xorg-xwayland
 zathura
+zathura-djvu
 zathura-pdf-mupdf
+zip
 zsh
