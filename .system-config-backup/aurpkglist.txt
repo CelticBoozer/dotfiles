@@ -2,8 +2,6 @@ binance
 droidcam
 ebtables
 google-chrome
-greetd
-greetd-tuigreet
 grimshot
 gruvbox-dark-gtk
 intellij-idea-ultimate-edition

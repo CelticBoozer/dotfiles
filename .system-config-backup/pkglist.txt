@@ -36,6 +36,8 @@ gettext
 git
 gnome-keyring
 go
+greetd
+greetd-tuigreet
 grep
 groff
 groovy
@@ -85,6 +87,7 @@ networkmanager
 ntfs-3g
 obsidian
 openssh
+p7zip
 pacman
 pacman-contrib
 pacutils
