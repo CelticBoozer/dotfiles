@@ -15,7 +15,7 @@ protonvpn-gui
 python-proton-client
 python-protonvpn-nm-lib
 python-pystray
-rofi-bluetooth-git
+rofi-greenclip
 rofi-lbonn-wayland-git
 rofi-ttv-git
 silo-google-calendar

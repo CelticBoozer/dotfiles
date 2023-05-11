@@ -116,6 +116,7 @@ s-nail
 sed
 shotcut
 sqlfluff
+steam
 sudo
 swappy
 sway
@@ -131,7 +132,7 @@ ttf-dejavu
 ttf-font-awesome
 ttf-hack
 ttf-jetbrains-mono
-ttf-nerd-fonts-symbols-1000-em
+ttf-nerd-fonts-symbols
 ttf-ubuntu-font-family
 unrar
 unzip

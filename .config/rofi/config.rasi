@@ -29,9 +29,9 @@ configuration {
 }
 
 #window {
-    border: 0.5%;
+    border: 0.2%;
     border-radius: 10px;
-    border-color: #282828;
+    border-color: #1d2021;
     transparency: "real";
     width: 35%;
     height: 500;
