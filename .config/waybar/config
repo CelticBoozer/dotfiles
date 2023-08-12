@@ -2,19 +2,19 @@
     "layer": "top",
     "position": "top",
     "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right",
-                     "custom/crypto", "custom/arrow-light-on-dark-right",
-		     "custom/weather", "custom/arrow-dark-on-bg-right", 
-		     "sway/mode"],
+        "custom/crypto", "custom/arrow-light-on-dark-right",
+		"custom/weather", "custom/arrow-dark-on-bg-right", 
+		"sway/mode"],
     "modules-center": ["clock"],
     "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
-                      "custom/arrow-dark-on-light-left", "network",
-                      "custom/arrow-light-on-dark-left", "cpu",
-                      "custom/arrow-dark-on-light-left", "memory",
-                      "custom/arrow-light-on-dark-left", "temperature",
-                      "custom/arrow-dark-on-light-left", "backlight",
-                      "custom/arrow-light-on-dark-left", "battery",
-                      "custom/arrow-dark-on-light-left", "sway/language",
-                      "custom/arrow-light-on-dark-left", "tray"],
+        "custom/arrow-dark-on-light-left", "network",
+        "custom/arrow-light-on-dark-left", "cpu",
+        "custom/arrow-dark-on-light-left", "memory",
+        "custom/arrow-light-on-dark-left", "temperature",
+        "custom/arrow-dark-on-light-left", "backlight",
+        "custom/arrow-light-on-dark-left", "battery",
+        "custom/arrow-dark-on-light-left", "sway/language",
+        "custom/arrow-light-on-dark-left", "tray"],
 
     "sway/workspaces": {
         "disable-scroll": true
@@ -26,7 +26,7 @@
         "return-type": "json",
         "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
         "exec-if": "ping pro-api.coinmarketcap.com -c1",
-	"tooltip": false
+        "tooltip": false
     },
 
     "custom/weather": {
@@ -39,25 +39,42 @@
 
     "sway/mode": {
         "format": "<span style='italic'>{}</span>",
-	"tooltip": false
+        "tooltip": false
     },
 
     "clock": {
-        "timezone": "Europe/Minsk",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-	"today-format": "<b><span background='#fe8019'><span foreground='#282828'>{}</span></span></b>",
-        "format-alt": "{:%d-%m-%Y}",
-	"on-click-right": "kitty --class=calcurse -e calcurse"
+        "format": "{:%H:%M}",
+        "format-alt": "{:%A, %d %b, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "year",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "left",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#e2cca9'><b>{}</b></span>",
+                "days":       "<span color='#e2cca9'><b>{}</b></span>",
+                "weeks":      "<span color='#b0b846'><b>W{}</b></span>",
+                "weekdays":   "<span color='#e9b143'><b>{}</b></span>",
+                "today":      "<span color='#f28534'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "kitty --class=calcurse -e calcurse",
+            "on-click-middle": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
 
     "pulseaudio": {
         "scroll-step": 1,
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "<span foreground='#fb4934'>  {format_source}</span>",
-        "format-muted": "<span foreground='#fb4934'></span> {format_source}",
+        "format-bluetooth-muted": "<span foreground='#f2594b'>  {format_source}</span>",
+        "format-muted": "<span foreground='#f2594b'></span> {format_source}",
         "format-source": " ",
-        "format-source-muted": " <span foreground='#fb4934'></span>",
+        "format-source-muted": " <span foreground='#f2594b'></span>",
         "format-icons": {
             "headphone": "",
             "headset": "",

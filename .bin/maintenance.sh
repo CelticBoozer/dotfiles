@@ -8,7 +8,6 @@ rm -rf ~/.android
 rm -rf ~/.cargo
 rmdir ~/Desktop
 rm -rf ~/Downloads/Telegram\ Desktop
-rm -rf ~/.java
 rm -rf ~/.yarn
 rm ~/.pulse-cookie
 rm ~/.python_history

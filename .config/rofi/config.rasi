@@ -23,15 +23,15 @@ configuration {
 @theme "/dev/null"
 
 * {
-    background-color: #282828;
+    background-color: #32302f;
     font-family: "JetBrains Mono";
-    text-color: #ebdbb2;
+    text-color: #e2cca9;
 }
 
 #window {
     border: 0.2%;
     border-radius: 10px;
-    border-color: #1d2021;
+    border-color: #252423;
     transparency: "real";
     width: 35%;
     height: 500;
@@ -39,7 +39,7 @@ configuration {
 
 #scrollbar {
     enabled: true;
-    background-color: #1d2021;
+    background-color: #252423;
     handle-color: #3c3836;
     border-color: #000000;
 }
@@ -77,6 +77,6 @@ element-text, element-icon {
 }
 
 #button.selected {
-    background-color: #fe8019;
-    text-color: #1d2021;
+    background-color: #f28534;
+    text-color: #252423;
 }

@@ -70,6 +70,7 @@ linux-zen-headers
 logrotate
 lostfiles
 lvm2
+lxappearance
 m4
 make
 mako
@@ -114,15 +115,12 @@ rmlint-shredder
 rofi-calc
 s-nail
 sed
-shotcut
 sqlfluff
-steam
 sudo
 swappy
 sway
 swaybg
 swayidle
-syncplay
 telegram-desktop
 terminus-font
 texinfo

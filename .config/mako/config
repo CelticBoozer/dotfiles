@@ -8,8 +8,8 @@ on-button-right=dismiss-all
 
 # Style options
 font=Cantarell 10
-background-color=#1d2021
-text-color=#fbf1c7
+background-color=#252423
+text-color=#e2cca9
 width=300
 height=100
 margin=10
