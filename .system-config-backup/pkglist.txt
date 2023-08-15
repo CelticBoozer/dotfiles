@@ -116,6 +116,7 @@ rofi-calc
 s-nail
 sed
 sqlfluff
+steam
 sudo
 swappy
 sway

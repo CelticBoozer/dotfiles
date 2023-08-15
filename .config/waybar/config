@@ -47,7 +47,7 @@
         "format-alt": "{:%A, %d %b, %Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-            "mode"          : "year",
+            "mode"          : "month",
             "mode-mon-col"  : 3,
             "weeks-pos"     : "left",
             "on-scroll"     : 1,
