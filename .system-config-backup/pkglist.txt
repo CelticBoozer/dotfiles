@@ -23,6 +23,7 @@ dnsmasq
 docker
 easyeffects
 efibootmgr
+element-desktop
 expac
 fakeroot
 ffmpegthumbnailer
@@ -116,7 +117,6 @@ rofi-calc
 s-nail
 sed
 sqlfluff
-steam
 sudo
 swappy
 sway

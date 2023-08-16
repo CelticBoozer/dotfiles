@@ -31,7 +31,6 @@ configuration {
 #window {
     border: 0.2%;
     border-radius: 10px;
-    border-color: #252423;
     transparency: "real";
     width: 35%;
     height: 500;
