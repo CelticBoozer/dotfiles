@@ -1,4 +1,3 @@
-droidcam
 ebtables
 google-chrome
 googlekeep
@@ -8,6 +7,7 @@ gruvbox-material-icon-theme-git
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 libelectron
+openrgb
 paru
 pkgtools
 postman-bin
@@ -17,7 +17,6 @@ rofi-lbonn-wayland-git
 rofi-ttv-git
 swaykbdd
 swaylock-effects-git
-v4l2loopback-dc-dkms
 viber
 wlsunset
 wob
