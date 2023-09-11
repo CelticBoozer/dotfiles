@@ -21,4 +21,6 @@ viber
 wlsunset
 wob
 xcursor-simp1e-gruvbox-dark
+xiaomitool-v2
 yandex-disk
+youtube-dl

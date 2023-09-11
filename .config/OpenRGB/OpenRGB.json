@@ -1279,7 +1279,7 @@
             "x": 0,
             "y": 0
         },
-        "greyscale_tray_icon": false,
+        "greyscale_tray_icon": true,
         "language": "default",
         "minimize_on_close": true
     }

@@ -43,6 +43,7 @@ grep
 groff
 groovy
 grub
+gvfs-mtp
 gzip
 imv
 inetutils
@@ -80,6 +81,7 @@ man-pages
 mdadm
 mpv
 msmtp-mta
+mtpfs
 nano
 neofetch
 neovim
@@ -87,6 +89,7 @@ net-tools
 netctl
 networkmanager
 ntfs-3g
+obs-studio
 obsidian
 openssh
 p7zip
@@ -117,6 +120,7 @@ rofi-calc
 s-nail
 sed
 sqlfluff
+steam
 sudo
 swappy
 sway
