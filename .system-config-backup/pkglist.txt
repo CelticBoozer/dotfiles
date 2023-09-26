@@ -9,7 +9,6 @@ blueberry
 brightnessctl
 btop
 calcurse
-calibre
 code
 cool-retro-term
 dbeaver
@@ -24,6 +23,7 @@ docker
 easyeffects
 efibootmgr
 element-desktop
+ephoto
 expac
 fakeroot
 ffmpegthumbnailer
@@ -64,7 +64,6 @@ krita
 ld-lsb
 lib32-libx11
 lib32-pam
-libreoffice-fresh
 libtool
 linux-firmware
 linux-zen
@@ -89,7 +88,6 @@ net-tools
 netctl
 networkmanager
 ntfs-3g
-obs-studio
 obsidian
 openssh
 p7zip

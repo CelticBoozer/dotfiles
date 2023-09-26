@@ -1,3 +1,4 @@
+avizo
 ebtables
 google-chrome
 googlekeep
@@ -17,6 +18,7 @@ rofi-lbonn-wayland-git
 rofi-ttv-git
 swaykbdd
 swaylock-effects-git
+swayosd-git
 viber
 wlsunset
 wob
