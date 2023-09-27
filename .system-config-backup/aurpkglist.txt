@@ -8,6 +8,7 @@ gruvbox-material-icon-theme-git
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 libelectron
+onlyoffice-bin
 openrgb
 paru
 pkgtools

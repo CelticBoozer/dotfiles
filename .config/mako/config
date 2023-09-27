@@ -29,11 +29,11 @@ anchor=bottom-right
 
 [category=CHANGE_LAYOUT]
 font=Cantarell 25
-background-color=#252423aa
-text-color=#e2cca9cc
+background-color=#252423
+text-color=#e2cca9
 width=300
 height=100
-margin=200
+margin=300
 padding=15
 border-size=0
 border-radius=5

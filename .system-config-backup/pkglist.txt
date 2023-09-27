@@ -52,6 +52,7 @@ intellij-idea-community-edition
 iw
 jdk-openjdk
 jdk11-openjdk
+jdk17-openjdk
 jdk8-openjdk
 jfsutils
 jre-openjdk
