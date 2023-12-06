@@ -29,6 +29,8 @@
 !.config/mimeapps.list
 !.config/mpv/
 !.config/neofetch/
+!.config/nvim/
+.config/nvim/lazy-lock.json
 !.config/OpenRGB/
 .config/OpenRGB/logs/
 !.config/paru/

@@ -5,10 +5,10 @@ googlekeep
 grimshot
 gruvbox-dark-gtk
 gruvbox-material-icon-theme-git
+hide-client
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 libelectron
-onlyoffice-bin
 openrgb
 paru
 pkgtools
@@ -21,6 +21,7 @@ swaykbdd
 swaylock-effects-git
 swayosd-git
 viber
+windscribe-v2-bin
 wlsunset
 wob
 xcursor-simp1e-gruvbox-dark

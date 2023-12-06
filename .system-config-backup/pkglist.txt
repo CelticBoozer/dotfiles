@@ -9,6 +9,7 @@ blueberry
 brightnessctl
 btop
 calcurse
+calibre
 code
 cool-retro-term
 dbeaver
@@ -23,7 +24,6 @@ docker
 easyeffects
 efibootmgr
 element-desktop
-ephoto
 expac
 fakeroot
 ffmpegthumbnailer
@@ -55,7 +55,6 @@ jdk11-openjdk
 jdk17-openjdk
 jdk8-openjdk
 jfsutils
-jre-openjdk
 jre11-openjdk
 jre8-openjdk
 kanshi
@@ -65,6 +64,7 @@ krita
 ld-lsb
 lib32-libx11
 lib32-pam
+libreoffice-fresh
 libtool
 linux-firmware
 linux-zen
@@ -116,6 +116,7 @@ reiserfsprogs
 rmlint
 rmlint-shredder
 rofi-calc
+rust
 s-nail
 sed
 sqlfluff
@@ -142,8 +143,10 @@ usbutils
 vde2
 vi
 virtualbox
+virtualbox-guest-iso
 virtualbox-host-dkms
 waybar
+webkit2gtk
 which
 wl-clipboard
 wqy-microhei
