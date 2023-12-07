@@ -2,8 +2,14 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'gruvbox-material',
-    component_separators = { left = '', right = '' },
-    section_separators = { left = '', right = '' },
+    component_separators = {
+      left = '',
+      right = ''
+    },
+    section_separators = {
+      left = '',
+      right = ''
+    },
     always_divide_middle = true,
     globalstatus = true,
     refresh = {
@@ -24,9 +30,22 @@ require('lualine').setup {
       },
       {
         'diagnostics',
-        sources = { 'nvim_diagnostic', 'nvim_lsp' },
-        sections = { 'error', 'warn', 'info', 'hint' },
-        symbols = { error = 'E', warn = 'W', info = 'I', hint = 'H' },
+        sources = {
+          'nvim_diagnostic',
+          'nvim_lsp' 
+        },
+        sections = {
+          'error',
+          'warn',
+          'info',
+          'hint'
+        },
+        symbols = {
+          error = 'E',
+          warn = 'W',
+          info = 'I',
+          hint = 'H' 
+        },
         colored = true,
         update_in_insert = true,
         always_visible = false,
