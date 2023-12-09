@@ -27,3 +27,7 @@ g.gruvbox_material_spell_foreground = 'none'
 g.gruvbox_material_better_performance = 1
 
 vim.cmd([[colorscheme gruvbox-material]])
+
+-- Disable float windows background.
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
+vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })

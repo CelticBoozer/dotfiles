@@ -15,8 +15,5 @@ require('fine-cmdline').setup({
     border = {
       style = 'rounded',
     },
-    win_options = {
-      winhighlight = 'NormalFloat:TelescopeNormal,FloatBorder:TelescopeBorder',
-    },
   }
 })

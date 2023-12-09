@@ -5,7 +5,7 @@ require('core.keymap')
 -- Plugins
 require('plugins.lazy')
 require('plugins.lualine')
-require('plugins.colorscheme')
 require('plugins.neotree')
 require('plugins.finecmdline')
+require('plugins.colorscheme')
 -- require('plugins.lsp')
