@@ -2,10 +2,11 @@ local o = vim.opt
 local g = vim.g
 
 -- Color settings
+o.termguicolors = true
 o.background = 'dark'
 g.gruvbox_material_background = 'soft'
 g.gruvbox_material_foreground = 'mix'
-g.gruvbox_material_transparent_background = 0
+g.gruvbox_material_transparent_background = 2
 g.gruvbox_material_visual = 'grey background'
 g.gruvbox_material_menu_selection_background = 'grey'
 g.gruvbox_material_sign_column_background = 'grey'
@@ -28,6 +29,16 @@ g.gruvbox_material_better_performance = 1
 
 vim.cmd([[colorscheme gruvbox-material]])
 
--- Disable float windows background.
-vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none' })
-vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none' })
+-- Additional customizing for float windows
+vim.api.nvim_set_hl(0, "NormalFloat", { fg='#e2cca9',  bg='#32302f' })
+vim.api.nvim_set_hl(0, 'FloatBorder', { fg='#e2cca9',  bg='#32302f'})
+
+-- Additional customizing for NeoTree
+vim.api.nvim_set_hl(0, 'NeoTreeFloatBorder', { fg='#e2cca9', bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeFloatTitle', { fg='#e2cca9', bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeCursorLine', { fg='#e2cca9', bg='#3c3836' })
+vim.api.nvim_set_hl(0, 'NeoTreeEndOfBuffer', { bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeNormal', { fg='#e2cca9',  bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { fg='#e2cca9',  bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeFileName', { fg='#e2cca9', bg='#32302f' })
+vim.api.nvim_set_hl(0, 'NeoTreeDotfile', { fg='#a89984', bg='#32302f' })
