@@ -26,10 +26,11 @@ require('lazy').setup({
     }
   },
   { 'nvim-lualine/lualine.nvim' },
-  { 'neovim/nvim-lspconfig' },
+  { 'norcalli/nvim-colorizer.lua' },
   { 'VonHeikemen/fine-cmdline.nvim',
     dependencies = {
       { 'MunifTanjim/nui.nvim' }
     }
-  }
+  },
 })
+
