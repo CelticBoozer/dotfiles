@@ -7,13 +7,13 @@ require('fine-cmdline').setup({
   popup = {
     position = {
       row = '20%',
-      col = '50%',
+      col = '50%'
     },
     size = {
-      width = '40%',
+      width = '40%'
     },
     border = {
-      style = 'rounded',
-    },
+      style = 'rounded'
+    }
   }
 })

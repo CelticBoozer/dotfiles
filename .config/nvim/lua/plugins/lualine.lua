@@ -48,7 +48,7 @@ require('lualine').setup {
         },
         colored = true,
         update_in_insert = true,
-        always_visible = false,
+        always_visible = false
       }
     },
     lualine_c = {
@@ -62,7 +62,7 @@ require('lualine').setup {
           modified = '[+]',
           readonly = '[RO]',
           unnamed = '[No Name]',
-          newfile = '[New]',
+          newfile = '[New]'
         }
       }
     },
@@ -70,17 +70,17 @@ require('lualine').setup {
       {
         'searchcount',
         maxcount = 999,
-        timeout = 10,
+        timeout = 10
       },
       'encoding', 
       {
         'filetype',
         colored = true,
         icon_only = false,
-        icon = { align = 'left' },
+        icon = { align = 'left' }
       }
     },
     lualine_y = { 'progress' },
     lualine_z = { 'location' }
-  },
+  }
 }
