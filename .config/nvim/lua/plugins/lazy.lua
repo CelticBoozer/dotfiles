@@ -32,5 +32,6 @@ require('lazy').setup({
       { 'MunifTanjim/nui.nvim' }
     }
   },
+  { 'numToStr/Comment.nvim' }
 })
 
