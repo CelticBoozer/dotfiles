@@ -32,6 +32,10 @@ require('lazy').setup({
       { 'MunifTanjim/nui.nvim' }
     }
   },
-  { 'numToStr/Comment.nvim' }
+  { 'numToStr/Comment.nvim' },
+  {
+      'windwp/nvim-autopairs',
+      event = "InsertEnter"
+  }
 })
 

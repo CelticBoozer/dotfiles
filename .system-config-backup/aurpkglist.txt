@@ -22,9 +22,9 @@ swaylock-effects-git
 swayosd-git
 viber
 windscribe-v2-bin
+winegui-bin
 wlsunset
 wob
 xcursor-simp1e-gruvbox-dark
 xiaomitool-v2
-yandex-disk
 youtube-dl
