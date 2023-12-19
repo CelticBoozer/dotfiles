@@ -35,8 +35,8 @@ o.backupdir = vim.fn.expand('~/.nvim/backup/')
 o.wrap = true
 o.linebreak = true
 
--- Hide default cmdline, to make pretty and work with fine-cmdline
--- o.cmdheight = 0
-
 -- Set system clipboard
 o.clipboard:append('unnamedplus')
+
+-- Enable mouse input
+o.mousemoveevent = true
