@@ -91,6 +91,7 @@ netctl
 networkmanager
 ntfs-3g
 obsidian
+openrgb
 openssh
 p7zip
 pacman
@@ -117,6 +118,7 @@ reiserfsprogs
 rmlint
 rmlint-shredder
 rofi-calc
+rtorrent
 rust
 s-nail
 sed
@@ -131,7 +133,7 @@ telegram-desktop
 terminus-font
 texinfo
 tlp-rdw
-transmission-qt
+transmission-cli
 ttf-dejavu
 ttf-font-awesome
 ttf-hack

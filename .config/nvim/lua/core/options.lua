@@ -2,6 +2,7 @@ local o = vim.opt
 
 -- Set lines enable
 o.number = true
+o.relativenumber = true
 
 -- Tabs settings
 o.tabstop = 2
@@ -40,3 +41,7 @@ o.clipboard:append('unnamedplus')
 
 -- Enable mouse input
 o.mousemoveevent = true
+
+-- Basic color setup
+o.termguicolors = true
+o.background = 'dark'

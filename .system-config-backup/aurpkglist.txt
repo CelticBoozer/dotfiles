@@ -9,7 +9,6 @@ hide-client
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 libelectron
-openrgb
 paru
 pkgtools
 postman-bin

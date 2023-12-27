@@ -1,14 +1,49 @@
+-- lazy.nvim package manager installation
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable',
+    lazypath
+  })
+end
+vim.opt.rtp:prepend(lazypath)
+
 --Core
 require('core.options')
 require('core.keymap')
 
--- Plugins
-require('plugins.lazy')
-require('plugins.lualine')
-require('plugins.neotree')
-require('plugins.finecmdline')
-require('plugins.colorscheme')
-require('plugins.colorizer')
-require('plugins.comment')
-require('plugins.autopairs')
-require('plugins.bufferline')
+local lazy = require("lazy")
+
+local opts = {
+  defaults = {
+    lazy = false,
+    version = "*",
+    cond = nil,
+  },
+  dev = {
+    path = "~/Development/Projects",
+  },
+  install = {
+    missing = true,
+    colorscheme = { "gruvbox-materal" },
+  },
+  ui = {
+    border = "rounded",
+  },
+  checker = {
+    enabled = true,
+  },
+}
+
+local plugins = {
+  {import = "plugin.editor"},
+  {import = "plugin.lsp"},
+  {import = "plugin.ui"},
+  {import = "plugin.util"},
+}
+
+lazy.setup(plugins, opts)
