@@ -11,6 +11,7 @@ brightnessctl
 btop
 calcurse
 calibre
+chafa
 code
 cool-retro-term
 dbeaver

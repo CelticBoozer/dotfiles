@@ -43,9 +43,6 @@
 !.config/sway/
 !.config/swayidle/
 !.config/swaylock/
-!.config/transmission/
-.config/transmission/*
-!.config/transmission/settings.json
 !.config/waybar/
 !.config/wob/
 !.config/zathura/

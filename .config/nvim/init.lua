@@ -16,8 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 require('core.options')
 require('core.keymap')
 
-local lazy = require("lazy")
-
 local opts = {
   defaults = {
     lazy = false,
@@ -40,10 +38,11 @@ local opts = {
 }
 
 local plugins = {
-  {import = "plugin.editor"},
-  {import = "plugin.lsp"},
-  {import = "plugin.ui"},
-  {import = "plugin.util"},
+  { import = "plugin.editor" },
+  { import = "plugin.lsp" },
+  { import = "plugin.ui" },
+  { import = "plugin.util" },
 }
 
-lazy.setup(plugins, opts)
+require("lazy").setup(plugins, opts)
+require('telescope').load_extension('media_files')
