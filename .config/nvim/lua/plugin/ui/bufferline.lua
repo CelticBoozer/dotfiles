@@ -41,39 +41,17 @@ return {
 			},
 		},
 		highlights = {
-			fill = {
-				fg = "#252423",
-				bg = "#252423",
-			},
-			background = {
-				fg = "#a89984",
-				bg = "#504945",
-			},
 			separator = {
 				fg = "#252423",
-				bg = "#504945",
+				bg = "#32302f",
 			},
 			separator_selected = {
 				fg = "#252423",
 				bg = "#32302f",
 			},
-			close_button = {
-				fg = "#e2cca9",
-				bg = "#504945",
-			},
-			close_button_selected = {
-				fg = "#e2cca9",
-				bg = "#32302f",
-			},
-			numbers = {
-				fg = "#a89984",
-				bg = "#504945",
-			},
-			numbers_selected = {
-				fg = "#e2cca9",
-				bg = "#32302f",
-				bold = true,
-				italic = true,
+			fill = {
+				fg = "#252423",
+				bg = "#252423",
 			},
 		},
 	},
