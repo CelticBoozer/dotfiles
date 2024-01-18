@@ -28,20 +28,20 @@ o.splitbelow = true
 
 -- Some backup and undo rules to keep
 o.undofile = true
-o.undodir = vim.fn.expand('~/.nvim/undo/')
-o.directory = vim.fn.expand('~/.nvim/swp/')
-o.backupdir = vim.fn.expand('~/.nvim/backup/')
+o.undodir = vim.fn.expand("~/.nvim/undo/")
+o.directory = vim.fn.expand("~/.nvim/swp/")
+o.backupdir = vim.fn.expand("~/.nvim/backup/")
 
 -- Line wrapping
 o.wrap = true
 o.linebreak = true
 
 -- Set system clipboard
-o.clipboard:append('unnamedplus')
+o.clipboard:append("unnamedplus")
 
 -- Enable mouse input
 o.mousemoveevent = true
 
 -- Basic color setup
 o.termguicolors = true
-o.background = 'dark'
+o.background = "dark"

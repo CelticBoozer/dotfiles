@@ -12,6 +12,7 @@ btop
 calcurse
 calibre
 chafa
+cmake
 code
 cool-retro-term
 dbeaver
@@ -73,6 +74,7 @@ linux-zen
 linux-zen-headers
 logrotate
 lostfiles
+luarocks
 lvm2
 lxappearance
 m4
