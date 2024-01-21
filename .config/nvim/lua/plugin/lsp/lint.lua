@@ -20,7 +20,6 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
 			python = { "pylint" },
-			html = { "htmlhint" },
 			css = { "stylelint" },
 		}
 
