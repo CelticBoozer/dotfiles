@@ -64,7 +64,7 @@ List of daemons/background tasks:
 - [kanshi](https://github.com/emersion/kanshi);
 - ~/.bin/randomBackground.sh.
 
-[xcursor-simp1e-gruvbox-dark](https://gitlab.com/zoli111/simp1e/) is used as the cursor theme, and 
+[xcursor-simp1e-gruvbox-dark](https://gitlab.com/zoli111/simp1e/) is used as the cursor theme, and
 [papirus-icon-theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) is used for icons, and
 [gruvbox-dark-gtk](https://github.com/jmattheis/gruvbox-dark-gtk) is used as gtk apps theme.
 

@@ -23,7 +23,6 @@ class my_edit(Command):
     # The so-called doc-string of the class will be visible in the built-in
     # help that is accessible by typing "?c" inside ranger.
     """:my_edit <filename>
-
     A sample command for demonstration purposes that opens a file in an editor.
     """
 

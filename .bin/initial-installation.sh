@@ -19,4 +19,3 @@ chsh --shell /bin/zsh
 
 # Other submodules configuration.
 git submodule update --init
-

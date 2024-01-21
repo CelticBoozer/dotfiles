@@ -155,6 +155,7 @@ waybar
 webkit2gtk
 which
 wl-clipboard
+wlsunset
 wqy-microhei
 xdg-desktop-portal
 xf86-input-synaptics
