@@ -1,5 +1,6 @@
 return {
 	"hiphish/rainbow-delimiters.nvim",
+	lazy = false,
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = {
 		"nvim-treesitter/nvim-treesitter",
@@ -9,6 +10,7 @@ return {
 
 		strategy = {
 			[""] = rainbow.strategy["global"],
+			vim = rainbow.strategy["local"],
 		}
 		query = {
 			[""] = "rainbow-delimiters",

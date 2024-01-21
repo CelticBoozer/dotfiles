@@ -8,6 +8,7 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
 		"L3MON4D3/LuaSnip",
+		"onsails/lspkind.nvim",
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -44,30 +45,15 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
-			}, { { name = "buffer" }, { name = "nvim_lsp_signature_help" } }),
+				{ name = "buffer" },
+				{ name = "nvim_lsp_signature_help" },
+			}),
+			formatting = {
+				format = require("lspkind").cmp_format({
+					maxwidth = 50,
+					ellipsis_char = "...",
+				}),
+			},
 		})
-
-		-- Set configuration for specific filetype.
-		cmp.setup.filetype("gitcommit", {
-			sources = cmp.config.sources({
-				{ name = "cmp_git" }, -- You can specify the `cmp_git` source if you were installed it.
-			}, { { name = "buffer" } }),
-		})
-
-		-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-		cmp.setup.cmdline({ "/", "?" }, {
-			mapping = cmp.mapping.preset.cmdline(),
-			sources = { { name = "buffer" } },
-		})
-
-		-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-		cmp.setup.cmdline(":", {
-			mapping = cmp.mapping.preset.cmdline(),
-			sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
-		})
-
-		-- Set up lspconfig.
-		local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		require("lspconfig")["tsserver"].setup({ capabilities = capabilities })
 	end,
 }
