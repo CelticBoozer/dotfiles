@@ -41,6 +41,12 @@ return {
 				vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 				vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 				vim.keymap.set("n", "<space>r", vim.lsp.buf.rename, opts)
+
+				local signs = { Error = "", Warn = "", Hint = "", Info = "" }
+				for type, icon in pairs(signs) do
+					local hl = "DiagnosticSign" .. type
+					vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+				end
 			end,
 		})
 	end,

@@ -3,6 +3,6 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	opts = {},
 	keys = {
-    { "<leader>d", ":Trouble<CR>", desc = "lsp diagnostics" },
-  },
+		{ "<leader>d", ":Trouble<CR>", desc = "trouble diagnostics" },
+	},
 }
