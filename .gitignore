@@ -25,6 +25,7 @@
 !.config/imv/
 !.config/kanshi/
 !.config/kitty/
+!.config/luacheck/
 !.config/mako/
 !.config/mimeapps.list
 !.config/mpv/

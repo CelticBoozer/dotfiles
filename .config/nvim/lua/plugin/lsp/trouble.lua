@@ -10,6 +10,10 @@ return {
 		win_config = { border = "rounded" },
 	},
 	keys = {
-		{ "<leader>d", ":Trouble<CR>", desc = "trouble diagnostics" },
+		{ "<leader>td", ":Trouble document_diagnostics<CR>", desc = "trouble diagnostics workspace" },
+		{ "<leader>tD", ":Trouble workspace_diagnostics<CR>", desc = "trouble diagnostics workspace" },
+		{ "<leader>tl", ":Trouble loclist<CR>", desc = "trouble diagnostics workspace" },
+		{ "<leader>tr", ":Trouble lsp_references<CR>", desc = "trouble diagnostics workspace" },
+		{ "<leader>tR", ":Trouble lsp_definitions<CR>", desc = "trouble diagnostics workspace" },
 	},
 }
