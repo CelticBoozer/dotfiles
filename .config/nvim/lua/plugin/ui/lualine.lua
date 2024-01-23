@@ -1,6 +1,9 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
+		"arkav/lualine-lsp-progress",
+	},
 	opts = {
 		options = {
 			theme = "gruvbox-material",
@@ -52,6 +55,7 @@ return {
 						newfile = "[New]",
 					},
 				},
+				"lsp_progress",
 			},
 			lualine_x = {
 				{
