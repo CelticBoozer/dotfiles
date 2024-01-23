@@ -1,186 +1,213 @@
 {
-    "layer": "top",
-    "position": "top",
-    "modules-left": ["sway/workspaces", "custom/arrow-dark-on-light-right",
-        "custom/crypto", "custom/arrow-light-on-dark-right",
-		"custom/weather", "custom/arrow-dark-on-bg-right", 
-		"sway/mode"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/arrow-light-on-bg-left", "pulseaudio",
-        "custom/arrow-dark-on-light-left", "network",
-        "custom/arrow-light-on-dark-left", "cpu",
-        "custom/arrow-dark-on-light-left", "memory",
-        "custom/arrow-light-on-dark-left", "temperature",
-        "custom/arrow-dark-on-light-left", "backlight",
-        "custom/arrow-light-on-dark-left", "battery",
-        "custom/arrow-dark-on-light-left", "sway/language",
-        "custom/arrow-light-on-dark-left", "tray"],
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "sway/workspaces",
+    "custom/arrow-dark-on-light-right",
+    "custom/crypto",
+    "custom/arrow-light-on-dark-right",
+    "custom/weather",
+    "custom/arrow-dark-on-light-right",
+    "custom/updates",
+    "custom/arrow-light-on-bg-right",
+    "sway/mode"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "custom/arrow-light-on-bg-left",
+    "pulseaudio",
+    "custom/arrow-dark-on-light-left",
+    "network",
+    "custom/arrow-light-on-dark-left",
+    "cpu",
+    "custom/arrow-dark-on-light-left",
+    "memory",
+    "custom/arrow-light-on-dark-left",
+    "temperature",
+    "custom/arrow-dark-on-light-left",
+    "backlight",
+    "custom/arrow-light-on-dark-left",
+    "battery",
+    "custom/arrow-dark-on-light-left",
+    "sway/language",
+    "custom/arrow-light-on-dark-left",
+    "tray"
+  ],
 
-    "sway/workspaces": {
-        "disable-scroll": true
+  "sway/workspaces": {
+    "disable-scroll": true
+  },
+
+  "custom/crypto": {
+    "format": "{}",
+    "interval": 600,
+    "return-type": "json",
+    "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
+    "exec-if": "ping pro-api.coinmarketcap.com -c1",
+    "tooltip": false
+  },
+
+  "custom/weather": {
+    "format": "{} °",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+  },
+
+  "custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+      "has-updates": "󱍷",
+      "updated": "󰂪"
     },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates"
+  },
 
-    "custom/crypto": {
-        "format": "{}",
-        "interval": 600,
-        "return-type": "json",
-        "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
-        "exec-if": "ping pro-api.coinmarketcap.com -c1",
-        "tooltip": false
+  "sway/mode": {
+    "format": "<span style='italic'>{}</span>",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%A, %d %b, %Y}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "weeks-pos": "left",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#e2cca9'><b>{}</b></span>",
+        "days": "<span color='#e2cca9'><b>{}</b></span>",
+        "weeks": "<span color='#b0b846'><b>W{}</b></span>",
+        "weekdays": "<span color='#e9b143'><b>{}</b></span>",
+        "today": "<span color='#f28534'><b><u>{}</u></b></span>"
+      }
     },
-
-    "custom/weather": {
-        "format": "{}",
-        "tooltip": true,
-        "interval": 3600,
-        "exec": "python ~/.config/waybar/waybar-wttr.py",
-        "return-type": "json"
-    },
-
-    "sway/mode": {
-        "format": "<span style='italic'>{}</span>",
-        "tooltip": false
-    },
-
-    "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%A, %d %b, %Y}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode"          : "month",
-            "mode-mon-col"  : 3,
-            "weeks-pos"     : "left",
-            "on-scroll"     : 1,
-            "format": {
-                "months":     "<span color='#e2cca9'><b>{}</b></span>",
-                "days":       "<span color='#e2cca9'><b>{}</b></span>",
-                "weeks":      "<span color='#b0b846'><b>W{}</b></span>",
-                "weekdays":   "<span color='#e9b143'><b>{}</b></span>",
-                "today":      "<span color='#f28534'><b><u>{}</u></b></span>"
-            }
-        },
-        "actions": {
-            "on-click-right": "kitty --class=calcurse -e calcurse",
-            "on-click-middle": "mode",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
-    },
-
-    "pulseaudio": {
-        "scroll-step": 1,
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "<span foreground='#f2594b'>  {format_source}</span>",
-        "format-muted": "<span foreground='#f2594b'></span> {format_source}",
-        "format-source": " ",
-        "format-source-muted": " <span foreground='#f2594b'></span>",
-        "format-icons": {
-            "headphone": "",
-            "headset": "",
-            "default": ["", "", ""]
-        },
-        "tooltip": false,
-        "on-click": "pavucontrol --class=pavu",
-	"on-click-right": "easyeffects",
-	"ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
-    },
-
-    "network": {
-        "format-wifi": "",
-        "format-ethernet": "",
-        "format-linked": "",
-        "format-disconnected": "⚠",
-	"tooltip-format": "{essid}\n{ipaddr}/{cidr}",
-	"tooltip": true,
-        "on-click": "kitty --class=nmtui -e nmtui"
-    },
-
-    "cpu": {
-        "format": "{usage}% ",
-	    "states": {
-            "warning": 60,
-            "critical": 80
-	    },
-        "tooltip": false,
-        "on-click": "kitty --class=btop -e btop"
-    },
-
-    "memory": {
-        "tooltip": true,
-        "format": "{}% ",
-        "states": {
-            "warning": 60,
-            "critical": 80
-        },
-        "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
-    },
-
-    "temperature": {
-        "tooltip": false,  
-        "critical-threshold": 80,
-        "format": "{temperatureC}°{icon}",
-        "format-icons": ["", "", ""]
-    },
-
-    "backlight": {
-        "tooltip": false,
-        "format": "{percent}% {icon}",
-        "format-icons": [""]
-    },
-
-    "battery": {
-        "tooltip": true,
-        "tooltip-format": "{time}",
-        "states": {
-            "warning": 35,
-            "critical": 20
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-icons": ["", "", "", "", ""]
-    },
-
-    "sway/language": {
-        "format": "{shortDescription}",
-        "tooltip": false 
-    },
-
-    "tray": {
-        "tooltip": false,
-        "spacing": 5
-    },
-
-    "custom/arrow-light-on-bg-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-light-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-light-on-dark-left": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-bg-right": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-dark-on-light-right": {
-        "tooltip": false,
-        "format": ""
-    },
-
-    "custom/arrow-light-on-dark-right": {
-        "tooltip": false,
-        "format": ""
+    "actions": {
+      "on-click-right": "kitty --class=calcurse -e calcurse",
+      "on-click-middle": "mode",
+      "on-scroll-up": "shift_up",
+      "on-scroll-down": "shift_down"
     }
+  },
 
+  "pulseaudio": {
+    "scroll-step": 1,
+    "format": "{volume}% {icon} {format_source}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": "<span foreground='#f2594b'>  {format_source}</span>",
+    "format-muted": "<span foreground='#f2594b'></span> {format_source}",
+    "format-source": " ",
+    "format-source-muted": " <span foreground='#f2594b'></span>",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "default": ["", "", ""]
+    },
+    "tooltip": false,
+    "on-click": "pavucontrol --class=pavu",
+    "on-click-right": "easyeffects",
+    "ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
+  },
+
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-linked": "",
+    "format-disconnected": "⚠",
+    "tooltip-format": "{essid}\n{ipaddr}/{cidr}",
+    "tooltip": true,
+    "on-click": "kitty --class=nmtui -e nmtui"
+  },
+
+  "cpu": {
+    "format": "{usage}% ",
+    "states": {
+      "warning": 60,
+      "critical": 80
+    },
+    "tooltip": false,
+    "on-click": "kitty --class=btop -e btop"
+  },
+
+  "memory": {
+    "tooltip": true,
+    "format": "{}% ",
+    "states": {
+      "warning": 60,
+      "critical": 80
+    },
+    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+  },
+
+  "temperature": {
+    "tooltip": false,
+    "critical-threshold": 80,
+    "format": "{temperatureC}°{icon}",
+    "format-icons": ["", "", ""]
+  },
+
+  "backlight": {
+    "tooltip": false,
+    "format": "{percent}% {icon}",
+    "format-icons": [""]
+  },
+
+  "battery": {
+    "tooltip": true,
+    "tooltip-format": "{time}",
+    "states": {
+      "warning": 35,
+      "critical": 20
+    },
+    "format": "{capacity}% {icon}",
+    "format-charging": "{capacity}% ",
+    "format-plugged": "{capacity}% ",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  "sway/language": {
+    "format": "{shortDescription}",
+    "tooltip": false
+  },
+
+  "tray": {
+    "tooltip": false,
+    "spacing": 5
+  },
+
+  "custom/arrow-light-on-bg-left": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/arrow-dark-on-light-left": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/arrow-light-on-dark-left": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/arrow-light-on-bg-right": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/arrow-dark-on-light-right": {
+    "tooltip": false,
+    "format": ""
+  },
+
+  "custom/arrow-light-on-dark-right": {
+    "tooltip": false,
+    "format": ""
+  }
 }
-

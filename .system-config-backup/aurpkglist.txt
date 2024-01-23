@@ -20,9 +20,11 @@ swaykbdd
 swaylock-effects-git
 swayosd-git
 viber
+waybar-module-pacman-updates-git
 windscribe-v2-bin
 winegui-bin
 wob
+wttrbar
 xcursor-simp1e-gruvbox-dark
 xiaomitool-v2
 youtube-dl

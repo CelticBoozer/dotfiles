@@ -92,6 +92,7 @@ neovim
 net-tools
 netctl
 networkmanager
+noto-fonts-emoji
 ntfs-3g
 obsidian
 openrgb

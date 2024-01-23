@@ -13,9 +13,6 @@ o.smartindent = true
 -- Save changes automatically
 o.autowriteall = true
 
--- Enable words spell check
-o.spell = true
-
 -- Enable cursor higlighting
 o.cursorline = true
 
