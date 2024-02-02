@@ -14,3 +14,6 @@ rm ~/.python_history
 rm ~/.yarnrc
 rm ~/.bash_history
 
+# Clean rofi modes cache
+cliphist wipe
+rm ~/.local/share/rofi/rofi_calc_history

@@ -112,5 +112,17 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
+		lspconfig.jdtls.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+		lspconfig.groovyls.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+		lspconfig.sqlls.setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 	end,
 }

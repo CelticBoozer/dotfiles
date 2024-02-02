@@ -30,6 +30,7 @@ return {
 			lua = { "stylua" },
 			python = { "black" },
 			sh = { "beautysh" },
+			java = { "google-java-format" },
 			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},

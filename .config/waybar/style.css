@@ -1,38 +1,52 @@
+@define-color bg-bar rgba(50, 48, 47, 0.8);
+@define-color dark-box #32302f;
+@define-color light-box #3c3836;
+@define-color light-fg #e2cca9;
+@define-color dark-fg #32302f;
+@define-color selected #f28534;
+@define-color warning #e9b143;
+@define-color critical #f2594b;
+@define-color good #b0b846;
+@define-color info #80aa9e;
+@define-color separator #46413e;
+
 * {
+  color: @light-fg;
+  font-size: 13px;
   border: none;
   border-radius: 0;
   font-family: my-queue;
 }
 
 #waybar {
-  background-color: rgba(50, 48, 47, 0.8);
+  background: @bg-bar;
 }
 
 #workspaces button {
-  color: #e2cca9;
-  background-color: #32302f;
-  font-size: 13px;
+  background: @dark-box;
+  border-left: 2px solid @separator;
+}
+
+#workspaces button:first-child {
+  background: @dark-box;
+  border-left: 0px;
+}
+
+#workspaces button.focused {
+  background: @light-box;
+  box-shadow: inset 0 -3px @selected;
+}
+
+#workspaces button.urgent {
+  color: @dark-fg;
+  background: @critical;
 }
 
 #workspaces button:hover,
 #workspaces button.focused:hover,
 #workspaces button.visible:hover {
-  color: #32302f;
-  background-color: #e9b143;
-}
-
-#workspaces button.focused {
-  background-color: #3c3836;
-  box-shadow: inset 0 -3px #f28534;
-}
-
-#workspaces button.urgent {
-  color: #32302f;
-  background-color: #f2594b;
-}
-
-#workspaces button.visible {
-  background-color: #3c3836;
+  color: @dark-fg;
+  background: @warning;
 }
 
 /*
@@ -40,28 +54,28 @@
  */
 #custom-arrow-light-on-bg-left {
   font-size: 15px;
-  color: #3c3836;
-  background-color: transparent;
+  color: @light-box;
+  background: transparent;
 }
 
 #custom-arrow-light-on-bg-right {
   font-size: 15px;
-  color: #3c3836;
-  background-color: transparent;
+  color: @light-box;
+  background: transparent;
 }
 
 #custom-arrow-light-on-dark-left,
 #custom-arrow-light-on-dark-right {
   font-size: 15px;
-  color: #3c3836;
-  background: #32302f;
+  color: @light-box;
+  background: @dark-box;
 }
 
 #custom-arrow-dark-on-light-left,
 #custom-arrow-dark-on-light-right {
   font-size: 15px;
-  color: #32302f;
-  background: #3c3836;
+  color: @dark-box;
+  background: @light-box;
 }
 
 /*
@@ -71,10 +85,9 @@
 #memory,
 #backlight,
 #language,
+#tray,
 #custom-weather {
-  color: #e2cca9;
-  font-size: 13px;
-  background-color: #32302f;
+  background: @dark-box;
   padding: 0 3 0 3;
 }
 
@@ -82,12 +95,10 @@
 #pulseaudio,
 #temperature,
 #battery,
-#tray,
+#custom-notification,
 #custom-crypto,
 #custom-updates {
-  color: #e2cca9;
-  font-size: 13px;
-  background-color: #3c3836;
+  background: @light-box;
   padding: 0 3 0 3;
 }
 
@@ -97,7 +108,7 @@
 #memory.warning,
 #cpu.warning,
 #battery.warning {
-  color: #e9b143;
+  color: @warning;
 }
 
 /*
@@ -108,34 +119,26 @@
 #memory.critical,
 #battery.critical,
 #network.disconnected {
-  color: #f2594b;
+  color: @critical;
 }
 
 #mode {
-  color: #32302f;
-  font-size: 13px;
-  background-color: #f2594b;
-}
-
-#clock {
-  color: #e2cca9;
-  font-size: 13px;
+  color: @dark-fg;
+  background: @critical;
 }
 
 #battery.charging {
-  color: #b0b846;
+  color: @good;
 }
 
 #battery.plugged {
-  color: #80aa9e;
+  color: @info;
 }
 
 #pulseaudio.bluetooth {
-  color: #80aa9e;
+  color: @info;
 }
 
 tooltip {
-  color: #e2cca9;
-  font-size: 13px;
-  background-color: #32302f;
+  background: @dark-box;
 }

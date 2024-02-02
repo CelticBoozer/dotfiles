@@ -21,6 +21,8 @@ return {
 			typescriptreact = { "eslint_d" },
 			python = { "pylint" },
 			css = { "stylelint" },
+			java = { "checkstyle" },
+			sql = { "sqlfluff" },
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })

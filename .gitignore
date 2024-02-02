@@ -18,7 +18,6 @@
 !.config/calcurse/
 !.config/easyeffects/
 !.config/electron-flags.conf
-!.config/electron22-flags.conf
 !.config/electron25-flags.conf
 !.config/fontconfig/
 !.config/gtk-3.0/
@@ -34,6 +33,8 @@
 !.config/OpenRGB/
 .config/OpenRGB/logs/
 !.config/paru/
+!.config/qalculate/
+.config/qalculate/qalc.history
 !.config/ranger/
 .config/ranger/colorschemes/__pycache__/
 .config/ranger/colorschemes/__init__.py
@@ -44,6 +45,8 @@
 !.config/sway/
 !.config/swayidle/
 !.config/swaylock/
+!.config/swaync/
+!.config/sworkstyle/
 !.config/waybar/
 !.config/wob/
 !.config/zathura/

@@ -147,7 +147,7 @@ echo -e "\0markup-rows\x1ftrue"
 
 if [ -z "${selection+x}" ]
 then
-    echo -e "\0prompt\x1f Power menu"
+    echo -e "\0prompt\x1fPower"
     for entry in "${show[@]}"
     do
         echo -e "${messages[$entry]}\0icon\x1f${icons[$entry]}"
@@ -194,4 +194,3 @@ else
     echo "Invalid selection: $selection" >&2
     exit 1
 fi
-

@@ -1,5 +1,4 @@
 acpi
-alacritty
 archlinux-keyring
 autoconf
 automake
@@ -12,13 +11,11 @@ btop
 calcurse
 calibre
 chafa
+cliphist
 cmake
 code
 cool-retro-term
-dbeaver
-dbeaver-plugin-svg-format
 ddcutil
-debugedit
 dhcpcd
 dialog
 discord
@@ -92,7 +89,8 @@ neovim
 net-tools
 netctl
 networkmanager
-noto-fonts-emoji
+nodejs
+npm
 ntfs-3g
 obsidian
 openrgb
@@ -104,7 +102,6 @@ pacutils
 papirus-icon-theme
 patch
 pavucontrol
-peek
 pipewire-alsa
 pipewire-pulse
 pkgconf
@@ -126,7 +123,6 @@ rtorrent
 rust
 s-nail
 sed
-sqlfluff
 steam
 sudo
 swappy
@@ -137,7 +133,6 @@ telegram-desktop
 terminus-font
 texinfo
 tlp-rdw
-transmission-cli
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
@@ -159,6 +154,7 @@ wl-clipboard
 wlsunset
 wqy-microhei
 xdg-desktop-portal
+xdg-desktop-portal-gtk
 xf86-input-synaptics
 xf86-video-intel
 xfsprogs

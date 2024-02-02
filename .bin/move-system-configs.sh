@@ -6,3 +6,4 @@ sudo cp ~/.system-config-backup/pacman/pacman.conf /etc/pacman.conf
 sudo cp ~/.system-config-backup/systemd/logind.conf /etc/systemd/logind.conf
 sudo cp ~/.system-config-backup/tlp.conf /etc/tlp.conf
 sudo cp ~/.system-config-backup/config.toml /etc/greetd/config.toml
+sudo cp ~/.system-config-backup/discord.desktop /opt/discord/discord.desktop

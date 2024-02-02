@@ -11,4 +11,3 @@ while true; do
     kill $OLD_PID
     OLD_PID=$NEXT_PID
 done
-

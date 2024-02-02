@@ -14,7 +14,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fast-syntax-highlighting 
+plugins=(fast-syntax-highlighting
         zsh-autosuggestions
         sudo
         copypath
@@ -32,4 +32,3 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
-

@@ -36,6 +36,9 @@ return {
 				"cssls",
 				"eslint",
 				"tsserver",
+				"jdtls",
+				"groovyls",
+				"sqlls",
 			},
 			automatic_installation = true,
 		})
@@ -48,12 +51,15 @@ return {
 				"hadolint",
 				"eslint_d",
 				"stylelint",
+				"checkstyle",
+				"sqlfluff",
 
 				-- Formatters
 				"black", -- Python formatter
 				"stylua",
 				"beautysh",
 				"prettier",
+				"google-java-format",
 			},
 		})
 	end,
