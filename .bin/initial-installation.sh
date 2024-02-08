@@ -9,7 +9,7 @@ cd "${HOME}" || exit
 sudo pacman -S - < "${HOME}/.system-config-backup/pkglist.txt"
 
 # AUR helper(paru) installation
-git clone https://github.com/Morganamilo/paru.git
+git clone https://aur.archlinux.org/paru.git
 cd paru || exit
 makepkg -si
 cd ..
