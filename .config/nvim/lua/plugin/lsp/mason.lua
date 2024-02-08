@@ -46,9 +46,12 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				-- Linters
-				"luacheck",
 				"pylint",
-				"hadolint",
+				"luacheck",
+				"hadolint", -- Docker linter
+				"shellcheck",
+				"jsonlint",
+				"yamllint",
 				"eslint_d",
 				"stylelint",
 				"checkstyle",

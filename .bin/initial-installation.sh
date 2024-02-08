@@ -1,21 +1,49 @@
 #!/bin/sh
 
-# All needed packages installation.
-cd ~
-sudo pacman -S $(cat ~/.system-config-backup/pkglist.txt)
+# Script to install all programs, submodules etc.
+
+# Packages installation
+cd "${HOME}" || exit
+sudo pacman -S - < "${HOME}/.system-config-backup/pkglist.txt"
+
+# AUR helper(paru) installation
 git clone https://aur.archlinux.org/paru.git
-cd paru
+cd paru || exit
 makepkg -si
 cd ..
 rm -rf paru
-paru -S $(cat ~/.system-config-backup/aurpkglist.txt)
 
-# Zsh and oh-my-zsh installation and configuration.
+# AUR packages installation
+paru -S - < "${HOME}/.system-config-backup/aurpkglist.txt"
+
+# Zsh and oh-my-zsh installation and configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd ~/.oh-my-zsh/custom/plugins/
+cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 git clone git@github.com:zsh-users/zsh-autosuggestions.git
 git clone git@github.com:zdharma-continuum/fast-syntax-highlighting.git
 chsh --shell /bin/zsh
 
-# Other submodules configuration.
+# Download all git submodules such as waybar-crypto etc.
 git submodule update --init
+
+sh "${HOME}/"
+
+# Copies all pacman hooks and some configs that are not stored not in ${XDG_CONFIG_HOME}
+
+# Hooks
+sudo cp "${HOME}/.system-config-backup/pacman/create-backup.hook" "/usr/share/libalpm/hooks/create-backup.hook"
+sudo cp "${HOME}/.system-config-backup/pacman/create-aur-backup.hook" "/usr/share/libalpm/hooks/create-aur-backup.hook"
+sudo cp "${HOME}/.system-config-backup/pacman/electron.hook" "/usr/share/libalpm/hooks/electron.hook"
+
+# Configs
+sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
+sudo cp "${HOME}/.system-config-backup/systemd/logind.conf" "/etc/systemd/logind.conf"
+sudo cp "${HOME}/.system-config-backup/tlp.conf" "/etc/tlp.conf"
+sudo cp "${HOME}/.system-config-backup/config.toml" "/etc/greetd/config.toml"
+
+#Start some daemons
+systemctl enable --now tlp.service
+systemctl enable --now swayosd-libinput-backend.service
+
+# Electron links setup
+sh "${HOME}/.bin/update-electron-symlinks.sh"

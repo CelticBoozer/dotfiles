@@ -76,7 +76,6 @@ lvm2
 lxappearance
 m4
 make
-mako
 man-db
 man-pages
 mdadm

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 # Based on https://github.com/jluttine/rofi-power-menu scripts. Changed for my own usage.
 
 set -e

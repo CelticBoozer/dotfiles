@@ -15,10 +15,9 @@
 .config/*
 !.config/btop/
 .config/btop/btop.log
-!.config/calcurse/
+!.config/calcure/
 !.config/easyeffects/
 !.config/electron-flags.conf
-!.config/electron25-flags.conf
 !.config/fontconfig/
 !.config/gtk-3.0/
 !.config/imv/
@@ -47,6 +46,8 @@
 !.config/swaylock/
 !.config/swaync/
 !.config/sworkstyle/
+!.config/user-dirs.dirs
+!.config/user-dirs.locale
 !.config/waybar/
 !.config/wob/
 !.config/zathura/
