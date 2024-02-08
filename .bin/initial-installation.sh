@@ -3,6 +3,8 @@
 # Script to install all programs, submodules etc.
 
 # Packages installation
+
+sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
 cd "${HOME}" || exit
 sudo pacman -S - < "${HOME}/.system-config-backup/pkglist.txt"
 
@@ -36,7 +38,6 @@ sudo cp "${HOME}/.system-config-backup/pacman/create-aur-backup.hook" "/usr/shar
 sudo cp "${HOME}/.system-config-backup/pacman/electron.hook" "/usr/share/libalpm/hooks/electron.hook"
 
 # Configs
-sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
 sudo cp "${HOME}/.system-config-backup/systemd/logind.conf" "/etc/systemd/logind.conf"
 sudo cp "${HOME}/.system-config-backup/tlp.conf" "/etc/tlp.conf"
 sudo cp "${HOME}/.system-config-backup/config.toml" "/etc/greetd/config.toml"
