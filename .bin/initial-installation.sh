@@ -9,7 +9,7 @@ cd "${HOME}" || exit
 sudo pacman -S - < "${HOME}/.system-config-backup/pkglist.txt"
 
 # AUR helper(paru) installation
-git clone https://aur.archlinux.org/paru.git
+git clone https://github.com/Morganamilo/paru.git
 cd paru || exit
 makepkg -si
 cd ..
@@ -21,8 +21,8 @@ paru -S - < "${HOME}/.system-config-backup/aurpkglist.txt"
 # Zsh and oh-my-zsh installation and configuration
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
-git clone git@github.com:zsh-users/zsh-autosuggestions.git
-git clone git@github.com:zdharma-continuum/fast-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zdharma/fast-syntax-highlighting.git
 chsh --shell /bin/zsh
 
 # Download all git submodules such as waybar-crypto etc.
