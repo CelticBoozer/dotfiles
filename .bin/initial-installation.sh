@@ -3,18 +3,14 @@
 # Script to install all programs, submodules etc.
 
 # Message colors declaration
-info_color=36
-success_color=32
-error_color=31
-
-print_colored_title() {
-    echo -e "\e[${1}mInstallation log:\e[0m"
-}
+info_title="\e[36mInstallation log:\e[0m"
+success_title="\e[32mInstallation log:\e[0m"
+error_title="\e[31mInstallation log:\e[0m"
 
 # Function to check file exist
 check_file_exists() {
     if [ ! -f "$1" ]; then
-        echo "$(print_colored_title $error_color) file $1 missing, installation aborted"
+        printf "%b file %s missing, installation aborted\n" "$error_title" "$1"
         exit
     fi
 }
@@ -22,103 +18,92 @@ check_file_exists() {
 # Function to check if a Pacman package is installed
 check_package_installed() {
     if ! pacman -Qs "$1" > /dev/null; then
-        echo "$(print_colored_title $error_color) $1 is not installed, installation aborted"
+        printf "%b %s is not installed, installation aborted" "$error_title" "$1"
         exit
     fi
 }
 
-echo "$(print_colored_title $info_color) system installation initiated"
-
-read -p "Enter"
+printf "%b system installation initiated" "$info_title"
 
 # Packages installation
-echo "$(print_colored_title $info_color) official packages installation initiated"
+printf "%b official packages installation initiated" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/pacman/pacman.conf"
 sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
-echo "$(print_colored_title $success_color) pacman configuration file replaced"
-echo "$(print_colored_title $info_color) pacman repos sync"
+printf "%b pacman configuration file replaced" "$success_title"
+printf "%b pacman repos sync" "$info_title"
 sudo pacman -Sy
 
 cd "${HOME}" || exit
 check_file_exists "${HOME}/.system-config-backup/pkglist.txt"
 sudo pacman -S - < "${HOME}/.system-config-backup/pkglist.txt"
-echo "$(print_colored_title $success_color) all packages from the official repositories have been installed"
+printf "%b all packages from the official repositories have been installed" "$success_title"
 sudo pacman -Scc
-echo "$(print_colored_title $success_color) pacman cache has been cleared"
-
-read -p "Enter"
+printf "%b pacman cache has been cleared" "$success_title"
 
 # AUR helper(paru) installation
-echo "$(print_colored_title $info_color) paru installation initiated"
+printf "%b paru installation initiated" "$info_title"
 cd "${HOME}" || exit
 check_package_installed "git"
 git clone https://aur.archlinux.org/paru.git
-echo "$(print_colored_title $success_color) paru repo has been cloned"
+printf "%b paru repo has been cloned" "$success_title"
 cd paru || exit
 makepkg -si
-echo "$(print_colored_title $success_color) paru has been installed"
+printf "%b paru has been installed" "$success_title"
 cd ..
 rm -rf paru
-echo "$(print_colored_title $success_color) paru repo has been deleted"
+printf "%b paru repo has been deleted" "$success_title"
 
-read -p "Enter"
 # AUR packages installation
-echo "$(print_colored_title $info_color) AUR packages installation initiated"
+printf "%b AUR packages installation initiated" "$info_title"
 paru -S - < "${HOME}/.system-config-backup/aurpkglist.txt"
-echo "$(print_colored_title $success_color) all packages from AUR have been installed"
+printf "%b all packages from AUR have been installed" "$success_title"
 paru -Sccd
-echo "$(print_colored_title $success_color) paru cache has been cleared"
+printf "%b paru cache has been cleared" "$success_title"
 
-read -p "Enter"
 # oh-my-zsh installation and configuration
-echo "$(print_colored_title $info_color) oh-my-zsh installation initiated"
+printf "%b oh-my-zsh installation initiated" "$info_title"
+# BUG: doesn't return control
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
-echo "$(print_colored_title $info_color) oh-my-zsh custom plugins cloning initiated"
-read -p "Enter"
+printf "%b oh-my-zsh custom plugins cloning initiated" "$info_title"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zdharma/fast-syntax-highlighting.git
 chsh --shell /bin/zsh
-echo "$(print_colored_title $success_color) default shell has been changed to the zsh"
+printf "%b default shell has been changed to the zsh" "$success_title"
 
-read -p "Enter"
 # Download all git submodules such as waybar-crypto etc.
-echo "$(print_colored_title $info_color) all submodules cloning initiated"
+printf "%b all submodules cloning initiated" "$info_title"
 git submodule update --init
-echo "$(print_colored_title $success_color) all submodules has been cloned"
+printf "%b all submodules has been cloned" "$success_title"
 
-read -p "Enter"
 # Copies all pacman hooks and some configs that are not stored not in ${XDG_CONFIG_HOME}
 
 # Hooks
-echo "$(print_colored_title $info_color) pacman hooks copying initiated"
+printf "%b pacman hooks copying initiated" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/pacman/create-backup.hook"
 sudo cp "${HOME}/.system-config-backup/pacman/create-backup.hook" "/usr/share/libalpm/hooks/create-backup.hook"
 check_file_exists "${HOME}/.system-config-backup/pacman/create-aur-backup.hook"
 sudo cp "${HOME}/.system-config-backup/pacman/create-aur-backup.hook" "/usr/share/libalpm/hooks/create-aur-backup.hook"
 check_file_exists "${HOME}/.system-config-backup/pacman/electron.hook"
 sudo cp "${HOME}/.system-config-backup/pacman/electron.hook" "/usr/share/libalpm/hooks/electron.hook"
-echo "$(print_colored_title $success_color) pacman hooks has been copied"
+printf "%b pacman hooks has been copied" "$success_title"
 
-read -p "Enter"
 # Configs
-echo "$(print_colored_title $info_color) system configs copying initiated"
+printf "%b system configs copying initiated" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/systemd/logind.conf"
 sudo cp "${HOME}/.system-config-backup/systemd/logind.conf" "/etc/systemd/logind.conf"
 check_file_exists "${HOME}/.system-config-backup/tlp.conf"
 sudo cp "${HOME}/.system-config-backup/tlp.conf" "/etc/tlp.conf"
 check_file_exists "${HOME}/.system-config-backup/config.toml"
 sudo cp "${HOME}/.system-config-backup/config.toml" "/etc/greetd/config.toml"
-echo "$(print_colored_title $success_color) system configs has been copied"
+printf "%b system configs has been copied" "$success_title"
 
-read -p "Enter"
 #Start some daemons
 systemctl enable --now tlp.service
 systemctl enable --now swayosd-libinput-backend.service
 
-read -p "Enter"
 # Electron links setup
-echo "$(print_colored_title $info_color) electron symlinks check initiated"
+printf "%b electron symlinks check initiated" "$info_title"
 sh "${HOME}/.bin/update-electron-symlinks.sh"
 
-echo "$(print_colored_title $success_color) system installation finished"
+printf "%b system installation finished" "$success_title"
