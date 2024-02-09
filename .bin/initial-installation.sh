@@ -62,7 +62,6 @@ printf "%b paru cache has been cleared\n" "$success_title"
 
 # oh-my-zsh installation and configuration
 printf "%b oh-my-zsh installation initiated\n" "$info_title"
-# BUG: doesn't return control
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 printf "%b oh-my-zsh custom plugins cloning initiated\n" "$info_title"
@@ -72,9 +71,9 @@ chsh --shell /bin/zsh
 printf "%b default shell has been changed to the zsh\n" "$success_title"
 
 # Download all git submodules such as waybar-crypto etc.
-printf "%b all submodules cloning initiated\n" "$info_title"
-git submodule update --init
-printf "%b all submodules has been cloned\n" "$success_title"
+printf "%b submodules update initiated\n" "$info_title"
+git submodule update --recursive --remote
+printf "%b all submodules has been updated\n" "$success_title"
 
 # Copies all pacman hooks and some configs that are not stored not in ${XDG_CONFIG_HOME}
 
