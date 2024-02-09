@@ -72,6 +72,7 @@ printf "%b default shell has been changed to the zsh\n" "$success_title"
 
 # Download all git submodules such as waybar-crypto etc.
 printf "%b submodules update initiated\n" "$info_title"
+cd "${HOME}" || exit
 git submodule update --recursive --remote
 printf "%b all submodules has been updated\n" "$success_title"
 
