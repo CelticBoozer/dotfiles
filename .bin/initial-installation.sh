@@ -29,6 +29,8 @@ check_package_installed() {
 
 echo "$(print_colored_title $info_color) system installation initiated"
 
+read -p "Enter"
+
 # Packages installation
 echo "$(print_colored_title $info_color) official packages installation initiated"
 check_file_exists "${HOME}/.system-config-backup/pacman/pacman.conf"
@@ -44,6 +46,8 @@ echo "$(print_colored_title $success_color) all packages from the official repos
 sudo pacman -Scc
 echo "$(print_colored_title $success_color) pacman cache has been cleared"
 
+read -p "Enter"
+
 # AUR helper(paru) installation
 echo "$(print_colored_title $info_color) paru installation initiated"
 cd "${HOME}" || exit
@@ -57,6 +61,7 @@ cd ..
 rm -rf paru
 echo "$(print_colored_title $success_color) paru repo has been deleted"
 
+read -p "Enter"
 # AUR packages installation
 echo "$(print_colored_title $info_color) AUR packages installation initiated"
 paru -S - < "${HOME}/.system-config-backup/aurpkglist.txt"
@@ -64,21 +69,25 @@ echo "$(print_colored_title $success_color) all packages from AUR have been inst
 paru -Sccd
 echo "$(print_colored_title $success_color) paru cache has been cleared"
 
+read -p "Enter"
 # oh-my-zsh installation and configuration
 echo "$(print_colored_title $info_color) oh-my-zsh installation initiated"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 echo "$(print_colored_title $info_color) oh-my-zsh custom plugins cloning initiated"
+read -p "Enter"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zdharma/fast-syntax-highlighting.git
 chsh --shell /bin/zsh
 echo "$(print_colored_title $success_color) default shell has been changed to the zsh"
 
+read -p "Enter"
 # Download all git submodules such as waybar-crypto etc.
 echo "$(print_colored_title $info_color) all submodules cloning initiated"
 git submodule update --init
 echo "$(print_colored_title $success_color) all submodules has been cloned"
 
+read -p "Enter"
 # Copies all pacman hooks and some configs that are not stored not in ${XDG_CONFIG_HOME}
 
 # Hooks
@@ -91,6 +100,7 @@ check_file_exists "${HOME}/.system-config-backup/pacman/electron.hook"
 sudo cp "${HOME}/.system-config-backup/pacman/electron.hook" "/usr/share/libalpm/hooks/electron.hook"
 echo "$(print_colored_title $success_color) pacman hooks has been copied"
 
+read -p "Enter"
 # Configs
 echo "$(print_colored_title $info_color) system configs copying initiated"
 check_file_exists "${HOME}/.system-config-backup/systemd/logind.conf"
@@ -101,10 +111,12 @@ check_file_exists "${HOME}/.system-config-backup/config.toml"
 sudo cp "${HOME}/.system-config-backup/config.toml" "/etc/greetd/config.toml"
 echo "$(print_colored_title $success_color) system configs has been copied"
 
+read -p "Enter"
 #Start some daemons
 systemctl enable --now tlp.service
 systemctl enable --now swayosd-libinput-backend.service
 
+read -p "Enter"
 # Electron links setup
 echo "$(print_colored_title $info_color) electron symlinks check initiated"
 sh "${HOME}/.bin/update-electron-symlinks.sh"
