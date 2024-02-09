@@ -34,6 +34,8 @@ echo "$(print_colored_title $info_color) official packages installation initiate
 check_file_exists "${HOME}/.system-config-backup/pacman/pacman.conf"
 sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
 echo "$(print_colored_title $success_color) pacman configuration file replaced"
+echo "$(print_colored_title $info_color) pacman repos sync"
+sudo pacman -Sy
 
 cd "${HOME}" || exit
 check_file_exists "${HOME}/.system-config-backup/pkglist.txt"
