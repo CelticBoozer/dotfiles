@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script to upgrade all packages, cleanup orphans and cache
 # zsh alias: sysupg

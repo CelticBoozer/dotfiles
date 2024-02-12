@@ -32,6 +32,7 @@
 !.config/OpenRGB/
 .config/OpenRGB/logs/
 !.config/paru/
+!.config/pulsemixer.cfg
 !.config/qalculate/
 .config/qalculate/qalc.history
 !.config/ranger/

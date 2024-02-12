@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script to create new/delete old symlinks on electron wayland flags file, for each electron version
 

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-# Script to install all programs, submodules etc.
+# Script to install my system
 
 # Message colors declaration
 info_title="\e[36mInstallation log:\e[0m"
@@ -62,12 +62,11 @@ printf "%b paru cache has been cleared\n" "$success_title"
 
 # oh-my-zsh installation and configuration
 printf "%b oh-my-zsh installation initiated\n" "$info_title"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 printf "%b oh-my-zsh custom plugins cloning initiated\n" "$info_title"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zdharma/fast-syntax-highlighting.git
-chsh --shell /bin/zsh
 printf "%b default shell has been changed to the zsh\n" "$success_title"
 
 # Download all git submodules such as waybar-crypto etc.
@@ -100,6 +99,7 @@ printf "%b system configs has been copied\n" "$success_title"
 
 #Start some daemons
 systemctl enable --now tlp.service
+systemctl enable --now greetd.service
 systemctl enable --now swayosd-libinput-backend.service
 
 # Electron links setup

@@ -100,13 +100,13 @@ pacman-contrib
 pacutils
 papirus-icon-theme
 patch
-pavucontrol
 pipewire-alsa
 pipewire-pulse
 pkgconf
 playerctl
 polkit
 postgresql
+pulsemixer
 pyside2
 python-pillow
 python-pip

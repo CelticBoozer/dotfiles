@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 tmp_dir="/tmp/cliphist"
 rm -rf "$tmp_dir"
