@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Script to upgrade all packages, cleanup orphans and cache
 # zsh alias: sysupg
@@ -11,3 +11,10 @@ paru -Syu
 sudo pacman -Rs "$(pacman -Qtdq)"
 sudo pacman -Scc
 paru -Sccd
+
+# Update github repos, installed as packages
+git submodule update --recursive --remote
+cd "${HOME}/.oh-my-zsh/custom/plugins/fast-syntax-highlighting" || exit
+git pull
+cd "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" || exit
+git pull

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Script to install my system
 
@@ -66,7 +66,7 @@ printf "%b oh-my-zsh installation initiated\n" "$info_title"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 printf "%b oh-my-zsh custom plugins cloning initiated\n" "$info_title"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/zdharma/fast-syntax-highlighting.git
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git
 mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 printf "%b default shell has been changed to the zsh\n" "$success_title"
 
@@ -106,5 +106,7 @@ systemctl enable --now swayosd-libinput-backend.service
 # Electron links setup
 printf "%b electron symlinks check initiated\n" "$info_title"
 sh "${HOME}/.bin/update-electron-symlinks.sh"
+
+chsh -s /usr/bin/zsh celtic
 
 printf "%b system installation finished\n" "$success_title"

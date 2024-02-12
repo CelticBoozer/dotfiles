@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # A script to clean and update some things on the system
 # zsh alias: maint
