@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# shellcheck disable=SC2024
 
 # Script to install my system
 
@@ -110,3 +111,4 @@ sh "${HOME}/.bin/update-electron-symlinks.sh"
 chsh -s /usr/bin/zsh celtic
 
 printf "%b system installation finished\n" "$success_title"
+zsh
