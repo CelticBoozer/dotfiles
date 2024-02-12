@@ -67,6 +67,7 @@ cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
 printf "%b oh-my-zsh custom plugins cloning initiated\n" "$info_title"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zdharma/fast-syntax-highlighting.git
+mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 printf "%b default shell has been changed to the zsh\n" "$success_title"
 
 # Download all git submodules such as waybar-crypto etc.
@@ -99,7 +100,7 @@ printf "%b system configs has been copied\n" "$success_title"
 
 #Start some daemons
 systemctl enable --now tlp.service
-systemctl enable --now greetd.service
+systemctl enable greetd.service
 systemctl enable --now swayosd-libinput-backend.service
 
 # Electron links setup
