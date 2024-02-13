@@ -22,7 +22,7 @@ python-taskw
 rofi-bluetooth-git
 rofi-lbonn-wayland-git
 swaykbdd
-swaylock-effects-git
+swaylock-effects
 swaync
 swayosd-git
 sweet-gtk-theme

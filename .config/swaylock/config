@@ -31,9 +31,10 @@ ring-ver-color=80aa9ecc
 ring-wrong-color=f2594bcc
 separator-color=00000000
 text-color=e2cca9
-text-clear-color=
+text-clear-color=e2cca9
 text-caps-lock-color=e2cca9
 text-ver-color=e2cca9
 text-wrong-color=e2cca9
-effect-blur=70x5
+effect-blur=10x5
+effect-greyscale
 effect-vignette=0.5:0.5
