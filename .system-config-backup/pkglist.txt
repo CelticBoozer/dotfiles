@@ -16,6 +16,7 @@ cmake
 code
 cool-retro-term
 ddcutil
+deno
 dhcpcd
 dialog
 dnsmasq
@@ -159,6 +160,7 @@ xf86-video-intel
 xfsprogs
 xorg-xlsclients
 xorg-xwayland
+yarn
 zathura
 zathura-djvu
 zathura-pdf-mupdf
