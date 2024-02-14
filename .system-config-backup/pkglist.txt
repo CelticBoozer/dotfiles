@@ -18,7 +18,6 @@ cool-retro-term
 ddcutil
 dhcpcd
 dialog
-discord
 dnsmasq
 docker
 easyeffects
@@ -83,6 +82,7 @@ mpv
 msmtp-mta
 mtpfs
 nano
+nautilus
 neofetch
 neovim
 net-tools

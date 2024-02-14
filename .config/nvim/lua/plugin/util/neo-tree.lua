@@ -6,7 +6,7 @@ return {
 		"MunifTanjim/nui.nvim",
 		"3rd/image.nvim",
 	},
-	lazy = false,
+	lazy = true,
 	keys = {
 		{ "<leader>E", ":Neotree float reveal<CR>", desc = "float file explorer" },
 		{ "<leader>e", ":Neotree left reveal<CR>", desc = "left file explorer" },

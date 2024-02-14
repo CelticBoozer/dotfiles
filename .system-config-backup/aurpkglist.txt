@@ -29,6 +29,7 @@ sweet-gtk-theme
 sworkstyle
 sysz
 ttf-twemoji
+vesktop-bin
 viber
 waybar-module-pacman-updates-git
 windscribe-v2-bin
