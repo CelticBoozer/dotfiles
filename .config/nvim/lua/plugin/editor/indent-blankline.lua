@@ -8,6 +8,10 @@ return {
 			char = "▏",
 			smart_indent_cap = true,
 		},
+		scope = {
+			show_exact_scope = true,
+			highlight = "Orange",
+		},
 	},
 	main = "ibl",
 }

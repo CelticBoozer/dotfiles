@@ -1,7 +1,7 @@
 -- INFO: pair {}/[]/()
 return {
 	"windwp/nvim-autopairs",
-	lazy = true,
+	lazy = false,
 	event = { "InsertEnter" },
 	dependencies = {
 		"hrsh7th/nvim-cmp",
