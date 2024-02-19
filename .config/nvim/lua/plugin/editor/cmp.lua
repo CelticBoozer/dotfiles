@@ -1,17 +1,22 @@
+-- INFO: completion engine
 return {
 	"hrsh7th/nvim-cmp",
+	lazy = true,
 	event = { "InsertEnter" },
 	dependencies = {
-		"neovim/nvim-lspconfig",
-		"hrsh7th/cmp-nvim-lsp",
-		"hrsh7th/cmp-buffer",
-		"hrsh7th/cmp-path",
-		"hrsh7th/cmp-cmdline",
-		"L3MON4D3/LuaSnip",
-		"onsails/lspkind.nvim",
+		"neovim/nvim-lspconfig", -- LSP server support
+		"hrsh7th/cmp-nvim-lsp", -- LSP support for completion
+		"hrsh7th/cmp-buffer", -- nvim-cmp source for buffer words
+		"hrsh7th/cmp-path", -- nvim-cmp source for filesystem paths
+		"hrsh7th/cmp-cmdline", -- nvim-cmp source for vim's cmdline
+		"L3MON4D3/LuaSnip", -- Snippet support
+		"saadparwaiz1/cmp_luasnip", -- Snippet support
+		"onsails/lspkind.nvim", -- Plugin adds vscode-like pictograms to neovim built-in lsp
 	},
 	config = function()
 		local cmp = require("cmp")
+		local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+		cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
 
 		cmp.setup({
 			snippet = {

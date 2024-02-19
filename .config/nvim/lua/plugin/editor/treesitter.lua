@@ -1,5 +1,7 @@
+-- INFO: better highlighting, creating file tree
 return {
 	"nvim-treesitter/nvim-treesitter",
+	lazy = true,
 	event = { "BufReadPre", "BufNewFile" },
 	opts = {
 		ensure_installed = {

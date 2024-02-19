@@ -1,12 +1,13 @@
+-- INFO: pretty file manager
 return {
 	"nvim-neo-tree/neo-tree.nvim",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons",
-		"MunifTanjim/nui.nvim",
-		"3rd/image.nvim",
-	},
 	lazy = false,
+	dependencies = {
+		"nvim-lua/plenary.nvim", -- Async support
+		"nvim-tree/nvim-web-devicons", -- Just pretty icons
+		"MunifTanjim/nui.nvim", -- Floating support
+		"3rd/image.nvim", -- Image preview
+	},
 	keys = {
 		{ "<leader>E", ":Neotree float reveal<CR>", desc = "float file explorer" },
 		{ "<leader>e", ":Neotree left reveal<CR>", desc = "left file explorer" },

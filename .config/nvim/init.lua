@@ -35,7 +35,6 @@ local opts = {
 		enabled = true,
 	},
 }
-
 local plugins = {
 	{ import = "plugin.editor" },
 	{ import = "plugin.lsp" },

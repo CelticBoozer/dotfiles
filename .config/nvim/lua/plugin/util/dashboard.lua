@@ -1,3 +1,4 @@
+-- INFO: enter screen configuration
 return {
 	"nvimdev/dashboard-nvim",
 	event = "VimEnter",

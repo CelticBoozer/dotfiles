@@ -1,8 +1,10 @@
+-- INFO: LSP install tool configuration
 return {
 	"williamboman/mason.nvim",
+	lazy = false,
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
+		"williamboman/mason-lspconfig.nvim", -- For LSP configuration
+		"WhoIsSethDaniel/mason-tool-installer.nvim", -- For linters and  formatters automatic installation
 	},
 	config = function()
 		local mason = require("mason")

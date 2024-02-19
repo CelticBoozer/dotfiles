@@ -1,7 +1,7 @@
+-- INFO: my gruvbox theme
 return {
 	"sainnhe/gruvbox-material",
 	lazy = false,
-	priority = 1000,
 	config = function()
 		local g = vim.g
 
@@ -25,5 +25,8 @@ return {
 		vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#e2cca9", bg = "#32302f" })
 		vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#e2cca9", bg = "#32302f" })
 		vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { fg = "#e2cca9", bg = "#32302f" })
+
+		vim.api.nvim_set_hl(0, "IblScope", { fg = "#e9b143" })
 	end,
+	priority = 1000,
 }

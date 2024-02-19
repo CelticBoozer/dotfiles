@@ -1,5 +1,6 @@
+-- INFO: autoclose and autorename html tag
 return {
 	"windwp/nvim-ts-autotag",
-	setup = true,
+	lazy = true,
 	opts = {},
 }

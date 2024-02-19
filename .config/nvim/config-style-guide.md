@@ -45,11 +45,12 @@ Stick to a specific order of configuration sections.
 
 1. Plugin address.
 2. lazy
-3. dependencies
-4. keys
-5. opts
+3. event
+4. dependencies
+5. keys
 6. opts/config()
 7. build
+8. Other specific sections
 
 ### Always add which-key configuration
 

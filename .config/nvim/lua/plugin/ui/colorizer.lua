@@ -1,7 +1,8 @@
+-- INFO: higlight colors in editor
 return {
 	"norcalli/nvim-colorizer.lua",
-	event = { "BufReadPre", "BufNewFile" },
 	lazy = false,
+	event = { "BufReadPre", "BufNewFile" },
 	opts = {
 		"*",
 		css = {

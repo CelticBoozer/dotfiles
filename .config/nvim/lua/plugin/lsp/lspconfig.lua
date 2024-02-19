@@ -1,5 +1,7 @@
+-- INFO: LSP configuration
 return {
 	"neovim/nvim-lspconfig",
+	lazy = false,
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local lspconfig = require("lspconfig")

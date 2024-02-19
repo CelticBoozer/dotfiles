@@ -1,10 +1,11 @@
+-- INFO: statusline with useful info
 return {
 	"nvim-lualine/lualine.nvim",
-	dependencies = {
-		"nvim-tree/nvim-web-devicons",
-		"linrongbin16/lsp-progress.nvim",
-	},
 	lazy = false,
+	dependencies = {
+		"nvim-tree/nvim-web-devicons", -- Just pretty icons
+		"linrongbin16/lsp-progress.nvim", -- To check LSP progress
+	},
 	opts = {
 		options = {
 			theme = "gruvbox-material",
@@ -47,7 +48,7 @@ return {
 					"filename",
 					file_status = true,
 					newfile_status = false,
-					path = 1,
+					path = 0,
 					shorting_target = 40,
 					symbols = {
 						modified = "[+]",

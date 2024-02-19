@@ -1,12 +1,12 @@
+-- INFO: cool finder|previewer
 return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-lua/popup.nvim",
-		"nvim-lua/plenary.nvim",
-		"debugloop/telescope-undo.nvim",
-		"nvim-telescope/telescope-media-files.nvim",
-		"lpoto/telescope-docker.nvim",
+		"nvim-lua/plenary.nvim", -- Async support
+		"nvim-lua/popup.nvim", -- Popup support
+		"debugloop/telescope-undo.nvim", -- Custom module, to preview undos
+		"nvim-telescope/telescope-media-files.nvim", -- Custom module, to preview images
+		"lpoto/telescope-docker.nvim", --  Custom module, docker support
 	},
 	keys = {
 		{ "<leader>ff", ":Telescope find_files<CR>", desc = "find files" },

@@ -1,7 +1,8 @@
+-- INFO: tabline
 return {
 	"akinsho/bufferline.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
 	lazy = false,
+	dependencies = { "nvim-tree/nvim-web-devicons" }, -- Just pretty icons
 	opts = {
 		options = {
 			mode = "tabs",
