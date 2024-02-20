@@ -9,8 +9,10 @@ return {
 			smart_indent_cap = true,
 		},
 		scope = {
-			show_exact_scope = true,
 			highlight = "Orange",
+			include = {
+				node_type = { ["*"] = { "*" } },
+			},
 		},
 	},
 	main = "ibl",

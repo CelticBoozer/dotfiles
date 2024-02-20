@@ -4,6 +4,8 @@ return {
 	lazy = false,
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
+		require("lspconfig.ui.windows").default_options.border = "rounded"
+		vim.api.nvim_set_hl(0, "LspInfoBorder", { fg = "#e2cca9" })
 		local lspconfig = require("lspconfig")
 		local cmp_nvim_lsp = require("cmp_nvim_lsp")
 		local keymap = vim.keymap
