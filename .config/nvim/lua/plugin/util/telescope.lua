@@ -1,6 +1,7 @@
 -- INFO: cool finder|previewer
 return {
 	"nvim-telescope/telescope.nvim",
+	lazy = true,
 	dependencies = {
 		"nvim-lua/plenary.nvim", -- Async support
 		"nvim-lua/popup.nvim", -- Popup support

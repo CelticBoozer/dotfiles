@@ -1,6 +1,7 @@
 -- INFO: pretty command line
 return {
 	"VonHeikemen/fine-cmdline.nvim",
+	lazy = true,
 	dependencies = { "MunifTanjim/nui.nvim" }, -- Floating support
 	keys = {
 		{ ":", "<cmd>FineCmdline<CR>", desc = "execute" },
