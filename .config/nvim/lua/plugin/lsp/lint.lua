@@ -1,7 +1,7 @@
 -- INFO: linter
 return {
 	"mfussenegger/nvim-lint",
-	lazy = true,
+	lazy = false,
 	event = { "BufReadPre", "BufNewFile" },
 	keys = {
 		{

@@ -9,7 +9,7 @@ on-button-right=dismiss-all
 # Style options
 font=Cantarell 10
 background-color=#252423
-text-color=#e2cca9
+text-color=#d4be98
 width=300
 height=100
 margin=10
@@ -30,7 +30,7 @@ anchor=bottom-right
 [category=CHANGE_LAYOUT]
 font=Cantarell 25
 background-color=#252423
-text-color=#e2cca9
+text-color=#d4be98
 width=300
 height=100
 margin=300

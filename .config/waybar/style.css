@@ -1,13 +1,13 @@
 @define-color bg-bar rgba(50, 48, 47, 0.8);
 @define-color dark-box #32302f;
 @define-color light-box #3c3836;
-@define-color light-fg #e2cca9;
+@define-color light-fg #d4be98;
 @define-color dark-fg #32302f;
-@define-color selected #f28534;
-@define-color warning #e9b143;
-@define-color critical #f2594b;
-@define-color good #b0b846;
-@define-color info #80aa9e;
+@define-color selected #e78a4e;
+@define-color warning #d8a657;
+@define-color critical #ea6962;
+@define-color good #a9b665;
+@define-color info #7daea3;
 @define-color separator #46413e;
 
 * {

@@ -26,7 +26,7 @@ configuration {
 * {
     background-color: #32302f;
     font-family: "JetBrains Mono";
-    text-color: #e2cca9;
+    text-color: #d4be98;
 }
 
 #window {
@@ -77,6 +77,6 @@ element-text, element-icon {
 }
 
 #button.selected {
-    background-color: #f28534;
+    background-color: #e78a4e;
     text-color: #252423;
 }

@@ -1,7 +1,7 @@
 -- INFO: formatter
 return {
 	"stevearc/conform.nvim",
-	lazy = true,
+	lazy = false,
 	event = { "BufReadPre", "BufNewFile" },
 	keys = {
 		{

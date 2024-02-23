@@ -5,11 +5,11 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = {
 		colors = {
-			error = { "#f2594b" },
-			warning = { "#e9b143" },
-			info = { "#80aa9e" },
-			hint = { "#8bba7f" },
-			default = { "#f28534" },
+			error = { "#ea6962" },
+			warning = { "#d8a657" },
+			info = { "#7daea3" },
+			hint = { "#89b482" },
+			default = { "#e78a4e" },
 			test = { "#d3869b" },
 		},
 	},

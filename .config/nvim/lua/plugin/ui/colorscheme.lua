@@ -9,8 +9,8 @@ return {
 		g.gruvbox_material_foreground = "mix"
 		g.gruvbox_material_transparent_background = 2
 		g.gruvbox_material_sign_column_background = "grey"
-		g.gruvbox_material_statusline_style = "mix"
-		g.gruvbox_material_ui_contrast = "high"
+		g.gruvbox_material_statusline_style = "default"
+		g.gruvbox_material_ui_contrast = "low"
 		g.gruvbox_material_diagnostic_line_highlight = "1"
 		g.gruvbox_material_disable_terminal_colors = 1
 
@@ -22,9 +22,9 @@ return {
 
 		vim.cmd([[colorscheme gruvbox-material]])
 
-		vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#e2cca9" })
-		vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#e2cca9" })
-		vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { fg = "#e2cca9" })
+		vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#d4be98" })
+		vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#d4be98" })
+		vim.api.nvim_set_hl(0, "NeoTreeFloatTitle", { fg = "#d4be98" })
 	end,
 	priority = 1000,
 }
