@@ -1,5 +1,5 @@
 @define-color control-center-bg rgba(50, 48, 47, 0.8);
-@define-color checked rgba(242, 133, 52, 1);
+@define-color checked rgba(231, 138, 78, 1);
 
 @define-color notification-bg rgba(60, 56, 54, 1);
 @define-color notification-bg-darker rgb(50, 48, 47);
@@ -8,8 +8,8 @@
 @define-color notification-close-bg-hover rgba(226, 204, 169, 0.15);
 @define-color notification-box-hover rgba(80, 73, 69, 1);
 
-@define-color text-color rgba(226, 204, 169, 1);
-@define-color text-color-disabled rgba(168, 153, 132, 1);
+@define-color text-color rgba(221, 199, 161, 1);
+@define-color text-color-disabled rgba(212, 190, 152, 1);
 
 .notification-row {
   background: transparent;
@@ -24,7 +24,10 @@
   background: transparent;
   border-radius: 12px;
   margin: 6px 12px;
-  box-shadow: 0 0 0 1px rgba(37, 36, 35, 0.3), 0 1px 3px 1px rgba(37, 36, 35, 0.7), 0 2px 6px 2px rgba(37, 36, 35, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(37, 36, 35, 0.3),
+    0 1px 3px 1px rgba(37, 36, 35, 0.7),
+    0 2px 6px 2px rgba(37, 36, 35, 0.3);
   padding: 0;
 }
 
@@ -240,22 +243,23 @@
   background-color: @notification-bg;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button{
+.widget-buttons-grid > flowbox > flowboxchild > button {
   background: @notification-bg;
   border-radius: 12px;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
   background: @notificationox-hover;
 }
 
 /* Menubar widget */
-.widget-menubar>box>.menu-button-bar>button {
+.widget-menubar > box > .menu-button-bar > button {
   border: none;
   background: transparent;
 }
 
-.topbar-buttons>button { /* Name defined in config after # */
+.topbar-buttons > button {
+  /* Name defined in config after # */
   border: none;
   background: transparent;
 }
@@ -269,7 +273,7 @@
   border-radius: 12px;
 }
 
-.widget-volume>box>button {
+.widget-volume > box > button {
   background: transparent;
   border: none;
 }
