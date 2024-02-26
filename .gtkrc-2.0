@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/celtic/.gtkrc-2.0.mine"
-gtk-theme-name="gruvbox-dark-gtk"
+gtk-theme-name="Gruvbox-Material-Dark"
 gtk-icon-theme-name="Gruvbox-Material-Dark"
 gtk-font-name="Cantarell 12"
 gtk-cursor-theme-name="Simp1e-Gruvbox-Dark"

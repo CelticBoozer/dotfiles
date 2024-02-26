@@ -2,7 +2,7 @@ calcure
 ddcui
 google-chrome
 grimshot
-gruvbox-dark-gtk
+gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 hide-client
 intellij-idea-ultimate-edition
