@@ -1,6 +1,7 @@
 {
   "layer": "top",
   "position": "top",
+  "height": 12,
   "modules-left": [
     "sway/workspaces",
     "custom/arrow-dark-on-light-right",
@@ -183,14 +184,14 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='#ea6962'><sup></sup></span>",
+      "notification": "",
       "none": "",
-      "dnd-notification": "<span foreground='#ea6962'><sup></sup></span>",
-      "dnd-none": "",
-      "inhibited-notification": "<span foreground='#ea6962'><sup></sup></span>",
+      "dnd-notification": "<span foreground='#ea6962'></span>",
+      "dnd-none": "<span foreground='#ea6962'></span>",
+      "inhibited-notification": "",
       "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='#ea6962'><sup></sup></span>",
-      "dnd-inhibited-none": ""
+      "dnd-inhibited-notification": "<span foreground='#ea6962'></span>",
+      "dnd-inhibited-none": "<span foreground='#ea6962'></span>"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",

@@ -6,7 +6,7 @@ return {
 		local g = vim.g
 
 		g.gruvbox_material_background = "soft"
-		g.gruvbox_material_foreground = "mix"
+		g.gruvbox_material_foreground = "material"
 		g.gruvbox_material_transparent_background = 2
 		g.gruvbox_material_sign_column_background = "grey"
 		g.gruvbox_material_statusline_style = "default"

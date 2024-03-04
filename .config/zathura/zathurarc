@@ -23,6 +23,11 @@ set incremental-search true
 set highlight-color "#e78a4e"
 set highlight-fg "#252423"
 set highlight-active-color "#e78a4e"
+set recolor true
+set recolor-lightcolor "#ddc7a1"
+set recolor-darkcolor "#252423"
+set recolor-keephue true
+set recolor-reverse-video true
 set highlight-transparency 0.6
 set page-padding 10
 set show-directories true

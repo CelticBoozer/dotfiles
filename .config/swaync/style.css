@@ -13,11 +13,6 @@
 
 .notification-row {
   background: transparent;
-  outline: none;
-}
-
-.notification-row:hover {
-  background: @notification-box-hover;
 }
 
 .notification {
@@ -32,14 +27,14 @@
 }
 
 .notification-content {
-  background: @notification-bg;
+  background: transparent;
   padding: 6px;
   border-radius: 12px;
 }
 
 .close-button {
-  background: @notification-close-bg;
-  color: @text-color;
+  background: rgba(50, 48, 47, 1);
+  color: rgba(212, 190, 152, 1);
   text-shadow: none;
   padding: 0;
   border-radius: 100%;
@@ -53,7 +48,7 @@
 
 .close-button:hover {
   box-shadow: none;
-  background: @noti-close-bg-hover;
+  background: rgba(226, 204, 169, 0.15);
   transition: all 0.15s ease-in-out;
   border: none;
 }

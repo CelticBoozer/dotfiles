@@ -1,6 +1,7 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionY": "bottom",
+  "layer": "top",
   "notification-inline-replies": true,
   "timeout": 5,
   "control-center-width": 400,

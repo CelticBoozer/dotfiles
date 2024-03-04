@@ -83,7 +83,6 @@ mpv
 msmtp-mta
 mtpfs
 nano
-nautilus
 neofetch
 neovim
 net-tools
@@ -98,7 +97,6 @@ openssh
 p7zip
 pacman
 pacman-contrib
-pacutils
 papirus-icon-theme
 patch
 pipewire-alsa
@@ -111,6 +109,7 @@ pulsemixer
 pyside2
 python-pillow
 python-pip
+python-pipx
 python-requests
 qemu-desktop
 ranger

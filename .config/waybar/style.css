@@ -16,6 +16,8 @@
   border: none;
   border-radius: 0;
   font-family: my-queue;
+  padding: 0;
+  margin: 0;
 }
 
 #waybar {
@@ -53,27 +55,27 @@
  * Arrows
  */
 #custom-arrow-light-on-bg-left {
-  font-size: 15px;
+  font-size: 17px;
   color: @light-box;
   background: transparent;
 }
 
 #custom-arrow-light-on-bg-right {
-  font-size: 15px;
+  font-size: 17px;
   color: @light-box;
   background: transparent;
 }
 
 #custom-arrow-light-on-dark-left,
 #custom-arrow-light-on-dark-right {
-  font-size: 15px;
+  font-size: 17px;
   color: @light-box;
   background: @dark-box;
 }
 
 #custom-arrow-dark-on-light-left,
 #custom-arrow-dark-on-light-right {
-  font-size: 15px;
+  font-size: 17px;
   color: @dark-box;
   background: @light-box;
 }
