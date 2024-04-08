@@ -2,7 +2,7 @@
 return {
 	"stevearc/conform.nvim",
 	lazy = false,
-	event = { "BufReadPre", "BufNewFile" },
+	event = { "BufReadPre", "BufNewFile", "BufWrite" },
 	keys = {
 		{
 			"<leader>lf",
@@ -33,6 +33,7 @@ return {
 			svelte = { "prettier" },
 			java = { "google-java-format" },
 			graphql = { "prettier" },
+			sql = { "sqlfluff" },
 			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},

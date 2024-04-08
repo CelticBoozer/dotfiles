@@ -4,6 +4,7 @@ separator = ' '
 
 [matching]
 '/Picture-in-Picture/' = ''
+'/Выява ў выяве/' = ''
 '/Private Browsing/' = ''
 'firefoxdeveloperedition' = ''
 '/Google Chrome/' = ''
@@ -34,3 +35,4 @@ separator = ' '
 'btop' = ''
 'nmtui' = ''
 'vesktop' = ''
+'GoogleKeep' = ''

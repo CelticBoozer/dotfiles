@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/bin/bash
+
+# Clipboard-manager script for rofi
+# Cloned from the repository https://github.com/sentriz/cliphist/blob/master/contrib/cliphist-rofi-img
 
 tmp_dir="/tmp/cliphist"
 rm -rf "$tmp_dir"

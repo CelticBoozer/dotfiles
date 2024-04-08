@@ -1,14 +1,14 @@
-#!/usr/bin/bash
+#!/bin/bash
 # shellcheck disable=SC2024
 
-# Script to install my system
+# The script for installing my system
 
-# Message colors declaration
+# Declaration of message colors
 info_title="\e[36mInstallation log:\e[0m"
 success_title="\e[32mInstallation log:\e[0m"
 error_title="\e[31mInstallation log:\e[0m"
 
-# Function to check file exist
+# Function for checking the existence of a file
 check_file_exists() {
     if [ ! -f "$1" ]; then
         printf "%b file %s missing, installation aborted\n" "$error_title" "$1"
@@ -16,7 +16,7 @@ check_file_exists() {
     fi
 }
 
-# Function to check if a Pacman package is installed
+# Function to check if the pacman package is installed
 check_package_installed() {
     if ! pacman -Qs "$1" > /dev/null; then
         printf "%b %s is not installed, installation aborted\n" "$error_title" "$1"
@@ -26,7 +26,7 @@ check_package_installed() {
 
 printf "%b system installation initiated\n" "$info_title"
 
-# Packages installation
+# Installing packages
 printf "%b official packages installation initiated\n" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/pacman/pacman.conf"
 sudo cp "${HOME}/.system-config-backup/pacman/pacman.conf" "/etc/pacman.conf"
@@ -41,7 +41,7 @@ printf "%b all packages from the official repositories have been installed\n" "$
 sudo pacman -Scc
 printf "%b pacman cache has been cleared\n" "$success_title"
 
-# AUR helper(paru) installation
+# Installing the AUR helper(paru)
 printf "%b paru installation initiated\n" "$info_title"
 cd "${HOME}" || exit
 check_package_installed "git"
@@ -54,14 +54,14 @@ cd ..
 rm -rf paru
 printf "%b paru repo has been deleted\n" "$success_title"
 
-# AUR packages installation
+# Installing AUR packages
 printf "%b AUR packages installation initiated\n" "$info_title"
 paru -S - < "${HOME}/.system-config-backup/aurpkglist.txt"
 printf "%b all packages from AUR have been installed\n" "$success_title"
 paru -Sccd
 printf "%b paru cache has been cleared\n" "$success_title"
 
-# oh-my-zsh installation and configuration
+# Installing and configuring oh-my-zsh
 printf "%b oh-my-zsh installation initiated\n" "$info_title"
 0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
@@ -69,16 +69,14 @@ printf "%b oh-my-zsh custom plugins cloning initiated\n" "$info_title"
 git clone https://github.com/zsh-users/zsh-autosuggestions.git
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git
 mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
-printf "%b default shell has been changed to the zsh\n" "$success_title"
 
-# Download all git submodules such as waybar-crypto etc.
+# Downloading all git submodules such as waybar-crypto, etc
 printf "%b submodules update initiated\n" "$info_title"
 cd "${HOME}" || exit
 git submodule update --recursive --remote
 printf "%b all submodules has been updated\n" "$success_title"
 
-# Copies all pacman hooks and some configs that are not stored not in ${XDG_CONFIG_HOME}
-
+# Copying all pacman hooks and some configuration files that are not stored in ${XDG_CONFIG_HOME}
 # Hooks
 printf "%b pacman hooks copying initiated\n" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/pacman/create-backup.hook"
@@ -89,7 +87,7 @@ check_file_exists "${HOME}/.system-config-backup/pacman/electron.hook"
 sudo cp "${HOME}/.system-config-backup/pacman/electron.hook" "/usr/share/libalpm/hooks/electron.hook"
 printf "%b pacman hooks has been copied\n" "$success_title"
 
-# Configs
+# Config files
 printf "%b system configs copying initiated\n" "$info_title"
 check_file_exists "${HOME}/.system-config-backup/systemd/logind.conf"
 sudo cp "${HOME}/.system-config-backup/systemd/logind.conf" "/etc/systemd/logind.conf"
@@ -99,9 +97,9 @@ check_file_exists "${HOME}/.system-config-backup/config.toml"
 sudo cp "${HOME}/.system-config-backup/config.toml" "/etc/greetd/config.toml"
 printf "%b system configs has been copied\n" "$success_title"
 
-#Start some daemons
+# Start some daemons
 systemctl enable --now tlp.service
-systemctl enable greetd.service
+systemctl enable --now greetd.service
 systemctl enable --now swayosd-libinput-backend.service
 
 # Electron links setup

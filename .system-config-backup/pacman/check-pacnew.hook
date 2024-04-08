@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Upgrade
+Type = Package
+Target = *
+
+[Action]
+Description = Check .pacnew files
+When = PostTransaction
+Exec = /bin/zsh -c 'sh /home/celtic/.bin/check-pacnew.sh'

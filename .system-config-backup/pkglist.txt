@@ -3,6 +3,7 @@ archlinux-keyring
 autoconf
 automake
 base
+base-devel
 binutils
 bison
 blueberry
@@ -13,7 +14,6 @@ calibre
 chafa
 cliphist
 cmake
-code
 cool-retro-term
 ddcutil
 deno
@@ -25,6 +25,7 @@ easyeffects
 efibootmgr
 element-desktop
 expac
+eza
 fakeroot
 ffmpegthumbnailer
 file
@@ -55,7 +56,6 @@ jdk11-openjdk
 jdk17-openjdk
 jdk8-openjdk
 jfsutils
-jre11-openjdk
 jre8-openjdk
 kanshi
 keepassxc
@@ -83,6 +83,7 @@ mpv
 msmtp-mta
 mtpfs
 nano
+nautilus
 neofetch
 neovim
 net-tools
@@ -98,6 +99,7 @@ p7zip
 pacman
 pacman-contrib
 papirus-icon-theme
+parallel
 patch
 pipewire-alsa
 pipewire-pulse
@@ -109,11 +111,9 @@ pulsemixer
 pyside2
 python-pillow
 python-pip
-python-pipx
 python-requests
 qemu-desktop
 ranger
-reflector
 reiserfsprogs
 rmlint
 rmlint-shredder
@@ -132,6 +132,7 @@ telegram-desktop
 terminus-font
 texinfo
 tlp-rdw
+transmission-gtk
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
@@ -142,7 +143,7 @@ unrar
 unzip
 usbutils
 vde2
-vi
+vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-dkms

@@ -65,7 +65,7 @@
       "has-updates": "󱍷",
       "updated": "󰂪"
     },
-    "on-click": "kitty --class=sysupg -e ~/.bin/upgrade-system.sh",
+    "on-click": "kitty --class=floating_waybar -e ~/.bin/upgrade-system.sh",
     "exec-if": "which waybar-module-pacman-updates",
     "exec": "waybar-module-pacman-updates"
   },
@@ -94,10 +94,10 @@
     },
     "actions": {
       "on-click-middle": "mode",
-      "on-scroll-up": "Shift_up",
+      "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down",
     },
-    "on-click-right": "kitty --class=calcure -e calcure"
+    "on-click-right": "kitty --class=floating_waybar -e calcure"
   },
 
   "pulseaudio": {
@@ -114,7 +114,7 @@
       "default": ["", "", ""]
     },
     "tooltip": false,
-    "on-click": "kitty --class=pulsemixer -e pulsemixer",
+    "on-click": "kitty --class=floating_waybar -e pulsemixer",
     "on-click-right": "easyeffects",
     "ignored-sinks": ["Easy Effects Sink", "Monitor of Easy Effects Sink"]
   },
@@ -126,7 +126,7 @@
     "format-disconnected": "⚠",
     "tooltip-format": "{essid}\n{ipaddr}/{cidr}",
     "tooltip": true,
-    "on-click": "kitty --class=nmtui -e nmtui"
+    "on-click": "kitty --class=floating_waybar -e nmtui"
   },
 
   "cpu": {
@@ -136,7 +136,7 @@
       "critical": 80
     },
     "tooltip": false,
-    "on-click": "kitty --class=btop -e btop"
+    "on-click": "kitty --class=floating_waybar -e btop"
   },
 
   "memory": {
@@ -146,7 +146,8 @@
       "warning": 60,
       "critical": 80
     },
-    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB"
+    "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB",
+    "on-click": "kitty --class=floating_waybar -e sysz"
   },
 
   "temperature": {

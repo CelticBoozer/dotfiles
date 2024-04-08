@@ -1,6 +1,9 @@
+adspower-global
 calcure
 ddcui
+debtap
 google-chrome
+googlekeep
 grimshot
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
@@ -8,7 +11,10 @@ hide-client
 intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 lazydocker
+libelectron
+pacnews-git
 paru
+paru-debug
 pkgtools
 postman-bin
 python-convertdate
@@ -19,13 +25,13 @@ python-kitchen
 python-korean_lunar_calendar
 python-pystray
 python-taskw
+rate-mirrors
 rofi-bluetooth-git
 rofi-lbonn-wayland-git
 swaykbdd
 swaylock-effects
 swaync
 swayosd-git
-sweet-gtk-theme
 sworkstyle
 sysz
 ttf-twemoji
@@ -33,7 +39,6 @@ vesktop-bin
 viber
 waybar-module-pacman-updates-git
 windscribe-v2-bin
-wob
 wttrbar
 xcursor-simp1e-gruvbox-dark
 xiaomitool-v2

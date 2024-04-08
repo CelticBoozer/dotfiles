@@ -1,6 +1,6 @@
-#!/usr/bin/bash
+#!/bin/bash
 
-# Script to set wallpaper and periodically(every 5 mins) change it
+# Script for setting wallpapers and changing them periodically (every 5 minutes)
 swaybg -i "$(find "${HOME}/.wallpaper/." -type f | shuf -n1)" -m fill &
 OLD_PID=$!
 

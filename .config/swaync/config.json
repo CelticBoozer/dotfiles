@@ -2,8 +2,9 @@
   "$schema": "/etc/xdg/swaync/configSchema.json",
   "positionY": "bottom",
   "layer": "top",
+  "notification-2fa-action": false,
   "notification-inline-replies": true,
-  "timeout": 5,
+  "timeout": -1,
   "control-center-width": 400,
   "notification-window-width": 400,
   "transition-time": 500,
@@ -29,10 +30,6 @@
     },
     "dnd": {
       "text": "Do Not Disturb"
-    },
-    "label": {
-      "max-lines": 5,
-      "text": "Label Text"
     },
     "volume": {
       "label": " "

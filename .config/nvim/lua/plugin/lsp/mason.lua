@@ -65,6 +65,7 @@ return {
 				"beautysh",
 				"prettier",
 				"google-java-format",
+        "sql-formatter"
 			},
 		})
 	end,

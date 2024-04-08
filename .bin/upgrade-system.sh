@@ -1,18 +1,24 @@
-#!/usr/bin/bash
+#!/bin/bash
+# shellcheck disable=SC2046
 
-# Script to upgrade all packages, cleanup orphans and cache
-# zsh alias: sysupg
+# Script to update all packages, clear orphans and pacman cache
+# INFO: zsh alias: sysupg
 
-# Upgrade system and packages
+# Upgrading system and packages
+printf "\e[36mUpdating official packages\e[0m\n"
 sudo pacman -Syu
+printf "\e[36mUpdating AUR packages\e[0m\n"
 paru -Syu
 
-# Clean up packages and package cache
-sudo pacman -Rns "$(pacman -Qtdq)"
+# Clearing packages and cache
+printf "\e[36mClear orphan packages\e[0m\n"
+sudo pacman -Rs $(pacman -Qtdq)
+printf "\e[36mClear pacman and paru cache\e[0m\n"
 sudo pacman -Scc
 paru -Sccd
 
-# Update github repos, installed as packages
+# Updating github repos
+printf "\e[36mUpdating submodules\e[0m\n"
 git submodule update --recursive --remote
 cd "${HOME}/.oh-my-zsh/custom/plugins/fast-syntax-highlighting" || exit
 git pull
