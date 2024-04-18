@@ -16,7 +16,3 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export BROWSER="firefox-developer-edition"
 export QT_QPA_PLATFORMTHEME=gtk3
 export UNZIP_DISABLE_ZIPBOMB_DETECTION=TRUE
-alias maint="sh $HOME/.bin/maintenance.sh"
-alias sysupg="sh $HOME/.bin/upgrade-system.sh"
-alias ls="eza --long --header --git --icons=always"
-alias l="eza --long --header --git --icons=always --all"

@@ -6,9 +6,9 @@
 for package in $(pacman -Qq | grep '^electron[0-9]*$'); do
     if [ ! -L "/home/celtic/.config/$package-flags.conf" ]; then
         ln -s "/home/celtic/.config/electron-flags.conf" "/home/celtic/.config/$package-flags.conf"
-        echo "Created symlink for $package"
+        echo -e "\e[32mCreated symlink for $package...\e[0m"
     else
-        echo "Symlink for $package exists"
+        echo -e "\e[36mSymlink for $package exists...\e[0m"
     fi
 done
 
@@ -19,7 +19,7 @@ for file in "/home/celtic/.config"/electron[0-9]*-flags.conf; do
 
     # Check if the package exists
     if ! pacman -Q "$package" > /dev/null; then
-        echo "Package $package not found, deleting $file..."
+        echo -e "\e[31mPackage $package not found, deleting $file...\e[0m"
         rm "$file"
     fi
 done

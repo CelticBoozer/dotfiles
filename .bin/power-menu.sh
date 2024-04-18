@@ -37,7 +37,6 @@ dryrun=false
 showsymbols=true
 
 function check_valid {
-    option="$1"
     shift 1
     for entry in "${@}"
     do

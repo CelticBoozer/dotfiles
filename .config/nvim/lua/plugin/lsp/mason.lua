@@ -33,7 +33,7 @@ return {
 				"bashls",
 				"jsonls",
 				"yamlls",
-				"taplo",
+				"taplo", -- TOML LSP
 				"html",
 				"cssls",
 				"eslint",
@@ -41,6 +41,7 @@ return {
 				"jdtls",
 				"groovyls",
 				"sqlls",
+				"lemminx", -- XML LSP
 			},
 			automatic_installation = true,
 		})
@@ -65,7 +66,8 @@ return {
 				"beautysh",
 				"prettier",
 				"google-java-format",
-        "sql-formatter"
+				"sql-formatter",
+				"xmlformatter",
 			},
 		})
 	end,

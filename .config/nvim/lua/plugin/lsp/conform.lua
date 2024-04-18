@@ -34,6 +34,7 @@ return {
 			java = { "google-java-format" },
 			graphql = { "prettier" },
 			sql = { "sqlfluff" },
+			xml = { "xmlformatter" },
 			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},

@@ -6,6 +6,6 @@ Type = Package
 Target = *
 
 [Action]
-Description = Update electron symlinks
+Description = Update electron symlinks...
 When = PostTransaction
 Exec = /bin/zsh -c 'sh /home/celtic/.bin/update-electron-symlinks.sh'

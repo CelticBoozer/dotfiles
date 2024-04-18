@@ -108,12 +108,12 @@ playerctl
 polkit
 postgresql
 pulsemixer
-pyside2
 python-pillow
 python-pip
 python-requests
 qemu-desktop
 ranger
+reflector
 reiserfsprogs
 rmlint
 rmlint-shredder
@@ -138,12 +138,12 @@ ttf-font-awesome
 ttf-hack
 ttf-jetbrains-mono
 ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-mono
 ttf-ubuntu-font-family
 unrar
 unzip
 usbutils
 vde2
-vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-dkms
