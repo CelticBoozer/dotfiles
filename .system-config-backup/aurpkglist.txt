@@ -32,7 +32,6 @@ rofi-bluetooth-git
 rofi-lbonn-wayland-git
 swaykbdd
 swaylock-effects
-swaync
 swayosd-git
 sworkstyle
 sysz

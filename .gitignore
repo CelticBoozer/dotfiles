@@ -31,6 +31,7 @@
 !.config/nvim/
 !.config/OpenRGB/
 .config/OpenRGB/logs/
+.config/OpenRGB/plugins/*.so
 !.config/paru/
 !.config/pulsemixer.cfg
 !.config/qalculate/

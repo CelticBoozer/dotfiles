@@ -125,7 +125,8 @@ print_log_message $success_color "all submodules has been updated."
 # Copying all pacman hooks and some configuration files that are not stored in ${XDG_CONFIG_HOME}
 # Hooks
 print_log_message $info_color "pacman hooks copying initiated..."
-sudo cp "${HOME}/.system-config-backup/pacman/"*.hook /usr/share/libalpm/hooks/
+sudo mkdir /etc/pacman.d/hooks/
+sudo cp "${HOME}/.system-config-backup/pacman/"*.hook /etc/pacman.d/hooks/
 print_log_message $success_color "pacman hooks has been copied."
 
 # Config files
@@ -145,6 +146,8 @@ systemctl enable --now reflector.service
 systemctl enable --now greetd.service
 
 chsh -s /usr/bin/zsh celtic
+
+curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/effects/release_0.9/OpenRGBEffectsPlugin_0.9_Bullseye_64_f1411e1.so
 
 print_log_message $success_color "system installation finished."
 zsh

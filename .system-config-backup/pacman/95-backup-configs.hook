@@ -6,4 +6,4 @@ Target = *
 [Action]
 Description = Backup configs...
 When = PostTransaction
-Exec = /bin/zsh -c 'sh /home/celtic/.bin/check-pacnew.sh'
+Exec = /bin/zsh -c 'sh /home/celtic/.bin/backup-configs.sh'
