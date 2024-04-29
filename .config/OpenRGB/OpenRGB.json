@@ -2,13 +2,13 @@
     "AutoStart": {
         "client": "localhost:6742",
         "custom": "",
-        "enabled": false,
+        "enabled": true,
         "host": "0.0.0.0",
         "port": "6742",
         "profile": "",
         "setclient": false,
         "setcustom": false,
-        "setminimized": false,
+        "setminimized": true,
         "setprofile": false,
         "setserver": false,
         "setserverhost": false,
@@ -1268,8 +1268,8 @@
     },
     "UserInterface": {
         "exit_profile": {
-            "profile_name": "",
-            "set_on_exit": false
+            "profile_name": "rw-basic",
+            "set_on_exit": true
         },
         "geometry": {
             "height": 0,

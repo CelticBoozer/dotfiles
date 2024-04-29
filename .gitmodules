@@ -10,3 +10,6 @@
 [submodule ".config/ranger/plugins/ranger_udisk_menu"]
 	path = .config/ranger/plugins/ranger_udisk_menu
 	url = https://github.com/SL-RU/ranger_udisk_menu.git
+[submodule ".config/ranger/plugins/ranger_keyboard"]
+	path = .config/ranger/plugins/ranger_keyboard
+	url = git@github.com:CelticBoozer/ranger_keyboard.git

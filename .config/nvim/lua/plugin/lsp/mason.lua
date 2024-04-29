@@ -25,7 +25,7 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
-				"pyright",
+				"ruff_lsp", -- Python LSP
 				"lua_ls",
 				"marksman",
 				"dockerls",
@@ -49,7 +49,7 @@ return {
 		mason_tool_installer.setup({
 			ensure_installed = {
 				-- Linters
-				"pylint",
+				"ruff", -- Python linter
 				"luacheck",
 				"hadolint", -- Docker linter
 				"shellcheck",
@@ -61,9 +61,9 @@ return {
 				"sqlfluff",
 
 				-- Formatters
-				"black", -- Python formatter
+				"ruff", -- Python formatter
 				"stylua",
-				"beautysh",
+				"shfmt",
 				"prettier",
 				"google-java-format",
 				"sql-formatter",

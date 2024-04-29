@@ -11,6 +11,7 @@ brightnessctl
 btop
 calcurse
 calibre
+catdoc
 chafa
 cliphist
 cmake
@@ -46,6 +47,7 @@ groovy
 grub
 gvfs-mtp
 gzip
+haskell-pandoc
 imv
 inetutils
 intel-ucode
@@ -83,7 +85,6 @@ mpv
 msmtp-mta
 mtpfs
 nano
-nautilus
 neofetch
 neovim
 net-tools
@@ -98,6 +99,7 @@ openssh
 p7zip
 pacman
 pacman-contrib
+pandoc-cli
 papirus-icon-theme
 parallel
 patch
@@ -133,6 +135,7 @@ telegram-desktop
 terminus-font
 texinfo
 tlp-rdw
+transmission-cli
 transmission-gtk
 ttf-dejavu
 ttf-font-awesome

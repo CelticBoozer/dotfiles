@@ -27,6 +27,7 @@ python-korean_lunar_calendar
 python-pystray
 python-shiboken2
 python-taskw
+python-xlsx2csv
 rate-mirrors
 rofi-bluetooth-git
 rofi-lbonn-wayland-git

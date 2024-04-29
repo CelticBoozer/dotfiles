@@ -31,10 +31,8 @@ local opts = {
 	ui = {
 		border = "rounded",
 	},
-	checker = {
-		enabled = true,
-	},
 }
+
 local plugins = {
 	{ import = "plugin.editor" },
 	{ import = "plugin.lsp" },

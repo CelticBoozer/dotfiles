@@ -9,19 +9,19 @@ return {
 			function()
 				require("conform").format({
 					lsp_fallback = true,
-					async = false,
+					async = true,
 					timeout_ms = 1000,
 				})
 			end,
-			desc = "format file",
+			desc = "Format file",
 		},
 	},
 	opts = {
 		formatters_by_ft = {
-			python = { "black" },
+			python = { "ruff" },
 			lua = { "stylua" },
 			markdown = { "prettier" },
-			sh = { "beautysh" },
+			sh = { "shfmt" },
 			json = { "prettier" },
 			yaml = { "prettier" },
 			html = { "prettier" },
@@ -38,10 +38,16 @@ return {
 			["*"] = { "codespell" },
 			["_"] = { "trim_whitespace" },
 		},
-		format_on_save = {
-			lsp_fallback = true,
-			async = false,
-			timeout_ms = 1000,
-		},
+		-- format_on_save = {
+		-- 	lsp_fallback = true,
+		-- 	async = true,
+		-- 	timeout_ms = 1000,
+		-- },
+		vim.api.nvim_create_autocmd("BufWritePre", {
+			pattern = "*",
+			callback = function(args)
+				require("conform").format({ bufnr = args.buf })
+			end,
+		}),
 	},
 }
