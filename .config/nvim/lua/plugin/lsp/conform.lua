@@ -23,7 +23,7 @@ return {
 			markdown = { "prettier" },
 			sh = { "shfmt" },
 			json = { "prettier" },
-			yaml = { "prettier" },
+			yaml = { "yamlfmt" },
 			html = { "prettier" },
 			css = { "prettier" },
 			javascript = { "prettier" },
@@ -43,11 +43,5 @@ return {
 		-- 	async = true,
 		-- 	timeout_ms = 1000,
 		-- },
-		vim.api.nvim_create_autocmd("BufWritePre", {
-			pattern = "*",
-			callback = function(args)
-				require("conform").format({ bufnr = args.buf })
-			end,
-		}),
 	},
 }

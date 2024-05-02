@@ -52,4 +52,5 @@
 !.config/user-dirs.locale
 !.config/waybar/
 !.config/wob/
+!.config/yamlfmt/
 !.config/zathura/

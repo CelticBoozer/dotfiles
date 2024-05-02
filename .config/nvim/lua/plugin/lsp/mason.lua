@@ -64,10 +64,12 @@ return {
 				"ruff", -- Python formatter
 				"stylua",
 				"shfmt",
+        "yamlfmt",
 				"prettier",
 				"google-java-format",
 				"sql-formatter",
 				"xmlformatter",
+
 			},
 		})
 	end,
