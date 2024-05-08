@@ -29,7 +29,6 @@
 !.config/mimeapps.list
 !.config/mpv/
 !.config/neofetch/
-!.config/nvim/
 !.config/OpenRGB/
 .config/OpenRGB/logs/
 .config/OpenRGB/plugins/*.so

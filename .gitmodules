@@ -13,3 +13,8 @@
 [submodule ".config/ranger/plugins/ranger_keyboard"]
 	path = .config/ranger/plugins/ranger_keyboard
 	url = git@github.com:CelticBoozer/ranger_keyboard.git
+[submodule ".config/nvim"]
+
+	path = .config/nvim
+
+	url = git@github.com:CelticBoozer/nvim-config.git
