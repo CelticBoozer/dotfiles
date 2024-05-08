@@ -54,7 +54,7 @@
     "format": "{} °",
     "tooltip": true,
     "interval": 3600,
-    "exec": "wttrbar",
+    "exec": "wttrbar --lang be",
     "return-type": "json"
   },
 
