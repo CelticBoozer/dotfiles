@@ -110,16 +110,12 @@ print_log_message $success_color "paru cache has been cleared."
 # Installing and configuring oh-my-zsh
 print_log_message $info_color "oh-my-zsh installation initiated..."
 0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd "${HOME}/.oh-my-zsh/custom/plugins/" || exit
-print_log_message $info_color "oh-my-zsh custom plugins cloning initiated..."
-git clone https://github.com/zsh-users/zsh-autosuggestions.git
-git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git
 mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 
 # Downloading all git submodules such as waybar-crypto, etc
 print_log_message $info_color "submodules update initiated..."
 cd "${HOME}" || exit
-git submodule update --recursive --remote
+git submodule update --init --recursive
 print_log_message $success_color "all submodules has been updated."
 
 # Copying all pacman hooks and some configuration files that are not stored in ${XDG_CONFIG_HOME}

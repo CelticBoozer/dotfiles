@@ -6,18 +6,14 @@ base
 base-devel
 binutils
 bison
-blueberry
 brightnessctl
 btop
-calcurse
 calibre
-catdoc
 chafa
 cliphist
 cmake
 cool-retro-term
 ddcutil
-deno
 dhcpcd
 dialog
 dnsmasq
@@ -86,6 +82,7 @@ msmtp-mta
 mtpfs
 nano
 neofetch
+neovide
 neovim
 net-tools
 netctl
@@ -164,7 +161,6 @@ xf86-video-intel
 xfsprogs
 xorg-xlsclients
 xorg-xwayland
-yarn
 zathura
 zathura-djvu
 zathura-pdf-mupdf
