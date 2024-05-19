@@ -54,3 +54,8 @@
 !.config/wob/
 !.config/yamlfmt/
 !.config/zathura/
+!.oh-my-zsh/
+.oh-my-zsh/*
+!.oh-my-zsh/custom/
+.oh-my-zsh/custom/*
+!.oh-my-zsh/custom/plugins/
