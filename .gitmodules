@@ -22,3 +22,9 @@
 [submodule ".oh-my-zsh/custom/plugins/fast-syntax-highlighting"]
 	path = .oh-my-zsh/custom/plugins/fast-syntax-highlighting
 	url = git@github.com:zdharma-continuum/fast-syntax-highlighting.git
+[submodule ".zsh_custom/plugins/fast-syntax-highlighting"]
+	path = .zsh_custom/plugins/fast-syntax-highlighting
+	url = git@github.com:zdharma-continuum/fast-syntax-highlighting.git
+[submodule ".zsh_custom/plugins/zsh-autosuggestions"]
+	path = .zsh_custom/plugins/zsh-autosuggestions
+	url = git@github.com:zsh-users/zsh-autosuggestions.git
