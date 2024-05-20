@@ -20,7 +20,3 @@ paru -Sccd
 # Updating github repos
 printf "\e[36mUpdating submodules:\e[0m\n"
 git submodule update --recursive --remote
-cd "${HOME}/.oh-my-zsh/custom/plugins/fast-syntax-highlighting" || exit
-git pull
-cd "${HOME}/.oh-my-zsh/custom/plugins/zsh-autosuggestions" || exit
-git pull
