@@ -1,6 +1,3 @@
-[submodule ".config/waybar/modules/crypto"]
-	path = .config/waybar/modules/crypto
-	url = git@github.com:chadsr/waybar-crypto.git
 [submodule ".config/ranger/plugins/ranger_devicons"]
 	path = .config/ranger/plugins/ranger_devicons
 	url = git@github.com:alexanderjeurissen/ranger_devicons.git

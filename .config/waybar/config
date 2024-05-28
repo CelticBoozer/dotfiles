@@ -45,7 +45,7 @@
     "format": "{}",
     "interval": 600,
     "return-type": "json",
-    "exec": "~/.config/waybar/modules/crypto/waybar_crypto.py",
+    "exec": "waybar-crypto",
     "exec-if": "ping pro-api.coinmarketcap.com -c1",
     "tooltip": false
   },

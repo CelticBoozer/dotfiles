@@ -37,6 +37,7 @@ sysz
 ttf-twemoji
 vesktop-bin
 viber
+waybar-crypto
 waybar-module-pacman-updates-git
 windscribe-v2-bin
 wttrbar
