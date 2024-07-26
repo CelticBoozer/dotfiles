@@ -15,6 +15,7 @@ cliphist
 cmake
 cool-retro-term
 ddcutil
+deno
 dhcpcd
 dialog
 dnsmasq
@@ -27,6 +28,7 @@ eza
 fakeroot
 ffmpegthumbnailer
 file
+file-roller
 findutils
 firefox-developer-edition
 flex
@@ -110,7 +112,6 @@ postgresql
 pulsemixer
 python-pillow
 python-pip
-python-poetry
 python-requests
 qemu-desktop
 ranger
@@ -147,6 +148,7 @@ unrar
 unzip
 usbutils
 vde2
+vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-dkms

@@ -12,6 +12,7 @@ intellij-idea-ultimate-edition
 intellij-idea-ultimate-edition-jre
 lazydocker
 libelectron
+logseq-desktop-bin
 pacnews-git
 paru
 paru-debug
@@ -29,6 +30,7 @@ python-xlsx2csv
 rate-mirrors
 rofi-bluetooth-git
 rofi-lbonn-wayland-git
+skypeforlinux-bin
 swaykbdd
 swaylock-effects
 swayosd-git
