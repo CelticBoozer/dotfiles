@@ -76,6 +76,7 @@ application/x-extension-xht=firefoxdeveloperedition.desktop
 x-scheme-handler/mailspring=Mailspring.desktop
 x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 x-scheme-handler/viber=viber.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;userapp-Telegram Desktop-KWPCW1.desktop;
@@ -89,3 +90,4 @@ application/x-extension-shtml=firefoxdeveloperedition.desktop;
 application/xhtml+xml=firefoxdeveloperedition.desktop;
 application/x-extension-xhtml=firefoxdeveloperedition.desktop;
 application/x-extension-xht=firefoxdeveloperedition.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;

@@ -1,10 +1,10 @@
 acpi
-alacritty
 archlinux-keyring
 autoconf
 automake
 base
 base-devel
+bat
 binutils
 bison
 brightnessctl
@@ -50,11 +50,11 @@ haskell-pandoc
 imv
 inetutils
 intel-ucode
-intellij-idea-community-edition
 iw
 jdk-openjdk
 jdk11-openjdk
 jdk17-openjdk
+jdk21-openjdk
 jdk8-openjdk
 jfsutils
 jre8-openjdk
@@ -148,7 +148,6 @@ unrar
 unzip
 usbutils
 vde2
-vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-dkms

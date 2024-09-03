@@ -1,4 +1,3 @@
-adspower-global
 calcure
 ddcui
 debtap
@@ -8,12 +7,10 @@ grimshot
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 hide-client
-intellij-idea-ultimate-edition
-intellij-idea-ultimate-edition-jre
+intellij-idea-community-edition-jre
 lazydocker
 libelectron
-logseq-desktop-bin
-pacnews-git
+pacnews-neovim
 paru
 paru-debug
 pkgtools

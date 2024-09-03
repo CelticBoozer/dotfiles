@@ -13,7 +13,9 @@
     "custom/arrow-light-on-bg-right",
     "sway/mode"
   ],
-  "modules-center": ["clock"],
+  "modules-center": [
+    "clock"
+  ],
   "modules-right": [
     "custom/arrow-light-on-bg-left",
     "pulseaudio",

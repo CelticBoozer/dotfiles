@@ -36,5 +36,5 @@ fi
 # Set aliases
 alias maint="sh $HOME/.bin/maintenance.sh"
 alias sysupg="sh $HOME/.bin/upgrade-system.sh"
-alias ls="eza --long --header --git --icons=always"
+alias ls="eza --long --header --icons=always"
 alias l="eza --long --header --git --icons=always --all"
