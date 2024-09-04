@@ -3,6 +3,7 @@ name: "Check commit"
 # yamllint disable-line rule:truthy
 on:
   - pull_request
+  - push
 jobs:
   commit_check:
     name: Run check commit

@@ -3,6 +3,7 @@ name: "yamlfmt"
 # yamllint disable-line rule:truthy
 on:
   - pull_request
+  - push
 jobs:
   format_check:
     name: Run yamlfmt

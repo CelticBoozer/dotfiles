@@ -3,6 +3,7 @@ name: "markdownlint"
 # yamllint disable-line rule:truthy
 on:
   - pull_request
+  - push
 jobs:
   lint:
     name: Run markdownlint-cli
