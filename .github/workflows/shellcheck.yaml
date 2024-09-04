@@ -12,5 +12,5 @@ jobs:
       - name: Run shellcheck
         uses: ludeeus/action-shellcheck@master
         with:
-          ignore_paths:
+          ignore_names: >-
             .zshrc
