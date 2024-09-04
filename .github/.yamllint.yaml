@@ -1,0 +1,24 @@
+---
+# https://github.com/adrienverge/yamllint config file.
+# Simply copy this file to the root of the project.
+extends: default
+rules:
+  anchors:
+    forbid-duplicated-anchors: true
+  braces:
+    min-spaces-inside-empty: 0
+    max-spaces-inside-empty: 0
+  brackets:
+    min-spaces-inside-empty: 0
+    max-spaces-inside-empty: 0
+  comments-indentation: enable
+  document-start:
+    present: true
+  float-values:
+    require-numeral-before-decimal: true
+  indentation:
+    spaces: 2
+  key-duplicates:
+    forbid-duplicated-merge-keys: true
+  new-lines:
+    type: unix

@@ -1,6 +1,6 @@
 configuration {
     threads: 0;
-    modi: "calc,clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:~/.bin/power-menu.sh,ssh";
+    modi: "calc,clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:~/.bin/power-menu.sh";
     case-sensitive: false;
     cycle: true;
     scroll-method: 1;
@@ -17,7 +17,6 @@ configuration {
     terminal: "kitty";
     display-drun: "Application";
     display-calc: "Calculator";
-    display-ssh: "SSH";
     display-clipboard: "Clipboard";
 }
 

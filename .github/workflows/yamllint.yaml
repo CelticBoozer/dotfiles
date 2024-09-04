@@ -1,0 +1,17 @@
+---
+name: "yamllint"
+# yamllint disable-line rule:truthy
+on:
+  - pull_request
+jobs:
+  lint:
+    name: Run yamllint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run yamllint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          strict: true
+          config_file: .github/.yamllint.yaml
