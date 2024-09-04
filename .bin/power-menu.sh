@@ -1,5 +1,6 @@
 #!/bin/bash
 # Based on https://github.com/jluttine/rofi-power-menu scripts. Changed for my own usage.
+# shellcheck disable=SC2091
 
 set -e
 set -u
@@ -127,7 +128,7 @@ confirmationMessages[cancel]=$(write_message "${icons[cancel]}" "No, cancel")
 
 if [ $# -gt 0 ]; then
 	# If arguments given, use those as the selection
-	selection="${@}"
+	selection="${*}"
 else
 	# Otherwise, use the CLI passed choice if given
 	if [ -n "${selectionID+x}" ]; then
