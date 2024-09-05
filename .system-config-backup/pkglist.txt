@@ -148,6 +148,7 @@ unrar
 unzip
 usbutils
 vde2
+vim
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-dkms
