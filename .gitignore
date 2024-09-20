@@ -34,11 +34,6 @@
 !.config/pulsemixer.cfg
 !.config/qalculate/
 .config/qalculate/qalc.history
-!.config/ranger/
-.config/ranger/colorschemes/__pycache__/
-.config/ranger/colorschemes/__init__.py
-.config/ranger/plugins/__pycache__/
-.config/ranger/plugins/__init__.py
 !.config/rofi/
 !.config/swappy/
 !.config/sway/

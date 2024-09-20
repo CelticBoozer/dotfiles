@@ -1,3 +1,4 @@
+advcpmv
 calcure
 ddcui
 debtap
@@ -21,7 +22,6 @@ python-holidays
 python-jdatetime
 python-kitchen
 python-korean_lunar_calendar
-python-pystray
 python-taskw
 python-xlsx2csv
 rate-mirrors
@@ -34,6 +34,8 @@ swayosd-git
 sworkstyle
 sysz
 ttf-twemoji
+twitch
+twitch-curses
 vesktop-bin
 viber
 waybar-crypto
@@ -41,3 +43,4 @@ waybar-module-pacman-updates-git
 windscribe-v2-bin
 wttrbar
 xcursor-simp1e-gruvbox-dark
+xdg-desktop-portal-termfilechooser-git

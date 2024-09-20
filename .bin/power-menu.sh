@@ -1,7 +1,7 @@
 #!/bin/bash
-# Based on https://github.com/jluttine/rofi-power-menu scripts. Changed for my own usage.
 # shellcheck disable=SC2091
 
+# Based on https://github.com/jluttine/rofi-power-menu scripts. Changed for my own usage.
 set -e
 set -u
 

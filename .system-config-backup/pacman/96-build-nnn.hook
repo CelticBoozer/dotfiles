@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = nnn
+
+[Action]
+Description = Build nnn with icons...
+When = PostTransaction
+Exec = /bin/zsh -c 'sh /home/celtic/.bin/build-nnn.sh'

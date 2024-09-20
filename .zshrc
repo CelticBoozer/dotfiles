@@ -38,3 +38,7 @@ alias maint="sh $HOME/.bin/maintenance.sh"
 alias sysupg="sh $HOME/.bin/upgrade-system.sh"
 alias ls="eza --long --header --icons=always"
 alias l="eza --long --header --git --icons=always --all"
+alias cp="cpg -g"
+alias mv="mvg -g"
+alias nnnupdate='sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"'
+alias nnn="nnn -P p -r"

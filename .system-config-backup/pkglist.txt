@@ -85,11 +85,11 @@ msmtp-mta
 mtpfs
 nano
 neofetch
-neovide
 neovim
 net-tools
 netctl
 networkmanager
+nnn
 nodejs
 npm
 ntfs-3g
@@ -100,7 +100,6 @@ p7zip
 pacman
 pacman-contrib
 pandoc-cli
-papirus-icon-theme
 parallel
 patch
 pipewire-alsa
@@ -112,9 +111,9 @@ postgresql
 pulsemixer
 python-pillow
 python-pip
+python-pystray
 python-requests
 qemu-desktop
-ranger
 reflector
 reiserfsprogs
 rmlint
