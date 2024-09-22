@@ -13,9 +13,9 @@
 !.zshrc
 !.config/
 .config/*
+!.config/bat/
 !.config/btop/
 .config/btop/btop.log
-!.config/calcure/
 !.config/easyeffects/
 !.config/electron-flags.conf
 !.config/fontconfig/

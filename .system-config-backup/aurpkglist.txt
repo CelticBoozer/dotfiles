@@ -3,7 +3,6 @@ calcure
 ddcui
 debtap
 google-chrome
-googlekeep
 grimshot
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git

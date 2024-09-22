@@ -40,5 +40,6 @@ alias ls="eza --long --header --icons=always"
 alias l="eza --long --header --git --icons=always --all"
 alias cp="cpg -g"
 alias mv="mvg -g"
+alias cat="bat"
 alias nnnupdate='sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"'
 alias nnn="nnn -P p -r"
