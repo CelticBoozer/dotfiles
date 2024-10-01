@@ -58,10 +58,10 @@ All the info about my setup.
 | **System information**      | [neofetch](https://github.com/dylanaraps/neofetch) [:gear:](../.config/neofetch/)              |
 | **ls replacement**          | [eza](https://github.com/eza-community/eza)                                                    |
 | **cat Replacement**         | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                |
-| **find replacement**        | [fd](https://github.com/sharkdp/fd) [:gear:](../.config/fd/)                                   |
+| **find replacement**        | [fd](https://github.com/sharkdp/fd)                                                            |
 | **File manager**            | [nnn](https://github.com/jarun/nnn)                                                            |
 | **Fuzzy file finder**       | [fzf](https://github.com/junegunn/fzf)                                                         |
-| **Fuzzy word finder**       | [ripgrep](https://github.com/BurntSushi/ripgrep) [:gear:](../.config/rg/)                      |
+| **Fuzzy word finder**       | [ripgrep](https://github.com/BurntSushi/ripgrep)                                               |
 | **Git TUI**                 | [lazygit](https://github.com/jesseduffield/lazygit)                                            |
 | **Docker TUI**              | [lazydocker](https://github.com/jesseduffield/lazydocker)                                      |
 | **Trash CLI**               | [glib2](https://archlinux.org/packages/core/x86_64/glib2/) (gio trash)                         |
