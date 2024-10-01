@@ -91,4 +91,4 @@ All the info about my setup.
 | **Fonts**                       | [JetBrainsMono](https://www.jetbrains.com/es-es/lp/mono/) and [Hack](https://github.com/source-foundry/Hack) |
 | **Icon theme**                  | [Gruvbox-Material-Dark](https://github.com/TheGreatMcPain/gruvbox-material-gtk)                              |
 | **Cursor theme**                | [Gruvbox Dark](https://gitlab.com/cursors/simp1e)                                                            |
-| **Wallpappers**                 | [Aenami's](https://www.artstation.com/aenamiart) art works [:gear:](../.wallpaper/)                          |
+| **Wallpappers**                 | [Aenami's](https://www.instagram.com/aenami.art/) art works [:gear:](../.wallpaper/)                         |
