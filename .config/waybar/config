@@ -106,13 +106,13 @@
     "scroll-step": 1,
     "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": "<span foreground='#ea6962'>  {format_source}</span>",
-    "format-muted": "<span foreground='#ea6962'></span> {format_source}",
+    "format-bluetooth-muted": "<span foreground='#ea6962'>󰗾 {format_source}</span>",
+    "format-muted": "<span foreground='#ea6962'></span> {format_source}",
     "format-source": " ",
     "format-source-muted": " <span foreground='#ea6962'></span>",
     "format-icons": {
-      "headphone": "",
-      "headset": "",
+      "headphone": "",
+      "headset": "",
       "default": ["", "", ""]
     },
     "tooltip": false,
@@ -123,8 +123,8 @@
 
   "network": {
     "format-wifi": "",
-    "format-ethernet": "",
-    "format-linked": "",
+    "format-ethernet": "",
+    "format-linked": "",
     "format-disconnected": "⚠",
     "tooltip-format": "{essid}\n{ipaddr}/{cidr}",
     "tooltip": true,
@@ -132,7 +132,7 @@
   },
 
   "cpu": {
-    "format": "{usage}% ",
+    "format": "{usage}% ",
     "states": {
       "warning": 60,
       "critical": 80
@@ -143,7 +143,7 @@
 
   "memory": {
     "tooltip": true,
-    "format": "{}% ",
+    "format": "{}% ",
     "states": {
       "warning": 60,
       "critical": 80
@@ -156,7 +156,7 @@
     "tooltip": false,
     "critical-threshold": 80,
     "format": "{temperatureC}°{icon}",
-    "format-icons": ["", "", ""]
+    "format-icons": ["", "", ""]
   },
 
   "backlight": {
@@ -173,9 +173,8 @@
       "critical": 20
     },
     "format": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
-    "format-plugged": "{capacity}% ",
-    "format-icons": ["", "", "", "", ""]
+    "format-charging": "{capacity}% 󰂄",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁" , "󰂂", "󰁹"]
   },
 
   "sway/language": {

@@ -1,9 +1,7 @@
 # fontconfig
 
-My font configuration.
+My font configuration. The following fonts are mandatory to install.
 
-- JetBrains Mono
-- Hack
-- Font Awesome 6 Brands
-- Font Awesome 6 Free
-- Symbols Nerd Font
+- JetBrains Mono.
+- Hack.
+- Symbols Nerd Font.

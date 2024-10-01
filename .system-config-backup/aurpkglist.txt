@@ -10,7 +10,6 @@ hide-client
 intellij-idea-community-edition-jre
 lazydocker
 libelectron
-pacnews-neovim
 paru
 paru-debug
 pkgtools
@@ -24,7 +23,6 @@ python-korean_lunar_calendar
 python-taskw
 python-xlsx2csv
 rate-mirrors
-rofi-bluetooth-git
 rofi-lbonn-wayland-git
 skypeforlinux-bin
 swaykbdd
@@ -32,7 +30,6 @@ swaylock-effects
 swayosd-git
 sworkstyle
 sysz
-ttf-twemoji
 twitch
 twitch-curses
 vesktop-bin

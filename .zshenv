@@ -40,3 +40,4 @@ export NNN_PLUG="p:preview-tui;"
 # Other settings
 export ARCHFLAGS="-arch x86_64"
 export BROWSER="firefox-developer-edition"
+export DIFFPROG="nvim -d"
