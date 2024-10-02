@@ -92,3 +92,5 @@ All the info about my setup.
 | **Icon theme**                  | [Gruvbox-Material-Dark](https://github.com/TheGreatMcPain/gruvbox-material-gtk)                              |
 | **Cursor theme**                | [Gruvbox Dark](https://gitlab.com/cursors/simp1e)                                                            |
 | **Wallpappers**                 | [Aenami's](https://www.instagram.com/aenami.art/) art works [:gear:](../.wallpaper/)                         |
+
+## Dotfiles installation

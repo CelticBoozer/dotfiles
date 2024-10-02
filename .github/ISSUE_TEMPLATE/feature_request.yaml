@@ -1,0 +1,26 @@
+---
+name: "Feature Request"
+description: "Suggest a new feature or enhancement for the dotfiles."
+labels: ["enhancement"]
+assignees: "CelticBoozer"
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Description
+        Describe the feature or improvement you would like to see.
+  - type: textarea
+    attributes:
+      label: "Why This Feature Is Necessary"
+      description: "Explain why this feature would be useful."
+  - type: textarea
+    attributes:
+      label: "Suggested Implementation"
+      description: |
+        If you have any ideas about how this feature can be implemented,
+        describe them here."
+  - type: textarea
+    attributes:
+      label: "Additional Notes"
+      description: "Provide any other information or context."
