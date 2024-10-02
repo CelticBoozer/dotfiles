@@ -38,7 +38,8 @@ tried to configure all programs in the same color palette.
 All the info about my setup.
 
 > Some of this apps have the config files included in the repo, which are
-  marked with :gear:.
+  marked with :gear:. If you need some information about a program/script etc,
+  just go to its directory, README will help you.
 
 ### Main system software
 
