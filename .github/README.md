@@ -8,6 +8,17 @@ tried to configure all programs in the same color palette.
 
 ![samples](assets/final.png "Gallery")
 
+## Table of Contents
+
+- [Core system info](#core-system-info)
+- [Whole System Info](#whole-system-info)
+  - [Main system software](#main-system-software)
+  - [Shell and CLI/TUI software](#shell-and-clitui-software)
+  - [GUI software](#gui-software)
+  - [Appearance](#appearance)
+- [Dotfiles installation](#dotfiles-installation)
+- [Acknowledgements](#acknowledgements)
+
 ## Core system info
 
 - OS: [Arch Linux](https://archlinux.org/)
@@ -22,7 +33,7 @@ tried to configure all programs in the same color palette.
 - Notification Manager: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 - Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material)
 
-## Whole System Info
+## Whole system info
 <!-- markdownlint-disable MD013 -->
 All the info about my setup.
 
@@ -94,3 +105,29 @@ All the info about my setup.
 | **Wallpappers**                 | [Aenami's](https://www.instagram.com/aenami.art/) art works [:gear:](../.wallpaper/)                         |
 
 ## Dotfiles installation
+
+If you want to install my dotfiles, here are some tips and recommendations.
+
+1. You need to install Arch Linux (please follow the official
+   [guide](https://wiki.archlinux.org/title/Installation_guide)).
+2. Establish a stable internet connection.
+3. Install git. You can do this by running the `pacman -S git` command.
+4. Copy this repository to your $HOME directory.
+5. Run the initial-installation script `sh .bin/initial-installation.sh`. This
+   script will install all the necessary packages and move all the necessary
+   configuration files to the system directories.
+
+> NOTE: you can adjust the packages by editing
+  `.system-config-backup/aurpkglist.txt` and `.system-config-backup/pkglist.txt`.
+
+If you still have any questions, please feel free to ask them in the
+[discussions](https://github.com/CelticBoozer/dotfiles/discussions).
+
+## Acknowledgements
+
+I would like to thank the entire community, anyone who uses or is inspired by
+my dotfiles. To everyone who inspired or helped me (I tried to indicate each
+author in each script or file I borrowed fully or partially).
+
+If you like this project and want to express your gratitude - star this
+repository. Or you can donate.
