@@ -23,7 +23,7 @@ Please check the relevant option by placing an "x" inside the brackets [x].
 Ensure that your PR adheres to the following requirements.
 -->
 
-- [ ] I have read and followed the [CONTRIBUTING.md](CONTRIBUTING.md) (if applicable).
+- [ ] I have read and followed the ![CONTRIBUTING.md](CONTRIBUTING.md).
 - [ ] The code or configuration is properly tested.
 - [ ] All changes are documented in the appropriate `.md` file or within comments.
 - [ ] No configuration files (e.g., `.bashrc`, `.zshrc`, `sway/config`) are
