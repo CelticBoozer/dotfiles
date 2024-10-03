@@ -26,6 +26,7 @@ element-desktop
 expac
 eza
 fakeroot
+fd
 ffmpegthumbnailer
 file
 file-roller
@@ -90,7 +91,6 @@ neovim
 net-tools
 netctl
 networkmanager
-nnn
 nodejs
 noto-fonts-emoji
 npm
@@ -163,6 +163,7 @@ xf86-video-intel
 xfsprogs
 xorg-xlsclients
 xorg-xwayland
+yazi
 zathura
 zathura-djvu
 zathura-pdf-mupdf

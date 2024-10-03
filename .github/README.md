@@ -17,7 +17,7 @@ tried to configure all programs in the same color palette.
   - [GUI software](#gui-software)
   - [Appearance](#appearance)
 - [Dotfiles installation](#dotfiles-installation)
-- [Acknowledgements](#acknowledgements)
+- [Acknowledgements and some additional info](#acknowledgements-and-some-additional-info)
 
 ## Core system info
 
@@ -124,7 +124,7 @@ If you want to install my dotfiles, here are some tips and recommendations.
 If you still have any questions, please feel free to ask them in the
 [discussions](https://github.com/CelticBoozer/dotfiles/discussions).
 
-## Acknowledgements
+## Acknowledgements and some additional info
 
 I would like to thank the entire community, anyone who uses or is inspired by
 my dotfiles. To everyone who inspired or helped me (I tried to indicate each
@@ -132,3 +132,7 @@ author in each script or file I borrowed fully or partially).
 
 If you like this project and want to express your gratitude - star this
 repository. Or you can donate.
+
+### Star history
+
+[![Star History Chart](https://api.star-history.com/svg?repos=CelticBoozer/dotfiles&type=Timeline&theme=dark)](https://star-history.com/#CelticBoozer/dotfiles&Timeline)
