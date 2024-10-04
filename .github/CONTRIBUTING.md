@@ -38,8 +38,8 @@ unacceptable behavior to <celtic.boozer@proton.me>.
 
 ## I Have a Question
 
-Before you ask a question, it is best to search for existing [Issues](https://github.com/CelticBoozer/dotfiles/issues)
-and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions)
+Before you ask a question, it is best to search for existing [Issues](https://github.com/CelticBoozer/dotfiles/issues/)
+and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions/)
 that might help you. In case you have found a suitable issue or discussion and
 still need clarification, you can write your question in this issue. It is also
 advisable to search the internet for answers first.
@@ -47,7 +47,7 @@ advisable to search the internet for answers first.
 If you then still feel the need to ask a question and need clarification, we
 recommend the following:
 
-- Open new or join existing an [Discussions](https://github.com/CelticBoozer/dotfiles/discussions).
+- Open new or join existing an [Discussions](https://github.com/CelticBoozer/dotfiles/discussions/).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions (lua, neovim, etc), depending on what
   seems relevant.
@@ -127,15 +127,15 @@ and the community to understand your suggestion and find related suggestions.
 - Read the [README](https://github.com/CelticBoozer/dotfiles/blob/master/.github/README.md)
   carefully and find out if the functionality is already covered, maybe by an
   individual configuration.
-- Perform a search in [Issues](https://github.com/CelticBoozer/dotfiles/issues)
-  and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions)
+- Perform a search in [Issues](https://github.com/CelticBoozer/dotfiles/issues/)
+  and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions/)
   to see if the enhancement has already been suggested. If it has, add a comment
   to the existing issue instead of opening a new one.
 
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/CelticBoozer/dotfiles/issues)
-and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions).
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/CelticBoozer/dotfiles/issues/)
+and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions/).
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as
@@ -202,8 +202,8 @@ For the full guide, see [here](https://www.conventionalcommits.org/en/v1.0.0/).
 ### Code style
 
 All code must be linted and formatted according to the rules. A list of linters,
-formatters and their configurations can be found in the [repository](https://github.com/CelticBoozer/lint-format-config).
+formatters and their configurations can be found in the [repository](https://github.com/CelticBoozer/lint-format-config/).
 
 ## Attribution
 
-This guide is based on the **contributing-gen**. [Make your own](https://github.com/bttger/contributing-gen)!
+This guide is based on the **contributing-gen**. [Make your own](https://github.com/bttger/contributing-gen/)!

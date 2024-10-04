@@ -1,6 +1,6 @@
 # kitty
 
-[kitty](https://github.com/kovidgoyal/kitty) is a terminal emulator, it is
+[kitty](https://github.com/kovidgoyal/kitty/) is a terminal emulator, it is
 extremely fast, convenient, customizable. The most important thing for me is
 that it supports tabs, tiles and image preview. Also this emulator is fully
 customizable.

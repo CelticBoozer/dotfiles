@@ -6,7 +6,7 @@ each of these works hits me right in the soul. If you like her works, and
 you have the opportunity on the links below you can find her credentials
 and donate.
 
-- <https://www.deviantart.com/aenami>
+- <https://www.deviantart.com/aenami/>
 - <https://www.instagram.com/aenami.art/>
 
 ![At Last](../at-last.jpg "At last")
