@@ -2,14 +2,19 @@
 name: "Check mds for broken links"
 # yamllint disable-line rule:truthy
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   broken_link_check:
-    name: Run check links
+    name: Check orphan links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Run Link Checker
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
