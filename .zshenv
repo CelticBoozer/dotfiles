@@ -18,25 +18,6 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=gtk3
 export WEBKIT_DISABLE_COMPOSITING_MODE=1
 
-# nnn file manager settings
-export NNN_TRASH=2
-export NNN_TMPFILE="/tmp/.lastd"
-export NNN_FIFO="/tmp/nnn.fifo"
-BLK="03"
-CHR="03"
-DIR="04"
-EXE="02"
-REG="07"
-HARDLINK="06"
-SYMLINK="06"
-MISSING="02"
-ORPHAN="01"
-FIFO="06"
-SOCK="04"
-OTHER="05"
-export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
-export NNN_PLUG="p:preview-tui;"
-
 # Other settings
 export ARCHFLAGS="-arch x86_64"
 export BROWSER="firefox-developer-edition"
