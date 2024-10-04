@@ -22,16 +22,16 @@ tried to configure all programs in the same color palette.
 ## Core system info
 
 - OS: [Arch Linux](https://archlinux.org/)
-- WM: [Sway](https://github.com/swaywm/sway)
-- Shell: [zsh](https://github.com/zsh-users/zsh)
-- Terminal Emulator: [kitty](https://github.com/kovidgoyal/kitty)
-- Panel: [waybar](https://github.com/Alexays/Waybar)
-- Text Editor: [neovim](https://github.com/neovim/neovim)
-- App Launcher: [rofi](https://github.com/lbonn/rofi)
-- File Manager: [nnn](https://github.com/jarun/nnn)
+- WM: [Sway](https://github.com/swaywm/sway/)
+- Shell: [zsh](https://github.com/zsh-users/zsh/)
+- Terminal Emulator: [kitty](https://github.com/kovidgoyal/kitty/)
+- Panel: [waybar](https://github.com/Alexays/Waybar/)
+- Text Editor: [neovim](https://github.com/neovim/neovim/)
+- App Launcher: [rofi](https://github.com/lbonn/rofi/)
+- File Manager: [yazi](https://github.com/sxyazi/yazi/)
 - Browser: [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/)
-- Notification Manager: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
-- Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material)
+- Notification Manager: [swaync](https://github.com/ErikReider/SwayNotificationCenter/)
+- Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material/)
 
 ## Whole system info
 <!-- markdownlint-disable MD013 -->
@@ -71,7 +71,7 @@ All the info about my setup.
 | **ls replacement**          | [eza](https://github.com/eza-community/eza)                                                    |
 | **cat Replacement**         | [bat](https://github.com/sharkdp/bat) [:gear:](../.config/bat/)                                |
 | **find replacement**        | [fd](https://github.com/sharkdp/fd)                                                            |
-| **File manager**            | [nnn](https://github.com/jarun/nnn)                                                            |
+| **File manager**            | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                             |
 | **Fuzzy file finder**       | [fzf](https://github.com/junegunn/fzf)                                                         |
 | **Fuzzy word finder**       | [ripgrep](https://github.com/BurntSushi/ripgrep)                                               |
 | **Git TUI**                 | [lazygit](https://github.com/jesseduffield/lazygit)                                            |

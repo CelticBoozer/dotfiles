@@ -1,0 +1,54 @@
+[manager]
+ratio = [1, 2, 3]
+sort_by = "natural"
+sort_translit = true
+linemode = "size"
+scrolloff = 200
+
+[preview]
+max_width = 720
+max_height = 1280
+
+[plugin]
+
+fetchers = [
+  # Mimetype
+  { id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
+]
+preloaders = [
+  # Image
+  { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
+  { mime = "image/*", run = "image" },
+  # Video
+  { mime = "video/*", run = "video" },
+  # PDF
+  { mime = "application/pdf", run = "pdf" },
+  # Font
+  { mime = "font/*", run = "font" },
+  { mime = "application/vnd.ms-opentype", run = "font" },
+]
+previewers = [
+  { name = "*/", run = "folder", sync = true },
+  # Code
+  { mime = "text/*", run = "code" },
+  { mime = "*/{xml,javascript,x-wine-extension-ini}", run = "code" },
+  # JSON
+  { mime = "application/{json,x-ndjson}", run = "json" },
+  # Image
+  { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
+  { mime = "image/*", run = "image" },
+  # Video
+  { mime = "video/*", run = "video" },
+  # PDF
+  { mime = "application/pdf", run = "pdf" },
+  # Archive
+  { mime = "application/{,g}zip", run = "archive" },
+  { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar,iso9660-image}", run = "archive" },
+  # Font
+  { mime = "font/*", run = "font" },
+  { mime = "application/vnd.ms-opentype", run = "font" },
+  # Empty file
+  { mime = "inode/x-empty", run = "empty" },
+  # Fallback
+  { name = "*", run = "file" },
+]

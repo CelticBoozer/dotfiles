@@ -45,5 +45,6 @@
 !.config/user-dirs.locale
 !.config/waybar/
 !.config/wob/
+!.config/yazi/
 !.config/zathura/
 !.zsh_custom/

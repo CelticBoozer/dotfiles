@@ -118,6 +118,7 @@ python-requests
 qemu-desktop
 reflector
 reiserfsprogs
+ripgrep
 rmlint
 rmlint-shredder
 rofi-calc
