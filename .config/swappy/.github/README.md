@@ -1,7 +1,7 @@
 # Swappy
 
-[Swappy](https://github.com/jtheoof/swappy) is a great, Wayland native snapshot
-and editor tool. It works with [grim](https://github.com/emersion/grim).
+[Swappy](https://github.com/jtheoof/swappy/) is a great, Wayland native snapshot
+and editor tool. It works with [grim](https://github.com/emersion/grim/).
 
 You can run it via the hotkeys:
 

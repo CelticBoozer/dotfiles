@@ -1,7 +1,8 @@
 # yazi
 
-yazi is an awesome file manager. Fast, similar to vim, beautiful, easy to
-customize. That's why I chose it as my primary file manager.
+[yazi](https://github.com/sxyazi/yazi/) is an awesome file manager. Fast, similar
+to vim, beautiful, easy to customize. That's why I chose it as my primary file
+manager.
 
 ![yazi](yazi.png "yazi")
 
