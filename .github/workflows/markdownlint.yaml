@@ -2,11 +2,15 @@
 name: "markdownlint"
 # yamllint disable-line rule:truthy
 on:
-  - pull_request
-  - push
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
 jobs:
   lint:
-    name: Run markdownlint-cli
+    name: Check markdown with markdownlint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
