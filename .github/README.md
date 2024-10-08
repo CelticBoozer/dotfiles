@@ -20,7 +20,7 @@ tried to configure all programs in the same color palette.
   - [GUI software](#window-gui-software)
   - [Appearance](#paintbrush-appearance)
 - [Dotfiles installation](#rocket-dotfiles-installation)
-- [Acknowledgements and some additional info](#heart-acknowledgements-and-some-additional-info)
+- [Acknowledgements](#heart-acknowledgements)
 
 ## :stars: Main features
 
@@ -92,6 +92,7 @@ All the info about my setup.
 | **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                              |
 | **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)                                                         |
 | **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/)                                               |
+| **Cheatsheet tool**     | [navi](https://github.com/denisidoro/navi)                                                      |
 | **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                            |
 | **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                      |
 | **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                           |
@@ -142,7 +143,7 @@ If you want to install my dotfiles, here are some tips and recommendations.
 If you still have any questions, please feel free to ask them in the
 [discussions](https://github.com/CelticBoozer/dotfiles/discussions/).
 
-## :heart: Acknowledgements and some additional info
+## :heart: Acknowledgements
 
 I would like to thank the entire community, anyone who uses or is inspired by
 my dotfiles. To everyone who inspired or helped me (I tried to indicate each

@@ -86,6 +86,7 @@ mpv
 msmtp-mta
 mtpfs
 nano
+navi
 neofetch
 neovim
 net-tools
