@@ -9,7 +9,6 @@ gruvbox-material-icon-theme-git
 hide-client
 intellij-idea-community-edition-jre
 lazydocker
-libelectron
 paru
 paru-debug
 pkgtools
@@ -30,8 +29,6 @@ swaylock-effects
 swayosd-git
 sworkstyle
 sysz
-twitch
-twitch-curses
 vesktop-bin
 viber
 waybar-crypto

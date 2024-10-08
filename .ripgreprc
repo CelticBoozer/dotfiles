@@ -1,0 +1,7 @@
+# Limit output to 1000 matches (to avoid flooding)
+--max-count=1000
+
+# Pretty colors for better readability
+--colors=match:fg:green
+--colors=path:fg:red 
+--colors=line:fg:magenta

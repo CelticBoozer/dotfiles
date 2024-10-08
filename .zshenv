@@ -22,3 +22,4 @@ export WEBKIT_DISABLE_COMPOSITING_MODE=1
 export ARCHFLAGS="-arch x86_64"
 export BROWSER="firefox-developer-edition"
 export DIFFPROG="nvim -d"
+export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
