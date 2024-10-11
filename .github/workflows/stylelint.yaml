@@ -18,4 +18,4 @@ jobs:
       - name: Install stylelint
         run: npm init stylelint
       - name: Run stylelint
-        run: npx stylelint **/*.scss
+        run: npx stylelint "**/*.scss" --config .stylelintrc.json
