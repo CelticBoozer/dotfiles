@@ -1,0 +1,21 @@
+---
+name: prettier
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  format_check:
+    name: Check CSS/json/etc files with prettier
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run prettier
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --check

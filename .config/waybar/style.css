@@ -20,7 +20,7 @@
 
 #workspaces button:first-child {
   background: #32302f;
-  border-left: 0px;
+  border-left: 0;
 }
 
 #workspaces button.focused {
@@ -79,7 +79,7 @@
 #tray,
 #custom-weather {
   background: #32302f;
-  padding: 0 3 0 3;
+  padding: 0 3;
 }
 
 #cpu,
@@ -90,7 +90,7 @@
 #custom-crypto,
 #custom-updates {
   background: #3c3836;
-  padding: 0 3 0 3;
+  padding: 0 3;
 }
 
 /*
@@ -126,7 +126,7 @@
   color: #7daea3;
 }
 
-tooltip {
+#tooltip {
   background: #32302f;
   border: 1px solid #252423;
 }

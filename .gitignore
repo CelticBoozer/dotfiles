@@ -5,6 +5,9 @@
 !.gitmodules
 !.gtkrc-2.0
 !.ripgreprc
+!.stylelintrc.json
+!.yamlfmt.yaml
+!.yamllint.yaml
 !.icons
 !LICENSE
 !README.md
