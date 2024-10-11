@@ -18,4 +18,4 @@ jobs:
       - name: Install Stylelint and config
         run: npm install stylelint stylelint-config-standard --save-dev
       - name: Run stylelint
-        run: npx stylelint "**/*.{css,scss}" ".**/*.{css,scss}" --config .stylelintrc.json
+        run: npx stylelint "**/*.{css,scss}" ".*/**/*.{css,scss}" --config .stylelintrc.json

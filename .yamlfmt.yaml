@@ -4,4 +4,4 @@
 continue_on_error: true
 formatter:
   include_document_start: true
-  max_line_length: 80
+  max_line_length: 100

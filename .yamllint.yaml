@@ -20,8 +20,8 @@ rules:
     spaces: 2
   key-duplicates:
     forbid-duplicated-merge-keys: true
+  line-length:
+    max: 100
+    level: warning
   new-lines:
     type: unix
-  line-length:
-    max: 80
-    level: warning
