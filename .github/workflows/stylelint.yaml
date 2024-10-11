@@ -15,7 +15,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install stylelint
-        run: npm init stylelint
       - name: Run stylelint
         run: npx stylelint "**/*.scss" --config .stylelintrc.json
