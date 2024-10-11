@@ -22,3 +22,6 @@ rules:
     forbid-duplicated-merge-keys: true
   new-lines:
     type: unix
+  line-length:
+    max: 80
+    level: warning
