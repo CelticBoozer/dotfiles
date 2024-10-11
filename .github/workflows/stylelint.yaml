@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Install npm
-        uses: bahmutov/npm-install@v1
       - name: Install stylelint
         run: npm init stylelint
       - name: Run stylelint
