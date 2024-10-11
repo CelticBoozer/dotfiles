@@ -16,4 +16,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run stylelint
-        uses: actions-hub/stylelint@master
+        uses: reviewdog/action-stylelint@v1.29.0
