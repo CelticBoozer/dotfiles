@@ -1,5 +1,5 @@
 ---
-name: "yamllint"
+name: prettier
 # yamllint disable-line rule:truthy
 on:
   push:
@@ -9,13 +9,13 @@ on:
     branches:
       - master
 jobs:
-  lint:
-    name: Check yaml with yamllint
+  format_check:
+    name: Check CSS/json/etc files with prettier
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Run yamllint
-        uses: ibiqlik/action-yamllint@v3
+      - name: Run prettier
+        uses: creyD/prettier_action@v4.3
         with:
-          strict: true
+          prettier_options: --check

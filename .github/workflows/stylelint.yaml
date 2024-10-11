@@ -1,0 +1,21 @@
+---
+name: stylelint
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  lint:
+    name: Check CSS with stylelint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Install Stylelint and config
+        run: npm install stylelint stylelint-config-standard --save-dev
+      - name: Run stylelint
+        run: npx stylelint "**/*.{css,scss}" ".*/**/*.{css,scss}" --config .stylelintrc.json

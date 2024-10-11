@@ -54,7 +54,7 @@
   color: rgb(212, 190, 152);
   border: none;
   border-top: 1px solid rgb(80, 73, 69);
-  border-radius: 0px;
+  border-radius: 0;
   border-right: 1px solid rgb(80, 73, 69);
 }
 
@@ -104,7 +104,7 @@
   background: rgba(80, 73, 69, 0.95);
 }
 
-/* Notification close button*/
+/* Notification close button */
 .close-button {
   background: transparent;
   color: rgb(212, 190, 152);
@@ -144,7 +144,6 @@
   font-weight: bold;
   background: transparent;
   color: rgb(212, 190, 152);
-  /* margin-right: 10px; */
 }
 
 .body {
@@ -162,15 +161,17 @@
   -gtk-icon-effect: none;
 }
 
-/* Control-center panel which contains the old notifications + widgets*/
+/* Control-center panel which contains the old notifications + widgets */
 .control-center {
   background: rgba(37, 36, 35, 0.85);
   color: rgb(212, 190, 152);
   border-radius: 12px;
 }
+
 .control-center-list-placeholder {
   opacity: 0.5;
 }
+
 .control-center-list {
   background: transparent;
 }
@@ -195,6 +196,7 @@
 }
 
 /*** Widgets ***/
+
 /* Title widget */
 .widget-title {
   color: rgb(212, 190, 152);
