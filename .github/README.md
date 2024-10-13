@@ -1,5 +1,13 @@
 # :hammer_and_wrench: Dotfiles
 
+![Commit check](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/check_commit.yaml?branch=master&label=Commit%20check)
+![yamllint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/yamllint.yaml?branch=master&label=yamllint)
+![markdownlint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/markdownlint.yaml?branch=master&label=markdownlint)
+![stylelint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/stylelint.yaml?branch=master&label=stylelint)
+![shellcheck](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/shellcheck.yaml?branch=master&label=shellcheck)
+![yamlfmt](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/yamlfmt.yaml?branch=master&label=yamlfmt)
+![prettier](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/prettier.yaml?branch=master&label=prettier)
+
 ## :wave: Greetings
 
 Greetings. Thanks for stopping by. This repository is the repository of my Linux
