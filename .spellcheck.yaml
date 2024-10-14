@@ -9,4 +9,5 @@ matrix:
       - pyspelling.filters.markdown:
     sources:
       - '.**/*.md'
+      - '.**/**/*.md'
     default_encoding: utf-8
