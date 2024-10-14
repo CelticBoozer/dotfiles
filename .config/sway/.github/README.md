@@ -2,7 +2,7 @@
 
 [Sway](https://github.com/swaywm/sway/) Window Manager is a tiling window manager
 and a drop-in replacement for i3, built specifically for the Wayland display
-server. I chose it because of: lightweight, tiling, customization, minimalizm.
+server. I chose it because of: lightweight, tiling, customization, minimalism.
 
 ![sway](sway-full.png "Sway")
 

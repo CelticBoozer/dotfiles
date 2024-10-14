@@ -3,5 +3,12 @@
   "version": "0.2",
   "language": "en",
   "ignoreRegExpList": ["/<[^>]*>/", "/&[a-z]+;/", "/`.*`/"],
-  "dictionaries": ["en_US", "softwareTerms"]
+  "dictionaryDefinitions": [
+    {
+      "name": "repo_soft",
+      "path": "repo_soft.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["en_US", "softwareTerms", "repo_soft"]
 }

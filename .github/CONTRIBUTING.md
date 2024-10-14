@@ -25,7 +25,7 @@ community looks forward to your contributions. 🎉
 - [I Want To Contribute](#i-want-to-contribute)
   - [Reporting Bugs](#reporting-bugs)
   - [Suggesting Enhancements](#suggesting-enhancements)
-- [Styleguides](#styleguides)
+- [Style guides](#style-guides)
   - [Commit Messages](#commit-messages)
   - [Code style](#code-style)
 
@@ -150,7 +150,7 @@ and [Discussions](https://github.com/CelticBoozer/dotfiles/discussions/).
   You may also want to point out the other projects that solved it better and
   which could serve as inspiration.
 
-## Styleguides
+## Style guides
 
 ### Commit Messages
 
