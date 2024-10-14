@@ -29,7 +29,6 @@ jobs:
           #
 
           # Default: ALL files
-          files: '.**/**/.**'
 
           # Check files and directories starting with `.`.
           # - "true" - glob searches will match against `.dot` files.
@@ -38,7 +37,6 @@ jobs:
           check_dot_files: explicit
           # The point in the directory tree to start spell checking.
           # Default: .
-          root: '.'
           # Notification level to use with inline reporting of spelling errors.
           # Allowed values are: warning, error, none
           # Default: warning
