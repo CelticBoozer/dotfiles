@@ -45,7 +45,7 @@ Files list:
 | Layout container stacking                         | mod+s               |
 | Layout container tabbed                           | mod+w               |
 | Layout container in current split mode            | mod+e               |
-| Fullscreen container                              | mod+f               |
+| Full-screen container                             | mod+f               |
 | Make container floating                           | mod+Shift+space     |
 | Reload sway config                                | mod+Shift+c         |
 | Focus between floating and not                    | mod+space           |
