@@ -38,7 +38,7 @@ jobs:
           check_dot_files: explicit
           # The point in the directory tree to start spell checking.
           # Default: .
-          root: '.github/'
+          root: ''
           # Notification level to use with inline reporting of spelling errors.
           # Allowed values are: warning, error, none
           # Default: warning
