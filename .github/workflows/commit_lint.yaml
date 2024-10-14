@@ -1,5 +1,5 @@
 ---
-name: "Check commit"
+name: "Commit lint"
 # yamllint disable-line rule:truthy
 on:
   push:
@@ -16,12 +16,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run conventional commit checks
-        uses: commit-check/commit-check-action@v1
-        with:
-          message: true
-          branch: false
-          author-name: true
-          author-email: true
-          commit-signoff: false
-          dry-run: false
-          job-summary: true
+        uses: wagoid/commitlint-github-action@v6
