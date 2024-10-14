@@ -9,6 +9,7 @@ gruvbox-material-icon-theme-git
 hide-client
 intellij-idea-community-edition-jre
 lazydocker
+nodejs-cspell
 paru
 paru-debug
 pkgtools

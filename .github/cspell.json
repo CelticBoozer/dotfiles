@@ -2,8 +2,6 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "language": "en",
-  "files": ["**/*", ".*/**/*"],
-  "ignorePaths": ["node_modules", ".git", "dist", "build"],
   "ignoreRegExpList": ["/<[^>]*>/", "/&[a-z]+;/", "/`.*`/"],
   "dictionaries": ["en_US", "softwareTerms"]
 }

@@ -19,21 +19,12 @@ jobs:
       - name: cspell run
         uses: streetsidesoftware/cspell-action@v6
         with:
-          # Define glob patterns to filter the files to be checked. Use a new line between patterns to define multiple patterns.
-          # The default is to check ALL files that were changed in in the pull_request or push.
-          # Note: `ignorePaths` defined in cspell.json still apply.
-          # Example:
           # files: |
-          #   **/*.{ts,js}
-          #   !dist/**/*.{ts,js}
-          #
-          # Default: ALL files
-          files: | 
-            *
-            .*
-            **
-            .*/*
-            .*/**/.*
+          #   *
+          #   .*
+          #   **
+          #   .*/*
+          #   .*/**/.*
           check_dot_files: true
           suggestions: false
           # Limit the files checked to the ones in the pull request or push.
