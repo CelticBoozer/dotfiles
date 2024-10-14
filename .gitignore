@@ -5,6 +5,7 @@
 !.gitmodules
 !.gtkrc-2.0
 !.ripgreprc
+!.spellcheck.yaml
 !.stylelintrc.json
 !.yamlfmt.yaml
 !.yamllint.yaml
