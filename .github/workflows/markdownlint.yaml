@@ -1,5 +1,5 @@
 ---
-name: "markdownlint"
+name: markdownlint
 # yamllint disable-line rule:truthy
 on:
   push:
