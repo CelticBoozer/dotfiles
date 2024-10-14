@@ -1,5 +1,5 @@
 ---
-name: "Check mds for broken links"
+name: Check mds for broken links
 # yamllint disable-line rule:truthy
 on:
   push:

@@ -1,6 +1,6 @@
 # :hammer_and_wrench: Dotfiles
 
-![Commit check](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/check_commit.yaml?branch=master&label=Commit%20check)
+![commitlint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/commitlint.yaml?branch=master&label=commitlint)
 ![yamllint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/yamllint.yaml?branch=master&label=yamllint)
 ![markdownlint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/markdownlint.yaml?branch=master&label=markdownlint)
 ![stylelint](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/stylelint.yaml?branch=master&label=stylelint)
