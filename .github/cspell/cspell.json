@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "language": "en",
+  "ignoreRegExpList": ["/<[^>]*>/", "/&[a-z]+;/", "/`.*`/"],
+  "dictionaryDefinitions": [
+    {
+      "name": "repo_soft",
+      "path": "repo_soft.txt",
+      "addWords": true
+    }
+  ],
+  "dictionaries": ["en_US", "softwareTerms", "repo_soft"]
+}

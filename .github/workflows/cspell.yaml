@@ -1,0 +1,39 @@
+---
+name: cspell
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - master
+      - development
+  pull_request:
+    branches:
+      - master
+jobs:
+  check:
+    name: Spellcheck project
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: cspell run
+        uses: streetsidesoftware/cspell-action@v6
+        with:
+          # files: |
+          #   *.md
+          #   .*.md
+          #   **.md
+          #   .*/*.md
+          #  .*/**/.*.md
+          files: "**/*.md"
+          check_dot_files: true
+          suggestions: false
+          # Limit the files checked to the ones in the pull request or push.
+          incremental_files_only: true
+          # Path to `cspell.json`
+          config: '.github/cspell/cspell.json'
+          # Log progress and other information during the action execution.
+          # Default: false
+          verbose: false
+          # Use the `files` setting found in the CSpell configuration instead of `input.files`.
+          use_cspell_files: false

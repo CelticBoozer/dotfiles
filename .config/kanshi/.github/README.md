@@ -1,6 +1,6 @@
 # kanshi
 
-I use [kanshi](https://sr.ht/~emersion/kanshi/) for convenient multiscreen
+I use [kanshi](https://sr.ht/~emersion/kanshi/) for convenient multi-screen
 operation and easy switching in case of configuration changes.
 
 It currently works in two modes.

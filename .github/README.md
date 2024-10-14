@@ -100,7 +100,7 @@ All the info about my setup.
 | **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                              |
 | **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)                                                         |
 | **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/)                                               |
-| **Cheatsheet tool**     | [navi](https://github.com/denisidoro/navi)                                                      |
+| **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                      |
 | **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                            |
 | **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                      |
 | **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                           |

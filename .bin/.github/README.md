@@ -2,7 +2,7 @@
 
 This directory contains scripts that allow me to automate some of my work.
 
-- **backup-configs.sh** - copies the cofiguration files in .system-config-backup,
+- **backup-configs.sh** - copies the configuration files in .system-config-backup,
   which are not in $XDG_CONFIG but in other places like /etc. The script is
   automatically started by the pacman hook 95-backup-configs.hook. This script
   requires your customization: change **celtic** to **<your_user_name>**.
@@ -17,7 +17,7 @@ This directory contains scripts that allow me to automate some of my work.
   configuration of the system. Before running it, you need to copy this repo to
   the $HOME, install arch linux, git and have internet access. This script
   requires your customization: change **celtic** to **<your_user_name>**.
-- **maintenance.sh** - performs some frequent maintenence tasks on my system.
+- **maintenance.sh** - performs some frequent maintenance tasks on my system.
   zsh alias - maint.
 - **power-menu.sh** - allows me to control system reboot, shutdown, hibernation,
   etc with rofi.
