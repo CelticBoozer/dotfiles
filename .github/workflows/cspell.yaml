@@ -29,7 +29,7 @@ jobs:
           #
 
           # Default: ALL files
-          files: '**'
+          files: '.**/**/.**'
 
           # Check files and directories starting with `.`.
           # - "true" - glob searches will match against `.dot` files.
