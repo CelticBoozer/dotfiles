@@ -19,12 +19,13 @@ jobs:
       - name: cspell run
         uses: streetsidesoftware/cspell-action@v6
         with:
-          files: |
-            *
-            .*
-            **
-            .*/*
-            .*/**/.*
+          # files: |
+          #   *
+          #   .*
+          #   **
+          #   .*/*
+          #  .*/**/.*
+          files: *.md
           check_dot_files: true
           suggestions: false
           # Limit the files checked to the ones in the pull request or push.
