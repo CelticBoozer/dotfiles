@@ -7,6 +7,7 @@
 ![shellcheck](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/shellcheck.yaml?branch=master&label=shellcheck)
 ![yamlfmt](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/yamlfmt.yaml?branch=master&label=yamlfmt)
 ![prettier](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/prettier.yaml?branch=master&label=prettier)
+![prettier](https://img.shields.io/github/actions/workflow/status/CelticBoozer/dotfiles/cspell.yaml?branch=master&label=cspell)
 
 ## :wave: Greetings
 
