@@ -5,8 +5,6 @@ logo of your Linux distribution or operating system in the terminal.
 
 Theme name: acenoster
 
-asdasasdasdasd
-
 Theme [repo](https://github.com/Chick2D/neofetch-themes/)
 
 ![neofetch](neofetch.png "neofetch")
