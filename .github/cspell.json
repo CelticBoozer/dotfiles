@@ -1,4 +1,7 @@
 {
-  "usePnP": true,
-  "import": ["@cspell/dict-medicalterms/cspell-ext.json"]
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "words": [],
+  "ignoreWords": [],
+  "import": []
 }

@@ -55,7 +55,7 @@ jobs:
           # Limit the files checked to the ones in the pull request or push.
           incremental_files_only: true
           # Path to `cspell.json`
-          config: '.github/'
+          config: '.github/cspell.json'
           # Log progress and other information during the action execution.
           # Default: false
           verbose: false
