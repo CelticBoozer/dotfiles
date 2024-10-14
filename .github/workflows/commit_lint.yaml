@@ -16,4 +16,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run conventional commit checks
-        uses: ahmadnassri/action-commit-lint@v2
+        uses: wagoid/commitlint-github-action@v6
