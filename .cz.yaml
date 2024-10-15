@@ -6,3 +6,4 @@ commitizen:
   update_changelog_on_bump: true
   version: 1.2.0
   version_scheme: semver2
+  bump_message: "chore: bump version {current_version} → {new_version}"
