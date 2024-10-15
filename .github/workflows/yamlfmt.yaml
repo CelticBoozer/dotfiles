@@ -5,9 +5,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**/*.yaml'
   pull_request:
     branches:
       - master
+    paths:
+      - '**/*.yaml'
 jobs:
   format_check:
     name: Check yaml with yamlfmt

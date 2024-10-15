@@ -5,9 +5,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**/*.sh'
   pull_request:
     branches:
       - master
+    paths:
+      - '**/*.sh'
 jobs:
   lint:
     name: Check shell scripts with shellcheck

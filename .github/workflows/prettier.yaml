@@ -5,9 +5,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**/*.css'
   pull_request:
     branches:
       - master
+    paths:
+      - '**/*.css'
 jobs:
   format_check:
     name: Check CSS/json/etc files with prettier

@@ -5,10 +5,13 @@ on:
   push:
     branches:
       - master
-      - development
+    paths:
+      - '**/*.md'
   pull_request:
     branches:
       - master
+    paths:
+      - '**/*.md'
 jobs:
   check:
     name: Spellcheck project
