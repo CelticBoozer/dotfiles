@@ -1,8 +1,8 @@
 ---
 commitizen:
   name: cz_conventional_commits
+  path: .github/CHANGELOG.md
   tag_format: $version
   update_changelog_on_bump: true
-  version: 1.1.0
+  version: 1.2.0
   version_scheme: semver2
-  path: .github/CHANGELOG.md
