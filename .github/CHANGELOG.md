@@ -1,3 +1,21 @@
+## 1.2.2 (2024-10-15)
+
+### Fix
+
+- **.cz.yaml**: trying to fix .cz.yaml
+
+## 1.2.1 (2024-10-15)
+
+### Fix
+
+- just to check
+
+## 1.2.0 (2024-10-15)
+
+### Feat
+
+- **CHANGELOG.md**: move CHANGELOG.md to .github directory
+
 ## 1.1.0 (2024-10-15)
 
 ### Feat
