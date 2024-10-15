@@ -5,3 +5,4 @@ commitizen:
   update_changelog_on_bump: true
   version: 1.1.0
   version_scheme: semver2
+  path: .github/CHANGELOG.md
