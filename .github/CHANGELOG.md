@@ -1,4 +1,16 @@
-## 1.2.0 (2024-10-15)
+## 1.0.2 (2024-10-15)
+
+### Fix
+
+- **CHANGELOG**: fix changelog
+
+## 1.0.1 (2024-10-15)
+
+### Fix
+
+- **CHANGELOG**: fix changelog
+
+## 1.0.0 (2024-10-15)
 
 ### Feat
 
@@ -12,6 +24,7 @@
 
 ### Fix
 
+- **CHANGELOG**: try to fix CHANGELOG
 - **CHANGELOG.md**: fix CHANGELOG
 - **.cz.yaml**: fix versions in cz bump
 - **cz.yaml**: fix wrong versions in commit messages
