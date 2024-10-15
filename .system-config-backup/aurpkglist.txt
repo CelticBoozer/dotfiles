@@ -13,12 +13,15 @@ paru
 paru-debug
 pkgtools
 postman-bin
+python-commitizen
 python-convertdate
+python-decli
 python-hijri-converter
 python-holidays
 python-jdatetime
 python-kitchen
 python-korean_lunar_calendar
+python-questionary
 python-taskw
 python-xlsx2csv
 rate-mirrors

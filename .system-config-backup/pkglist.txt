@@ -1,4 +1,5 @@
 acpi
+alacritty
 archlinux-keyring
 autoconf
 automake
