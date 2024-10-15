@@ -1,5 +1,5 @@
 /*
-!.bin
+!.bin/
 !.github/
 !.gitignore
 !.gitmodules
@@ -8,11 +8,11 @@
 !.stylelintrc.json
 !.yamlfmt.yaml
 !.yamllint.yaml
-!.icons
+!.icons/
 !LICENSE
-!README.md
-!.system-config-backup
-!.wallpaper
+!.system-config-backup/
+!.wallpaper/
+!.fzfrc
 !.zshenv
 !.zshrc
 !.config/

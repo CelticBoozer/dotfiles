@@ -1,0 +1,8 @@
+--cycle
+--border=rounded
+--border-label="Find file:"
+--margin=1%
+--padding=0%
+--color=dark
+--highlight-line
+--preview 'bat -n --color=always {}'
