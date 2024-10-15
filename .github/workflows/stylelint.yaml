@@ -5,9 +5,13 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**/*.css'
   pull_request:
     branches:
       - master
+    paths:
+      - '**/*.css'
 jobs:
   lint:
     name: Check CSS with stylelint
