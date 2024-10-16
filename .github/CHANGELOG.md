@@ -15,7 +15,7 @@
 ### Feat
 
 - **CHANGELOG.md**: move CHANGELOG.md to .github directory
-- **.cz.yzml**: add commitizen config
+- **.cz.yaml**: add commitizen config
 - add fzf config. #243 implemented
 - add ripgrep config
 - migrate to the yazi. #220 implemented.
