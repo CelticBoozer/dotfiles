@@ -1,3 +1,5 @@
+# Changelog
+<!-- markdownlint-disable MD024 -->
 ## 1.0.3 (2024-10-21)
 
 ### Fix
