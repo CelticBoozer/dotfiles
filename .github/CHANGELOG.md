@@ -1,3 +1,11 @@
+# Changelog
+<!-- markdownlint-disable MD024 -->
+## 1.0.3 (2024-10-21)
+
+### Fix
+
+- **markdownlint.yaml**: fix markdownlint workflow, to lint dots
+
 ## 1.0.2 (2024-10-15)
 
 ### Fix
