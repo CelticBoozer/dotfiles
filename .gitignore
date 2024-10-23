@@ -42,6 +42,7 @@
 !.wallpaper/
 !.zsh_custom/
 !.cz.yaml
+!.editorconfig
 !.fzfrc
 !.gitignore
 !.gitmodules

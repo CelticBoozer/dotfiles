@@ -1,0 +1,10 @@
+# https://editorconfig.org config file.
+# Simply copy this file to the root of the project.
+root=true
+
+[*]
+indent_style=space
+end_of_line=lf
+charset=utf-8
+trim_trailing_whitespace=true
+insert_final_newline=false
