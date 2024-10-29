@@ -7,6 +7,7 @@
 .config/btop/btop.log
 !.config/easyeffects/
 !.config/electron-flags.conf
+!.config/environment.d/
 !.config/fontconfig/
 !.config/gtk-3.0/
 !.config/imv/
@@ -51,6 +52,7 @@
 !.stylelintrc.json
 !.yamlfmt.yaml
 !.yamllint.yaml
+!.zprofile
 !.zshenv
 !.zshrc
 !LICENSE
