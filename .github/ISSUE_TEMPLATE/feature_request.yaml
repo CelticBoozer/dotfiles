@@ -5,11 +5,10 @@ labels: ["enhancement"]
 assignees: "CelticBoozer"
 title: "[Feature] "
 body:
-  - type: markdown
+  - type: textarea
     attributes:
-      value: |
-        ## Feature Description
-        Describe the feature or improvement you would like to see.
+      label: "Feature Description"
+      description: "Describe the feature or improvement you would like to see."
   - type: textarea
     attributes:
       label: "Why This Feature Is Necessary"
