@@ -3,5 +3,5 @@
 
 # Pretty colors for better readability
 --colors=match:fg:green
---colors=path:fg:red 
+--colors=path:fg:red
 --colors=line:fg:magenta

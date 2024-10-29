@@ -1,4 +1,4 @@
-# Remember specific matches should be first. 
+# Remember specific matches should be first.
 # F.e. nvim running inside the kitty terminal should be first.
 separator = ' '
 

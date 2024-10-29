@@ -13,38 +13,38 @@ success_color=32
 error_color=31
 
 check_file() {
-	if [ ! -f "$1" ]; then
-		missing_files="$missing_files\n $1,"
-	fi
+  if [ ! -f "$1" ]; then
+    missing_files="$missing_files\n $1,"
+  fi
 }
 
 check_package() {
-	if ! pacman -Qs "$1" >/dev/null; then
-		missing_packages="$missing_packages\n $1,"
-	fi
+  if ! pacman -Qs "$1" >/dev/null; then
+    missing_packages="$missing_packages\n $1,"
+  fi
 }
 
 print_log_message() {
-	printf "\e[%dmInstallation log: %b\e[0m\n" "$1" "$2"
+  printf "\e[%dmInstallation log: %b\e[0m\n" "$1" "$2"
 }
 
 printf "\e[36mPlease, make sure you move all files to your home directory.\e[0m\n"
 printf "\e[36mAlso, the computer must have internet access and git must be installed.\e[0m\n"
 
 while true; do
-	read -rp "Do you want to continue? (y/n): " choice
-	case "$choice" in
-	[Yy])
-		break
-		;;
-	[Nn])
-		echo "Aborting..."
-		exit
-		;;
-	*)
-		echo "Invalid input. Please enter 'y' or 'n'."
-		;;
-	esac
+  read -rp "Do you want to continue? (y/n): " choice
+  case "$choice" in
+  [Yy])
+    break
+    ;;
+  [Nn])
+    echo "Aborting..."
+    exit
+    ;;
+  *)
+    echo "Invalid input. Please enter 'y' or 'n'."
+    ;;
+  esac
 done
 
 print_log_message $info_color "system installation initiated..."
@@ -65,14 +65,14 @@ check_file "${HOME}/.system-config-backup/reflector.conf"
 check_package "git"
 
 if [ -n "$missing_files" ]; then
-	print_log_message $error_color "missing files...\n $missing_files"
-	print_log_message $error_color "installation aborted."
-	exit 1
+  print_log_message $error_color "missing files...\n $missing_files"
+  print_log_message $error_color "installation aborted."
+  exit 1
 fi
 if [ -n "$missing_packages" ]; then
-	print_log_message $error_color "missing packages...\n $missing_packages"
-	print_log_message $error_color "installation aborted."
-	exit 1
+  print_log_message $error_color "missing packages...\n $missing_packages"
+  print_log_message $error_color "installation aborted."
+  exit 1
 fi
 
 # Installing packages
