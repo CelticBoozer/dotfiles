@@ -1,81 +1,81 @@
 configuration {
-    threads: 0;
-    modi: "calc,clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:~/.bin/power-menu.sh";
-    case-sensitive: false;
-    cycle: true;
-    scroll-method: 1;
-    normalize-match: true;
-    no-lazy-grab: true;
-    show-icons: true;
-    icon-theme: "Papirus";
-    markup: true;
-    drun-display-format: "{name}";
-    location: 0;
-    sidebar-mode: true;
-    hover-select: true;
-    eh: 1;
-    terminal: "kitty";
-    display-drun: "Application";
-    display-calc: "Calculator";
-    display-clipboard: "Clipboard";
+  threads: 0;
+  modi: "calc,clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:~/.bin/power-menu.sh";
+  case-sensitive: false;
+  cycle: true;
+  scroll-method: 1;
+  normalize-match: true;
+  no-lazy-grab: true;
+  show-icons: true;
+  icon-theme: "Papirus";
+  markup: true;
+  drun-display-format: "{name}";
+  location: 0;
+  sidebar-mode: true;
+  hover-select: true;
+  eh: 1;
+  terminal: "kitty";
+  display-drun: "Application";
+  display-calc: "Calculator";
+  display-clipboard: "Clipboard";
 }
 
 @theme "/dev/null"
 
 * {
-    background-color: #32302f;
-    font-family: "JetBrains Mono";
-    text-color: #d4be98;
+  background-color: #32302f;
+  font-family: "JetBrains Mono";
+  text-color: #d4be98;
 }
 
 #window {
-    border: 0.2%;
-    border-radius: 10px;
-    transparency: "real";
-    width: 35%;
-    height: 500;
+  border: 0.2%;
+  border-radius: 10px;
+  transparency: "real";
+  width: 35%;
+  height: 500;
 }
 
 #scrollbar {
-    enabled: true;
-    background-color: #252423;
-    handle-color: #3c3836;
-    border-color: #000000;
+  enabled: true;
+  background-color: #252423;
+  handle-color: #3c3836;
+  border-color: #000000;
 }
 
 #listview {
-    columns: 1;
-    fixed-height: false;
-    dynamic: true;
-    scrollbar: true;
-    spacing: 10;
+  columns: 1;
+  fixed-height: false;
+  dynamic: true;
+  scrollbar: true;
+  spacing: 10;
 }
 
 #prompt,
 entry {
-    padding: 10;
+  padding: 10;
 }
 
 #textbox {
-    padding: 20;
+  padding: 20;
 }
 
 #element-text,
 button,
 listview {
-    padding: 5;
+  padding: 5;
 }
 
 #element.selected {
-    background-color: #665c54;
+  background-color: #665c54;
 }
 
 element-text, element-icon {
-    background-color: inherit;
-    text-color:       inherit;
+  background-color: inherit;
+  text-color:       inherit;
 }
 
 #button.selected {
-    background-color: #e78a4e;
-    text-color: #252423;
+  background-color: #e78a4e;
+  text-color: #252423;
 }

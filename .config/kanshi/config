@@ -1,11 +1,11 @@
 profile right-full-hd {
-    output eDP-1 mode 1920x1080 position 0,0
-    output HDMI-A-1 mode 1920x1080 position 1920,0
-    exec swaymsg workspace 1, move workspace to output '"eDP-1"'
-    exec swaymsg workspace 2, move workspace to output '"HDMI-A-1"'
+  output eDP-1 mode 1920x1080 position 0,0
+  output HDMI-A-1 mode 1920x1080 position 1920,0
+  exec swaymsg workspace 1, move workspace to output '"eDP-1"'
+  exec swaymsg workspace 2, move workspace to output '"HDMI-A-1"'
 }
 
 profile laptop-only {
-    output eDP-1 mode 1920x1080 position 0,0
-    exec swaymsg workspace 1, move workspace to output '"eDP-1"'
+  output eDP-1 mode 1920x1080 position 0,0
+  exec swaymsg workspace 1, move workspace to output '"eDP-1"'
 }
