@@ -26,13 +26,6 @@ plugins=(fast-syntax-highlighting
 
 source $ZSH/oh-my-zsh.sh
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nvim'
-else
-  export EDITOR='nvim'
-fi
-
 # Set aliases
 alias maint="sh $HOME/.bin/maintenance.sh"
 alias sysupg="sh $HOME/.bin/upgrade-system.sh"

@@ -26,6 +26,7 @@ python-taskw
 python-xlsx2csv
 rate-mirrors
 rofi-lbonn-wayland-git
+selectdefaultapplication-git
 skypeforlinux-bin
 swaykbdd
 swaylock-effects
