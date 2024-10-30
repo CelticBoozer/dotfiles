@@ -48,11 +48,11 @@
 !.gitignore
 !.gitmodules
 !.gtkrc-2.0
+!.profile
 !.ripgreprc
 !.stylelintrc.json
 !.yamlfmt.yaml
 !.yamllint.yaml
-!.zprofile
 !.zshenv
 !.zshrc
 !LICENSE
