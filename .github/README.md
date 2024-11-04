@@ -99,8 +99,8 @@ All the info about my setup.
 | **find replacement**    | [fd](https://github.com/sharkdp/fd/)                                                            |
 | **cp/mv replacement**   | [advcpmv](https://github.com/jarun/advcpmv)                                                     |
 | **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                              |
-| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)                                                         |
-| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/)                                               |
+| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)  [:gear:](../.config/.fzfrc)                            |
+| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/) [:gear:](../.config/.ripgreprc)               |
 | **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                      |
 | **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                            |
 | **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                      |

@@ -1,13 +1,13 @@
 configuration {
   threads: 0;
-  modi: "calc,clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:~/.bin/power-menu.sh";
+  modi: "calc,Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
   case-sensitive: false;
   cycle: true;
   scroll-method: 1;
   normalize-match: true;
   no-lazy-grab: true;
   show-icons: true;
-  icon-theme: "Papirus";
+  icon-theme: "Gruvbox-Material-Dark";
   markup: true;
   drun-display-format: "{name}";
   location: 0;
@@ -17,7 +17,6 @@ configuration {
   terminal: "kitty";
   display-drun: "Application";
   display-calc: "Calculator";
-  display-clipboard: "Clipboard";
 }
 
 @theme "/dev/null"
