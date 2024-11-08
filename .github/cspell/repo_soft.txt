@@ -57,3 +57,4 @@ aurpkglist
 pkglist
 logind
 Aenami
+scriptable

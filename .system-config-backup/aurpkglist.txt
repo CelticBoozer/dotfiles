@@ -26,13 +26,15 @@ python-taskw
 python-xlsx2csv
 rate-mirrors
 rofi-lbonn-wayland-git
+rofi-power-menu
+rofi-ttv-git
 skypeforlinux-bin
+spotube-bin
 swaykbdd
 swaylock-effects
 swayosd-git
 sworkstyle
 sysz
-tuiarchiver-git
 vesktop-bin
 viber
 waybar-crypto
@@ -41,3 +43,4 @@ windscribe-v2-bin
 wttrbar
 xcursor-simp1e-gruvbox-dark
 xdg-desktop-portal-termfilechooser-git
+youtube-dl

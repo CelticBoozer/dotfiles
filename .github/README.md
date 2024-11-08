@@ -99,8 +99,8 @@ All the info about my setup.
 | **find replacement**    | [fd](https://github.com/sharkdp/fd/)                                                            |
 | **cp/mv replacement**   | [advcpmv](https://github.com/jarun/advcpmv)                                                     |
 | **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                              |
-| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)                                                         |
-| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/)                                               |
+| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)  [:gear:](../.config/.fzfrc)                            |
+| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/) [:gear:](../.config/.ripgreprc)               |
 | **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                      |
 | **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                            |
 | **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                      |
@@ -116,7 +116,7 @@ All the info about my setup.
 | **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                       |
 | **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)             |
 | **Note taking app**  | [Obsidian](https://obsidian.md/)                                                      |
-| **Video player**     | [MPV](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                   |
+| **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                   |
 | **Image viewer**     | [imv](https://github.com/eXeC64/imv/) [:gear:](../.config/imv/)                       |
 | **Audio effects**    | [Easyeffects](https://github.com/wwmm/easyeffects/) [:gear:](../.config/easyeffects/) |
 | **Image editor**     | [Krita](https://krita.org/)                                                           |
