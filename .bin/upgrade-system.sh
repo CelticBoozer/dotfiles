@@ -20,7 +20,3 @@ paru -Sccd
 # Update github repos
 printf "\e[36mUpdate submodules:\e[0m\n"
 git submodule update --recursive --remote
-
-# Update nnn plugins
-printf "\e[36mUpdate nnn plugins:\e[0m\n"
-sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
