@@ -122,7 +122,6 @@ reiserfsprogs
 ripgrep
 rmlint
 rmlint-shredder
-rofi-calc
 rofi-wayland
 rtorrent
 rust

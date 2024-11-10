@@ -22,8 +22,6 @@
 .config/OpenRGB/plugins/*.so
 !.config/paru/
 !.config/pulsemixer.cfg
-!.config/qalculate/
-.config/qalculate/qalc.history
 !.config/rofi/
 !.config/swappy/
 !.config/sway/
