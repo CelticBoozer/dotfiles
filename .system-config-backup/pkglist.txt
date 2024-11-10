@@ -1,5 +1,4 @@
 acpi
-alacritty
 archlinux-keyring
 autoconf
 automake
@@ -124,6 +123,7 @@ ripgrep
 rmlint
 rmlint-shredder
 rofi-calc
+rofi-wayland
 rtorrent
 rust
 s-nail

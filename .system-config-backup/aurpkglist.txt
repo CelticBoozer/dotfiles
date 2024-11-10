@@ -25,7 +25,6 @@ python-questionary
 python-taskw
 python-xlsx2csv
 rate-mirrors
-rofi-lbonn-wayland-git
 rofi-power-menu
 rofi-ttv-git
 skypeforlinux-bin

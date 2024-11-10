@@ -1,6 +1,6 @@
 configuration {
   threads: 0;
-  modi: "calc,Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
+  modi: "Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
   case-sensitive: false;
   cycle: true;
   scroll-method: 1;
