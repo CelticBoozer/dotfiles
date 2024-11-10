@@ -14,7 +14,6 @@ in the home directory. It also contains lists of installed packages.
   - *94-check-pacnew.hook* - searches for .pacnew files and reports if any are
     present.
   - *95-backup-configs.hook* - copies the configuration files in .system-config-backup.
-  - *96-build-nnn.hook* - clones and builds nnn with a flag to support icons.
 - **reflector** - contains the configuration of the reflector.
 - **systemd** - contains the configuration of the logind.
 - **tlp** - contains the configuration of the tlp laptop battery utility.
