@@ -6,10 +6,6 @@ This directory contains scripts that allow me to automate some of my work.
   which are not in $XDG_CONFIG but in other places like /etc. The script is
   automatically started by the pacman hook 95-backup-configs.hook. This script
   requires your customization: change **celtic** to **<your_user_name>**.
-- **build-nnn.sh** - when updating nnn, clones and builds it with a flag to
-  support icons. The script is automatically started by the pacman hook
-  96-build-nnn.hook. This script requires your customization: change **celtic**
-  to **<your_user_name>**.
 - **check-pacnew.sh** - searches for .pacnew files and reports if any are
   present. It is started automatically by the pacman hook 94-check-pacnew.hook.
 - **cliphist-rofi.sh** - allows me to control clipboard history with rofi.
