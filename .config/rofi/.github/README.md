@@ -11,8 +11,6 @@ Unfortunately, the original rofi doesn't support Wayland. Therefore, I use the
 
 ## Modes
 
-- [rofi-calc](https://github.com/svenstaro/rofi-calc/) is rofi's mode as a
-  regular calculator. ![rofi-calc](rofi-calc.png "rofi-calc")
 - [rofi-cliphist](https://github.com/sentriz/cliphist/) is rofi's mode as a
   clipboard manager with image support.
   ![rofi-cliphist](rofi-cliphist.png "rofi-cliphist")
