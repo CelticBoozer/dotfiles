@@ -19,8 +19,6 @@ This directory contains scripts that allow me to automate some of my work.
   requires your customization: change **celtic** to **<your_user_name>**.
 - **maintenance.sh** - performs some frequent maintenance tasks on my system.
   zsh alias - maint.
-- **power-menu.sh** - allows me to control system reboot, shutdown, hibernation,
-  etc with rofi.
 - **random-background.sh** - randomly changes the wallpaper every five minutes.
 - **update-electron-symlinks.sh** - automatically started by the pacman hook
   93-electron.hook to create missing and remove unnecessary symlinks for each
