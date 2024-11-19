@@ -1,0 +1,63 @@
+{
+  "autoReconnect": false,
+  "afterFillSorting": "sortByMatchingCredentials",
+  "afterFillSortingTotp": "sortByRelevantEntry",
+  "autoCompleteUsernames": true,
+  "showGroupNameInAutocomplete": true,
+  "autoFillAndSend": false,
+  "autoFillSingleEntry": false,
+  "autoRetrieveCredentials": true,
+  "autoSubmit": false,
+  "checkUpdateKeePassXC": 0,
+  "colorTheme": "system",
+  "clearCredentialsTimeout": 10,
+  "credentialSorting": "sortByGroupAndTitle",
+  "debugLogging": false,
+  "defaultGroup": "",
+  "defaultGroupAlwaysAsk": false,
+  "downloadFaviconAfterSave": false,
+  "redirectAllowance": 1,
+  "saveDomainOnly": true,
+  "showGettingStartedGuideAlert": true,
+  "showTroubleshootingGuideAlert": true,
+  "showLoginFormIcon": true,
+  "showLoginNotifications": true,
+  "showNotifications": true,
+  "showOTPIcon": true,
+  "usePasswordGeneratorIcons": false,
+  "useObserver": true,
+  "usePredefinedSites": true,
+  "sitePreferences": [
+    {
+      "url": "https://accounts.binance.com/ru/*",
+      "ignore": "ignoreNothing",
+      "usernameOnly": true
+    },
+    {
+      "url": "https://langame.ru/*",
+      "ignore": "ignoreNormal",
+      "usernameOnly": false
+    },
+    {
+      "url": "https://langame.by/*",
+      "ignore": "ignoreNormal",
+      "usernameOnly": false
+    }
+  ],
+  "defined-custom-fields": {
+    "https://accounts.binance.com": {
+      "username": [
+        "/html/body/div/div/main/div[2]/div/div[2]/div[2]/div/form/div/div[2]/div/div/input",
+        "INPUT text username "
+      ],
+      "fields": []
+    }
+  },
+  "useMonochromeToolbarIcon": true,
+  "passkeys": false,
+  "passkeysFallback": true,
+  "autoFillSingleTotp": false,
+  "useCompactMode": false,
+  "bannerPosition": 1,
+  "defaultPasskeyGroup": ""
+}
