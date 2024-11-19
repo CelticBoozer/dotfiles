@@ -8,6 +8,7 @@
 !.config/easyeffects/
 !.config/electron-flags.conf
 !.config/environment.d/
+!.config/firefox/
 !.config/fontconfig/
 !.config/gtk-3.0/
 !.config/imv/

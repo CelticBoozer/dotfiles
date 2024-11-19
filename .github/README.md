@@ -110,18 +110,18 @@ All the info about my setup.
 
 ### :window: GUI software
 
-| Entry                | App                                                                                   |
-| -------------------- | ------------------------------------------------------------------------------------- |
-| **Web browser**      | [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/)         |
-| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                       |
-| **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)             |
-| **Note taking app**  | [Obsidian](https://obsidian.md/)                                                      |
-| **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                   |
-| **Image viewer**     | [imv](https://github.com/eXeC64/imv/) [:gear:](../.config/imv/)                       |
-| **Audio effects**    | [Easyeffects](https://github.com/wwmm/easyeffects/) [:gear:](../.config/easyeffects/) |
-| **Image editor**     | [Krita](https://krita.org/)                                                           |
-| **Office apps**      | [LibreOffice](https://www.libreoffice.org/)                                           |
-| **Password manager** | [KeePassXC](https://github.com/keepassxreboot/keepassxc/)                             |
+| Entry                | App                                                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Web browser**      | [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/)  [:gear:](../.config/firefox/) |
+| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                                              |
+| **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)                                    |
+| **Note taking app**  | [Obsidian](https://obsidian.md/)                                                                             |
+| **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                                          |
+| **Image viewer**     | [imv](https://github.com/eXeC64/imv/) [:gear:](../.config/imv/)                                              |
+| **Audio effects**    | [Easyeffects](https://github.com/wwmm/easyeffects/) [:gear:](../.config/easyeffects/)                        |
+| **Image editor**     | [Krita](https://krita.org/)                                                                                  |
+| **Office apps**      | [LibreOffice](https://www.libreoffice.org/)                                                                  |
+| **Password manager** | [KeePassXC](https://github.com/keepassxreboot/keepassxc/)                                                    |
 
 ### :paintbrush: Appearance
 
