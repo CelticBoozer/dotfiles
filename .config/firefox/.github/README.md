@@ -22,7 +22,7 @@ Main features of this config:
 - [Sidebery](https://github.com/mbnuqw/sidebery) [:gear:](../extensions/sidebery.json)
 - [Auto Tab Discard](https://github.com/rNeomy/auto-tab-discard) [:gear:](../extensions/auto-tab-discard.json)
 - [Metamask](https://github.com/MetaMask/metamask-extension)
-- [Dark Reader](https://github.com/darkreader/darkreader) [:gear:](dark-reader.json)
+- [Dark Reader](https://github.com/darkreader/darkreader) [:gear:](../extensions/dark-reader.json)
 - [Firefox Color](https://github.com/mozilla/FirefoxColor)
 
 ## :hammer_and_wrench: Setup

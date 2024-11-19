@@ -58,3 +58,5 @@ pkglist
 logind
 Aenami
 scriptable
+Vimium
+Sidebery
