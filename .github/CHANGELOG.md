@@ -1,5 +1,6 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
+<!-- cSpell:disable -->
 ## 1.1.0 (2024-11-21)
 
 ### Feat
