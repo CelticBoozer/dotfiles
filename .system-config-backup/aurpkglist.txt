@@ -6,9 +6,9 @@ google-chrome
 grimshot
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
-hide-client
 intellij-idea-community-edition-jre
 lazydocker
+pacnews-neovim-git
 paru
 paru-debug
 pkgtools
@@ -27,7 +27,6 @@ python-xlsx2csv
 rate-mirrors
 rofi-power-menu
 rofi-ttv-git
-skypeforlinux-bin
 spotube-bin
 swaykbdd
 swaylock-effects
