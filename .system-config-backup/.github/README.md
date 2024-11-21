@@ -15,5 +15,5 @@ in the home directory. It also contains lists of installed packages.
     present.
   - *95-backup-configs.hook* - copies the configuration files in .system-config-backup.
 - **reflector** - contains the configuration of the reflector.
-- **systemd** - contains the configuration of the logind.
+- **systemd** - contains the configuration of the systemd.
 - **tlp** - contains the configuration of the tlp laptop battery utility.

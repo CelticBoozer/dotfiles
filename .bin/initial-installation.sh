@@ -131,6 +131,7 @@ sudo cp "${HOME}/.system-config-backup/systemd/logind.conf" "/etc/systemd/logind
 sudo cp "${HOME}/.system-config-backup/tlp/tlp.conf" "/etc/tlp.conf"
 sudo cp "${HOME}/.system-config-backup/greetd/config.toml" "/etc/greetd/config.toml"
 sudo cp "${HOME}/.system-config-backup/reflector/reflector.conf" "/etc/xdg/reflector/reflector.conf"
+sudo cp "${HOME}/.system-config-backup/systemd/resolved.conf" "/etc/systemd/resolved.conf"
 print_log_message $success_color "system configs has been copied."
 
 # Start some daemons

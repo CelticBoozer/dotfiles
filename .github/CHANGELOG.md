@@ -1,5 +1,33 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
+<!-- cSpell:disable -->
+## 1.1.0 (2024-11-21)
+
+### Feat
+
+- **FUNDING.yaml**: add funding yaml file and donation in README
+- **firefox**: add firefox backup. All plugins, etc
+- **rofi-power-menu**: migrate from modified script to package
+- **sworkstyle**: add missing sworkstyle icons
+- **mpv**: added good mpv configuration
+- add most needed apps to mime
+- **.editorconfig**: add .editorconfig file
+
+### Fix
+
+- **rofi**: fix rofi fails because of rofi-calc support deprecated
+- **nnn**: delete nnn update plugin from update script
+- fix problem with envvars
+- fix problem with bug and feature templates
+- fix shellcheck workflow, to do not fail on .zprofile
+- **.editorconfig**: add .editorconfig option, to add new line at EOF
+- fix problem with environment variables declared in .zshenv and ingrore by sway
+
+### Refactor
+
+- fix few things to let ci complete successfuly
+- A bit code refactor in rofi and sway
+
 ## 1.0.3 (2024-10-21)
 
 ### Fix

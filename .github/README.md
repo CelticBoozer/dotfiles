@@ -145,6 +145,7 @@ If you want to install my dotfiles, here are some tips and recommendations.
 5. Run the initial-installation script `sh .bin/initial-installation.sh`. This
    script will install all the necessary packages and move all the necessary
    configuration files to the system directories.
+6. Configure Firefox manually. Follow the [instruction](../.config/firefox/).
 
 > NOTE: you can adjust the packages by editing
   `.system-config-backup/aurpkglist.txt` and `.system-config-backup/pkglist.txt`.
@@ -164,3 +165,23 @@ repository. Or you can donate.
 ### :star: Star history
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CelticBoozer/dotfiles&type=Timeline&theme=dark)](https://star-history.com/#CelticBoozer/dotfiles&Timeline)
+
+### :coin: Donation
+<!-- markdownlint-disable MD033 -->
+<div style="display: flex; justify-content: space-around; align-items: center;">
+
+<div style="text-align: center;">
+  <img src="assets/USDT.jpg" alt="USDT-TRC20" style="width: 150px;">
+  <p>USDT TRC20</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="assets/BitCoin.jpg" alt="BTC" style="width: 150px;">
+  <p>BTC</p>
+</div>
+
+<div style="text-align: center;">
+  <img src="assets/ETH.jpg" alt="ETH" style="width: 150px;">
+  <p>ETH</p>
+</div>
+</div>
