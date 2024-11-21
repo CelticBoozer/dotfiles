@@ -176,7 +176,7 @@ repository. Or you can donate.
 </div>
 
 <div style="text-align: center;">
-  <img src="assets/BitCoin.jpg" alt="BTC" style="width: 150px;">
+  <img src="assets/BTC.jpg" alt="BTC" style="width: 150px;">
   <p>BTC</p>
 </div>
 
