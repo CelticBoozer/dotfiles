@@ -167,21 +167,9 @@ repository. Or you can donate.
 [![Star History Chart](https://api.star-history.com/svg?repos=CelticBoozer/dotfiles&type=Timeline&theme=dark)](https://star-history.com/#CelticBoozer/dotfiles&Timeline)
 
 ### :coin: Donation
-<!-- markdownlint-disable MD033 -->
-<div style="display: flex; justify-content: space-around; align-items: center;">
 
-<div style="text-align: center;">
-  <img src="assets/USDT.jpg" alt="USDT-TRC20" style="width: 150px;">
-  <p>USDT TRC20</p>
-</div>
-
-<div style="text-align: center;">
-  <img src="assets/BitCoin.jpg" alt="BTC" style="width: 150px;">
-  <p>BTC</p>
-</div>
-
-<div style="text-align: center;">
-  <img src="assets/ETH.jpg" alt="ETH" style="width: 150px;">
-  <p>ETH</p>
-</div>
-</div>
+| ![USDT-TRC20](assets/USDT.jpg)     | ![BTC](assets/BTC.jpg)                     | ![ETH](assets/ETH.jpg)                     |
+|:----------------------------------:|:------------------------------------------:|:------------------------------------------:|
+| USDT TRC20                         | BTC                                        | ETH                                        |
+<!-- cspell:disable-next-line -->
+| TGhY5bCn12EDP3MGgs8Qg4YerczhP3PsC5 | bc1qru2p84r3zecva68e804jtjqp923mx2eekqwg3a | 0xb00d88737B0BD4f5cb5fc7519b3d27045b796ceb |
