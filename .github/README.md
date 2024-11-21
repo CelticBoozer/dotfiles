@@ -171,4 +171,5 @@ repository. Or you can donate.
 | ![USDT-TRC20](assets/USDT.jpg)     | ![BTC](assets/BTC.jpg)                     | ![ETH](assets/ETH.jpg)                     |
 |:----------------------------------:|:------------------------------------------:|:------------------------------------------:|
 | USDT TRC20                         | BTC                                        | ETH                                        |
+<!-- cspell:disable-next-line -->
 | TGhY5bCn12EDP3MGgs8Qg4YerczhP3PsC5 | bc1qru2p84r3zecva68e804jtjqp923mx2eekqwg3a | 0xb00d88737B0BD4f5cb5fc7519b3d27045b796ceb |
