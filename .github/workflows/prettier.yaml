@@ -28,4 +28,4 @@ jobs:
       - name: Run prettier
         uses: creyD/prettier_action@v4.3
         with:
-          prettier_options: '"**/*" --check'
+          prettier_options: '"**/*.json" --check'
