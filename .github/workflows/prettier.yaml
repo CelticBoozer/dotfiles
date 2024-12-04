@@ -7,11 +7,17 @@ on:
       - master
     paths:
       - '**/*.css'
+      - '**/*.json'
+      - '.config/OpenRGB/plugins/settings/*'
+      - '.config/waybar/config'
   pull_request:
     branches:
       - master
     paths:
       - '**/*.css'
+      - '**/*.json'
+      - '.config/OpenRGB/plugins/settings/*'
+      - '.config/waybar/config'
 jobs:
   format_check:
     name: Check CSS/json/etc files with prettier

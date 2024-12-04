@@ -81,6 +81,7 @@ m4
 make
 man-db
 man-pages
+maven
 mdadm
 mpv
 msmtp-mta
