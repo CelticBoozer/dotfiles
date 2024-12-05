@@ -25,6 +25,8 @@ python-questionary
 python-taskw
 python-xlsx2csv
 rate-mirrors
+rmlint
+rmlint-shredder
 rofi-power-menu
 rofi-ttv-git
 spotube-bin
