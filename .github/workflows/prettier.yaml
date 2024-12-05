@@ -31,3 +31,4 @@ jobs:
           dry: true
           prettier_options: >
             "**/{.css,*.json}" --check
+
