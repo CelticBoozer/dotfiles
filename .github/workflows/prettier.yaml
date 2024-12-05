@@ -29,4 +29,5 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           dry: true
-          prettier_options: "**/{.css,*.json} --check"
+          prettier_options: >
+            "**/{.css,*.json}" --check
