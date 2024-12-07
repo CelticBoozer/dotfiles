@@ -32,5 +32,5 @@ jobs:
         with:
           dry: true
           prettier_options: >
-            "**/{*.css,*.json}" ".config/OpenRGB/plugins/settings/**/*" ".config/waybar/config" --check
-
+            "**/{*.css,*.json,*.html}" ".config/OpenRGB/plugins/settings/**/*" ".config/waybar/config"
+            --check
