@@ -8,8 +8,6 @@ on:
     paths:
       - '**/*.css'
       - '**/*.json'
-      - '.config/OpenRGB/plugins/settings/**/*'
-      - '.config/waybar/config'
       - '**/*.html'
   pull_request:
     branches:
@@ -17,8 +15,6 @@ on:
     paths:
       - '**/*.css'
       - '**/*.json'
-      - '.config/OpenRGB/plugins/settings/*'
-      - '.config/waybar/config'
       - '**/*.html'
 jobs:
   format_check:
@@ -32,5 +28,4 @@ jobs:
         with:
           dry: true
           prettier_options: >
-            "**/{*.css,*.json,*.html}" "**/OpenRGB/plugins/settings/**/*" "**/waybar/config"
-            --check
+            "**/{*.css,*.json,*.html}" --check

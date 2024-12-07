@@ -45,7 +45,6 @@ grep
 groff
 groovy
 grub
-gtk4-layer-shell
 gvfs-mtp
 gzip
 haskell-pandoc
@@ -69,7 +68,6 @@ ld-lsb
 lib32-libx11
 lib32-pam
 libreoffice-fresh
-libsass
 libtool
 linux-firmware
 linux-zen
@@ -85,7 +83,6 @@ man-db
 man-pages
 maven
 mdadm
-meson
 mpv
 msmtp-mta
 mtpfs
@@ -96,7 +93,6 @@ neovim
 net-tools
 netctl
 networkmanager
-ninja
 nodejs
 noto-fonts-emoji
 npm
@@ -116,12 +112,12 @@ pkgconf
 playerctl
 polkit
 postgresql
+prettier
 pulsemixer
 python-pillow
 python-pip
 python-pystray
 python-requests
-python-tqdm
 qemu-desktop
 reflector
 reiserfsprogs
@@ -130,7 +126,6 @@ rofi-wayland
 rtorrent
 rust
 s-nail
-sassc
 sed
 steam
 sudo
