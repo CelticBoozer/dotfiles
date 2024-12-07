@@ -45,10 +45,6 @@
     "trash.unloaded": false,
     "trash.whitelist-url": [],
     "whitelist": [
-      "www.youtube.com",
-      "www.udemy.com",
-      "kinakipa.site",
-      "anibel.net",
       "swap.bingx.com",
       "bingx.com",
       "hd.kinopoisk.ru",
@@ -58,7 +54,6 @@
       "www.bybit.com",
       "www.binance.com",
       "futures.mexc.com",
-      "www.twitch.tv",
       "www.kucoin.com",
       "www.bitget.com",
       "hyperskill.org",

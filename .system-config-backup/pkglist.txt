@@ -81,6 +81,7 @@ m4
 make
 man-db
 man-pages
+maven
 mdadm
 mpv
 msmtp-mta
@@ -111,6 +112,7 @@ pkgconf
 playerctl
 polkit
 postgresql
+prettier
 pulsemixer
 python-pillow
 python-pip
@@ -120,8 +122,6 @@ qemu-desktop
 reflector
 reiserfsprogs
 ripgrep
-rmlint
-rmlint-shredder
 rofi-wayland
 rtorrent
 rust

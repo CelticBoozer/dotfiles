@@ -7,11 +7,15 @@ on:
       - master
     paths:
       - '**/*.css'
+      - '**/*.json'
+      - '**/*.html'
   pull_request:
     branches:
       - master
     paths:
       - '**/*.css'
+      - '**/*.json'
+      - '**/*.html'
 jobs:
   format_check:
     name: Check CSS/json/etc files with prettier
@@ -22,4 +26,6 @@ jobs:
       - name: Run prettier
         uses: creyD/prettier_action@v4.3
         with:
-          prettier_options: --check
+          dry: true
+          prettier_options: >
+            "**/{*.css,*.json,*.html}" --check

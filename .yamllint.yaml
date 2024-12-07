@@ -21,6 +21,8 @@ rules:
   key-duplicates:
     forbid-duplicated-merge-keys: true
   line-length:
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
     max: 100
     level: warning
   new-lines:
