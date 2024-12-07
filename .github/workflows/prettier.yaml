@@ -8,8 +8,9 @@ on:
     paths:
       - '**/*.css'
       - '**/*.json'
-      - '.config/OpenRGB/plugins/settings/*'
+      - '.config/OpenRGB/plugins/settings/**/*'
       - '.config/waybar/config'
+      - '**/*.html'
   pull_request:
     branches:
       - master
@@ -18,6 +19,7 @@ on:
       - '**/*.json'
       - '.config/OpenRGB/plugins/settings/*'
       - '.config/waybar/config'
+      - '**/*.html'
 jobs:
   format_check:
     name: Check CSS/json/etc files with prettier
@@ -30,5 +32,6 @@ jobs:
         with:
           dry: true
           prettier_options: >
-            "**/{.css,*.json}" --check
+            "**/{*.css,*.json}" ".config/OpenRGB/plugins/settings/**/*" ".config/waybar/config"
+            --check
 
