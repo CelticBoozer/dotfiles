@@ -3,6 +3,8 @@
 separator = ' '
 
 [matching]
+'jetbrains-idea-ce' = ''
+'jetbrains-idea' = ''
 '/Element/' = '󰯸'
 '/Picture-in-Picture/' = '󰹗'
 '/Private Browsing/' = '󱀣'
@@ -16,8 +18,6 @@ separator = ' '
 '/yazi/' = ''
 '/pulsemixer/' = ''
 'deno' = ''
-'jetbrains-idea-ce' = ''
-'jetbrains-idea' = ''
 'Postman' = ''
 'steam' = ''
 'kitty' = ''

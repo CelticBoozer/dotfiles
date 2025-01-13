@@ -2,6 +2,7 @@ advcpmv
 calcure
 ddcui
 debtap
+exercism
 google-chrome
 grimshot
 gruvbox-material-gtk-theme-git

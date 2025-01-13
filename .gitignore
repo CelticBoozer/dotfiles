@@ -34,6 +34,8 @@
 !.config/user-dirs.locale
 !.config/waybar/
 !.config/wob/
+!.config/yamlfmt/
+!.config/yamllint/
 !.config/yazi/
 !.config/zathura/
 !.github/
@@ -47,6 +49,7 @@
 !.gitignore
 !.gitmodules
 !.gtkrc-2.0
+!.ideavimrc
 !.profile
 !.ripgreprc
 !.stylelintrc.json
