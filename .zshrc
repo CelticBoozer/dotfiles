@@ -35,3 +35,5 @@ alias cp="cpg -g"
 alias mv="mvg -g"
 alias cat="bat"
 alias find="fd -I -c always"
+
+export PATH=$PATH:/home/celtic/.millennium/ext/bin

@@ -1,3 +1,4 @@
+7zip
 acpi
 archlinux-keyring
 autoconf
@@ -100,7 +101,6 @@ ntfs-3g
 obsidian
 openrgb
 openssh
-p7zip
 pacman
 pacman-contrib
 pandoc-cli
@@ -114,9 +114,12 @@ polkit
 postgresql
 prettier
 pulsemixer
+python-iniconfig
 python-pillow
 python-pip
+python-pluggy
 python-pystray
+python-pytest
 python-requests
 qemu-desktop
 reflector
