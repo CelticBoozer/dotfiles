@@ -114,12 +114,9 @@ polkit
 postgresql
 prettier
 pulsemixer
-python-iniconfig
 python-pillow
 python-pip
-python-pluggy
 python-pystray
-python-pytest
 python-requests
 qemu-desktop
 reflector
