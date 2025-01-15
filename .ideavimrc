@@ -3,6 +3,8 @@
 set clipboard=unnamedplus
 set guicursor=n-v-c:block,i-ci-ve:ver20,r-cr-o:hor20
 set hlsearch
+set ignorecase
+set incsearch
 set showcmd
 set showmode
 set smartcase
@@ -19,6 +21,7 @@ let mapleader ="\"
 " ==================================================================================================
 set nerdtree
 set sneak
+set surround
 
 " Highlightedyank settings
 set highlightedyank
@@ -73,8 +76,8 @@ let g:WhichKeyDesc_go_to_back = "<leader>gb Go back"
 let g:WhichKeyDesc_go_to_forward = "<leader>gn Go forward"
 
 let g:WhichKeyDesc_action = "<leader>a Actions"
-let g:WhichKeyDesc_action_context = "<leader>ac ShowIntentionActions"
-let g:WhichKeyDesc_action_search = "<leader>as SearchEverywhere"
+let g:WhichKeyDesc_action_context = "<leader>am Show intention actions"
+let g:WhichKeyDesc_action_search = "<leader>as Search everywhere"
 let g:WhichKeyDesc_action_generate = "<leader>ag Generate"
 
 let g:WhichKeyDesc_comment = "<leader>c Comment"
