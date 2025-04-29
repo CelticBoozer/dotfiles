@@ -1,36 +1,105 @@
-set font "ttf-hack 10"
-set completion-bg "#32302f"
-set completion-fg "#d4be98"
-set completion-group-bg "#252423"
-set completion-group-fg "#d4be98"
-set completion-highlight-bg "#d4be98"
-set completion-highlight-fg "#32302f"
-set default-bg "#32302f"
-set default-fg "#d4be98"
-set inputbar-bg "#32302f"
-set inputbar-fg "#a9b665"
-set notification-bg "#a9b665"
-set notification-fg "#252423"
-set notification-error-bg "#ea6962"
-set notification-error-fg "#252423"
-set notification-warning-bg "#d8a657"
-set notification-warning-fg "#252423"
-set statusbar-bg "#252423"
-set statusbar-fg "#d4be98"
-set statusbar-h-padding 10
-set statusbar-v-padding 5
-set incremental-search "true"
-set highlight-fg rgba(37,36,35,1)
-set highlight-color rgba(137,180,130,0.5)
-set highlight-active-color rgba(231,138,78,0.5)
-set recolor "true"
-set recolor-lightcolor "#ddc7a1"
-set recolor-darkcolor "#252423"
-set recolor-keephue "true"
-set recolor-reverse-video "true"
-set page-padding 10
-set show-directories "true"
-set show-hidden "true"
-set show-recent 5
-set guioptions vs
-set selection-clipboard clipboard
+# -------------------
+# Theme & Color Settings
+# -------------------
+# Set the primary font (ensure 'ttf-hack' is installed on your system)
+set font "ttf-hack 10"                # Monospace font with excellent Unicode support
+
+# Define the main color palette for the user interface
+set default-bg "#32302f"              # Background color (dark theme)
+set default-fg "#d4be98"              # Primary text color, chosen for legibility
+
+# -------------------
+# Completion Dialog Styling
+# -------------------
+# Customize the completion dialog (pop-up menus, suggestions, etc.)
+set completion-bg "#32302f"           # Background matches primary dark background
+set completion-fg "#d4be98"           # Foreground (text) stays consistent with theme
+set completion-group-bg "#252423"     # Slightly darker for group separators
+set completion-group-fg "#d4be98"     # Group title color for clarity
+set completion-highlight-bg "#d4be98" # Background for highlighted items (inversion creates emphasis)
+set completion-highlight-fg "#32302f" # Text color for highlighted items, ensures contrast
+
+# -------------------
+# Interface Components
+# -------------------
+# Input Bar: Where user commands are typed
+set inputbar-bg "#32302f"             # Input bar background same as main UI for consistency
+set inputbar-fg "#a9b665"             # Accent color (green) to indicate active command entry
+
+# Status Bar: Displays file info and status messages
+set statusbar-bg "#252423"            # Darker background for status bar to set it apart
+set statusbar-fg "#d4be98"            # Text remains clear and consistent with overall theme
+set statusbar-h-padding 10            # Horizontal spacing to avoid cramped text
+set statusbar-v-padding 5             # Vertical padding for better aesthetics
+
+# Notifications: For errors, warnings, and general messages
+set notification-bg "#a9b665"         # Background for success/info notifications
+set notification-fg "#252423"         # Dark text for clear readability on light backgrounds
+set notification-error-bg "#ea6962"   # Error messages in a distinct red shade
+set notification-error-fg "#252423"   # Dark text for error messages ensures legibility
+set notification-warning-bg "#d8a657" # Background for warnings (orange tone)
+set notification-warning-fg "#252423" # Matching dark text for contrast
+
+# -------------------
+# Document Interaction
+# -------------------
+# Search & Highlight settings enhance navigation within documents
+set incremental-search "true"                   # Enables live search-as-you-type for instant feedback
+set highlight-color rgba(137,180,130,0.5)       # Semi-transparent green highlight for matches
+set highlight-active-color rgba(231,138,78,0.5) # Active search result highlighted in orange hue
+set highlight-fg rgba(37,36,35,1)               # Text color within highlights for clear distinction
+
+# PDF Recoloring for improved dark mode rendering
+set recolor "true"                    # Enable recoloring to better suit dark environments
+set recolor-lightcolor "#ddc7a1"      # Defines the "light" color used in recoloring; adjust for personal taste
+set recolor-darkcolor "#252423"       # Defines the "dark" color used in recoloring for consistency with theme
+set recolor-keephue "true"            # Preserve original hues to maintain document integrity
+set recolor-reverse-video "true"      # Invert colors for improved readability in some cases
+
+# -------------------
+# Workflow & Navigation
+# -------------------
+# Interface navigation and workflow enhancements
+set page-padding 10                   # Margin around pages, providing a cleaner look
+set show-directories "true"           # Display directory entries for easier navigation
+set show-hidden "true"                # Show dotfiles to ensure no file is missed
+set show-recent 5                     # Limit recent files list to the 5 most recent for clarity
+set guioptions vs                     # 'v' and 's' option: both vertical and horizontal scrollbars visible
+set smooth-scroll "true"              # Enable animated scrolling for a smoother user experience
+
+# -------------------
+# System Integration
+# -------------------
+# Integration with system services
+set selection-clipboard clipboard     # Use system clipboard for copy-paste operations
+set database sqlite                   # Use SQLite for the internal database (more reliable than Berkeley DB)
+set window-title-basename "true"      # Display only the filename in the window title for a cleaner look
+set autosave-interval 300             # Automatically save session every 300 seconds (5 minutes)
+set highlight-active-color rgba(231,138,78,0.5) # Orange active highlight
+set highlight-fg rgba(37,36,35,1)               # Text color in highlights
+
+# PDF Recoloring (Dark Mode Optimization)
+set recolor "true"                    # Essential for dark theme
+set recolor-lightcolor "#ddc7a1"      # "White" in dark mode
+set recolor-darkcolor "#252423"       # "Black" in dark mode
+set recolor-keephue "true"            # Preserve original hues
+set recolor-reverse-video "true"      # Better contrast
+
+# -------------------
+# Workflow & Navigation
+# -------------------
+set page-padding 10                   # Clean page margins
+set show-directories "true"           # Directory visibility
+set show-hidden "true"                # Show dotfiles
+set show-recent 5                     # Recent files list length
+set guioptions vs                     # Both scrollbars visible
+set smooth-scroll "true"              # Animated scrolling
+
+# -------------------
+# System Integration
+# -------------------
+set selection-clipboard clipboard     # System clipboard integration
+set database sqlite                   # More reliable than default Berkeley DB
+set window-title-basename "true"      # Clean window titles (shows filename only)
+set autosave-interval 300             # Auto-save session every 5 mins
+
