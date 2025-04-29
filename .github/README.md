@@ -12,10 +12,10 @@
 ## :wave: Greetings
 
 Greetings. Thanks for stopping by. This repository is the repository of my Linux
-desktop system configuration. I tried to make my system lightweight, fast, easy
-to reconfigure, functional and convenient for both daily use and work. Where it
-is possible to use TUI without loss of functionality, I tried to use it. I also
-tried to configure all programs in the same color palette.
+desktop system configuration. I tried to make my system lightweight, fast,
+vim-like, easy to reconfigure, functional and convenient for both daily use and
+work. Where it is possible to use TUI without loss of functionality, I tried to
+use it. I also tried to configure all programs in the same color palette.
 
 ![samples](assets/final.png "Gallery")
 
@@ -122,6 +122,7 @@ All the info about my setup.
 | **Image editor**     | [Krita](https://krita.org/)                                                                                  |
 | **Office apps**      | [LibreOffice](https://www.libreoffice.org/)                                                                  |
 | **Password manager** | [KeePassXC](https://github.com/keepassxreboot/keepassxc/)                                                    |
+| **Java IDE**         | [Intellij IDEA](https://www.jetbrains.com/idea/) [:gear:](../.ideavimrc)                                     |
 
 ### :paintbrush: Appearance
 

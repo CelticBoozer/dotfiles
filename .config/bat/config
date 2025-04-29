@@ -1,16 +1,30 @@
-# This is `bat`s configuration file. Each line either contains a comment or
-# a command-line option that you want to pass to `bat` by default. You can
-# run `bat --help` to get a list of all possible configuration options.
+# This is `bat`'s configuration file.
+# Each line either contains a comment or a command-line option that you want to pass to `bat` by default.
+# Use `bat --help` to view all available configuration options.
 
-# Specify desired highlighting theme (e.g. "TwoDark"). Run `bat --list-themes`
-# for a list of all available themes
+# -------------------
+# Syntax Highlighting
+# -------------------
+# Specify desired highlighting theme.
+# Available themes can be listed by running: bat --list-themes
 --theme="gruvbox-dark"
 
-# Enable this to use italic text on the terminal. This is not supported on all
-# terminal emulators (like tmux, by default):
+# -------------------
+# Text Style Enhancements
+# -------------------
+# Always enable italic text, even if your terminal does not support it by default.
+# Note: Some terminal emulators (e.g., tmux) might require additional configuration.
 --italic-text=always
 
-# Uncomment the following line to disable automatic paging:
+# -------------------
+# Paging Behavior
+# -------------------
+# Disable automatic paging, so the output is sent directly to stdout.
 --paging=never
 
+# -------------------
+# Tab Width Setting
+# -------------------
+# Configure the width of tab characters to 2 spaces for more compact code display.
 --tabs=2
+

@@ -1,54 +1,102 @@
+# -------------------------
+# Yazi File Manager Config
+# -------------------------
 [manager]
+# Panel size ratio (left, middle, right)
 ratio = [1, 2, 3]
+
+# Sort using natural order (e.g., file10 after file2)
 sort_by = "natural"
+
+# Apply transliteration to sort non-ASCII names properly
 sort_translit = true
+
+# Show file size in the list view
 linemode = "size"
-scrolloff = 200
+
+# Number of lines to keep above/below the cursor when scrolling
+# Note: 200 is extremely high and may reduce usability
+scrolloff = 10
+
 
 [preview]
+# Max width/height of previewed images (in pixels)
+# Keep these values reasonable to avoid performance issues
 max_width = 720
 max_height = 1280
 
+
 [plugin]
 
+# -----------------------------------------------------------
+# Fetchers – Define how to fetch metadata or additional info
+# -----------------------------------------------------------
 fetchers = [
-  # Mimetype
+  # Use MIME-based fetcher with high priority if MIME is not already present
   { id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
 ]
+
+
+# -------------------------------------------------------
+# Preloaders – Run before previewers, useful for caching
+# -------------------------------------------------------
 preloaders = [
-  # Image
+  # Specialized image formats, handled by ImageMagick
   { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
+
+  # General image previewing
   { mime = "image/*", run = "image" },
-  # Video
+
+  # Video thumbnails or metadata
   { mime = "video/*", run = "video" },
-  # PDF
+
+  # PDFs (can be slow — consider optional size check)
   { mime = "application/pdf", run = "pdf" },
-  # Font
+
+  # Fonts
   { mime = "font/*", run = "font" },
   { mime = "application/vnd.ms-opentype", run = "font" },
 ]
+
+
+# -------------------------------------------
+# Previewers – Shown when a file is selected
+# -------------------------------------------
 previewers = [
+  # Directories
   { name = "*/", run = "folder", sync = true },
-  # Code
+
+  # Text/code files
   { mime = "text/*", run = "code" },
   { mime = "*/{xml,javascript,x-wine-extension-ini}", run = "code" },
-  # JSON
+
+  # JSON files
   { mime = "application/{json,x-ndjson}", run = "json" },
-  # Image
+
+  # Specialized image formats
   { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
+
+  # All other images
   { mime = "image/*", run = "image" },
-  # Video
+
+  # Video files
   { mime = "video/*", run = "video" },
-  # PDF
+
+  # PDF documents
   { mime = "application/pdf", run = "pdf" },
-  # Archive
+
+  # Archives (tarballs, 7z, ISO)
   { mime = "application/{,g}zip", run = "archive" },
   { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar,iso9660-image}", run = "archive" },
-  # Font
+
+  # Fonts
   { mime = "font/*", run = "font" },
   { mime = "application/vnd.ms-opentype", run = "font" },
-  # Empty file
+
+  # Empty file handler
   { mime = "inode/x-empty", run = "empty" },
-  # Fallback
+
+  # Fallback if nothing else matches
   { name = "*", run = "file" },
 ]
+

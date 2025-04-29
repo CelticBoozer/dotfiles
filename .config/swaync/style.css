@@ -1,14 +1,18 @@
-/* Row contains all other notification elements. */
+/* -----------------------------
+   Global Notification Elements
+   ----------------------------- */
+
+/* The container row for all notification elements. */
 .notification-row {
   outline: none;
 }
 
-/* Background is the next largest element. Just a box behind the notification itself. */
+/* The background element: acts as a box behind the notification. */
 .notification-background {
   padding: 10px 6px;
 }
 
-/* An notification is a box that contains actions. */
+/* The main notification box that contains actions and content. */
 .notification {
   border-radius: 12px;
   border: 1px solid rgba(37, 36, 35, 0.9);
@@ -20,19 +24,19 @@
     0 2px 6px 2px rgba(37, 36, 35, 0.3);
 }
 
-/* Just a desktop, non panel notification. */
+/* For desktop notifications that are not part of a panel. */
 .floating-notifications {
   background: transparent;
 }
 
-/* Content is for example the text of a telegram message, if the default action exists, the content will turn to it. */
+/* The main content area for notification text (like messages). */
 .notification-content {
   background: transparent;
   border-radius: 12px;
   padding: 4px;
 }
 
-/* An example of a default action - this is the telegram message that will be opened by pressing. */
+/* Default action elements, such as a Telegram message. */
 .notification-default-action {
   padding: 4px;
   margin: 0;
@@ -46,7 +50,7 @@
   background: rgba(60, 56, 54, 0.95);
 }
 
-/* Action like the "Mark as read" */
+/* Actions such as "Mark as read". */
 .notification-action {
   padding: 4px;
   margin: 0;
@@ -63,8 +67,8 @@
   background: rgba(60, 56, 54, 0.95);
 }
 
+/* Adjust border radii on the first and last action buttons. */
 .notification-action:first-child {
-  /* add bottom border radius to eliminate clipping */
   border-bottom-left-radius: 12px;
 }
 
@@ -73,11 +77,16 @@
   border-right: none;
 }
 
-/* Reply to message line */
+/* ----------------------
+   Inline Reply Elements
+   ---------------------- */
+
+/* The input line for inline replies. */
 .inline-reply {
   margin-top: 4px;
 }
 
+/* The text entry for inline replies. */
 .inline-reply-entry {
   background: rgba(37, 36, 35, 0.95);
   color: rgb(212, 190, 152);
@@ -86,6 +95,7 @@
   border-radius: 12px;
 }
 
+/* Button for sending inline replies. */
 .inline-reply-button {
   margin-left: 4px;
   background: transparent;
@@ -104,7 +114,11 @@
   background: rgba(80, 73, 69, 0.95);
 }
 
-/* Notification close button */
+/* ------------------------------
+   Notification Control Elements
+   ------------------------------ */
+
+/* The close button for notifications. */
 .close-button {
   background: transparent;
   color: rgb(212, 190, 152);
@@ -119,19 +133,25 @@
   background: rgba(80, 73, 69, 0.95);
 }
 
-/* Few other notification settings */
+/* ---------------------------
+   Icons and Summary Elements
+   --------------------------- */
+
+/* Styling for images within notifications. */
 .image {
   -gtk-icon-effect: none;
   border-radius: 100px;
   margin: 4px;
 }
 
+/* The app icon in a notification. */
 .app-icon {
   -gtk-icon-effect: none;
   -gtk-icon-shadow: 0 1px 4px black;
   margin: 6px;
 }
 
+/* Notification summary text. */
 .summary {
   font-size: 16px;
   font-weight: bold;
@@ -139,6 +159,7 @@
   color: rgb(212, 190, 152);
 }
 
+/* Time indicators. */
 .time {
   font-size: 16px;
   font-weight: bold;
@@ -146,6 +167,7 @@
   color: rgb(212, 190, 152);
 }
 
+/* Main body text of a notification. */
 .body {
   font-size: 14px;
   font-weight: normal;
@@ -154,6 +176,7 @@
   margin-top: 5px;
 }
 
+/* Body images within notifications. */
 .body-image {
   margin-top: 4px;
   background-color: white;
@@ -161,26 +184,33 @@
   -gtk-icon-effect: none;
 }
 
-/* Control-center panel which contains the old notifications + widgets */
+/* ----------------------------
+   Control Center and Grouping
+   ---------------------------- */
+
+/* The control-center panel containing notifications and widgets. */
 .control-center {
   background: rgba(37, 36, 35, 0.85);
   color: rgb(212, 190, 152);
   border-radius: 12px;
 }
 
+/* Placeholder for the control center list. */
 .control-center-list-placeholder {
   opacity: 0.5;
 }
 
+/* The control center list itself. */
 .control-center-list {
   background: transparent;
 }
 
+/* Blank window styling (transparent background). */
 .blank-window {
   background: transparent;
 }
 
-/* Notification group in control-center */
+/* Notification groups within the control center. */
 .notification-group-buttons,
 .notification-group-headers {
   margin: 0 16px;
@@ -195,17 +225,19 @@
   color: rgb(212, 190, 152);
 }
 
-/*** Widgets ***/
+/* ---------------
+   Widget Styling
+   --------------- */
 
-/* Title widget */
+/* Title widget styling. */
 .widget-title {
   color: rgb(212, 190, 152);
   margin: 8px;
-  font-size: 20;
+  font-size: 20px;
 }
 
 .widget-title > button {
-  font-size: 16;
+  font-size: 16px;
   color: rgb(212, 190, 152);
   text-shadow: none;
   background: rgba(37, 36, 35, 0.9);
@@ -217,7 +249,7 @@
   background: rgba(80, 73, 69, 0.9);
 }
 
-/* DND widget */
+/* DND (Do Not Disturb) widget styling. */
 .widget-dnd {
   color: rgb(212, 190, 152);
   margin: 8px;
@@ -241,7 +273,7 @@
   border-radius: 12px;
 }
 
-/* Volume widget */
+/* Volume widget styling. */
 .widget-volume {
   color: rgb(212, 190, 152);
   background-color: rgba(60, 56, 54, 0.95);
@@ -250,7 +282,7 @@
   border-radius: 12px;
 }
 
-/* Backlight widget */
+/* Backlight widget styling. */
 .widget-backlight {
   color: rgb(212, 190, 152);
   background-color: rgba(60, 56, 54, 0.95);
@@ -258,3 +290,4 @@
   margin: 8px;
   border-radius: 12px;
 }
+

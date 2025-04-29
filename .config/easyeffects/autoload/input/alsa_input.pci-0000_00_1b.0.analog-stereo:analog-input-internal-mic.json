@@ -1,0 +1,6 @@
+{
+    "device": "alsa_input.pci-0000_00_1b.0.analog-stereo",
+    "device-description": "Built-in Audio Analog Stereo",
+    "device-profile": "analog-input-internal-mic",
+    "preset-name": "NR+NPR"
+}

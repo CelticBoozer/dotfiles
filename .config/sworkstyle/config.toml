@@ -1,41 +1,78 @@
-# Remember specific matches should be first.
-# F.e. nvim running inside the kitty terminal should be first.
-separator = ' '
+# --------------------------------------------------------------------------------
+# sworkstyle.toml
+#
+# This configuration file maps application identifiers to their corresponding
+# icon glyphs. IMPORTANT: Specific matches (more detailed patterns) should be
+# listed first. For example, if you have a rule for nvim running inside kitty,
+# that should appear before a general nvim rule.
+#
+# To add a new match, simply add a new key-value pair under the [matching] table.
+# If using regex patterns, enclose them with forward slashes (e.g., /pattern/).
+# --------------------------------------------------------------------------------
+
+separator = ' '  # The separator used between icons or matches
 
 [matching]
-'jetbrains-idea-ce' = ''
-'jetbrains-idea' = ''
-'/Element/' = '󰯸'
-'/Picture-in-Picture/' = '󰹗'
-'/Private Browsing/' = '󱀣'
-'firefox-developer-edition' = '󰈹'
-'/Google Chrome/' = ''
-'/nvim ?\w*/' = ''
-'/vim ?\w*/' = ''
-'spotube' = ''
-'/btop/' = ''
-'/nmtui/' = ''
-'/yazi/' = ''
-'/pulsemixer/' = ''
-'deno' = ''
-'Postman' = ''
-'steam' = ''
-'kitty' = ''
-'cool-retro-term.cool-retro-term' = ''
-'obsidian' = ''
-'mpv' = ''
-'org.telegram.desktop' = ''
-'Skype' = '󰒯'
-'com.viber.Viber' = ''
-'org.keepassxc.KeePassXC' = '󱕴'
-'libreoffice-startcenter' = '󰹯'
-'libreoffice-writer' = ''
-'libreoffice-calc' = ''
-'libreoffice-impress' = ''
-'libreoffice-draw' = ''
-'libreoffice-base' = ''
-'soffice' = ''
-'org.pwmt.zathura' = ''
-'krita' = ''
-'com.github.wwmm.easyeffects' = '󰥠'
-'vesktop' = ''
+# JetBrains IDEs (Community and other editions)
+'jetbrains-idea-ce' = ''   # JetBrains IDEA Community Edition
+'jetbrains-idea'    = ''   # Generic JetBrains IDEA
+
+# Window-specific/Mode indicators
+'/Element/'            = '󰯸'   # Matches any window title containing "Element"
+'/Picture-in-Picture/' = '󰹗'   # Matches Picture-in-Picture mode
+'/Private Browsing/'   = '󱀣'   # Matches private browsing windows
+
+# Browsers
+'firefox-developer-edition' = '󰈹'   # Firefox Developer Edition
+'/Google Chrome/'          = ''   # Matches any instance of Google Chrome
+
+# Editors (vim-based)
+'/nvim ?\w*/' = ''   # Matches Neovim variants, e.g., "nvim", "nvim-qt", etc.
+'/vim ?\w*/'  = ''   # Matches Vim variants
+
+# Media and Entertainment
+'spotube' = ''   # Spotify client for Linux (Spotube)
+'/btop/' = ''   # btop system monitor
+
+# Networking & System Utilities
+'/nmtui/'     = ''   # Network manager text user interface
+'/yazi/'      = ''   # Yazi application
+'/pulsemixer/' = ''  # PulseMixer for audio control
+
+# Development & Other Tools
+'deno'      = ''   # Deno runtime
+'Postman'   = ''   # Postman API development tool
+'steam'     = ''   # Steam client
+
+# Terminal Emulators
+'kitty'                       = ''   # Kitty terminal
+'cool-retro-term.cool-retro-term' = ''  # Cool Retro Term
+
+# Personal & Productivity
+'obsidian'             = ''   # Obsidian note-taking app
+'mpv'                  = ''   # MPV media player
+'org.telegram.desktop' = ''   # Telegram Desktop
+'Skype'                = '󰒯'   # Skype
+'com.viber.Viber'      = ''   # Viber messaging app
+'org.keepassxc.KeePassXC' = '󱕴' # KeePassXC password manager
+
+# Office Suites
+'libreoffice-startcenter' = '󰹯'   # LibreOffice start center
+'libreoffice-writer'      = ''   # LibreOffice Writer
+'libreoffice-calc'        = ''   # LibreOffice Calc
+'libreoffice-impress'     = ''   # LibreOffice Impress
+'libreoffice-draw'        = ''   # LibreOffice Draw
+'libreoffice-base'        = ''   # LibreOffice Base
+'soffice'                 = ''   # Generic LibreOffice (alternative command)
+
+# Document & PDF Viewers
+'org.pwmt.zathura' = ''   # Zathura PDF viewer
+
+# Graphics & Media Editors
+'krita' = ''   # Krita digital painting program
+
+# Audio Processing
+'com.github.wwmm.easyeffects' = '󰥠'  # EasyEffects for audio processing
+
+# Desktop Environment Components
+'vesktop' = ''   # Vesktop or similar desktop element

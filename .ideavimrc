@@ -44,8 +44,12 @@ let g:WhichKeyDesc_tool = "<leader>t Tool window menu"
 let g:WhichKeyDesc_tool_file = "<leader>te File explorer"
 let g:WhichKeyDesc_tool_terminal = "<leader>tt Terminal window"
 let g:WhichKeyDesc_tool_git = "<leader>tg Git window"
+let g:WhichKeyDesc_tool_commit = "<leader>tc Commit window"
 let g:WhichKeyDesc_tool_problem = "<leader>tl Problems window"
 let g:WhichKeyDesc_tool_run = "<leader>tr Run window"
+let g:WhichKeyDesc_tool_database = "<leader>td Database window"
+let g:WhichKeyDesc_tool_maven = "<leader>tm Maven window"
+let g:WhichKeyDesc_tool_checkstyle = "<leader>ts Checkstyle window"
 
 let g:WhichKeyDesc_execution = "<leader>e Execution menu"
 let g:WhichKeyDesc_execution_run = "<leader>er Run"
@@ -59,10 +63,11 @@ let g:WhichKeyDesc_split_horizontally = "<leader>wS Split horizontally"
 
 let g:WhichKeyDesc_refactor = "<leader>r Refactor menu"
 let g:WhichKeyDesc_refactor_rename = "<leader>rn Rename element"
-let g:WhichKeyDesc_refactor_extract_method = "<leader>rm Extract mehtod"
+let g:WhichKeyDesc_refactor_intention_action = "<leader>ri Show intention actions"
+let g:WhichKeyDesc_refactor_extract_method = "<leader>rm Extract method"
 let g:WhichKeyDesc_refactor_introduce_variable = "<leader>rv Introduce variable"
-let g:WhichKeyDesc_refactor_introduce_field = "<leader>rf Introduce field"
-let g:WhichKeyDesc_refactor_reformat_code = "<leader>rc Reformat code"
+let g:WhichKeyDesc_refactor_introduce_field = "<leader>ra Introduce field"
+let g:WhichKeyDesc_refactor_reformat_code = "<leader>rf Reformat code"
 let g:WhichKeyDesc_refactor_change_signature = "<leader>rs Change signature"
 let g:WhichKeyDesc_refactor_action_list = "<leader>rr Actions list"
 
@@ -90,7 +95,7 @@ let g:WhichKeyDesc_folding_expand = "<leader>ze Expand region"
 let g:WhichKeyDesc_folding_fold_all = "<leader>zC Collapse all"
 let g:WhichKeyDesc_folding_expand_all = "<leader>zE Expand all"
 " ==================================================================================================
-
+" To get actions list, use
 " General
 map <C-q> <Action>(CloseContent)
 imap <C-q> <Action>(CloseContent)
@@ -100,8 +105,12 @@ map <esc> :noh<CR>
 map <leader>te :NERDTreeToggle<CR>
 map <leader>tt <Action>(ActivateTerminalToolWindow)
 map <leader>tg <Action>(ActivateVersionControlToolWindow)
+map <leader>tc <Action>(ActivateCommitToolWindow)
 map <leader>tl <Action>(ActivateProblemsViewToolWindow)
 map <leader>tr <Action>(ActivateRunToolWindow)
+map <leader>td <Action>(ActivateDatabaseToolWindow)
+map <leader>tm <Action>(ActivateMavenToolWindow)
+map <leader>ts <Action>(ActivateCheckStyleToolWindow)
 map <leader><leader> <Action>(RecentFiles)
 
 " Code execution
@@ -116,6 +125,7 @@ map <leader>wS <Action>(SplitHorizontally)
 
 " Refactoring
 map <leader>rn <Action>(RenameElement)
+map <leader>ri <Action>(ShowIntentionActions)
 map <leader>rm <Action>(ExtractMethod)
 map <leader>rv <Action>(IntroduceVariable)
 map <leader>ra <Action>(IntroduceField)
