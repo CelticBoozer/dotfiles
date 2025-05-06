@@ -16,13 +16,11 @@ pkgtools
 postman-bin
 python-commitizen
 python-decli
-python-pythondialog
 python-questionary
 python-xlsx2csv
 rate-mirrors
 reiserfsprogs
 rmlint
-rmlint-shredder
 rofi-power-menu
 rofi-ttv-git
 swaykbdd
