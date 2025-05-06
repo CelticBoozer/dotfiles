@@ -60,9 +60,10 @@ check_file "${HOME}/.system-config-backup/pacman/93-electron.hook"
 check_file "${HOME}/.system-config-backup/pacman/94-check-pacnew.hook"
 check_file "${HOME}/.system-config-backup/pacman/95-backup-configs.hook"
 check_file "${HOME}/.system-config-backup/systemd/logind.conf"
-check_file "${HOME}/.system-config-backup/tlp.conf"
-check_file "${HOME}/.system-config-backup/config.toml"
-check_file "${HOME}/.system-config-backup/reflector.conf"
+check_file "${HOME}/.system-config-backup/systemd/resolved.conf"
+check_file "${HOME}/.system-config-backup/tlp/tlp.conf"
+check_file "${HOME}/.system-config-backup/greetd/config.toml"
+check_file "${HOME}/.system-config-backup/reflector/reflector.conf"
 #Packages check
 check_package "git"
 
