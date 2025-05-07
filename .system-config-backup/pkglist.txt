@@ -125,6 +125,7 @@ steam
 sudo
 swappy
 sway
+sway-contrib
 swaybg
 swayidle
 swaync

@@ -29,7 +29,7 @@ print_log_message() {
 }
 
 printf "\e[36mPlease, make sure you move all files to your home directory.\e[0m\n"
-printf "\e[36mAlso, the computer must have internet access and git must be installed.\e[0m\n"
+printf "\e[36mComputer must have internet access and git must be installed with ssh-keys.\e[0m\n"
 
 while true; do
   read -rp "Do you want to continue? (y/n): " choice
@@ -54,13 +54,16 @@ print_log_message $info_color "prerequisites check..."
 # Files check
 check_file "${HOME}/.system-config-backup/pacman/pacman.conf"
 check_file "${HOME}/.system-config-backup/pkglist.txt"
-check_file "${HOME}/.system-config-backup/pacman/create-backup.hook"
-check_file "${HOME}/.system-config-backup/pacman/create-aur-backup.hook"
-check_file "${HOME}/.system-config-backup/pacman/electron.hook"
+check_file "${HOME}/.system-config-backup/pacman/91-create-backup.hook"
+check_file "${HOME}/.system-config-backup/pacman/92-create-aur-backup.hook"
+check_file "${HOME}/.system-config-backup/pacman/93-electron.hook"
+check_file "${HOME}/.system-config-backup/pacman/94-check-pacnew.hook"
+check_file "${HOME}/.system-config-backup/pacman/95-backup-configs.hook"
 check_file "${HOME}/.system-config-backup/systemd/logind.conf"
-check_file "${HOME}/.system-config-backup/tlp.conf"
-check_file "${HOME}/.system-config-backup/config.toml"
-check_file "${HOME}/.system-config-backup/reflector.conf"
+check_file "${HOME}/.system-config-backup/systemd/resolved.conf"
+check_file "${HOME}/.system-config-backup/tlp/tlp.conf"
+check_file "${HOME}/.system-config-backup/greetd/config.toml"
+check_file "${HOME}/.system-config-backup/reflector/reflector.conf"
 #Packages check
 check_package "git"
 

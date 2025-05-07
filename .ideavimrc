@@ -47,15 +47,20 @@ let g:WhichKeyDesc_tool_git = "<leader>tg Git window"
 let g:WhichKeyDesc_tool_commit = "<leader>tc Commit window"
 let g:WhichKeyDesc_tool_problem = "<leader>tl Problems window"
 let g:WhichKeyDesc_tool_run = "<leader>tr Run window"
-let g:WhichKeyDesc_tool_database = "<leader>td Database window"
+let g:WhichKeyDesc_tool_database = "<leader>tb Database window"
+let g:WhichKeyDesc_tool_structure = "<leader>to Outline structure window"
 let g:WhichKeyDesc_tool_maven = "<leader>tm Maven window"
 let g:WhichKeyDesc_tool_checkstyle = "<leader>ts Checkstyle window"
+let g:WhichKeyDesc_tool_debug = "<leader>td Debug window"
 
 let g:WhichKeyDesc_execution = "<leader>e Execution menu"
 let g:WhichKeyDesc_execution_run = "<leader>er Run"
 let g:WhichKeyDesc_execution_run_config = "<leader>eR Choose run configuration"
-let g:WhichKeyDesc_execution_debug = "<leader>ed Debug"
-let g:WhichKeyDesc_execution_stop = "<leader>es Stop"
+let g:WhichKeyDesc_execution_stop = "<leader>eS Stop"
+
+let g:WhichKeyDesc_debug = "<leader>d Debug menu"
+let g:WhichKeyDesc_debug_start = "<leader>de Strat debug"
+let g:WhichKeyDesc_debug_add_breakpoint = "<leader>db Add Breakpoint"
 
 let g:WhichKeyDesc_split = "<leader>w Split menu"
 let g:WhichKeyDesc_split_vertically = "<leader>ws Split vertically"
@@ -63,37 +68,30 @@ let g:WhichKeyDesc_split_horizontally = "<leader>wS Split horizontally"
 
 let g:WhichKeyDesc_refactor = "<leader>r Refactor menu"
 let g:WhichKeyDesc_refactor_rename = "<leader>rn Rename element"
-let g:WhichKeyDesc_refactor_intention_action = "<leader>ri Show intention actions"
-let g:WhichKeyDesc_refactor_extract_method = "<leader>rm Extract method"
-let g:WhichKeyDesc_refactor_introduce_variable = "<leader>rv Introduce variable"
-let g:WhichKeyDesc_refactor_introduce_field = "<leader>ra Introduce field"
 let g:WhichKeyDesc_refactor_reformat_code = "<leader>rf Reformat code"
-let g:WhichKeyDesc_refactor_change_signature = "<leader>rs Change signature"
 let g:WhichKeyDesc_refactor_action_list = "<leader>rr Actions list"
 
-let g:WhichKeyDesc_go_to = "<leader>g Go to menu"
-let g:WhichKeyDesc_go_to_declaration = "<leader>gd Go to declaration"
-let g:WhichKeyDesc_go_to_type_declaration = "<leader>gy Go to type declaration"
-let g:WhichKeyDesc_go_to_implementation = "<leader>gi Go to implementation"
-let g:WhichKeyDesc_go_to_usages = "<leader>gu Show usages"
-let g:WhichKeyDesc_go_to_test = "<leader>gt Go to test"
-let g:WhichKeyDesc_go_to_back = "<leader>gb Go back"
-let g:WhichKeyDesc_go_to_forward = "<leader>gn Go forward"
+let g:WhichKeyDesc_go_to = "g Go to menu"
+let g:WhichKeyDesc_go_to_declaration = "gd Go to declaration"
+let g:WhichKeyDesc_go_to_type_declaration = "gy Go to type declaration"
+let g:WhichKeyDesc_go_to_implementation = "gi Go to implementation"
+let g:WhichKeyDesc_go_to_test = "gt Go to test"
+let g:WhichKeyDesc_go_to_back = "gb Go back"
+let g:WhichKeyDesc_go_to_forward = "gn Go forward"
 
 let g:WhichKeyDesc_action = "<leader>a Actions"
-let g:WhichKeyDesc_action_context = "<leader>am Show intention actions"
-let g:WhichKeyDesc_action_search = "<leader>as Search everywhere"
+let g:WhichKeyDesc_action_context = "<leader>aa Show intention actions"
 let g:WhichKeyDesc_action_generate = "<leader>ag Generate"
+
+
+let g:WhichKeyDesc_search = "<leader>f Search"
+let g:WhichKeyDesc_search_all = "<leader>ff Search everywhere"
+let g:WhichKeyDesc_search_references = "<leader>fr Search references"
 
 let g:WhichKeyDesc_comment = "<leader>c Comment"
 let g:WhichKeyDesc_comment_line = "<leader>cc Comment line"
 let g:WhichKeyDesc_comment_block = "<leader>cb Comment block"
 
-let g:WhichKeyDesc_folding = "<leader>z Folding"
-let g:WhichKeyDesc_folding_fold = "<leader>zc Collapse region"
-let g:WhichKeyDesc_folding_expand = "<leader>ze Expand region"
-let g:WhichKeyDesc_folding_fold_all = "<leader>zC Collapse all"
-let g:WhichKeyDesc_folding_expand_all = "<leader>zE Expand all"
 " ==================================================================================================
 " To get actions list, use
 " General
@@ -108,16 +106,21 @@ map <leader>tg <Action>(ActivateVersionControlToolWindow)
 map <leader>tc <Action>(ActivateCommitToolWindow)
 map <leader>tl <Action>(ActivateProblemsViewToolWindow)
 map <leader>tr <Action>(ActivateRunToolWindow)
-map <leader>td <Action>(ActivateDatabaseToolWindow)
+map <leader>tb <Action>(ActivateDatabaseToolWindow)
+map <leader>to <Action>(ActivateStructureToolWindow)
 map <leader>tm <Action>(ActivateMavenToolWindow)
 map <leader>ts <Action>(ActivateCheckStyleToolWindow)
+map <leader>td <Action>(ActivateDebugToolWindow)
 map <leader><leader> <Action>(RecentFiles)
 
 " Code execution
 map <leader>er <Action>(Run)
 map <leader>eR <Action>(ChooseRunConfiguration)
-map <leader>ed <Action>(Debug)
 map <leader>es <Action>(Stop)
+
+" Debug
+map <leader>db <Action>(ToggleLineBreakpoint)
+map <leader>de <Action>(Debug)
 
 " Window splits
 map <leader>ws <Action>(SplitVertically)
@@ -125,34 +128,25 @@ map <leader>wS <Action>(SplitHorizontally)
 
 " Refactoring
 map <leader>rn <Action>(RenameElement)
-map <leader>ri <Action>(ShowIntentionActions)
-map <leader>rm <Action>(ExtractMethod)
-map <leader>rv <Action>(IntroduceVariable)
-map <leader>ra <Action>(IntroduceField)
 map <leader>rf <Action>(ReformatCode)
-map <leader>rs <Action>(ChangeSignature)
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 
 " Go to code
-map <leader>gd <Action>(GotoDeclaration)
-map <leader>gy <Action>(GotoTypeDeclaration)
-map <leader>gi <Action>(GotoImplementation)
-map <leader>gu <Action>(ShowUsages)
-map <leader>gt <Action>(GotoTest)
-map <leader>gb <Action>(Back)
-map <leader>gn <Action>(Forward)
+map gd <Action>(GotoDeclaration)
+map gy <Action>(GotoTypeDeclaration)
+map gi <Action>(GotoImplementation)
+map gt <Action>(GotoTest)
+map gb <Action>(Back)
+map gn <Action>(Forward)
 
 " Actions
-map <leader>am <action>(ShowIntentionActions)
-map <leader>as <action>(SearchEverywhere)
+map <leader>aa <action>(ShowIntentionActions)
 map <leader>ag <action>(Generate)
+
+" Search
+map <leader>ff <action>(SearchEverywhere)
+map <leader>fr <Action>(ShowUsages)
 
 " Comments
 map <leader>cc <Action>(CommentByLineComment)
 map <leader>cb <Action>(CommentByBlockComment)
-
-" Folding
-map <leader>zc <Action>(CollapseRegion)
-map <leader>ze <Action>(ExpandRegion)
-map <leader>zC <Action>(CollapseAllRegions)
-map <leader>zE <Action>(ExpandAllRegions)
