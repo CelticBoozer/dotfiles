@@ -29,7 +29,7 @@ print_log_message() {
 }
 
 printf "\e[36mPlease, make sure you move all files to your home directory.\e[0m\n"
-printf "\e[36mAlso, the computer must have internet access and git must be installed.\e[0m\n"
+printf "\e[36mComputer must have internet access and git must be installed with ssh-keys.\e[0m\n"
 
 while true; do
   read -rp "Do you want to continue? (y/n): " choice
