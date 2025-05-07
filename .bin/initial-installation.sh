@@ -137,17 +137,13 @@ sudo cp "${HOME}/.system-config-backup/reflector/reflector.conf" "/etc/xdg/refle
 sudo cp "${HOME}/.system-config-backup/systemd/resolved.conf" "/etc/systemd/resolved.conf"
 print_log_message $success_color "system configs has been copied."
 
+chsh -s /usr/bin/zsh celtic
+
+curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/effects/release_0.9/OpenRGBEffectsPlugin_0.9_Bullseye_64_f1411e1.so
+
 # Start some daemons
 print_log_message $info_color "enable the necessary services..."
 systemctl enable --now tlp.service
 systemctl enable --now greetd.service
 systemctl enable --now swayosd-libinput-backend.service
 systemctl enable --now reflector.service
-systemctl enable --now greetd.service
-
-chsh -s /usr/bin/zsh celtic
-
-curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/effects/release_0.9/OpenRGBEffectsPlugin_0.9_Bullseye_64_f1411e1.so
-
-print_log_message $success_color "system installation finished."
-zsh
