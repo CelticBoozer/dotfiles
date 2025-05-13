@@ -37,6 +37,7 @@ separator = ' '
 # -----------------------
 '/nvim ?\w*/' = ''
 '/vim ?\w*/' = ''
+'/Yazi ?\w*/' = ''
 'kitty' = ''
 'cool-retro-term.cool-retro-term' = ''
 
@@ -46,7 +47,6 @@ separator = ' '
 '/btop/' = ''
 '/nmtui/' = ''
 '/pulsemixer/' = ''
-'yazi' = ''
 
 # -----------------------
 # 6. Development & Tools
