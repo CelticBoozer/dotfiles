@@ -1,30 +1,40 @@
-# This is `bat`'s configuration file.
-# Each line either contains a comment or a command-line option that you want to pass to `bat` by default.
-# Use `bat --help` to view all available configuration options.
+# NOTE: bat — A modern `cat` clone with syntax highlighting & Git integration
+# INFO: Full docs: https://github.com/sharkdp/bat
 
-# -------------------
-# Syntax Highlighting
-# -------------------
-# Specify desired highlighting theme.
-# Available themes can be listed by running: bat --list-themes
+# =======================
+# 1. Appearance & Themes
+# =======================
+
+# Primary syntax theme. Use `bat --list-themes` to explore options.
 --theme="gruvbox-dark"
 
-# -------------------
-# Text Style Enhancements
-# -------------------
-# Always enable italic text, even if your terminal does not support it by default.
-# Note: Some terminal emulators (e.g., tmux) might require additional configuration.
---italic-text=always
+# Style components to display:
+# numbers  → show line numbers
+# changes  → mark Git-modified lines
+# header   → display filename header
+# grid     → draw borders around the text
+--style="numbers,changes,header,grid"
 
-# -------------------
-# Paging Behavior
-# -------------------
-# Disable automatic paging, so the output is sent directly to stdout.
---paging=never
+# Enable italics only if the terminal supports it.
+--italic-text="always"
 
-# -------------------
-# Tab Width Setting
-# -------------------
-# Configure the width of tab characters to 2 spaces for more compact code display.
+# =============================
+# 2. Whitespace & Line Control
+# =============================
+
+# Squeeze multiple empty lines into one.
+--squeeze-blank
+
+# (Optional) Limit the maximum number of consecutive blank lines.
+--squeeze-limit=2
+
+# Preserve tabs exactly as in file, or expand them to N spaces.
 --tabs=2
 
+# ==============================
+# 3. Paging Behavior
+# ==============================
+
+# Automatically use a pager (`less -RF`) only when output is larger than one screen.
+# Alternatives: `never` (always cat-style), `always` (always use pager)
+--paging="auto"

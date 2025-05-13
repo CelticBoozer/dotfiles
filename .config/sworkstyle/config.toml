@@ -1,78 +1,86 @@
-# --------------------------------------------------------------------------------
-# sworkstyle.toml
+# NOTE: Maps application identifiers (executable or window-title regex)
+# to icon glyphs. Specific patterns must precede more general ones.
 #
-# This configuration file maps application identifiers to their corresponding
-# icon glyphs. IMPORTANT: Specific matches (more detailed patterns) should be
-# listed first. For example, if you have a rule for nvim running inside kitty,
-# that should appear before a general nvim rule.
-#
-# To add a new match, simply add a new key-value pair under the [matching] table.
-# If using regex patterns, enclose them with forward slashes (e.g., /pattern/).
-# --------------------------------------------------------------------------------
+# NOTE: To add a new mapping:
+# • Under [matching], add 'app-id' = 'glyph'
+# • For regex, wrap the key in forward slashes: '/pattern/' = 'glyph'
 
-separator = ' '  # The separator used between icons or matches
+# The string used between multiple icons (if a match yields >1 glyph)
+separator = ' '
 
 [matching]
-# JetBrains IDEs (Community and other editions)
-'jetbrains-idea-ce' = ''   # JetBrains IDEA Community Edition
-'jetbrains-idea'    = ''   # Generic JetBrains IDEA
 
-# Window-specific/Mode indicators
-'/Element/'            = '󰯸'   # Matches any window title containing "Element"
-'/Picture-in-Picture/' = '󰹗'   # Matches Picture-in-Picture mode
-'/Private Browsing/'   = '󱀣'   # Matches private browsing windows
+# ------------------
+# 1. JetBrains IDEs
+# ------------------
+'jetbrains-idea-ce' = ''
+'jetbrains-idea' = ''
 
-# Browsers
-'firefox-developer-edition' = '󰈹'   # Firefox Developer Edition
-'/Google Chrome/'          = ''   # Matches any instance of Google Chrome
+# ----------------------------
+# 2. Browsers & Private Modes
+# ----------------------------
+'firefox-developer-edition' = '󰈹'
+'/Google Chrome/' = ''
+'/Private Browsing/' = '󱀣'
+'/Picture-in-Picture/' = '󰹗'
 
-# Editors (vim-based)
-'/nvim ?\w*/' = ''   # Matches Neovim variants, e.g., "nvim", "nvim-qt", etc.
-'/vim ?\w*/'  = ''   # Matches Vim variants
+# --------------------------
+# 3. Communication & Social
+# --------------------------
+'org.telegram.desktop' = ''
+'Skype' = '󰒯'
+'/Element/' = '󰯸'
+'vesktop' = ''
 
-# Media and Entertainment
-'spotube' = ''   # Spotify client for Linux (Spotube)
-'/btop/' = ''   # btop system monitor
+# -----------------------
+# 4. Terminals & Editors
+# -----------------------
+'/nvim ?\w*/' = ''
+'/vim ?\w*/' = ''
+'kitty' = ''
+'cool-retro-term.cool-retro-term' = ''
 
-# Networking & System Utilities
-'/nmtui/'     = ''   # Network manager text user interface
-'/yazi/'      = ''   # Yazi application
-'/pulsemixer/' = ''  # PulseMixer for audio control
+# -----------------------
+# 5. System & Monitoring
+# -----------------------
+'/btop/' = ''
+'/nmtui/' = ''
+'/pulsemixer/' = ''
+'yazi' = ''
 
-# Development & Other Tools
-'deno'      = ''   # Deno runtime
-'Postman'   = ''   # Postman API development tool
-'steam'     = ''   # Steam client
+# -----------------------
+# 6. Development & Tools
+# -----------------------
+'deno' = ''
+'Postman' = ''
 
-# Terminal Emulators
-'kitty'                       = ''   # Kitty terminal
-'cool-retro-term.cool-retro-term' = ''  # Cool Retro Term
+# -------------------------
+# 7. Media & Entertainment
+# -------------------------
+'spotube' = ''
+'mpv' = ''
+'steam' = ''
 
-# Personal & Productivity
-'obsidian'             = ''   # Obsidian note-taking app
-'mpv'                  = ''   # MPV media player
-'org.telegram.desktop' = ''   # Telegram Desktop
-'Skype'                = '󰒯'   # Skype
-'com.viber.Viber'      = ''   # Viber messaging app
-'org.keepassxc.KeePassXC' = '󱕴' # KeePassXC password manager
+# -------------------------
+# 8. Productivity & Office
+# -------------------------
+'obsidian' = ''
+'org.pwmt.zathura' = ''
+'libreoffice-startcenter' = '󰹯'
+'libreoffice-writer' = ''
+'libreoffice-calc' = ''
+'libreoffice-impress' = ''
+'libreoffice-draw' = ''
+'libreoffice-base' = ''
+'soffice' = ''
 
-# Office Suites
-'libreoffice-startcenter' = '󰹯'   # LibreOffice start center
-'libreoffice-writer'      = ''   # LibreOffice Writer
-'libreoffice-calc'        = ''   # LibreOffice Calc
-'libreoffice-impress'     = ''   # LibreOffice Impress
-'libreoffice-draw'        = ''   # LibreOffice Draw
-'libreoffice-base'        = ''   # LibreOffice Base
-'soffice'                 = ''   # Generic LibreOffice (alternative command)
+# -------------------------------
+# 9. Graphics & Audio Processing
+# -------------------------------
+'krita' = ''
+'com.github.wwmm.easyeffects' = '󰥠'
 
-# Document & PDF Viewers
-'org.pwmt.zathura' = ''   # Zathura PDF viewer
-
-# Graphics & Media Editors
-'krita' = ''   # Krita digital painting program
-
-# Audio Processing
-'com.github.wwmm.easyeffects' = '󰥠'  # EasyEffects for audio processing
-
-# Desktop Environment Components
-'vesktop' = ''   # Vesktop or similar desktop element
+# -------------------------
+# 10. Security & Passwords
+# -------------------------
+'org.keepassxc.KeePassXC' = '󱕴'

@@ -1,12 +1,21 @@
-# Global configuration options
+# NOTE: mako — A lightweight Wayland notification daemon
+# INFO: See “man 5 mako” for full option reference
+
+# ========================
+# 1. Global Configuration
+# ========================
 max-history=5
 sort=+time
 
-# Binding options
+# ===================
+# 2. Binding options
+# ===================
 on-button-left=dismiss
 on-button-right=dismiss-all
 
-# Style options
+# =================
+# 3. Style options
+# =================
 font=Cantarell 10
 background-color=#252423
 text-color=#d4be98
@@ -26,19 +35,3 @@ text-alignment=left
 default-timeout=15000
 layer=top
 anchor=bottom-right
-
-[category=CHANGE_LAYOUT]
-font=Cantarell 25
-background-color=#252423
-text-color=#d4be98
-width=300
-height=100
-margin=300
-padding=15
-border-size=0
-border-radius=5
-history=0
-text-alignment=center
-layer=top
-default-timeout=400
-anchor=bottom-center
