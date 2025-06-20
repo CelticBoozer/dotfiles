@@ -1,8 +1,8 @@
 /* Apply common reset for all elements */
 * {
-  font-size: 13px;       /* Base font size for consistency */
-  border: none;          /* Remove any default border */
-  border-radius: 0;      /* Remove border rounding */
+  font-size: 13px; /* Base font size for consistency */
+  border: none; /* Remove any default border */
+  border-radius: 0; /* Remove border rounding */
   font-family: my-queue; /* Custom font family; ensure it's installed */
   padding: 0;
   margin: 0;
@@ -12,35 +12,35 @@
    Main Waybar Container
    ---------------------- */
 #waybar {
-  color: #d4be98;                         /* Primary text color */
-  background: rgba(50, 48, 47, 0.6);      /* Semi-transparent background */
+  color: #d4be98; /* Primary text color */
+  background: rgba(50, 48, 47, 0.6); /* Semi-transparent background */
 }
 
 /* -------------------------
    Workspaces Module Styles
    ------------------------- */
 #workspaces button {
-  color: #d4be98;                         /* Button text color */
-  background: #32302f;                    /* Button background */
-  border-left: 2px solid #46413e;         /* Left border for separation */
+  color: #d4be98; /* Button text color */
+  background: #32302f; /* Button background */
+  border-left: 2px solid #46413e; /* Left border for separation */
 }
 #workspaces button:first-child {
-  background: #32302f;                    /* First button: no left border */
+  background: #32302f; /* First button: no left border */
   border-left: 0;
 }
 #workspaces button.focused {
-  background: #3c3836;                    /* Focused workspace button */
-  box-shadow: inset 0 -3px #e78a4e;       /* Underline effect for focus */
+  background: #3c3836; /* Focused workspace button */
+  box-shadow: inset 0 -3px #e78a4e; /* Underline effect for focus */
 }
 #workspaces button.urgent {
-  color: #32302f;                         /* Urgent state text color */
-  background: #ea6962;                    /* Urgent state background */
+  color: #32302f; /* Urgent state text color */
+  background: #ea6962; /* Urgent state background */
 }
 #workspaces button:hover,
 #workspaces button.focused:hover,
 #workspaces button.visible:hover {
-  color: #32302f;                         /* Hover state text color */
-  background: #d8a657;                    /* Hover state background */
+  color: #32302f; /* Hover state text color */
+  background: #d8a657; /* Hover state background */
 }
 
 /* ---------------------------
@@ -84,7 +84,7 @@
 #tray,
 #custom-weather {
   background: #32302f;
-  padding: 0 3;   /* Horizontal padding: 3px (unit assumed) */
+  padding: 0 3; /* Horizontal padding: 3px (unit assumed) */
 }
 
 /* Background settings for performance/monitoring modules */
@@ -138,4 +138,3 @@
   background: #32302f;
   border: 1px solid #252423;
 }
-

@@ -8,6 +8,6 @@ That's why I chose [swaylock-effect](https://github.com/mortie/swaylock-effects/
 however this project was abandoned by the author, so I'm using a
 [supported fork](https://github.com/jirutka/swaylock-effects/).
 
-To execute swaylock use hotkey Win+Esc.
+To execute swaylock use hotkey `Win+Esc`.
 
 ![swaylock](swaylock.png "swaylock")

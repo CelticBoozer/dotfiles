@@ -12,6 +12,8 @@ bison
 brightnessctl
 btop
 calibre
+cantarell-fonts
+chafa
 cliphist
 cmake
 cool-retro-term
@@ -26,6 +28,7 @@ element-desktop
 expac
 eza
 fakeroot
+fastfetch
 fd
 ffmpegthumbnailer
 file
@@ -84,7 +87,6 @@ mpv
 msmtp-mta
 mtpfs
 navi
-neofetch
 neovim
 net-tools
 netctl
@@ -92,7 +94,6 @@ network-manager-applet
 networkmanager
 noto-fonts-emoji
 npm
-nvidia-container-toolkit
 obsidian
 openrgb
 openssh
@@ -107,7 +108,6 @@ playerctl
 polkit
 postgresql
 prettier
-proton-vpn-gtk-app
 pulsemixer
 python-pillow
 python-pip

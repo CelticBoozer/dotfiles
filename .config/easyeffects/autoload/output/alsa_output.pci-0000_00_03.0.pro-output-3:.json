@@ -1,6 +1,6 @@
 {
-    "device": "alsa_output.pci-0000_00_03.0.pro-output-3",
-    "device-description": "Built-in Audio Pro",
-    "device-profile": "",
-    "preset-name": "Bass Enhancing + Perfect EQ"
+  "device": "alsa_output.pci-0000_00_03.0.pro-output-3",
+  "device-description": "Built-in Audio Pro",
+  "device-profile": "",
+  "preset-name": "Bass Enhancing + Perfect EQ"
 }

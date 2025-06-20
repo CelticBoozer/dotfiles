@@ -5,7 +5,7 @@ extremely fast, convenient, customizable. The most important thing for me is
 that it supports tabs, tiles and image preview. Also this emulator is fully
 customizable.
 
-You can execute kitty, using the Win+Return hotkey.
+You can execute kitty, using the `Win+Return` hotkey.
 
 ![kitty](kitty-full.png "kitty")
 

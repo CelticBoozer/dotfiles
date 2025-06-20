@@ -66,63 +66,66 @@ All the info about my setup.
 > Some of this apps have the config files included in the repo, which are
   marked with :gear:. If you need some information about a program/script etc,
   just go to its directory, README will help you.
+  Also some programs I have used before and I don't delete their configurations,
+   they are marked with :hourglass:. However, they are no longer supported by
+   me.
 
 ### :brain: Main system software
 
-| Entry                    | App                                                                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **OS**                   | [Arch Linux](https://archlinux.org/)                                                                                                             |
-| **AUR helper**           | [paru](https://github.com/Morganamilo/paru/) [:gear:](../.config/paru/)                                                                          |
-| **Display manager**      | [greetd](https://sr.ht/~kennylevinsen/greetd/) (with [tuigreet](https://github.com/apognu/tuigreet/) [:gear:](../.system-config-backup/greetd/)) |
-| **Window manager**       | [SwayWM](https://github.com/swaywm/sway/) [:gear:](../.config/sway/)                                                                             |
-| **Notification daemon**  | [swaync](https://github.com/ErikReider/SwayNotificationCenter/) [:gear:](../.config/swaync/)                                                     |
-| **Popup daemon**         | [swayosd](https://github.com/ErikReider/SwayOSD/)                                                                                                |
-| **Bar**                  | [waybar](https://github.com/Alexays/Waybar/) [:gear:](../.config/waybar/)                                                                        |
-| **Audio daemon**         | [pipewire](https://github.com/PipeWire/pipewire/)                                                                                                |
-| **Application launcher** | [rofi](https://github.com/lbonn/rofi/) [:gear:](../.config/rofi/)                                                                                |
-| **Clipboard manager**    | [wl-clipboard](https://github.com/bugaevc/wl-clipboard/) (with [cliphist](https://github.com/sentriz/cliphist/))                                 |
-| **Lock screen**          | [swaylock](https://github.com/jirutka/swaylock-effects/) [:gear:](../.config/swaylock/)                                                          |
-| **Idle timeout**         | [swayidle](https://github.com/hyprwm/hypridle/) [:gear:](../.config/swayidle/)                                                                   |
-| **Screenshot tool**      | [swappy](https://github.com/jtheoof/swappy/) [:gear:](../.config/swayidle/) (with [grim](https://sr.ht/~emersion/grim/))                         |
+| Entry                    | App                                                                                                                                                                           |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **OS**                   | [Arch Linux](https://archlinux.org/)                                                                                                                                          |
+| **AUR helper**           | [paru](https://github.com/Morganamilo/paru/) [:gear:](../.config/paru/)                                                                                                       |
+| **Display manager**      | [greetd](https://sr.ht/~kennylevinsen/greetd/) (with [tuigreet](https://github.com/apognu/tuigreet/) [:gear:](../.system-config-backup/greetd/))                              |
+| **Window manager**       | [SwayWM](https://github.com/swaywm/sway/) [:gear:](../.config/sway/)                                                                                                          |
+| **Notification daemon**  | [swaync](https://github.com/ErikReider/SwayNotificationCenter/) [:gear:](../.config/swaync/) :hourglass: [mako](https://github.com/emersion/mako/) [:gear:](../.config/mako/) |
+| **Popup daemon**         | [swayosd](https://github.com/ErikReider/SwayOSD/)                                                                                                                             |
+| **Bar**                  | [waybar](https://github.com/Alexays/Waybar/) [:gear:](../.config/waybar/)                                                                                                     |
+| **Audio daemon**         | [pipewire](https://github.com/PipeWire/pipewire/)                                                                                                                             |
+| **Application launcher** | [rofi](https://github.com/lbonn/rofi/) [:gear:](../.config/rofi/)                                                                                                             |
+| **Clipboard manager**    | [wl-clipboard](https://github.com/bugaevc/wl-clipboard/) (with [cliphist](https://github.com/sentriz/cliphist/))                                                              |
+| **Lock screen**          | [swaylock](https://github.com/jirutka/swaylock-effects/) [:gear:](../.config/swaylock/)                                                                                       |
+| **Idle timeout**         | [swayidle](https://github.com/hyprwm/hypridle/) [:gear:](../.config/swayidle/)                                                                                                |
+| **Screenshot tool**      | [swappy](https://github.com/jtheoof/swappy/) [:gear:](../.config/swayidle/) (with [grim](https://sr.ht/~emersion/grim/))                                                      |
 
 ### :shell: Shell and CLI/TUI software
 
-| Entry                   | App                                                                                             |
-| ----------------------- | ----------------------------------------------------------------------------------------------- |
-| **Shell**               | [zsh](https://github.com/zsh-users/zsh/) [:gear:](../.zshrc)                                    |
-| **Shell configuration** | [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/)                                                  |
-| **Terminal emulator**   | [kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                           |
-| **Text editor**         | [neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                         |
-| **System information**  | [neofetch](https://github.com/dylanaraps/neofetch/) [:gear:](../.config/neofetch/)              |
-| **ls replacement**      | [eza](https://github.com/eza-community/eza/)                                                    |
-| **cat Replacement**     | [bat](https://github.com/sharkdp/bat/) [:gear:](../.config/bat/)                                |
-| **find replacement**    | [fd](https://github.com/sharkdp/fd/)                                                            |
-| **cp/mv replacement**   | [advcpmv](https://github.com/jarun/advcpmv)                                                     |
-| **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                              |
-| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)  [:gear:](../.fzfrc)                                    |
-| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/) [:gear:](../.ripgreprc)                       |
-| **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                      |
-| **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                            |
-| **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                      |
-| **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                           |
-| **System monitor**      | [btop](https://github.com/aristocratos/btop/) [:gear:](../.config/btop/)                        |
-| **Pulse audio control** | [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer/) [:gear:](../.config/pulsemixer.cfg) |
+| Entry                   | App                                                                                                                                                                                     |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Shell**               | [zsh](https://github.com/zsh-users/zsh/) [:gear:](../.zshrc)                                                                                                                            |
+| **Shell configuration** | [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/)                                                                                                                                          |
+| **Terminal emulator**   | [kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                                                                                                                   |
+| **Text editor**         | [neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                                                                                                                 |
+| **System information**  | [fastfetch](https://github.com/LinusDierheimer/fastfetch/) [:gear:](../.config/fastfetch/) :hourglass: [neofetch](https://github.com/dylanaraps/neofetch/) [gear](../.config/neofetch/) |
+| **ls replacement**      | [eza](https://github.com/eza-community/eza/)                                                                                                                                            |
+| **cat Replacement**     | [bat](https://github.com/sharkdp/bat/) [:gear:](../.config/bat/)                                                                                                                        |
+| **find replacement**    | [fd](https://github.com/sharkdp/fd/)                                                                                                                                                    |
+| **cp/mv replacement**   | [advcpmv](https://github.com/jarun/advcpmv)                                                                                                                                             |
+| **File manager**        | [yazi](https://github.com/sxyazi/yazi/) [:gear:](../.config/yazi/)                                                                                                                      |
+| **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)  [:gear:](../.fzfrc)                                                                                                                            |
+| **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/) [:gear:](../.ripgreprc)                                                                                                               |
+| **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                                                                                                              |
+| **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                                                                                                                    |
+| **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                                                                                                              |
+| **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                                                                                                                   |
+| **System monitor**      | [btop](https://github.com/aristocratos/btop/) [:gear:](../.config/btop/)                                                                                                                |
+| **Pulse audio control** | [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer/) [:gear:](../.config/pulsemixer.cfg)                                                                                         |
 
 ### :window: GUI software
 
-| Entry                | App                                                                                                          |
-| -------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Web browser**      | [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/)  [:gear:](../.config/firefox/) |
-| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                                              |
-| **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)                                    |
-| **Note taking app**  | [Obsidian](https://obsidian.md/)                                                                             |
-| **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                                          |
-| **Image viewer**     | [imv](https://github.com/eXeC64/imv/) [:gear:](../.config/imv/)                                              |
-| **Audio effects**    | [Easyeffects](https://github.com/wwmm/easyeffects/) [:gear:](../.config/easyeffects/)                        |
-| **Image editor**     | [Krita](https://krita.org/)                                                                                  |
-| **Office apps**      | [LibreOffice](https://www.libreoffice.org/)                                                                  |
-| **Password manager** | [KeePassXC](https://github.com/keepassxreboot/keepassxc/)                                                    |
-| **Java IDE**         | [Intellij IDEA](https://www.jetbrains.com/idea/) [:gear:](../.ideavimrc)                                     |
+| Entry                | App                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Web browser**      | [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/) [:gear:](../.config/firefox/) |
+| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                                             |
+| **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)                                   |
+| **Note taking app**  | [Obsidian](https://obsidian.md/)                                                                            |
+| **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                                         |
+| **Image viewer**     | [imv](https://github.com/eXeC64/imv/) [:gear:](../.config/imv/)                                             |
+| **Audio effects**    | [Easyeffects](https://github.com/wwmm/easyeffects/) [:gear:](../.config/easyeffects/)                       |
+| **Image editor**     | [Krita](https://krita.org/)                                                                                 |
+| **Office apps**      | [LibreOffice](https://www.libreoffice.org/)                                                                 |
+| **Password manager** | [KeePassXC](https://github.com/keepassxreboot/keepassxc/)                                                   |
+| **Java IDE**         | [Intellij IDEA](https://www.jetbrains.com/idea/) [:gear:](../.ideavimrc)                                    |
 
 ### :paintbrush: Appearance
 

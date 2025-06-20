@@ -10,6 +10,6 @@ main advantage is the availability of a full-fledged notification center.
 
 ![SwayNC notification](notification.png "Notification example")
 
-To execute swaync use hotkey Win+n.
+To execute swaync use hotkey `Win+n`.
 
 ![SwayNC notification-center](notification-center.png "Notification center")

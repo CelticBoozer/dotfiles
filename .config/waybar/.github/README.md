@@ -25,17 +25,21 @@ a list of custom modules.
 
 Some plugins have an intended behavior when you click on them with the mouse.
 
-- pacman-update: left-click to run the sysupg script, to upgrade system.
-- clock: left-click to change the mode to date.
+- pacman-update:
+  - Left-click to run the sysupg script, to upgrade system.
+- clock:
+  - Left-click to change the mode to date.
 - pulseaudio:
   - Left-click to run the pulsemixer.
   - Right-click to run the easyeffects.
-- network: left-click to run the nmtui.
-- cpu: left-click to run the btop.
+- network:
+  - Left-click to run the nmtui.
+- cpu:
+  - Left-click to run the btop.
 - memory:
   - Left-click to run the sysz.
-  - Right-click to run navi.
-- backlight: mouse wheel to adjust/decrease the brightness of the monitor.
+- backlight:
+  - Wheel to adjust/decrease the brightness of the monitor.
 - notification:
   - Left-click to run the SwayNC panel.
   - Right-click to enter the do-not-disturb-mode.

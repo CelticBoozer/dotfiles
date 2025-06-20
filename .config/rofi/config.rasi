@@ -1,80 +1,89 @@
 configuration {
+  /* 1. Core Behavior */
   threads: 0;
-  modi: "calc,Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
   case-sensitive: false;
+  normalize-match: true;
   cycle: true;
   scroll-method: 1;
-  normalize-match: true;
-  no-lazy-grab: true;
   show-icons: true;
-  icon-theme: "Gruvbox-Material-Dark";
-  markup: true;
-  drun-display-format: "{name}";
+  no-lazy-grab: true;
+
+  /* 2. Modes & Labels */
+  modi: "calc,Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
+  display-calc: "Calculator";
+  display-drun: "Application";
+
+  /* 3. Window/Layout */
   location: 0;
   sidebar-mode: true;
   hover-select: true;
   eh: 1;
   terminal: "kitty";
-  display-drun: "Application";
-  display-calc: "Calculator";
 }
 
 @theme "/dev/null"
 
 * {
+  /* 4. Base Style */
   background-color: #32302f;
-  font-family: "JetBrains Mono";
-  text-color: #d4be98;
+  font-family:     "JetBrains Mono";
+  text-color:      #d4be98;
 }
 
-#window {
-  border: 0.2%;
-  border-radius: 10px;
-  transparency: "real";
-  width: 35%;
-  height: 500;
+window {
+  /* 5. Window Appearance */
+  border:         0.2%;
+  border-radius:  10px;
+  transparency:  "real";
+  width:          35%;
+  height:         500px;
 }
 
-#scrollbar {
-  enabled: true;
-  background-color: #252423;
-  handle-color: #3c3836;
-  border-color: #000000;
+scrollbar {
+  /* 6. Scrollbar Styling */
+  enabled:           true;
+  background-color:  #252423;
+  handle-color:      #3c3836;
+  border-color:      #000000;
 }
 
-#listview {
-  columns: 1;
-  fixed-height: false;
-  dynamic: true;
-  scrollbar: true;
-  spacing: 10;
-}
-
-#prompt,
-entry {
-  padding: 10;
-}
-
-#textbox {
-  padding: 20;
-}
-
-#element-text,
-button,
 listview {
-  padding: 5;
+  /* 7. List Layout */
+  columns:        1;
+  fixed-height:   false;
+  dynamic:        true;
+  scrollbar:      true;
+  spacing:        10px;
 }
 
-#element.selected {
+prompt, entry {
+  /* 8. Input Padding */
+  padding: 10px;
+}
+
+textbox {
+  /* 9. Message Padding */
+  padding: 20px;
+}
+
+element-text, button, listview {
+  /* 10. Element Padding */
+  padding: 5px;
+}
+
+element.selected {
+  /* 11. Selected Item Highlight */
   background-color: #665c54;
 }
 
-element-text, element-icon {
-  background-color: inherit;
-  text-color:       inherit;
+button.selected {
+  /* 12. Selected Button */
+  background-color: #e78a4e;
+  text-color:      #252423;
 }
 
-#button.selected {
-  background-color: #e78a4e;
-  text-color: #252423;
+element-text, element-icon {
+  /* 13. Inherit Global Colors */
+  background-color: inherit;
+  text-color:       inherit;
 }
