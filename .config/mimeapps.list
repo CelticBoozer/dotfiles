@@ -63,10 +63,10 @@ application/epub+zip=org.pwmt.zathura.desktop
 application/oxps=org.pwmt.zathura.desktop
 x-scheme-handler/tg=userapp-Telegram Desktop-KWPCW1.desktop
 x-scheme-handler/postman=Postman.desktop
-x-scheme-handler/http=firefoxdeveloperedition.desktop
-x-scheme-handler/https=firefoxdeveloperedition.desktop
+x-scheme-handler/http=firefox-developer-edition.desktop
+x-scheme-handler/https=firefox-developer-edition.desktop
 x-scheme-handler/chrome=firefoxdeveloperedition.desktop
-text/html=nvim.desktop
+text/html=firefox-developer-edition.desktop
 application/x-extension-htm=firefoxdeveloperedition.desktop
 application/x-extension-html=firefoxdeveloperedition.desktop
 application/x-extension-shtml=firefoxdeveloperedition.desktop
@@ -290,6 +290,8 @@ audio/x-mpegurl=mpv.desktop
 audio/aac=mpv.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 x-scheme-handler/discord=vesktop.desktop
+x-scheme-handler/about=firefox-developer-edition.desktop
+x-scheme-handler/unknown=firefox-developer-edition.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;userapp-Telegram Desktop-KWPCW1.desktop;

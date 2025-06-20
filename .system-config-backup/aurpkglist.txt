@@ -2,6 +2,7 @@ advcpmv
 ddcui
 debtap
 google-chrome
+grimshot-bin-sway
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 intellij-idea-ultimate-edition
@@ -18,6 +19,7 @@ python-questionary
 python-xlsx2csv
 rate-mirrors
 reiserfsprogs
+riseup-vpn
 rmlint
 rofi-power-menu
 swaykbdd
@@ -33,4 +35,3 @@ windscribe-v2-bin
 wttrbar
 xcursor-simp1e-gruvbox-dark
 xdg-desktop-portal-termfilechooser-git
-youtube-dl

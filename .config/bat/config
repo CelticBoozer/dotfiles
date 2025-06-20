@@ -5,7 +5,7 @@
 # 1. Appearance & Themes
 # =======================
 
-# Primary syntax theme. Use `bat --list-themes` to explore options.
+# Set theme
 --theme="gruvbox-dark"
 
 # Style components to display:
@@ -15,7 +15,7 @@
 # grid     → draw borders around the text
 --style="numbers,changes,header,grid"
 
-# Enable italics only if the terminal supports it.
+# Enable italics.
 --italic-text="always"
 
 # =============================
@@ -25,7 +25,7 @@
 # Squeeze multiple empty lines into one.
 --squeeze-blank
 
-# (Optional) Limit the maximum number of consecutive blank lines.
+# Limit the maximum number of consecutive blank lines.
 --squeeze-limit=2
 
 # Preserve tabs exactly as in file, or expand them to N spaces.
@@ -36,5 +36,4 @@
 # ==============================
 
 # Automatically use a pager (`less -RF`) only when output is larger than one screen.
-# Alternatives: `never` (always cat-style), `always` (always use pager)
 --paging="auto"

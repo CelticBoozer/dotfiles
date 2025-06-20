@@ -29,7 +29,7 @@ Main features of this config:
 
 ### :package: Theme installation
 
-You can find my theme [here](https://color.firefox.com/?theme=XQAAAALeAwAAAAAAAABBKYhm849SCicxcUXd438oKRicm6da8pJr5ybY_J8hUMt05G4KNdoq8ZROHiReY7ChV4lMa2T1JCKcWl-FafdeofTZsu4oD5Q4JZ7cVt4G3EErV0IvIutsk5X6jNhkuhvgCd19wj2Oe3I-btXogGmQYS48fByne0g00DfPowtrG3N7iNshg1m-3tTHFkMVRDL-8r01xldtad1z8AOMekSVz8-jWMwEhDdfhSM1YmPhNTs2q26-nkEI8v630TsGJBOH3vPp5dXkqGizDnKA3mqdSXllNkPiMXNEm-J5H4ypygBxBhyjGQdhWfi-Ry63GSw3g8Bq-XvrKB9DFo6n_nTqbhPtyZTBCD8wPyKMn7D-XVMcjCGnR5HkB_cj4s_alb6avymBeaD8pTZaCQyjYpYQFd1uSUDKV6vZ7OWxIQJcBTWAUoQcuH5NNQO9_y7LwFvy67k6yeCT4RQ5MrEpVVWz-UKl7QZljh4Wdps4iz_330mDYtRp82PCsSh88qvH0chs6ZpMLzgKwr55ChGDySLMIASLW1vj27cM8g3-TbxG).
+You can find my [theme here](https://shorturl.at/kqHuq).
 
 ### :package: Firefox custom settings installation
 

@@ -1,7 +1,7 @@
 # -------------------------
 # Yazi File Manager Config
 # -------------------------
-[manager]
+[mgr]
 # Panel size ratio (left, middle, right)
 ratio = [1, 2, 3]
 
