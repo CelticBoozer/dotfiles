@@ -2,6 +2,7 @@
 
 # Script for maintaining optimal system state
 # INFO: zsh alias: maint
+# shellcheck disable=2059
 
 set -euo pipefail
 IFS=$'\n\t'
