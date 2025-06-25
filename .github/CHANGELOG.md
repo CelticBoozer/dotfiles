@@ -1,6 +1,29 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
 <!-- cSpell:disable -->
+## 1.2.0 (2025-06-25)
+
+### Feat
+
+- too much diffs, especially codestyle, docs and unify tabs in different progs
+- **.ideavimrc**: add a bit new functions to the ideavim
+
+### Fix
+
+- yazi fix icon
+- cspell fix
+- **yamlfmt**: another fix workflow
+- **yamlfmt.yaml**: fix yamlfmt workflow
+- **sworkstyle**: fix idea icon, when edit ideavimrc
+- **.bin/random-background.sh**: #284 bug fix, add new wallpapers
+
+### Refactor
+
+- a bit refactored
+- **.bin/initial-installation.sh**: rearranged stages
+- Just few little updates
+- **logind.conf**: add new logind.conf features
+
 ## 1.1.0 (2024-11-21)
 
 ### Feat
