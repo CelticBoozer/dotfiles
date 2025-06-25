@@ -144,7 +144,7 @@ If you want to install my dotfiles, here are some tips and recommendations.
    [guide](https://wiki.archlinux.org/title/Installation_guide)).
 2. Establish a stable internet connection.
 3. Install `git` and `base-devel` packages.
-4. Copy this repository to your $HOME directory.
+4. Copy this repository to your `$HOME` directory.
 5. Run the initial-installation script `sh .bin/initial-installation.sh`. This
    script will install all the necessary packages and move all the necessary
    configuration files to the system directories.
