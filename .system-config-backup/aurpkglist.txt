@@ -2,6 +2,7 @@ advcpmv
 ddcui
 debtap
 google-chrome
+google-java-format
 grimshot-bin-sway
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
