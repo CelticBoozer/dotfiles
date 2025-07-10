@@ -64,6 +64,7 @@ kdeconnect
 keepassxc
 kitty
 krita
+latex2html
 lazygit
 ld-lsb
 lib32-libx11
@@ -75,6 +76,7 @@ linux-zen
 linux-zen-headers
 logrotate
 lostfiles
+lua51
 luarocks
 lvm2
 m4
@@ -86,6 +88,7 @@ mdadm
 mpv
 msmtp-mta
 mtpfs
+nautilus
 navi
 neovim
 net-tools
@@ -107,7 +110,6 @@ pkgconf
 playerctl
 polkit
 postgresql
-prettier
 pulsemixer
 python-pillow
 python-pip
@@ -120,6 +122,7 @@ rofi-calc
 rofi-wayland
 rust
 sed
+shfmt
 sqlfluff
 steam
 sudo

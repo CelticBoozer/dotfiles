@@ -20,15 +20,15 @@ use it. I also tried to configure all programs in the same color palette.
 
 ## :bookmark_tabs: Table of Contents
 
-- [Main features](#stars-main-features)
-- [Core system info](#brain-core-system-info)
-- [Whole System Info](#computer-whole-system-info)
-  - [Main system software](#brain-main-system-software)
-  - [Shell and CLI/TUI software](#shell-shell-and-clitui-software)
-  - [GUI software](#window-gui-software)
-  - [Appearance](#paintbrush-appearance)
-- [Dotfiles installation](#rocket-dotfiles-installation)
-- [Acknowledgements](#heart-acknowledgements)
+- [:stars: Main features](#stars-main-features)
+- [:brain: Core system info](#brain-core-system-info)
+- [:computer: Whole system info](#computer-whole-system-info)
+  - [:brain: Main system software](#brain-main-system-software)
+  - [:shell: Shell and CLI/TUI software](#shell-shell-and-clitui-software)
+  - [:window: GUI software](#window-gui-software)
+  - [:paintbrush: Appearance](#paintbrush-appearance)
+- [:rocket: Dotfiles installation](#rocket-dotfiles-installation)
+- [:heart: Acknowledgements](#heart-acknowledgements)
 
 ## :stars: Main features
 
@@ -59,6 +59,7 @@ use it. I also tried to configure all programs in the same color palette.
 - Colorscheme: [Gruvbox-material](https://github.com/sainnhe/gruvbox-material/)
 
 ## :computer: Whole system info
+
 <!-- markdownlint-disable MD013 -->
 All the info about my setup.
 
@@ -66,8 +67,7 @@ All the info about my setup.
   marked with :gear:. If you need some information about a program/script etc,
   just go to its directory, README will help you.
   Also some programs I have used before and I don't delete their configurations,
-   they are marked with :hourglass:. However, they are no longer supported by
-   me.
+  they are marked with :hourglass:. However, they are no longer supported by me.
 
 ### :brain: Main system software
 
@@ -94,7 +94,7 @@ All the info about my setup.
 | **Shell**               | [zsh](https://github.com/zsh-users/zsh/) [:gear:](../.zshrc)                                                                                                                          |
 | **Shell configuration** | [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/)                                                                                                                                        |
 | **Terminal emulator**   | [kitty](https://sw.kovidgoyal.net/kitty/) [:gear:](../.config/kitty/)                                                                                                                 |
-| **Text editor**         | [neovim](https://neovim.io/) [:gear:](../.config/nvim/)                                                                                                                               |
+| **Text editor**         | [neovim](https://neovim.io/) [:gear:](https://github.com/CelticBoozer/nvim-config/)                                                                                                                               |
 | **System information**  | [fastfetch](https://github.com/LinusDierheimer/fastfetch/) [:gear:](../.config/fastfetch/)    [neofetch](https://github.com/dylanaraps/neofetch/) [:hourglass:](../.config/neofetch/) |
 | **ls replacement**      | [eza](https://github.com/eza-community/eza/)                                                                                                                                          |
 | **cat Replacement**     | [bat](https://github.com/sharkdp/bat/) [:gear:](../.config/bat/)                                                                                                                      |
@@ -170,8 +170,9 @@ repository. Or you can donate.
 [![Star History Chart](https://api.star-history.com/svg?repos=CelticBoozer/dotfiles&type=Timeline&theme=dark)](https://star-history.com/#CelticBoozer/dotfiles&Timeline)
 
 ### :coin: Donation
+
 <!-- markdownlint-disable MD033 -->
-| ![USDT-TRC20](assets/USDT.jpg)     | ![BTC](assets/BTC.jpg)                     | ![ETH](assets/ETH.jpg)                     |
-| ---------------------------------- | ------------------------------------------ | ------------------------------------------ |
-| USDT TRC20                         | BTC                                        | ETH                                        |
-| TGhY5bCn12EDP3MGgs8Qg4YerczhP3PsC5 | bc1qru2p84r3zecva68e804jtjqp923mx2eekqwg3a | 0xb00d88737B0BD4f5cb5fc7519b3d27045b796ceb |
+| ![USDT-TRC20](assets/USDT.jpg)             | ![BTC](assets/BTC.jpg)                     | ![ETH](assets/ETH.jpg)                     |
+| ------------------------------------------ | ------------------------------------------ | ------------------------------------------ |
+| USDT TRC20                                 | BTC                                        | ETH                                        |
+| TGhY5bCn12EDP3MGgs8Qg4YerczhP3PsC5         | bc1qru2p84r3zecva68e804jtjqp923mx2eekqwg3a | 0xb00d88737B0BD4f5cb5fc7519b3d27045b796ceb |
