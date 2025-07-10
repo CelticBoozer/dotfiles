@@ -23,6 +23,7 @@ reiserfsprogs
 riseup-vpn
 rmlint
 rofi-power-menu
+sniprun
 swaykbdd
 swaylock-effects
 swayosd-git
