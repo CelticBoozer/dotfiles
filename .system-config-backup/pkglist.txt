@@ -97,6 +97,7 @@ network-manager-applet
 networkmanager
 noto-fonts-emoji
 npm
+ntfs-3g
 obsidian
 openrgb
 openssh

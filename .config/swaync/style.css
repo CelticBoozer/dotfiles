@@ -1,292 +1,441 @@
-/* -----------------------------
-   Global Notification Elements
-   ----------------------------- */
+/* ============================
+   SwayNC Main Styles
+   ============================ */
 
-/* The container row for all notification elements. */
-.notification-row {
-  outline: none;
+/* -------------------------
+   Imports
+   ------------------------- */
+@import url("widgets/dnd.css");
+@import url("widgets/mpris.css");
+@import url("widgets/sliders.css");
+
+/* -------------------------
+   Root Variables
+   ------------------------- */
+:root {
+  --cc-bg: rgba(37, 36, 35, 0.8);
+  --noti-border-color: rgba(37, 36, 35, 0.15);
+  --noti-bg: 50, 48, 47;
+  --noti-bg-alpha: 0.8;
+  --noti-bg-darker: rgb(37, 36, 35);
+  --noti-bg-hover: rgb(60, 56, 54);
+  --noti-bg-focus: rgba(80, 73, 69, 0.6);
+  --noti-close-bg: rgba(80, 73, 69, 0.6);
+  --noti-close-bg-hover: rgba(234, 105, 98, 0.8);
+  --text-color: rgb(212, 190, 152);
+  --text-color-disabled: rgb(124, 111, 100);
+  --notification-icon-size: 64px;
+  --notification-app-icon-size: calc(var(--notification-icon-size) / 3);
+  --notification-group-icon-size: 32px;
 }
 
-/* The background element: acts as a box behind the notification. */
-.notification-background {
-  padding: 10px 6px;
-}
-
-/* The main notification box that contains actions and content. */
-.notification {
-  border-radius: 12px;
-  border: 1px solid rgba(37, 36, 35, 0.9);
+/* -------------------------
+   Close Button
+   ------------------------- */
+.notification-row .notification-background .notification .close-button {
+  /* The notification Close Button */
+  background: var(--noti-close-bg);
+  color: var(--text-color);
+  text-shadow: none;
   padding: 0;
-  background: rgba(50, 48, 47, 0.95);
-  box-shadow:
-    0 0 0 1px rgba(37, 36, 35, 0.3),
-    0 1px 3px 1px rgba(37, 36, 35, 0.7),
-    0 2px 6px 2px rgba(37, 36, 35, 0.3);
-}
-
-/* For desktop notifications that are not part of a panel. */
-.floating-notifications {
-  background: transparent;
-}
-
-/* The main content area for notification text (like messages). */
-.notification-content {
-  background: transparent;
-  border-radius: 12px;
-  padding: 4px;
-}
-
-/* Default action elements, such as a Telegram message. */
-.notification-default-action {
-  padding: 4px;
-  margin: 0;
-  background: transparent;
-  border: none;
-  color: rgb(212, 190, 152);
-}
-
-.notification-default-action:hover {
-  -gtk-icon-effect: none;
-  background: rgba(60, 56, 54, 0.95);
-}
-
-/* Actions such as "Mark as read". */
-.notification-action {
-  padding: 4px;
-  margin: 0;
-  background: transparent;
-  color: rgb(212, 190, 152);
-  border: none;
-  border-top: 1px solid rgb(80, 73, 69);
-  border-radius: 0;
-  border-right: 1px solid rgb(80, 73, 69);
-}
-
-.notification-action:hover {
-  -gtk-icon-effect: none;
-  background: rgba(60, 56, 54, 0.95);
-}
-
-/* Adjust border radii on the first and last action buttons. */
-.notification-action:first-child {
-  border-bottom-left-radius: 12px;
-}
-
-.notification-action:last-child {
-  border-bottom-right-radius: 12px;
-  border-right: none;
-}
-
-/* ----------------------
-   Inline Reply Elements
-   ---------------------- */
-
-/* The input line for inline replies. */
-.inline-reply {
-  margin-top: 4px;
-}
-
-/* The text entry for inline replies. */
-.inline-reply-entry {
-  background: rgba(37, 36, 35, 0.95);
-  color: rgb(212, 190, 152);
-  caret-color: rgb(212, 190, 152);
-  border: transparent;
-  border-radius: 12px;
-}
-
-/* Button for sending inline replies. */
-.inline-reply-button {
-  margin-left: 4px;
-  background: transparent;
-  border: 1px solid rgba(124, 111, 100, 0.95);
-  border-radius: 12px;
-  color: rgb(212, 190, 152);
-}
-
-.inline-reply-button:disabled {
-  background: transparent;
-  color: rgba(124, 111, 100, 1);
-  border-color: transparent;
-}
-
-.inline-reply-button:hover {
-  background: rgba(80, 73, 69, 0.95);
-}
-
-/* ------------------------------
-   Notification Control Elements
-   ------------------------------ */
-
-/* The close button for notifications. */
-.close-button {
-  background: transparent;
-  color: rgb(212, 190, 152);
   border-radius: 100%;
-  margin-top: 5px;
-  margin-right: 5px;
+  margin-top: 8px;
+  margin-right: 8px;
+  box-shadow: none;
+  border: none;
   min-width: 24px;
   min-height: 24px;
 }
 
-.close-button:hover {
-  background: rgba(80, 73, 69, 0.95);
+.notification-row .notification-background .notification .close-button:hover {
+  box-shadow: none;
+  background: var(--noti-close-bg-hover);
+  transition: background 0.15s ease-in-out;
+  border: none;
 }
 
-/* ---------------------------
-   Icons and Summary Elements
-   --------------------------- */
+/* -------------------------
+   Notification Row & Box
+   ------------------------- */
+.notification-row {
+  background: none;
+  outline: none;
+}
 
-/* Styling for images within notifications. */
-.image {
-  -gtk-icon-effect: none;
+.notification-row .notification-background {
+  padding: 6px 12px;
+}
+
+.notification-row .notification-background .notification {
+  /* The actual notification */
+  border-radius: 12px;
+  border: 1px solid var(--noti-border-color);
+  padding: 0;
+  transition: background 0.15s ease-in-out;
+  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+}
+
+/* -------------------------
+   Default Action (Header)
+   ------------------------- */
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action {
+  /* The large action that also displays the notification summary and body */
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  transition: background 0.15s ease-in-out;
+  border-radius: 12px;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action:not(:only-child) {
+  /* When alternative actions are visible */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action:hover {
+  -gtk-icon-filter: none;
+}
+
+/* -------------------------
+   Notification Content
+   ------------------------- */
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content {
+  background: transparent;
+  border-radius: 12px;
+  padding: 0;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .image {
+  /* Notification Primary Image */
+  -gtk-icon-filter: none;
+  -gtk-icon-size: var(--notification-icon-size);
   border-radius: 100px;
   margin: 4px;
 }
 
-/* The app icon in a notification. */
-.app-icon {
-  -gtk-icon-effect: none;
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .app-icon {
+  /* Notification app icon (only visible when the primary image is set) */
+  -gtk-icon-filter: none;
+  -gtk-icon-size: var(--notification-app-icon-size);
   -gtk-icon-shadow: 0 1px 4px black;
   margin: 6px;
 }
 
-/* Notification summary text. */
-.summary {
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  label {
+  /* Fixes base GTK 4 CSS setting a filter of opacity 50% for some odd reason */
+  filter: none;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .summary,
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .time {
+  /* Notification summary/title & time-ago */
   font-size: 16px;
   font-weight: bold;
   background: transparent;
-  color: rgb(212, 190, 152);
+  color: var(--text-color);
+  text-shadow: none;
 }
 
-/* Time indicators. */
-.time {
-  font-size: 16px;
-  font-weight: bold;
-  background: transparent;
-  color: rgb(212, 190, 152);
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .time {
+  margin-right: 30px;
 }
 
-/* Main body text of a notification. */
-.body {
-  font-size: 14px;
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .text-box
+  .body {
+  /* Notification body */
+  font-size: 15px;
   font-weight: normal;
   background: transparent;
-  color: rgb(212, 190, 152);
-  margin-top: 5px;
+  color: var(--text-color);
+  text-shadow: none;
 }
 
-/* Body images within notifications. */
-.body-image {
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  progressbar {
+  /* The optional notification progress bar */
+  margin-top: 4px;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .body-image {
+  /* The "extra" optional bottom notification image */
   margin-top: 4px;
   background-color: white;
-  border-radius: 12px;
-  -gtk-icon-effect: none;
+  -gtk-icon-filter: none;
 }
 
-/* ----------------------------
-   Control Center and Grouping
-   ---------------------------- */
+/* -------------------------
+   Inline Reply
+   ------------------------- */
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply {
+  /* The inline reply section */
+  margin-top: 4px;
+}
 
-/* The control-center panel containing notifications and widgets. */
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-entry {
+  background: var(--noti-bg-darker);
+  color: var(--text-color);
+  caret-color: var(--text-color);
+  border: 1px solid var(--noti-border-color);
+  border-radius: 12px;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-button {
+  margin-left: 4px;
+  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  border: 1px solid var(--noti-border-color);
+  border-radius: 12px;
+  color: var(--text-color);
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-button:hover {
+  background: var(--noti-bg-hover);
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-button:disabled {
+  background: initial;
+  color: var(--text-color-disabled);
+  border-color: transparent;
+}
+.notification-row
+  .notification-background
+  .notification
+  .notification-default-action
+  .notification-content
+  .inline-reply
+  .inline-reply-button:enabled {
+  background: initial;
+  color: var(--text-color-disabled);
+}
+
+/* -------------------------
+   Alternative Actions
+   ------------------------- */
+.notification-row
+  .notification-background
+  .notification
+  .notification-alt-actions {
+  background: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 4px;
+}
+
+.notification-row
+  .notification-background
+  .notification
+  .notification-action
+  > button {
+  /* The alternative actions below the default action */
+  color: var(--text-color);
+  border-radius: 12px;
+}
+
+/* -------------------------
+   Notification Groups
+   ------------------------- */
+.notification-group {
+  /* Styling only for Grouped Notifications */
+  transition: opacity 200ms ease-in-out;
+}
+
+.notification-group .notification-group-close-button .close-button {
+  margin: 12px 20px;
+}
+
+.notification-group .notification-group-buttons,
+.notification-group .notification-group-headers {
+  margin: 0 16px;
+  color: var(--text-color);
+}
+
+.notification-group .notification-group-headers .notification-group-icon {
+  color: var(--text-color);
+  -gtk-icon-size: var(--notification-group-icon-size);
+}
+
+.notification-group .notification-group-headers .notification-group-header {
+  color: var(--text-color);
+}
+
+.notification-group.collapsed .notification-row .notification {
+  background-color: rgba(var(--noti-bg), 1);
+}
+
+/* -------------------------
+   Control Center (Panel)
+   ------------------------- */
 .control-center {
-  background: rgba(37, 36, 35, 0.85);
-  color: rgb(212, 190, 152);
+  background: var(--cc-bg);
+  color: var(--text-color);
   border-radius: 12px;
 }
 
-/* Placeholder for the control center list. */
-.control-center-list-placeholder {
+.control-center .control-center-list-placeholder {
   opacity: 0.5;
 }
 
-/* The control center list itself. */
-.control-center-list {
+.control-center .control-center-list .notification {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.3),
+    0 1px 3px 1px rgba(0, 0, 0, 0.7),
+    0 2px 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.control-center
+  .control-center-list
+  .notification
+  .notification-default-action:hover,
+.control-center .control-center-list .notification .notification-action:hover {
+  background-color: var(--noti-bg-hover);
+}
+
+/* -------------------------
+   Blank & Floating
+   ------------------------- */
+.blank-window,
+.floating-notifications {
   background: transparent;
 }
 
-/* Blank window styling (transparent background). */
-.blank-window {
-  background: transparent;
-}
-
-/* Notification groups within the control center. */
-.notification-group-buttons,
-.notification-group-headers {
-  margin: 0 16px;
-  color: rgb(212, 190, 152);
-}
-
-.notification-group-icon {
-  color: rgb(212, 190, 152);
-}
-
-.notification-group-header {
-  color: rgb(212, 190, 152);
-}
-
-/* ---------------
-   Widget Styling
-   --------------- */
-
-/* Title widget styling. */
-.widget-title {
-  color: rgb(212, 190, 152);
-  margin: 8px;
-  font-size: 20px;
-}
-
-.widget-title > button {
-  font-size: 16px;
-  color: rgb(212, 190, 152);
-  text-shadow: none;
-  background: rgba(37, 36, 35, 0.9);
-  border: 1px solid rgba(124, 111, 100, 0.95);
-  border-radius: 12px;
-}
-
-.widget-title > button:hover {
-  background: rgba(80, 73, 69, 0.9);
-}
-
-/* DND (Do Not Disturb) widget styling. */
-.widget-dnd {
-  color: rgb(212, 190, 152);
-  margin: 8px;
-  font-size: 1.1rem;
-}
-
-.widget-dnd > switch {
-  font-size: initial;
-  border-radius: 12px;
-  background: rgba(37, 36, 35, 0.9);
-  border: 1px solid rgba(124, 111, 100, 0.95);
+.floating-notifications .notification {
   box-shadow: none;
 }
 
-.widget-dnd > switch:checked {
-  background: rgba(231, 138, 78, 0.9);
+/* -------------------------
+   Widget Styling
+   ------------------------- */
+.widget-title > label,
+.widget-label > label {
+  margin: 8px;
+  font-size: 1.5rem;
 }
 
-.widget-dnd > switch slider {
-  background: rgba(50, 48, 47, 0.95);
+.widget-title > button,
+.widget-inhibitors > button {
+  margin: 8px;
   border-radius: 12px;
 }
 
-/* Volume widget styling. */
-.widget-volume {
-  color: rgb(212, 190, 152);
-  background-color: rgba(60, 56, 54, 0.95);
+.widget-buttons-grid {
   padding: 8px;
   margin: 8px;
   border-radius: 12px;
 }
 
-/* Backlight widget styling. */
-.widget-backlight {
-  color: rgb(212, 190, 152);
-  background-color: rgba(60, 56, 54, 0.95);
-  padding: 8px;
-  margin: 8px;
+.widget-buttons-grid flowboxchild > button,
+.widget-menubar > .menu-button-bar > .widget-menubar-container button {
   border-radius: 12px;
+}
+
+.widget-menubar > .menu-button-bar > .start {
+  margin-left: 8px;
+}
+.widget-menubar > .menu-button-bar > .end {
+  margin-right: 8px;
+}
+
+.widget-menubar > revealer {
+  margin-top: 8px;
+}
+.widget-menubar > revealer button {
+  margin: 8px 8px 0;
+}
+
+.widget-inhibitors > label {
+  margin: 8px;
+  font-size: 1.5rem;
 }

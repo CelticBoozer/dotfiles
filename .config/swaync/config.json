@@ -1,18 +1,43 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
+  "ignore-gtk-theme": false,
+  "positionX": "right",
   "positionY": "bottom",
   "layer": "top",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+  "cssPriority": "application",
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 0,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
   "notification-2fa-action": false,
   "notification-inline-replies": true,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
   "timeout": -1,
+  "timeout-low": 5,
+  "timeout-critical": 0,
+  "fit-to-screen": true,
+  "relative-timestamps": true,
   "control-center-width": 400,
+
   "notification-window-width": 400,
+  "keyboard-shortcuts": false,
+  "notification-grouping": true,
+  "image-visibility": "when-available",
   "transition-time": 500,
   "hide-on-clear": true,
+  "hide-on-action": false,
+  "text-empty": "No Notifications",
+  "script-fail-notify": true,
+
   "widgets": [
     "inhibitors",
     "title",
     "dnd",
+    "mpris",
     "notifications",
     "volume",
     "backlight"
@@ -32,7 +57,8 @@
       "text": "Do Not Disturb"
     },
     "volume": {
-      "label": " "
+      "label": " ",
+      "show-per-app": true
     },
     "backlight": {
       "label": " "

@@ -3,7 +3,6 @@ ddcui
 debtap
 google-chrome
 google-java-format
-grimshot-bin-sway
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 intellij-idea-ultimate-edition
@@ -13,6 +12,7 @@ luajit-tiktoken-bin
 pacnews-neovim-git
 paru
 pkgtools
+playit-bin
 postman-bin
 python-commitizen
 python-decli
