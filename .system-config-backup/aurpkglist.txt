@@ -6,7 +6,6 @@ google-java-format
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 intellij-idea-ultimate-edition
-lazydocker
 lazyjournal
 luajit-tiktoken-bin
 pacnews-neovim-git
