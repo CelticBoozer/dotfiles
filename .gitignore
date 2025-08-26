@@ -33,7 +33,6 @@
 !.config/sworkstyle/
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
-.config/vesktop/
 !.config/vesktop/.github/
 !.config/vesktop/themes/
 !.config/waybar/
