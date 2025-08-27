@@ -98,5 +98,4 @@ previewers = [
 
   # Fallback if nothing else matches
   { name = "*", run = "file" },
-  "",
 ]

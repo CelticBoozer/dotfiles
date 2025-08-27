@@ -5,6 +5,7 @@ google-chrome
 google-java-format
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
+insomnia-bin
 intellij-idea-ultimate-edition
 lazyjournal
 luajit-tiktoken-bin
@@ -12,7 +13,6 @@ pacnews-neovim-git
 paru
 pkgtools
 playit-bin
-postman-bin
 python-commitizen
 python-decli
 python-questionary
