@@ -67,3 +67,4 @@ Yerczh
 zecva
 jtjqp
 eekqwg
+termfilechooser

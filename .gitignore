@@ -39,6 +39,8 @@
 !.config/vesktop/themes/
 !.config/waybar/
 !.config/wob/
+!.config/xdg-desktop-portal/
+!.config/xdg-desktop-portal-termfilechooser/
 !.config/yamlfmt/
 !.config/yamllint/
 !.config/yazi/
