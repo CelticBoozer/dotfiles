@@ -115,7 +115,7 @@ All the info about my setup.
 | Entry                | App                                                                                                         |
 | -------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Web browser**      | [Firefox developer edition](https://www.mozilla.org/en-US/firefox/developer/) [:gear:](../.config/firefox/) |
-| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client)                                             |
+| **Messaging app**    | [Vesktop](https://github.com/Vencord/Vesktop/) (Discord Client) [:gear:](../.config/vesktop/)               |
 | **PDF viewer**       | [Zathura](https://github.com/pwmt/zathura/) [:gear:](../.config/zathura/)                                   |
 | **Note taking app**  | [Obsidian](https://obsidian.md/)                                                                            |
 | **Video player**     | [mpv](https://github.com/mpv-player/mpv/) [:gear:](../.config/mpv/)                                         |

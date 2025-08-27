@@ -65,6 +65,7 @@ keepassxc
 kitty
 krita
 latex2html
+lazydocker
 lazygit
 ld-lsb
 lib32-libx11
@@ -97,6 +98,7 @@ network-manager-applet
 networkmanager
 noto-fonts-emoji
 npm
+ntfs-3g
 obsidian
 openrgb
 openssh

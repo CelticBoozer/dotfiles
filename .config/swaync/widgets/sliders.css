@@ -1,0 +1,28 @@
+/* ====================================
+   Volume & Backlight Slider Overrides
+   ==================================== */
+
+/* Root variables */
+:root {
+  --slider-bg: rgb(80, 73, 69);
+  --slider-track: rgb(60, 56, 54);
+  --slider-fill: rgb(91, 83, 77);
+}
+
+/* Style the overall slider background */
+.widget-volume slider,
+.widget-backlight slider {
+  background-color: var(--slider-bg);
+}
+
+/* Style the unfilled track (trough) */
+.widget-volume trough,
+.widget-backlight trough {
+  background: var(--slider-track);
+}
+
+/* Style the filled portion (highlight) */
+.widget-volume trough highlight,
+.widget-backlight trough highlight {
+  background: var(--slider-fill);
+}

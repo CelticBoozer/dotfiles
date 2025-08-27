@@ -3,31 +3,31 @@
 
 [options]
 
-# =============================
-# 1. Window & Display Settings
-# =============================
+# --------------------------
+# Window & Display Settings
+# --------------------------
 background                = 32302f
 fullscreen                = false
 width                     = 1280
 height                    = 720
 initial_pan               = 50 50
 
-# =====================
-# 2. File & Navigation
-# =====================
+# ------------------
+# File & Navigation
+# ------------------
 recursively               = true
 loop_input                = true
 list_files_at_exit        = false
 
-# =======================
-# 3. Scaling & Slideshow
-# =======================
+# --------------------
+# Scaling & Slideshow
+# --------------------
 scaling_mode              = full
 slideshow_duration        = 0
 
-# =================
-# 4. Overlay & HUD
-# =================
+# --------------
+# Overlay & HUD
+# --------------
 overlay                   = true
 overlay_font              = Hack:10
 overlay_text_color        = d4be98
@@ -36,7 +36,7 @@ overlay_background_color  = 252423
 overlay_background_alpha  = 99
 overlay_position_bottom   = false
 
-# ===============
-# 5. Keybindings
-# ===============
+# ------------
+# Keybindings
+# ------------
 suppress_default_binds    = false

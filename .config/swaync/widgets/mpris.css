@@ -1,0 +1,63 @@
+/* ------------------------
+   Container & Player Card
+   ------------------------ */
+.widget-mpris {
+  margin: 8px; /* spacing around the entire MPRIS widget */
+}
+
+.widget-mpris .widget-mpris-player {
+  margin: 4px; /* inner card padding */
+  border-radius: 12px; /* rounded corners */
+  box-shadow: 0 0 10px rgba(37, 36, 35, 0.75);
+}
+
+/* -------------------------
+   Blurred Background Layer
+   ------------------------- */
+.widget-mpris .widget-mpris-player .mpris-background {
+  filter: blur(10px);
+}
+
+/* -------------------
+   Overlay & Controls
+   ------------------- */
+.widget-mpris .widget-mpris-player .mpris-overlay {
+  padding: 8px;
+  background-color: rgba(60, 56, 54, 0.55);
+}
+
+/* Button hover state */
+.widget-mpris .widget-mpris-player .mpris-overlay button:hover {
+  background-color: var(--noti-bg-hover);
+}
+
+/* -----------------
+   Album Art & Text
+   ----------------- */
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-album-art {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(37, 36, 35, 0.75);
+  -gtk-icon-size: 96px;
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay .widget-mpris-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+/* ----------------
+   Control Buttons
+   ---------------- */
+.widget-mpris .widget-mpris-player .mpris-overlay > box > button {
+  color: var(--text-color);
+}
+
+.widget-mpris .widget-mpris-player .mpris-overlay > box > button:disabled {
+  color: var(--text-disabled);
+}

@@ -1,6 +1,19 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
 <!-- cSpell:disable -->
+## 1.3.0 (2025-08-27)
+
+### Feat
+
+- **entire-project**: fix #298, close #282, close #300, close #299
+- add vesktop base
+
+### Fix
+
+- gitignore final
+- gitignore path
+- gitignore path to vesktop
+
 ## 1.2.0 (2025-06-25)
 
 ### Feat

@@ -1,0 +1,54 @@
+/* --------------
+   DND Variables
+   -------------- */
+:root {
+  --dnd-label-margin: 8px;
+  --dnd-label-size: 1.1rem;
+  --dnd-switch-bg: rgb(80, 73, 69);
+  --dnd-switch-hover: rgb(102, 92, 84);
+  --dnd-switch-checked-bg: rgb(231, 138, 78);
+  --dnd-thumb-bg: rgb(212, 190, 152);
+  --dnd-thumb-checked-bg: rgb(37, 36, 35);
+  --dnd-border-radius: 12px;
+}
+
+/* ------
+   Label
+   ------ */
+.widget-dnd > label {
+  margin: var(--dnd-label-margin);
+  font-size: var(--dnd-label-size);
+}
+
+/* --------------------------
+   Toggle (Switch) Container
+   -------------------------- */
+.widget-dnd switch {
+  background-color: var(--dnd-switch-bg);
+  border-radius: var(--dnd-border-radius);
+  margin: var(--dnd-label-margin);
+  transition: background 0.15s ease-in-out;
+}
+
+/* Hover state */
+.widget-dnd switch:hover {
+  background-color: var(--dnd-switch-hover);
+}
+
+/* Checked state (DND enabled) */
+.widget-dnd switch:checked {
+  background-color: var(--dnd-switch-checked-bg);
+}
+
+/* ----------------------
+   Thumb (Slider Handle)
+   ---------------------- */
+.widget-dnd switch slider {
+  background-color: var(--dnd-thumb-bg);
+  border-radius: var(--dnd-border-radius);
+}
+
+/* Thumb when checked */
+.widget-dnd swiLtch:checked slider {
+  background-color: var(--dnd-thumb-checked-bg);
+}
