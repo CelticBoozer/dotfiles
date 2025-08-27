@@ -35,4 +35,4 @@ wg-cmd
 windscribe-v2-bin
 wttrbar
 xcursor-simp1e-gruvbox-dark
-xdg-desktop-portal-termfilechooser-git
+xdg-desktop-portal-termfilechooser-hunkyburrito-git

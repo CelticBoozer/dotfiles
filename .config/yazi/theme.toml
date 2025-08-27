@@ -26,48 +26,48 @@ count_selected = { fg = "gray", bg = "#e78a4e" }
 # Border Style
 border_style = { fg = "yellow" }
 
-# ----------------
+# -----------
 # Tabs Style
-# ----------------
+# -----------
 [tabs]
 active = { fg = "white", bg = "#7c6f64", bold = true }
 inactive = { fg = "#7c6f64", bg = "black" }
 sep_inner = { open = "", close = "" }
 sep_outer = { open = "", close = "" }
 
-# ----------------
+# -----------
 # Mode Style
-# ----------------
+# -----------
 [mode]
 normal_main = { fg = "darkgray", bg = "#a89984", bold = true }
 normal_alt = { fg = "white", bg = "#665c54", bold = true }
 select_main = { fg = "darkgray", bg = "red", bold = true }
 select_alt = { fg = "white", bg = "#665c54", bold = true }
 
-# ----------------
+# -----------------
 # Statusline Style
-# ----------------
+# -----------------
 [status]
 overall = { fg = "white", bg = "darkgray" }
 sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
 
-# ----------------
+# --------------
 # Confirm Style
-# ----------------
+# --------------
 [confirm]
 border = { fg = "magenta", bg = "darkgray" }
 title = { fg = "magenta", bg = "darkgray" }
 
-# ----------------
+# ------------
 # Input Style
-# ----------------
+# ------------
 [input]
 border = { fg = "magenta", bg = "darkgray" }
 
-# ----------------
+# -----------
 # Task Style
-# ----------------
+# -----------
 [tasks]
 border = { fg = "green", bg = "darkgray" }
 

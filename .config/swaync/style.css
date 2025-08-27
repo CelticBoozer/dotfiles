@@ -1,17 +1,13 @@
-/* ============================
-   SwayNC Main Styles
-   ============================ */
-
-/* -------------------------
+/* --------
    Imports
-   ------------------------- */
+   -------- */
 @import url("widgets/dnd.css");
 @import url("widgets/mpris.css");
 @import url("widgets/sliders.css");
 
-/* -------------------------
+/* ---------------
    Root Variables
-   ------------------------- */
+   ---------------*/
 :root {
   --cc-bg: rgba(37, 36, 35, 0.8);
   --noti-border-color: rgba(37, 36, 35, 0.15);
@@ -29,9 +25,9 @@
   --notification-group-icon-size: 32px;
 }
 
-/* -------------------------
+/* -------------
    Close Button
-   ------------------------- */
+   -------------*/
 .notification-row .notification-background .notification .close-button {
   /* The notification Close Button */
   background: var(--noti-close-bg);
@@ -54,9 +50,9 @@
   border: none;
 }
 
-/* -------------------------
+/* -----------------------
    Notification Row & Box
-   ------------------------- */
+   ----------------------- */
 .notification-row {
   background: none;
   outline: none;
@@ -75,9 +71,9 @@
   background: rgba(var(--noti-bg), var(--noti-bg-alpha));
 }
 
-/* -------------------------
+/* ------------------------
    Default Action (Header)
-   ------------------------- */
+   ------------------------ */
 .notification-row
   .notification-background
   .notification
@@ -109,9 +105,9 @@
   -gtk-icon-filter: none;
 }
 
-/* -------------------------
+/* ---------------------
    Notification Content
-   ------------------------- */
+   --------------------- */
 .notification-row
   .notification-background
   .notification
@@ -228,9 +224,9 @@
   -gtk-icon-filter: none;
 }
 
-/* -------------------------
+/* -------------
    Inline Reply
-   ------------------------- */
+   ------------- */
 .notification-row
   .notification-background
   .notification
@@ -301,9 +297,9 @@
   color: var(--text-color-disabled);
 }
 
-/* -------------------------
+/* --------------------
    Alternative Actions
-   ------------------------- */
+   -------------------- */
 .notification-row
   .notification-background
   .notification
@@ -324,9 +320,9 @@
   border-radius: 12px;
 }
 
-/* -------------------------
+/* --------------------
    Notification Groups
-   ------------------------- */
+   -------------------- */
 .notification-group {
   /* Styling only for Grouped Notifications */
   transition: opacity 200ms ease-in-out;
@@ -355,9 +351,9 @@
   background-color: rgba(var(--noti-bg), 1);
 }
 
-/* -------------------------
+/* -----------------------
    Control Center (Panel)
-   ------------------------- */
+   ----------------------- */
 .control-center {
   background: var(--cc-bg);
   color: var(--text-color);
@@ -383,9 +379,9 @@
   background-color: var(--noti-bg-hover);
 }
 
-/* -------------------------
+/* -----------------
    Blank & Floating
-   ------------------------- */
+   ----------------- */
 .blank-window,
 .floating-notifications {
   background: transparent;
@@ -395,9 +391,9 @@
   box-shadow: none;
 }
 
-/* -------------------------
+/* ---------------
    Widget Styling
-   ------------------------- */
+   --------------- */
 .widget-title > label,
 .widget-label > label {
   margin: 8px;

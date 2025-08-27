@@ -1,5 +1,7 @@
+/* --------------
+   Core Behavior
+   -------------- */
 configuration {
-  /* 1. Core Behavior */
   threads: 0;
   case-sensitive: false;
   normalize-match: true;
@@ -8,12 +10,16 @@ configuration {
   show-icons: true;
   no-lazy-grab: true;
 
-  /* 2. Modes & Labels */
+  /* ---------------
+     Modes & Labels
+     --------------- */
   modi: "calc,Clipboard:~/.bin/cliphist-rofi.sh,drun,power-menu:rofi-power-menu";
   display-calc: "Calculator";
   display-drun: "Application";
 
-  /* 3. Window/Layout */
+  /* --------------
+     Window/Layout
+     -------------- */
   location: 0;
   sidebar-mode: true;
   hover-select: true;
@@ -23,15 +29,19 @@ configuration {
 
 @theme "/dev/null"
 
+/* -----------
+   Base Style
+   ----------- */
 * {
-  /* 4. Base Style */
   background-color: #32302f;
   font-family:     "JetBrains Mono";
   text-color:      #d4be98;
 }
 
+/* ------------------
+   Window Appearance
+   ------------------ */
 window {
-  /* 5. Window Appearance */
   border:         0.2%;
   border-radius:  10px;
   transparency:  "real";
@@ -39,16 +49,20 @@ window {
   height:         500px;
 }
 
+/* ------------------
+   Scrollbar Styling
+   ------------------ */
 scrollbar {
-  /* 6. Scrollbar Styling */
   enabled:           true;
   background-color:  #252423;
   handle-color:      #3c3836;
   border-color:      #000000;
 }
 
+/* ------------
+   List Layout
+   ------------ */
 listview {
-  /* 7. List Layout */
   columns:        1;
   fixed-height:   false;
   dynamic:        true;
@@ -56,34 +70,46 @@ listview {
   spacing:        10px;
 }
 
+/* --------------
+   Input Padding
+   -------------- */
 prompt, entry {
-  /* 8. Input Padding */
   padding: 10px;
 }
 
+/* ----------------
+   Message Padding
+   ---------------- */
 textbox {
-  /* 9. Message Padding */
   padding: 20px;
 }
 
+/* ----------------
+   Element Padding
+   ---------------- */
 element-text, button, listview {
-  /* 10. Element Padding */
   padding: 5px;
 }
 
+/* ------------------------
+   Selected Item Highlight
+   ------------------------ */
 element.selected {
-  /* 11. Selected Item Highlight */
   background-color: #665c54;
 }
 
+/* ----------------
+   Selected Button
+   ---------------- */
 button.selected {
-  /* 12. Selected Button */
   background-color: #e78a4e;
   text-color:      #252423;
 }
 
+/* ----------------------
+   Inherit Global Colors
+   ---------------------- */
 element-text, element-icon {
-  /* 13. Inherit Global Colors */
   background-color: inherit;
   text-color:       inherit;
 }

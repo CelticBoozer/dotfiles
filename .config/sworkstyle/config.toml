@@ -10,60 +10,60 @@ separator = ' '
 
 [matching]
 
-# ------------------
-# 1. JetBrains IDEs
-# ------------------
+# ---------------
+# JetBrains IDEs
+# ---------------
 'jetbrains-idea-ce' = ''
 'jetbrains-idea' = ''
 
-# ----------------------------
-# 2. Browsers & Private Modes
-# ----------------------------
+# -------------------------
+# Browsers & Private Modes
+# -------------------------
 'firefox-developer-edition' = '󰈹'
 '/Google Chrome/' = ''
 '/Private Browsing/' = '󱀣'
 '/Picture-in-Picture/' = '󰹗'
 
-# --------------------------
-# 3. Communication & Social
-# --------------------------
+# -----------------------
+# Communication & Social
+# -----------------------
 'org.telegram.desktop' = ''
 'Skype' = '󰒯'
 '/Element/' = '󰯸'
 'vesktop' = ''
 
-# -----------------------
-# 4. Terminals & Editors
-# -----------------------
+# --------------------
+# Terminals & Editors
+# --------------------
 '/nvim ?\w*/' = ''
 '/vim ?\w*/' = ''
 '/Yazi ?\w*/' = ''
 'kitty' = ''
 'cool-retro-term.cool-retro-term' = ''
 
-# -----------------------
-# 5. System & Monitoring
-# -----------------------
+# --------------------
+# System & Monitoring
+# --------------------
 '/btop/' = ''
 '/nmtui/' = ''
 '/pulsemixer/' = ''
 
-# -----------------------
-# 6. Development & Tools
-# -----------------------
+# --------------------
+# Development & Tools
+# --------------------
 'deno' = ''
 'Postman' = ''
 
-# -------------------------
-# 7. Media & Entertainment
-# -------------------------
+# ----------------------
+# Media & Entertainment
+# ----------------------
 'spotube' = ''
 'mpv' = ''
 'steam' = ''
 
-# -------------------------
-# 8. Productivity & Office
-# -------------------------
+# ----------------------
+# Productivity & Office
+# ----------------------
 'obsidian' = ''
 'org.pwmt.zathura' = ''
 'libreoffice-startcenter' = '󰹯'
@@ -74,13 +74,13 @@ separator = ' '
 'libreoffice-base' = ''
 'soffice' = ''
 
-# -------------------------------
-# 9. Graphics & Audio Processing
-# -------------------------------
+# ----------------------------
+# Graphics & Audio Processing
+# ----------------------------
 'krita' = ''
 'com.github.wwmm.easyeffects' = '󰥠'
 
-# -------------------------
-# 10. Security & Passwords
-# -------------------------
+# ---------------------
+# Security & Passwords
+# ---------------------
 'org.keepassxc.KeePassXC' = '󱕴'
