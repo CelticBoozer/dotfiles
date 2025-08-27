@@ -7,4 +7,4 @@ As a main theme, I use [system24](https://github.com/refact0r/system24), TUI-lik
 theme with a focus on readability, but a bit customized to my taste and
 gruvbox-material palette.
 
-![Screenshot](../themes/system24-gruvbox-material.css)
+![Screenshot](../assets/full.png)
