@@ -1,4 +1,9 @@
+# NOTE: this is my personal config file for lazygit, the best git client
+# INFO: commitizen integration teaked from https://github.com/jesseduffield/lazygit/issues/41 thanks
+# to https://github.com/leikoilja
 ---
+gui:
+  nerdFontsVersion: "3"
 customCommands:
   - key: "C"
     command: 'git commit -m "{{ .Form.Type }}{{if .Form.Scopes}}({{ .Form.Scopes }}){{end}}{{if eq .Form.Breaking
@@ -33,8 +38,9 @@ customCommands:
             description: "Adding missing tests or correcting existing tests"
             value: "test"
           - name: "Builds"
-            description: "Changes that affect the build system or external dependencies (example scopes:
-              gulp, broccoli, npm)"
+            description: >
+              Changes that affect the build system or external dependencies (example scopes: gulp, broccoli,
+              npm) #magic___^_^___line
             value: "build"
           - name: "Continuous Integration"
             description: "Changes to our CI configuration files and scripts (example scopes: Travis, Circle,
