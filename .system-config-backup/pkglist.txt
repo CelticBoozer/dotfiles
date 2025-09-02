@@ -86,6 +86,7 @@ man-db
 man-pages
 maven
 mdadm
+meson
 mpv
 msmtp-mta
 mtpfs
@@ -96,6 +97,7 @@ net-tools
 netctl
 network-manager-applet
 networkmanager
+ninja
 noto-fonts-emoji
 npm
 ntfs-3g
@@ -123,6 +125,7 @@ ripgrep
 rofi-calc
 rofi-wayland
 rust
+scdoc
 sed
 shfmt
 sqlfluff

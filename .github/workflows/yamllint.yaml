@@ -23,4 +23,3 @@ jobs:
         uses: ibiqlik/action-yamllint@v3
         with:
           strict: true
-          config_file: .config/yamllint/config
