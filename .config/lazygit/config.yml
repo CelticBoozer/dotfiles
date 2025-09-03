@@ -1,6 +1,8 @@
 # NOTE: this is my personal config file for lazygit, the best git client
 # INFO: commitizen integration teaked from https://github.com/jesseduffield/lazygit/issues/41 thanks
 # to https://github.com/leikoilja
+
+# yamllint disable rule:line-length
 ---
 gui:
   nerdFontsVersion: "3"
