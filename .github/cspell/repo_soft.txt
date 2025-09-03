@@ -68,3 +68,7 @@ zecva
 jtjqp
 eekqwg
 termfilechooser
+udiskie
+udisks
+mimeapps
+soundcard

@@ -2,6 +2,7 @@
 !.bin/
 !.config/
 .config/*
+!.config/.github/
 !.config/bat/
 !.config/btop/
 .config/btop/btop.log
@@ -15,6 +16,7 @@
 !.config/imv/
 !.config/kanshi/
 !.config/kitty/
+!.config/lazygit/
 !.config/mako/
 !.config/mimeapps.list
 !.config/mpv/
@@ -31,18 +33,18 @@
 !.config/swaylock/
 !.config/swaync/
 !.config/sworkstyle/
+!.config/udiskie/
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
 !.config/vesktop/
 .config/vesktop/*
 !.config/vesktop/.github/
+!.config/vesktop/settings/settings.json
 !.config/vesktop/themes/
 !.config/waybar/
 !.config/wob/
 !.config/xdg-desktop-portal/
 !.config/xdg-desktop-portal-termfilechooser/
-!.config/yamlfmt/
-!.config/yamllint/
 !.config/yazi/
 !.config/zathura/
 !.github/

@@ -17,3 +17,5 @@ in the home directory. It also contains lists of installed packages.
 - **reflector** - contains the configuration of the reflector.
 - **systemd** - contains the configuration of the systemd.
 - **tlp** - contains the configuration of the tlp laptop battery utility.
+- **aurpkglist** - contains a list of all manually installed AUR packages.
+- **pkglist** - contains a list of all manually installed official packages.
