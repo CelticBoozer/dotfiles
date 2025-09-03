@@ -2,6 +2,7 @@
 !.bin/
 !.config/
 .config/*
+!.config/.github/
 !.config/bat/
 !.config/btop/
 .config/btop/btop.log
