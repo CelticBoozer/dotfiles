@@ -70,3 +70,5 @@ eekqwg
 termfilechooser
 udiskie
 udisks
+mimeapps
+soundcard
