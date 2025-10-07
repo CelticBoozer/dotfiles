@@ -11,6 +11,7 @@ binutils
 bison
 brightnessctl
 btop
+calf
 calibre
 cantarell-fonts
 chafa
@@ -30,6 +31,7 @@ eza
 fakeroot
 fastfetch
 fd
+ffmpeg4.4
 ffmpegthumbnailer
 file
 findutils
@@ -47,6 +49,7 @@ grep
 groff
 groovy
 grub
+gst-plugins-ugly
 gvfs-mtp
 gzip
 imv
@@ -77,6 +80,7 @@ linux-zen
 linux-zen-headers
 logrotate
 lostfiles
+lsp-plugins
 lua51
 luarocks
 lvm2
@@ -86,7 +90,6 @@ man-db
 man-pages
 maven
 mdadm
-meson
 mpv
 msmtp-mta
 mtpfs
@@ -97,10 +100,10 @@ net-tools
 netctl
 network-manager-applet
 networkmanager
-ninja
 noto-fonts-emoji
 npm
 ntfs-3g
+obs-studio
 obsidian
 openrgb
 openssh
@@ -109,6 +112,7 @@ pacman-contrib
 parallel
 patch
 pipewire-alsa
+pipewire-libcamera
 pipewire-pulse
 pkgconf
 playerctl
@@ -122,10 +126,10 @@ python-requests
 qemu-desktop
 reflector
 ripgrep
+rofi
 rofi-calc
-rofi-wayland
 rust
-scdoc
+scribus
 sed
 shfmt
 sqlfluff
@@ -140,7 +144,7 @@ swaync
 telegram-desktop
 texinfo
 tlp-rdw
-transmission-gtk
+transmission-cli
 ttf-dejavu
 ttf-hack
 ttf-jetbrains-mono
@@ -162,6 +166,7 @@ wget
 which
 wipe
 wireguard-tools
+wireplumber
 wl-clipboard
 wlsunset
 xdg-desktop-portal

@@ -2,8 +2,8 @@
   "input": {
     "blocklist": [],
     "compressor#0": {
-      "attack": 5.0,
-      "boost-amount": 6.0,
+      "attack": 3.0,
+      "boost-amount": 0.0,
       "boost-threshold": -72.0,
       "bypass": false,
       "dry": -100.0,
@@ -13,11 +13,11 @@
       "knee": -6.0,
       "lpf-frequency": 20000.0,
       "lpf-mode": "off",
-      "makeup": 0.0,
+      "makeup": 3.0,
       "mode": "Downward",
       "output-gain": 0.0,
-      "ratio": 4.0,
-      "release": 75.0,
+      "ratio": 3.0,
+      "release": 100.0,
       "release-threshold": -40.0,
       "sidechain": {
         "lookahead": 0.0,
@@ -29,25 +29,33 @@
         "type": "Feed-forward"
       },
       "stereo-split": false,
-      "threshold": -20.0,
+      "threshold": -18.0,
       "wet": 0.0
+    },
+    "deepfilternet#0": {
+      "attenuation-limit": 100.0,
+      "max-df-processing-threshold": 20.0,
+      "max-erb-processing-threshold": 30.0,
+      "min-processing-buffer": 0,
+      "min-processing-threshold": 5.0,
+      "post-filter-beta": 0.02
     },
     "deesser#0": {
       "bypass": false,
       "detection": "RMS",
-      "f1-freq": 3000.0,
+      "f1-freq": 6000.0,
       "f1-level": -6.0,
-      "f2-freq": 5000.0,
+      "f2-freq": 10000.0,
       "f2-level": -6.0,
-      "f2-q": 1.5000000000000004,
+      "f2-q": 1.5,
       "input-gain": 0.0,
       "laxity": 15,
       "makeup": 0.0,
-      "mode": "Wide",
+      "mode": "Split",
       "output-gain": 0.0,
-      "ratio": 5.0,
+      "ratio": 3.0,
       "sc-listen": false,
-      "threshold": -20.0
+      "threshold": -22.0
     },
     "equalizer#0": {
       "balance": 0.0,
@@ -55,19 +63,19 @@
       "input-gain": 0.0,
       "left": {
         "band0": {
-          "frequency": 50.0,
-          "gain": 3.0,
+          "frequency": 70.0,
+          "gain": 0.0,
           "mode": "RLC (BT)",
           "mute": false,
           "q": 0.7,
-          "slope": "x1",
+          "slope": "x2",
           "solo": false,
           "type": "Hi-pass",
           "width": 4.0
         },
         "band1": {
-          "frequency": 90.0,
-          "gain": 3.0,
+          "frequency": 150.0,
+          "gain": 0.0,
           "mode": "RLC (MT)",
           "mute": false,
           "q": 0.7,
@@ -77,11 +85,11 @@
           "width": 4.0
         },
         "band2": {
-          "frequency": 425.0,
+          "frequency": 350.0,
           "gain": -2.0,
           "mode": "BWC (MT)",
           "mute": false,
-          "q": 0.9999999999999998,
+          "q": 1.2,
           "slope": "x2",
           "solo": false,
           "type": "Bell",
@@ -89,17 +97,17 @@
         },
         "band3": {
           "frequency": 3500.0,
-          "gain": 3.0,
+          "gain": 2.0,
           "mode": "BWC (BT)",
           "mute": false,
-          "q": 0.7,
+          "q": 0.9,
           "slope": "x2",
           "solo": false,
           "type": "Bell",
           "width": 4.0
         },
         "band4": {
-          "frequency": 9000.0,
+          "frequency": 10000.0,
           "gain": 2.0,
           "mode": "LRX (MT)",
           "mute": false,
@@ -117,19 +125,19 @@
       "pitch-right": 0.0,
       "right": {
         "band0": {
-          "frequency": 50.0,
-          "gain": 3.0,
+          "frequency": 70.0,
+          "gain": 0.0,
           "mode": "RLC (BT)",
           "mute": false,
           "q": 0.7,
-          "slope": "x1",
+          "slope": "x2",
           "solo": false,
           "type": "Hi-pass",
           "width": 4.0
         },
         "band1": {
-          "frequency": 90.0,
-          "gain": 3.0,
+          "frequency": 150.0,
+          "gain": 0.0,
           "mode": "RLC (MT)",
           "mute": false,
           "q": 0.7,
@@ -139,11 +147,11 @@
           "width": 4.0
         },
         "band2": {
-          "frequency": 425.0,
+          "frequency": 350.0,
           "gain": -2.0,
           "mode": "BWC (MT)",
           "mute": false,
-          "q": 0.9999999999999998,
+          "q": 1.2,
           "slope": "x2",
           "solo": false,
           "type": "Bell",
@@ -151,17 +159,17 @@
         },
         "band3": {
           "frequency": 3500.0,
-          "gain": 3.0,
+          "gain": 2.0,
           "mode": "BWC (BT)",
           "mute": false,
-          "q": 0.7,
+          "q": 0.9,
           "slope": "x2",
           "solo": false,
           "type": "Bell",
           "width": 4.0
         },
         "band4": {
-          "frequency": 9000.0,
+          "frequency": 10000.0,
           "gain": 2.0,
           "mode": "LRX (MT)",
           "mute": false,
@@ -175,7 +183,7 @@
       "split-channels": false
     },
     "gate#0": {
-      "attack": 1.0,
+      "attack": 5.0,
       "bypass": false,
       "curve-threshold": -50.0,
       "curve-zone": -2.0,
@@ -190,8 +198,8 @@
       "lpf-mode": "off",
       "makeup": 1.0,
       "output-gain": 0.0,
-      "reduction": -15.0,
-      "release": 200.0,
+      "reduction": -60.0,
+      "release": 150.0,
       "sidechain": {
         "input": "Internal",
         "lookahead": 0.0,
@@ -209,53 +217,28 @@
       "alr-attack": 5.0,
       "alr-knee": 0.0,
       "alr-release": 50.0,
-      "attack": 1.0,
+      "attack": 2.0,
       "bypass": false,
       "dithering": "16bit",
       "external-sidechain": false,
-      "gain-boost": true,
+      "gain-boost": false,
       "input-gain": 0.0,
-      "lookahead": 5.0,
+      "lookahead": 2.0,
       "mode": "Herm Wide",
       "output-gain": 0.0,
       "oversampling": "Half x2(2L)",
       "release": 5.0,
       "sidechain-preamp": 0.0,
       "stereo-link": 100.0,
-      "threshold": -1.0
+      "threshold": -1.5
     },
     "plugins_order": [
-      "rnnoise#0",
+      "deepfilternet#0",
       "gate#0",
-      "deesser#0",
-      "compressor#0",
       "equalizer#0",
-      "speex#0",
+      "compressor#0",
+      "deesser#0",
       "limiter#0"
-    ],
-    "rnnoise#0": {
-      "bypass": false,
-      "enable-vad": false,
-      "input-gain": 0.0,
-      "model-path": "",
-      "output-gain": 0.0,
-      "release": 20.0,
-      "vad-thres": 50.0,
-      "wet": 0.0
-    },
-    "speex#0": {
-      "bypass": false,
-      "enable-agc": false,
-      "enable-denoise": false,
-      "enable-dereverb": false,
-      "input-gain": 0.0,
-      "noise-suppression": -70,
-      "output-gain": 0.0,
-      "vad": {
-        "enable": true,
-        "probability-continue": 90,
-        "probability-start": 95
-      }
-    }
+    ]
   }
 }

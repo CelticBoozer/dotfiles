@@ -1,6 +1,25 @@
 # Changelog
 <!-- markdownlint-disable MD024 -->
 <!-- cSpell:disable -->
+## 1.4.0 (2025-10-07)
+
+### Feat
+
+- **easyeffects**: add few new features
+- **add udiskie config, vesktop settings**: few changes
+- **lazygit**: add mesage is commet breaks
+- **lazygit**: add lazygit basic config
+- close #303
+
+### Fix
+
+- fix line-length in lazygit
+- documentation links
+- fix cspell
+- another fix of screenshot link for vesktop
+- wrong link in vesktop readme
+- fix typo and wrong code style
+
 ## 1.3.0 (2025-08-27)
 
 ### Feat

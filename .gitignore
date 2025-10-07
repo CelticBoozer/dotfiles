@@ -25,6 +25,7 @@
 .config/OpenRGB/logs/
 .config/OpenRGB/plugins/*.so
 !.config/paru/
+!.config/pipewire/
 !.config/pulsemixer.cfg
 !.config/rofi/
 !.config/swappy/

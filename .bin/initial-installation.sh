@@ -115,7 +115,7 @@ print_log_message $info_color "oh-my-zsh installation initiated..."
 0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 
-# Downloading all git submodules such as waybar-crypto, etc
+# Downloading all git submodules such as zsh-autosuggestions, etc...
 print_log_message $info_color "submodules update initiated..."
 cd "${HOME}" || exit
 git submodule update --init --recursive
@@ -135,6 +135,8 @@ sudo cp "${HOME}/.system-config-backup/tlp/tlp.conf" "/etc/tlp.conf"
 sudo cp "${HOME}/.system-config-backup/greetd/config.toml" "/etc/greetd/config.toml"
 sudo cp "${HOME}/.system-config-backup/reflector/reflector.conf" "/etc/xdg/reflector/reflector.conf"
 sudo cp "${HOME}/.system-config-backup/systemd/resolved.conf" "/etc/systemd/resolved.conf"
+sudo mkdir "/etc/security/limits.d/"
+sudo cp "${HOME}/.system-config-backup/audio/audio.conf" "/etc/security/limits.d/audio.conf"
 print_log_message $success_color "system configs has been copied."
 
 chsh -s /usr/bin/zsh celtic
@@ -143,7 +145,10 @@ curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/
 
 # Start some daemons
 print_log_message $info_color "enable the necessary services..."
-systemctl enable --now tlp.service
-systemctl enable --now greetd.service
-systemctl enable --now swayosd-libinput-backend.service
-systemctl enable --now reflector.service
+systemctl enable transmission.service
+systemctl enable tlp.service
+systemctl enable greetd.service
+systemctl enable swayosd-libinput-backend.service
+systemctl enable reflector.service
+
+print_log_message $success_color "system installation successfully completed. Please, reboot your computer."

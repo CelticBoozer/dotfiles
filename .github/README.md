@@ -80,7 +80,7 @@ All the info about my setup.
 | **Notification daemon**  | [swaync](https://github.com/ErikReider/SwayNotificationCenter/) [:gear:](../.config/swaync/)    [mako](https://github.com/emersion/mako/) [:hourglass:](../.config/mako/) |
 | **Popup daemon**         | [swayosd](https://github.com/ErikReider/SwayOSD/)                                                                                                                         |
 | **Bar**                  | [waybar](https://github.com/Alexays/Waybar/) [:gear:](../.config/waybar/)                                                                                                 |
-| **Audio daemon**         | [pipewire](https://github.com/PipeWire/pipewire/)                                                                                                                         |
+| **Audio daemon**         | [pipewire](https://github.com/PipeWire/pipewire/) [:gear:](../.config/pipewire/)                                                                                          |
 | **Application launcher** | [rofi](https://github.com/lbonn/rofi/) [:gear:](../.config/rofi/)                                                                                                         |
 | **Clipboard manager**    | [wl-clipboard](https://github.com/bugaevc/wl-clipboard/) (with [cliphist](https://github.com/sentriz/cliphist/))                                                          |
 | **Lock screen**          | [swaylock](https://github.com/jirutka/swaylock-effects/) [:gear:](../.config/swaylock/)                                                                                   |
@@ -110,6 +110,7 @@ All the info about my setup.
 | **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                                                                                                                 |
 | **System monitor**      | [btop](https://github.com/aristocratos/btop/) [:gear:](../.config/btop/)                                                                                                              |
 | **Pulse audio control** | [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer/) [:gear:](../.config/pulsemixer.cfg)                                                                                       |
+| **Torrent client**      | [stig](https://github.com/rndusr/stig)                                                                                                                                                |
 
 ### :window: GUI software
 
