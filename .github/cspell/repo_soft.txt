@@ -72,3 +72,4 @@ udiskie
 udisks
 mimeapps
 soundcard
+stig

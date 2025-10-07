@@ -1,41 +1,27 @@
 {
-    "audio_settings": {
-        "amplitude": 100,
-        "audio_device": -1,
-        "avg_mode": 0,
-        "avg_size": 8,
-        "decay": 80,
-        "equalizer": [
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0
-        ],
-        "filter_constant": 1.0,
-        "nrml_ofst": 0.03999999910593033,
-        "nrml_scl": 0.5,
-        "window_mode": 0
-    },
-    "brightness": 100,
-    "fps": 60,
-    "fpscapture": 60,
-    "hide_unsupported": true,
-    "prefer_random": false,
-    "prefered_colors": [],
-    "startup_profile": "rw-swap",
-    "temperature": 0,
-    "tint": 0,
-    "use_prefered_colors": false
+  "audio_settings": {
+    "amplitude": 100,
+    "audio_device": -1,
+    "avg_mode": 0,
+    "avg_size": 8,
+    "decay": 80,
+    "equalizer": [
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0
+    ],
+    "filter_constant": 1.0,
+    "nrml_ofst": 0.03999999910593033,
+    "nrml_scl": 0.5,
+    "window_mode": 0
+  },
+  "brightness": 100,
+  "fps": 60,
+  "fpscapture": 60,
+  "hide_unsupported": true,
+  "prefer_random": false,
+  "prefered_colors": [],
+  "startup_profile": "rw-swap",
+  "temperature": 0,
+  "tint": 0,
+  "use_prefered_colors": false
 }
