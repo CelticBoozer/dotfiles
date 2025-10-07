@@ -1,6 +1,7 @@
 advcpmv
 ddcui
 debtap
+gnu-netcat
 google-chrome
 google-java-format
 gruvbox-material-gtk-theme-git
@@ -13,6 +14,7 @@ pacnews-neovim-git
 paru
 pkgtools
 playit-bin
+python-async-timeout
 python-commitizen
 python-decli
 python-questionary
@@ -23,11 +25,13 @@ riseup-vpn
 rmlint
 rofi-power-menu
 sniprun
+stig
 swaykbdd
 swaylock-effects
 swayosd-git
 sworkstyle
 sysz
+tgpt-git
 vesktop-bin
 waybar-crypto
 waybar-module-pacman-updates-git

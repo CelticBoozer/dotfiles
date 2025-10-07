@@ -1,47 +1,50 @@
 {
-  "Effects": [
-    {
-      "AllowOnlyFirst": false,
-      "AutoStart": true,
-      "Brightness": 100,
-      "ControllerZones": [
+    "Effects": [
         {
-          "description": "HyperX Pulsefire Surge Device",
-          "is_segment": false,
-          "location": "HID /dev/hidraw1",
-          "name": "HyperX Pulsefire Surge",
-          "reverse": false,
-          "segment_idx": -1,
-          "self_brightness": 100,
-          "serial": "",
-          "vendor": "HyperX",
-          "version": "",
-          "zone_idx": 0
-        },
-        {
-          "description": "HyperX Pulsefire Surge Device",
-          "is_segment": false,
-          "location": "HID /dev/hidraw1",
-          "name": "HyperX Pulsefire Surge",
-          "reverse": false,
-          "segment_idx": -1,
-          "self_brightness": 100,
-          "serial": "",
-          "vendor": "HyperX",
-          "version": "",
-          "zone_idx": 1
+            "AllowOnlyFirst": false,
+            "AutoStart": true,
+            "Brightness": 100,
+            "ControllerZones": [
+                {
+                    "description": "HyperX Pulsefire Surge Device",
+                    "is_segment": false,
+                    "location": "HID /dev/hidraw5",
+                    "name": "HyperX Pulsefire Surge",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "HyperX",
+                    "version": "",
+                    "zone_idx": 0
+                },
+                {
+                    "description": "HyperX Pulsefire Surge Device",
+                    "is_segment": false,
+                    "location": "HID /dev/hidraw5",
+                    "name": "HyperX Pulsefire Surge",
+                    "reverse": false,
+                    "segment_idx": -1,
+                    "self_brightness": 100,
+                    "serial": "",
+                    "vendor": "HyperX",
+                    "version": "",
+                    "zone_idx": 1
+                }
+            ],
+            "CustomName": "",
+            "EffectClassName": "Swap",
+            "FPS": 60,
+            "RandomColors": false,
+            "Slider2Val": 1,
+            "Speed": 10,
+            "Temperature": 0,
+            "Tint": 0,
+            "UserColors": [
+                16777215,
+                255
+            ]
         }
-      ],
-      "CustomName": "",
-      "EffectClassName": "Swap",
-      "FPS": 60,
-      "RandomColors": false,
-      "Slider2Val": 1,
-      "Speed": 7,
-      "Temperature": 0,
-      "Tint": 0,
-      "UserColors": [16053750, 204]
-    }
-  ],
-  "version": 2
+    ],
+    "version": 2
 }
