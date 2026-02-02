@@ -34,6 +34,8 @@
 !.config/swaylock/
 !.config/swaync/
 !.config/sworkstyle/
+!.config/tatuin/
+.config/tatuin/settings.toml
 !.config/udiskie/
 !.config/user-dirs.dirs
 !.config/user-dirs.locale
