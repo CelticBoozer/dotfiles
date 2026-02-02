@@ -1,0 +1,14 @@
+[StreamInputs]
+inputDevice=alsa_input.usb-MV-SILICON_fifine_Microphone_20190808-00.mono-fallback
+visiblePage=pluginsPage
+
+[StreamOutputs]
+outputDevice=alsa_output.pci-0000_00_03.0.hdmi-stereo
+visiblePage=pluginsPage
+
+[TestSignals]
+signalType=pinkNoise
+
+[Window]
+height=718
+width=1278
