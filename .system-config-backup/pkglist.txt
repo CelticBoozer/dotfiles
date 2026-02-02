@@ -16,6 +16,7 @@ calibre
 cantarell-fonts
 chafa
 cliphist
+cloudflared
 cmake
 cool-retro-term
 ddcutil
@@ -49,6 +50,8 @@ grep
 groff
 groovy
 grub
+gst-plugin-pipewire
+gst-plugins-base
 gst-plugins-ugly
 gvfs-mtp
 gzip
@@ -93,13 +96,13 @@ mdadm
 mpv
 msmtp-mta
 mtpfs
-nautilus
 navi
 neovim
 net-tools
 netctl
 network-manager-applet
 networkmanager
+nodejs
 noto-fonts-emoji
 npm
 ntfs-3g
@@ -119,8 +122,11 @@ playerctl
 polkit
 postgresql
 pulsemixer
+python-distro
 python-pillow
 python-pip
+python-pipx
+python-pymupdf
 python-pystray
 python-requests
 qemu-desktop
@@ -145,6 +151,7 @@ telegram-desktop
 texinfo
 tlp-rdw
 transmission-cli
+tree
 ttf-dejavu
 ttf-hack
 ttf-jetbrains-mono
@@ -162,6 +169,7 @@ virtualbox-host-dkms
 waybar
 webkit2gtk
 webkit2gtk-4.1
+webkitgtk-6.0
 wget
 which
 wipe

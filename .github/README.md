@@ -105,12 +105,13 @@ All the info about my setup.
 | **Fuzzy file finder**   | [fzf](https://github.com/junegunn/fzf/)  [:gear:](../.fzfrc)                                                                                                                          |
 | **Fuzzy word finder**   | [ripgrep](https://github.com/BurntSushi/ripgrep/) [:gear:](../.ripgreprc)                                                                                                             |
 | **Cheat sheet tool**    | [navi](https://github.com/denisidoro/navi)                                                                                                                                            |
-| **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/)                                                                                                                                  |
+| **Git TUI**             | [lazygit](https://github.com/jesseduffield/lazygit/) [:gear:](../.config/lazygit/)                                                                                                    |
 | **Docker TUI**          | [lazydocker](https://github.com/jesseduffield/lazydocker/)                                                                                                                            |
 | **Trash CLI**           | [glib2](https://archlinux.org/packages/core/x86_64/glib2) (gio trash)                                                                                                                 |
 | **System monitor**      | [btop](https://github.com/aristocratos/btop/) [:gear:](../.config/btop/)                                                                                                              |
 | **Pulse audio control** | [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer/) [:gear:](../.config/pulsemixer.cfg)                                                                                       |
 | **Torrent client**      | [stig](https://github.com/rndusr/stig)                                                                                                                                                |
+| **Task manager**        | [tatuin](https://github.com/panter-dsd/tatuin) [:gear:](../.config/tatuin/)                                                                                                           |
 
 ### :window: GUI software
 

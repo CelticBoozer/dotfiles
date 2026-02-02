@@ -19,12 +19,17 @@ marker_marked = { fg = "cyan", bg = "cyan" }
 marker_selected = { fg = "#e78a4e", bg = "#e78a4e" }
 
 # Counts style
-count_copied = { fg = "gray", bg = "green" }
-count_cut = { fg = "gray", bg = "red" }
-count_selected = { fg = "gray", bg = "#e78a4e" }
+count_copied = { fg = "black", bg = "green" }
+count_cut = { fg = "black", bg = "red" }
+count_selected = { fg = "black", bg = "#e78a4e" }
 
 # Border Style
 border_style = { fg = "yellow" }
+
+[indicator]
+parent = { fg = "black", bg = "blue" }
+current = { fg = "black", bg = "blue" }
+preview = { fg = "black", bg = "blue" }
 
 # -----------
 # Tabs Style
@@ -51,6 +56,10 @@ select_alt = { fg = "white", bg = "#665c54", bold = true }
 overall = { fg = "white", bg = "darkgray" }
 sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
+perm_type = { fg = "blue" }
+perm_read = { fg = "yellow" }
+perm_exec = { fg = "green" }
+perm_sep = { fg = "white" }
 
 # --------------
 # Confirm Style
@@ -81,11 +90,11 @@ rules = [
   { mime = "application/{,g}zip", fg = "red" },
   { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar}", fg = "red" },
   { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "cyan" },
-  { name = "*", is = "orphan", bg = "red" },
-  { name = "*", is = "exec", fg = "green" },
-  { name = "*", is = "dummy", bg = "red" },
-  { name = "*/", is = "dummy", bg = "red" },
-  { name = "*/", fg = "blue" },
+  { url = "*", is = "orphan", bg = "red" },
+  { url = "*", is = "exec", fg = "green" },
+  { url = "*", is = "dummy", bg = "red" },
+  { url = "*/", is = "dummy", bg = "red" },
+  { url = "*/", fg = "blue" },
 ]
 
 # ----------------------------
@@ -240,17 +249,17 @@ files = [
 
 exts = [
   # Audio Files
-  { name = "aac", text = "", fg = "blue" },
-  { name = "aif", text = "", fg = "blue" },
-  { name = "aiff", text = "", fg = "blue" },
-  { name = "ape", text = "", fg = "blue" },
-  { name = "flac", text = "", fg = "blue" },
-  { name = "m4a", text = "", fg = "blue" },
-  { name = "mp3", text = "", fg = "blue" },
-  { name = "ogg", text = "", fg = "blue" },
-  { name = "opus", text = "", fg = "blue" },
-  { name = "wav", text = "", fg = "blue" },
-  { name = "wma", text = "", fg = "blue" },
+  { name = "aac", text = "", fg = "blue" },
+  { name = "aif", text = "", fg = "blue" },
+  { name = "aiff", text = "", fg = "blue" },
+  { name = "ape", text = "", fg = "blue" },
+  { name = "flac", text = "", fg = "blue" },
+  { name = "m4a", text = "", fg = "blue" },
+  { name = "mp3", text = "", fg = "blue" },
+  { name = "ogg", text = "", fg = "blue" },
+  { name = "opus", text = "", fg = "blue" },
+  { name = "wav", text = "", fg = "blue" },
+  { name = "wma", text = "", fg = "blue" },
 
   # Video Files
   { name = "3gp", text = "", fg = "#e78a4e" },

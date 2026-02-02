@@ -37,7 +37,7 @@ separator = ' '
 # --------------------
 '/nvim ?\w*/' = ''
 '/vim ?\w*/' = ''
-'/Yazi ?\w*/' = ''
+'/yazi ?\w*/' = ''
 'kitty' = ''
 'cool-retro-term.cool-retro-term' = ''
 
