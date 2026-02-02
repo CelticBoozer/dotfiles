@@ -56,7 +56,7 @@ let g:WhichKeyDesc_tool_debug = "<leader>td Debug window"
 let g:WhichKeyDesc_execution = "<leader>e Execution menu"
 let g:WhichKeyDesc_execution_run = "<leader>er Run"
 let g:WhichKeyDesc_execution_run_config = "<leader>eR Choose run configuration"
-let g:WhichKeyDesc_execution_stop = "<leader>eS Stop"
+let g:WhichKeyDesc_execution_stop = "<leader>es Stop"
 
 let g:WhichKeyDesc_debug = "<leader>d Debug menu"
 let g:WhichKeyDesc_debug_start = "<leader>de Strat debug"
@@ -98,6 +98,7 @@ let g:WhichKeyDesc_comment_block = "<leader>cb Comment block"
 map <C-q> <Action>(CloseContent)
 imap <C-q> <Action>(CloseContent)
 map <esc> :noh<CR>
+map U <Action>(Redo)
 
 " Tool windows
 map <leader>te :NERDTreeToggle<CR>
@@ -135,7 +136,7 @@ map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 map gd <Action>(GotoDeclaration)
 map gy <Action>(GotoTypeDeclaration)
 map gi <Action>(GotoImplementation)
-map gt <Action>(GotoTest)
+map gs <Action>(GotoTest)
 map gb <Action>(Back)
 map gn <Action>(Forward)
 
