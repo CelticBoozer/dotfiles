@@ -8,94 +8,68 @@ ratio = [1, 2, 3]
 # Sort using natural order (e.g., file10 after file2)
 sort_by = "natural"
 
+# Sort case-insensitively
+sort_sensitive = false
+
+# Sort in normal order
+sort_reverse = false
+
+# Sort directories first
+sort_dir_first = true
+
 # Apply transliteration to sort non-ASCII names properly
 sort_translit = true
 
 # Show file size in the list view
 linemode = "size"
 
+# Don't show hidden files
+show_hidden = false
+
+# Show the path of the symlink file
+show_symlink = true
+
 # Number of lines to keep above/below the cursor when scrolling
-# Note: 200 is extremely high and may reduce usability
 scrolloff = 10
+
+# Mouse events to capture
+mouse_events = ["click", "scroll"]
+
+# Format string for the title bar
+title_format = ""
 
 
 [preview]
+# Wrap long lines
+wrap = "yes"
+
+# Number of spaces per tab
+tab_size = 2
+
 # Max width/height of previewed images (in pixels)
-# Keep these values reasonable to avoid performance issues
 max_width = 720
 max_height = 1280
 
+# Image preview delay in milliseconds
+image_delay = 100
 
-[plugin]
+# Image downscaling filter to use
+image_filter = "catmull-rom"
 
-# -----------------------------------------------------------
-# Fetchers – Define how to fetch metadata or additional info
-# -----------------------------------------------------------
-fetchers = [
-  # Use MIME-based fetcher with high priority if MIME is not already present
-  { id = "mime", name = "*", run = "mime", if = "!mime", prio = "high" },
-]
+# Image quality (50-90)
+image_quality = 50
 
 
-# -------------------------------------------------------
-# Preloaders – Run before previewers, useful for caching
-# -------------------------------------------------------
-preloaders = [
-  # Specialized image formats, handled by ImageMagick
-  { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
+[opener]
+# Opener to use for opening files
+play = [{ run = "mpv %s", orphan = true, for = "unix" }]
+edit = [{ run = "kitty -e $EDITOR %s", orphan = true, for = "unix" }]
+open = [{ run = "xdg-open %s", desc = "Open" }]
 
-  # General image previewing
-  { mime = "image/*", run = "image" },
-
-  # Video thumbnails or metadata
-  { mime = "video/*", run = "video" },
-
-  # PDFs (can be slow — consider optional size check)
-  { mime = "application/pdf", run = "pdf" },
-
-  # Fonts
-  { mime = "font/*", run = "font" },
-  { mime = "application/vnd.ms-opentype", run = "font" },
-]
-
-
-# -------------------------------------------
-# Previewers – Shown when a file is selected
-# -------------------------------------------
-previewers = [
-  # Directories
-  { name = "*/", run = "folder", sync = true },
-
-  # Text/code files
-  { mime = "text/*", run = "code" },
-  { mime = "*/{xml,javascript,x-wine-extension-ini}", run = "code" },
-
-  # JSON files
-  { mime = "application/{json,x-ndjson}", run = "json" },
-
-  # Specialized image formats
-  { mime = "image/{avif,hei?,jxl,svg+xml}", run = "magick" },
-
-  # All other images
-  { mime = "image/*", run = "image" },
-
-  # Video files
-  { mime = "video/*", run = "video" },
-
-  # PDF documents
-  { mime = "application/pdf", run = "pdf" },
-
-  # Archives (tarballs, 7z, ISO)
-  { mime = "application/{,g}zip", run = "archive" },
-  { mime = "application/x-{tar,bzip*,7z-compressed,xz,rar,iso9660-image}", run = "archive" },
-
-  # Fonts
-  { mime = "font/*", run = "font" },
-  { mime = "application/vnd.ms-opentype", run = "font" },
-
-  # Empty file handler
-  { mime = "inode/x-empty", run = "empty" },
-
-  # Fallback if nothing else matches
-  { name = "*", run = "file" },
+[open]
+rules = [
+  { mime = "text/*", use = "edit" },
+  { mime = "video/*", use = "play" },
+  { mime = "audio/*", use = "play" },
+  { mime = "*", use = "open" },
 ]
