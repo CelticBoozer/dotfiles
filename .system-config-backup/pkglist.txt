@@ -130,6 +130,7 @@ python-pymupdf
 python-pystray
 python-requests
 qemu-desktop
+rate-mirrors
 reflector
 ripgrep
 rofi

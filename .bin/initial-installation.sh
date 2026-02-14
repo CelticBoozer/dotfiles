@@ -112,7 +112,7 @@ print_log_message $success_color "paru cache has been cleared."
 
 # Installing and configuring oh-my-zsh
 print_log_message $info_color "oh-my-zsh installation initiated..."
-0>/dev/null sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 mv "${HOME}/.zshrc.pre-oh-my-zsh" "${HOME}/.zshrc"
 
 # Downloading all git submodules such as zsh-autosuggestions, etc...
@@ -139,16 +139,16 @@ sudo mkdir "/etc/security/limits.d/"
 sudo cp "${HOME}/.system-config-backup/audio/audio.conf" "/etc/security/limits.d/audio.conf"
 print_log_message $success_color "system configs has been copied."
 
-chsh -s /usr/bin/zsh celtic
+chsh -s /usr/bin/zsh "$USER"
 
 curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/effects/release_0.9/OpenRGBEffectsPlugin_0.9_Bullseye_64_f1411e1.so
 
 # Start some daemons
 print_log_message $info_color "enable the necessary services..."
-systemctl enable transmission.service
-systemctl enable tlp.service
-systemctl enable greetd.service
-systemctl enable swayosd-libinput-backend.service
-systemctl enable reflector.service
+sudo systemctl enable transmission.service
+sudo systemctl enable tlp.service
+sudo systemctl enable greetd.service
+sudo systemctl enable swayosd-libinput-backend.service
+sudo systemctl enable reflector.timer
 
 print_log_message $success_color "system installation successfully completed. Please, reboot your computer."

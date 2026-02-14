@@ -1,153 +1,262 @@
-" Set basics
 " ==================================================================================================
-set clipboard=unnamedplus
-set guicursor=n-v-c:block,i-ci-ve:ver20,r-cr-o:hor20
-set hlsearch
-set ignorecase
-set incsearch
-set showcmd
-set showmode
-set smartcase
-set visualbell
-set colorcolumn=100
-set cursorline
-set list
-set relativenumber
-set notimeout
+" CORE SETTINGS
+" ==================================================================================================
 
+" Map Leader Key to Backslash
 let mapleader ="\"
 
-" Plugin settings
+" Clipboard & Editing behavior
+set clipboard=unnamedplus      " Use system clipboard
+set scrolloff=10               " Keep 10 lines visible above/below cursor
+set ideaput                    " Use IDE's paste handling
+set ideajoin                   " Use IDE's line join handling
+set notimeout                  " Disable timeout for mappings
+
+" UI & Visuals
+set guicursor=n-v-c:block,i-ci-ve:ver20,r-cr-o:hor20 " Cursor styles
+set visualbell                 " No beep sound
+set colorcolumn=100            " Line length marker
+set cursorline                 " Highlight current line
+set list                       " Show whitespace characters
+set relativenumber             " Relative line numbers
+set showcmd                    " Show command in bottom bar
+set showmode                   " Show current mode (Normal/Insert)
+
+" Search Settings
+set hlsearch                   " Highlight search results
+set incsearch                  " Incremental search
+set ignorecase                 " Ignore case when searching...
+set smartcase                  " ...unless uppercase letters are used
+
+" Clear search highlighting with Esc
+nnoremap <Esc> :nohlsearch<CR>
+
+" ==================================================================================================
+" PLUGIN ENABLEMENT
 " ==================================================================================================
 set nerdtree
 set sneak
 set surround
-
-" Highlightedyank settings
+set easymotion
 set highlightedyank
+set which-key
+
+" ==================================================================================================
+" PLUGIN CONFIGURATION: Visuals
+" ==================================================================================================
+
+" --- Highlightedyank Settings ---
+let g:highlightedyank_highlight_duration = "200"
 let g:highlightedyank_highlight_color = "rgba(216, 166, 87, 155)"
 let g:highlightedyank_highlight_foreground_color = "rgba(50, 48, 47, 255)"
 
-" Which-key settings
-set which-key
+" --- Which-key Visual Settings ---
 let g:WhichKey_FontSize = 16
 let g:WhichKey_KeyColor = "#e78a4e"
 let g:WhichKey_PrefixColor = "#7daea3"
 let g:WhichKey_CommandColor = "#a9b665"
 let g:WhichKey_SortOrder = "by_key_prefix_first"
 
+" Define Leader key description
 let g:WhichKeyDesc_leader = "<leader> Leader key"
 
-let g:WhichKeyDesc_recent = "<leader><leader> Recent files"
-
-let g:WhichKeyDesc_tool = "<leader>t Tool window menu"
-let g:WhichKeyDesc_tool_file = "<leader>te File explorer"
-let g:WhichKeyDesc_tool_terminal = "<leader>tt Terminal window"
-let g:WhichKeyDesc_tool_git = "<leader>tg Git window"
-let g:WhichKeyDesc_tool_commit = "<leader>tc Commit window"
-let g:WhichKeyDesc_tool_problem = "<leader>tl Problems window"
-let g:WhichKeyDesc_tool_run = "<leader>tr Run window"
-let g:WhichKeyDesc_tool_database = "<leader>tb Database window"
-let g:WhichKeyDesc_tool_structure = "<leader>to Outline structure window"
-let g:WhichKeyDesc_tool_maven = "<leader>tm Maven window"
-let g:WhichKeyDesc_tool_checkstyle = "<leader>ts Checkstyle window"
-let g:WhichKeyDesc_tool_debug = "<leader>td Debug window"
-
-let g:WhichKeyDesc_execution = "<leader>e Execution menu"
-let g:WhichKeyDesc_execution_run = "<leader>er Run"
-let g:WhichKeyDesc_execution_run_config = "<leader>eR Choose run configuration"
-let g:WhichKeyDesc_execution_stop = "<leader>es Stop"
-
-let g:WhichKeyDesc_debug = "<leader>d Debug menu"
-let g:WhichKeyDesc_debug_start = "<leader>de Strat debug"
-let g:WhichKeyDesc_debug_add_breakpoint = "<leader>db Add Breakpoint"
-
-let g:WhichKeyDesc_split = "<leader>w Split menu"
-let g:WhichKeyDesc_split_vertically = "<leader>ws Split vertically"
-let g:WhichKeyDesc_split_horizontally = "<leader>wS Split horizontally"
-
-let g:WhichKeyDesc_refactor = "<leader>r Refactor menu"
-let g:WhichKeyDesc_refactor_rename = "<leader>rn Rename element"
-let g:WhichKeyDesc_refactor_reformat_code = "<leader>rf Reformat code"
-let g:WhichKeyDesc_refactor_action_list = "<leader>rr Actions list"
-
-let g:WhichKeyDesc_go_to = "g Go to menu"
-let g:WhichKeyDesc_go_to_declaration = "gd Go to declaration"
-let g:WhichKeyDesc_go_to_type_declaration = "gy Go to type declaration"
-let g:WhichKeyDesc_go_to_implementation = "gi Go to implementation"
-let g:WhichKeyDesc_go_to_test = "gt Go to test"
-let g:WhichKeyDesc_go_to_back = "gb Go back"
-let g:WhichKeyDesc_go_to_forward = "gn Go forward"
-
-let g:WhichKeyDesc_action = "<leader>a Actions"
-let g:WhichKeyDesc_action_context = "<leader>aa Show intention actions"
-let g:WhichKeyDesc_action_generate = "<leader>ag Generate"
-
-
-let g:WhichKeyDesc_search = "<leader>f Search"
-let g:WhichKeyDesc_search_all = "<leader>ff Search everywhere"
-let g:WhichKeyDesc_search_references = "<leader>fr Search references"
-
-let g:WhichKeyDesc_comment = "<leader>c Comment"
-let g:WhichKeyDesc_comment_line = "<leader>cc Comment line"
-let g:WhichKeyDesc_comment_block = "<leader>cb Comment block"
-
 " ==================================================================================================
-" To get actions list, use
-" General
-map <C-q> <Action>(CloseContent)
-imap <C-q> <Action>(CloseContent)
-map <esc> :noh<CR>
-map U <Action>(Redo)
+" NAVIGATION & GENERAL MAPPINGS
+" ==================================================================================================
 
-" Tool windows
-map <leader>te :NERDTreeToggle<CR>
-map <leader>tt <Action>(ActivateTerminalToolWindow)
-map <leader>tg <Action>(ActivateVersionControlToolWindow)
-map <leader>tc <Action>(ActivateCommitToolWindow)
-map <leader>tl <Action>(ActivateProblemsViewToolWindow)
-map <leader>tr <Action>(ActivateRunToolWindow)
-map <leader>tb <Action>(ActivateDatabaseToolWindow)
-map <leader>to <Action>(ActivateStructureToolWindow)
-map <leader>tm <Action>(ActivateMavenToolWindow)
-map <leader>ts <Action>(ActivateCheckStyleToolWindow)
-map <leader>td <Action>(ActivateDebugToolWindow)
+" --- General Window/Buffer Navigation ---
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+" --- Tab Navigation (Replaces standard H/L) ---
+" Use H and L to switch between editor tabs
+nnoremap L :action NextTab<CR>
+nnoremap H :action PreviousTab<CR>
+
+" --- Closing Buffers ---
+let g:WhichKeyDesc_recent = "<leader><leader> Recent files"
 map <leader><leader> <Action>(RecentFiles)
 
-" Code execution
-map <leader>er <Action>(Run)
-map <leader>eR <Action>(ChooseRunConfiguration)
-map <leader>es <Action>(Stop)
+" Close current tab
+let g:WhichKeyDesc_close_tab = "<leader>q Close current tab"
+nnoremap <leader>q :action CloseContent<CR>
 
-" Debug
-map <leader>db <Action>(ToggleLineBreakpoint)
-map <leader>de <Action>(Debug)
+" Close all OTHER tabs
+let g:WhichKeyDesc_close_others = "<leader>Q Close other tabs"
+nnoremap <leader>Q :action CloseAllEditorsButActive<CR>
 
-" Window splits
-map <leader>ws <Action>(SplitVertically)
-map <leader>wS <Action>(SplitHorizontally)
+" Reopen closed tab (Changed from 'tr' to 'tu' to avoid conflict with Tool-Run)
+let g:WhichKeyDesc_reopen_tab = "<leader>tu Reopen closed tab (Undo)"
+nnoremap <leader>tu :action ReopenClosedTab<CR>
 
-" Refactoring
-map <leader>rn <Action>(RenameElement)
-map <leader>rf <Action>(ReformatCode)
-map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+" --- General Actions ---
+map <C-q> <Action>(CloseContent)
+imap <C-q> <Action>(CloseContent)
+map U <Action>(Redo)
+nnoremap Q @q  " Enable macros with Q
 
-" Go to code
-map gd <Action>(GotoDeclaration)
-map gy <Action>(GotoTypeDeclaration)
-map gi <Action>(GotoImplementation)
-map gs <Action>(GotoTest)
-map gb <Action>(Back)
-map gn <Action>(Forward)
+" ==================================================================================================
+" PLUGIN CONFIGURATION: EasyMotion
+" ==================================================================================================
+" Disable default mappings to avoid conflicts
+let g:EasyMotion_do_mapping = 0
+" Enable smartcase (abc finds ABC, but Abc finds only Abc)
+let g:EasyMotion_smartcase = 1
 
-" Actions
-map <leader>aa <action>(ShowIntentionActions)
-map <leader>ag <action>(Generate)
+" --- S-Key Navigation (2-char search) ---
+" Usage: Press s, then type 2 chars to jump anywhere
+let g:WhichKeyDesc_easymotion_s = "<leader>s Jump to Char (EasyMotion)"
+nmap s <Plug>(easymotion-s2)
+vmap s <Plug>(easymotion-s2)
 
-" Search
+" --- Vertical Line Navigation ---
+let g:WhichKeyDesc_easymotion_j = "<leader>j Jump Line Down"
+map <leader>j <Plug>(easymotion-j)
+
+let g:WhichKeyDesc_easymotion_k = "<leader>k Jump Line Up"
+map <leader>k <Plug>(easymotion-k)
+
+" ==================================================================================================
+" GROUP: Tool Windows (<leader>t...)
+" ==================================================================================================
+let g:WhichKeyDesc_tool = "<leader>t Tool window menu"
+
+let g:WhichKeyDesc_tool_file = "<leader>te File explorer"
+map <leader>te <Action>(ActivateProjectToolWindow)
+
+let g:WhichKeyDesc_tool_terminal = "<leader>tt Terminal window"
+map <leader>tt <Action>(ActivateTerminalToolWindow)
+
+let g:WhichKeyDesc_tool_git = "<leader>tg Git window"
+map <leader>tg <Action>(ActivateVersionControlToolWindow)
+
+let g:WhichKeyDesc_tool_commit = "<leader>tc Commit window"
+map <leader>tc <Action>(ActivateCommitToolWindow)
+
+let g:WhichKeyDesc_tool_problem = "<leader>tl Problems window"
+map <leader>tl <Action>(ActivateProblemsViewToolWindow)
+
+let g:WhichKeyDesc_tool_run = "<leader>tr Run window"
+map <leader>tr <Action>(ActivateRunToolWindow)
+
+let g:WhichKeyDesc_tool_database = "<leader>tb Database window"
+map <leader>tb <Action>(ActivateDatabaseToolWindow)
+
+let g:WhichKeyDesc_tool_structure = "<leader>to Outline structure window"
+map <leader>to <Action>(ActivateStructureToolWindow)
+
+let g:WhichKeyDesc_tool_maven = "<leader>tm Maven window"
+map <leader>tm <Action>(ActivateMavenToolWindow)
+
+let g:WhichKeyDesc_tool_checkstyle = "<leader>ts Checkstyle window"
+map <leader>ts <Action>(ActivateCheckStyleToolWindow)
+
+let g:WhichKeyDesc_tool_debug = "<leader>td Debug window"
+map <leader>td <Action>(ActivateDebugToolWindow)
+
+" ==================================================================================================
+" GROUP: Search & GoTo (g... / <leader>f...)
+" ==================================================================================================
+let g:WhichKeyDesc_go_to = "g Go to menu"
+let g:WhichKeyDesc_search = "<leader>f Search"
+
+" Search Everywhere
+let g:WhichKeyDesc_search_all = "<leader>ff Search everywhere"
 map <leader>ff <action>(SearchEverywhere)
+
+" Search References / Usages
+let g:WhichKeyDesc_search_references = "<leader>fr Search references"
 map <leader>fr <Action>(ShowUsages)
 
-" Comments
+" Go To Definitions
+let g:WhichKeyDesc_go_to_declaration = "gd Go to declaration"
+map gd <Action>(GotoDeclaration)
+
+let g:WhichKeyDesc_go_to_type_declaration = "gy Go to type declaration"
+map gy <Action>(GotoTypeDeclaration)
+
+let g:WhichKeyDesc_go_to_implementation = "gi Go to implementation"
+map gi <Action>(GotoImplementation)
+
+let g:WhichKeyDesc_go_to_test = "gs Go to test"
+map gs <Action>(GotoTest)
+
+" Navigate Back/Forward in history
+let g:WhichKeyDesc_go_to_back = "gb Go back"
+map gb <Action>(Back)
+
+let g:WhichKeyDesc_go_to_forward = "gn Go forward"
+map gn <Action>(Forward)
+
+" ==================================================================================================
+" GROUP: Execution & Debug (<leader>e...)
+" ==================================================================================================
+let g:WhichKeyDesc_execution = "<leader>e Execution menu"
+
+let g:WhichKeyDesc_execution_run = "<leader>er Run"
+map <leader>er <Action>(Run)
+
+let g:WhichKeyDesc_execution_run_config = "<leader>eR Choose run configuration"
+map <leader>eR <Action>(ChooseRunConfiguration)
+
+let g:WhichKeyDesc_execution_run_class = "<leader>ec Run current class"
+map <leader>ec <Action>(RunClass)
+
+let g:WhichKeyDesc_execution_stop = "<leader>es Stop"
+map <leader>es <Action>(Stop)
+
+let g:WhichKeyDesc_execution_run_debug = "<leader>ed Run in debug mode"
+map <leader>ed <Action>(Debug)
+
+" Breakpoints
+let g:WhichKeyDesc_debug_add_breakpoint = "<leader>b Add Breakpoint"
+map <leader>b <Action>(ToggleLineBreakpoint)
+
+" ==================================================================================================
+" GROUP: Refactoring (<leader>r...)
+" ==================================================================================================
+let g:WhichKeyDesc_refactor = "<leader>r Refactor menu"
+
+let g:WhichKeyDesc_refactor_rename = "<leader>rn Rename element"
+map <leader>rn <Action>(RenameElement)
+
+let g:WhichKeyDesc_refactor_reformat_code = "<leader>rf Reformat code"
+map <leader>rf <Action>(ReformatCode)
+
+let g:WhichKeyDesc_refactor_action_list = "<leader>rr Actions list"
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+" ==================================================================================================
+" GROUP: Code Actions & Intentions (<leader>a...)
+" ==================================================================================================
+let g:WhichKeyDesc_action = "<leader>a Actions"
+
+let g:WhichKeyDesc_action_context = "<leader>aa Show intention actions"
+map <leader>aa <action>(ShowIntentionActions)
+
+let g:WhichKeyDesc_action_generate = "<leader>ag Generate"
+map <leader>ag <action>(Generate)
+
+" ==================================================================================================
+" GROUP: Comments (<leader>c...)
+" ==================================================================================================
+let g:WhichKeyDesc_comment = "<leader>c Comment"
+
+let g:WhichKeyDesc_comment_line = "<leader>cc Comment line"
 map <leader>cc <Action>(CommentByLineComment)
+
+let g:WhichKeyDesc_comment_block = "<leader>cb Comment block"
 map <leader>cb <Action>(CommentByBlockComment)
+
+" ==================================================================================================
+" GROUP: Splits (<leader>w...)
+" ==================================================================================================
+let g:WhichKeyDesc_split = "<leader>w Split menu"
+
+let g:WhichKeyDesc_split_vertically = "<leader>ws Split vertically"
+map <leader>ws <Action>(SplitVertically)
+
+let g:WhichKeyDesc_split_horizontally = "<leader>wS Split horizontally"
+map <leader>wS <Action>(SplitHorizontally)

@@ -28,7 +28,6 @@ python-questionary
 python-sentencepiece
 python-sse-starlette
 python-xlsx2csv
-rate-mirrors
 reiserfsprogs
 riseup-vpn
 rmlint
