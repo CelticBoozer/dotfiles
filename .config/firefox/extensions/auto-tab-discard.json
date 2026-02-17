@@ -47,7 +47,6 @@
     "whitelist": [
       "swap.bingx.com",
       "bingx.com",
-      "hd.kinopoisk.ru",
       "open.spotify.com",
       "github.com",
       "www.mexc.com",
@@ -57,7 +56,21 @@
       "www.kucoin.com",
       "www.bitget.com",
       "hyperskill.org",
-      "chatgpt.com"
+      "chatgpt.com",
+      "app.roll20.net",
+      "dnd.su",
+      "chat.deepseek.com",
+      "coursehunter.net",
+      "www.codewars.com",
+      "copilot.microsoft.com",
+      "ttg.club",
+      "claude.ai",
+      "gemini.google.com",
+      "www.skarnik.by",
+      "slounik.org",
+      "5e14.ttg.club",
+      "kinakipa.site",
+      "anibel.net"
     ],
     "whitelist-url": []
   },
