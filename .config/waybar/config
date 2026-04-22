@@ -15,14 +15,16 @@
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "custom/arrow-light-on-bg-left",
+    "custom/arrow-dark-on-bg-left",
     "pulseaudio",
-    "custom/arrow-dark-on-light-left",
-    "network",
     "custom/arrow-light-on-dark-left",
-    "cpu",
+    "network",
     "custom/arrow-dark-on-light-left",
+    "cpu",
+    "custom/arrow-light-on-dark-left",
     "memory",
+    "custom/arrow-dark-on-light-left",
+    "bluetooth",
     "custom/arrow-light-on-dark-left",
     "temperature",
     "custom/arrow-dark-on-light-left",
@@ -103,10 +105,10 @@
   "pulseaudio": {
     "scroll-step": 1,
     "format": "{volume}% {icon} {format_source}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": "<span foreground='#ea6962'>󰗾 {format_source}</span>",
+    "format-bluetooth": "{volume}% <span foreground='#7daea3'>󰗾</span> {format_source}",
+    "format-bluetooth-muted": " <span foreground='#ea6962'>󰗿 {format_source}</span>",
     "format-muted": "<span foreground='#ea6962'></span> {format_source}",
-    "format-source": " ",
+    "format-source": "",
     "format-source-muted": " <span foreground='#ea6962'></span>",
     "format-icons": {
       "headphone": "",
@@ -148,7 +150,23 @@
       "critical": 80
     },
     "tooltip-format": "RAM: {used}GB/{total}GB\nSwap: {swapUsed}GB/{swapAvail}GB",
-    "on-click": "kitty --class=floating_waybar -e sysz",
+    "on-click": "kitty --class=floating_waybar -e sysz"
+  },
+
+
+  "bluetooth": {
+    "format": "󰂯 ",
+    "format-disabled": "󰂲",
+    "format-off": "󰂲",
+    "format-on": "󰂯 ",
+    "format-connected": "󰂱 {device_alias}",
+    "format-connected-battery": "󰂱 {device_alias} {device_battery_percentage}%",
+    "tooltip": true,
+    "tooltip-format": "{controller_alias}  {controller_address}",
+    "tooltip-format-connected": "{controller_alias}  {controller_address}\n\n{num_connections} connected\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "  {device_alias}  {device_address}",
+    "tooltip-format-enumerate-connected-battery": "  {device_alias}  {device_address}  {device_battery_percentage}%",
+    "on-click": "rofi-bluetooth"
   },
 
   "temperature": {
@@ -207,7 +225,7 @@
     "spacing": 5
   },
 
-  "custom/arrow-light-on-bg-left": {
+  "custom/arrow-dark-on-bg-left": {
     "tooltip": false,
     "format": ""
   },
