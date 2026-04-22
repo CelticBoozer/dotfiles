@@ -80,7 +80,7 @@ done
 # ---------------
 # 5. Empty trash
 # ---------------
-printf "${CYAN}[5/6] Cleaning stale /tmp files (older than 3 days)...${RESET}\n"
+printf "${CYAN}[5/6] Empty gio trash...${RESET}\n"
 gio trash --empty
 
 # ----------------------------------
