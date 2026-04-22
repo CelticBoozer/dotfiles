@@ -27,7 +27,7 @@ delete_path() {
 # ---------------------------------------
 # 1. Remove known unnecessary dirs/files
 # ---------------------------------------
-printf "${CYAN}[1/5] Removing unused files and directories...${RESET}\n"
+printf "${CYAN}[1/6] Removing unused files and directories...${RESET}\n"
 
 delete_path "${HOME}/.android"        # Android SDK leftovers
 delete_path "${HOME}/.cargo"          # Rust cache
@@ -55,7 +55,7 @@ fi
 # ------------------------
 # 2. Clear cliphist cache
 # ------------------------
-printf "${CYAN}[2/5] Clearing cliphist cache...${RESET}\n"
+printf "${CYAN}[2/6] Clearing cliphist cache...${RESET}\n"
 if command -v cliphist &>/dev/null; then
   cliphist wipe && printf "${GREEN}cliphist cache wiped${RESET}\n"
 else
@@ -65,22 +65,28 @@ fi
 # -------------------------------
 # 3. Vacuum systemd journal logs
 # -------------------------------
-printf "${CYAN}[3/5] Vacuuming journal logs older than 7 days...${RESET}\n"
+printf "${CYAN}[3/6] Vacuuming journal logs older than 7 days...${RESET}\n"
 sudo journalctl --vacuum-time=7d &&
   printf "${GREEN}Journal logs vacuumed${RESET}\n"
 
 # --------------------------
 # 4. Clean stale /tmp files
 # --------------------------
-printf "${CYAN}[4/5] Cleaning stale /tmp files (older than 3 days)...${RESET}\n"
+printf "${CYAN}[4/6] Cleaning stale /tmp files (older than 3 days)...${RESET}\n"
 sudo find /tmp -mindepth 1 -mtime +3 -print0 | while IFS= read -r -d '' file; do
   sudo rm -rf "$file" && printf "${GREEN}Deleted stale tmp:${RESET} %s\n" "$file"
 done
 
+# ---------------
+# 5. Empty trash
+# ---------------
+printf "${CYAN}[5/6] Cleaning stale /tmp files (older than 3 days)...${RESET}\n"
+gio trash --empty
+
 # ----------------------------------
-# 5. Run rmlint on selected folders
+# 6. Run rmlint on selected folders
 # ----------------------------------
-printf "${CYAN}[5/5] Running rmlint on select folders...${RESET}\n"
+printf "${CYAN}[6/6] Running rmlint on select folders...${RESET}\n"
 RMLINT_TARGETS=(
   "${HOME}/Documents"
   "${HOME}/Videos"
