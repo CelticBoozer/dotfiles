@@ -22,7 +22,10 @@ plugins=(fast-syntax-highlighting
         dirhistory
         archlinux
         vi-mode
-        timer)
+        timer
+        zsh-completions
+        colored-man-pages
+        command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,5 +40,7 @@ alias cat="bat"
 alias find="fd -I -c always"
 
 export PATH=$PATH:/home/celtic/.millennium/ext/bin
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+export HISTSIZE=50000
+export SAVEHIST=50000
 export TERMCMD='kitty -e "terminal filechooser"'
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
