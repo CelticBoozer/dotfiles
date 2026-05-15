@@ -47,9 +47,9 @@
    Custom Arrows (Decorative)
    --------------------------- */
 /* Arrow facing left with a light-on-bg style */
-#custom-arrow-light-on-bg-left {
+#custom-arrow-dark-on-bg-left {
   font-size: 17px;
-  color: #3c3836;
+  color: #32302f;
   background: transparent;
 }
 /* Arrow facing right with a light-on-bg style */
@@ -77,8 +77,9 @@
    Module Backgrounds & Padding
    ----------------------------- */
 /* General background for specific modules */
-#network,
-#memory,
+#pulseaudio,
+#cpu,
+#bluetooth,
 #backlight,
 #language,
 #tray,
@@ -88,8 +89,8 @@
 }
 
 /* Background settings for performance/monitoring modules */
-#cpu,
-#pulseaudio,
+#network,
+#memory,
 #temperature,
 #battery,
 #custom-notification,
@@ -129,8 +130,12 @@
 #battery.charging {
   color: #a9b665;
 }
-/* Bluetooth audio devices styling */
-#pulseaudio.bluetooth {
+/* Bluetooth status styling */
+#bluetooth.disabled,
+#bluetooth.off {
+  color: #928374;
+}
+#bluetooth.connected {
   color: #7daea3;
 }
 /* Tooltip styling */

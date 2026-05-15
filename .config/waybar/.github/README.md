@@ -29,17 +29,22 @@ Some plugins have an intended behavior when you click on them with the mouse.
   - Left-click to run the sysupg script, to upgrade system.
 - clock:
   - Left-click to change the mode to date.
+  - Riht-click to run the tatuin.
 - pulseaudio:
   - Left-click to run the pulsemixer.
   - Right-click to run the easyeffects.
+  - Wheel to change the volume.
 - network:
   - Left-click to run the nmtui.
 - cpu:
   - Left-click to run the btop.
+  - Right-click to run the lazyjournal.
+- bluetooth:
+  -Left-click to run the rofi-bluetooth.
 - memory:
   - Left-click to run the sysz.
 - backlight:
-  - Wheel to adjust/decrease the brightness of the monitor.
+  - Wheel to change the brightness of the monitor.
 - notification:
   - Left-click to run the SwayNC panel.
   - Right-click to enter the do-not-disturb-mode.

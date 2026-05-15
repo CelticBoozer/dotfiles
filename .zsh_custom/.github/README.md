@@ -7,3 +7,4 @@ List of plugins:
 
 - fast-syntax-highlighting - fast syntax highlighting for zsh.
 - zsh-autosuggestions - autosuggestions for zsh.
+- zsh-completions - zsh completions.
