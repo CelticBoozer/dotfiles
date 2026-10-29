@@ -61,6 +61,17 @@ let g:WhichKey_SortOrder = "by_key_prefix_first"
 let g:WhichKeyDesc_leader = "<leader> Leader key"
 
 " ==================================================================================================
+" PLUGIN CONFIGURATION: Surround Hints
+" ==================================================================================================
+" Hints for operators (triggered after pressing y, c, or d)
+let g:WhichKeyDesc_surround_yank = "ys Add surround (e.g., ysiw')"
+let g:WhichKeyDesc_surround_change = "cs Change surround (e.g., cs'\")"
+let g:WhichKeyDesc_surround_delete = "ds Delete surround (e.g., ds')"
+
+" Hint for visual mode surround
+let g:WhichKeyDesc_surround_visual = "S Surround visual selection"
+
+" ==================================================================================================
 " NAVIGATION & GENERAL MAPPINGS
 " ==================================================================================================
 
@@ -75,21 +86,9 @@ nnoremap <C-l> <C-w>l
 nnoremap L :action NextTab<CR>
 nnoremap H :action PreviousTab<CR>
 
-" --- Closing Buffers ---
+" --- Recent Files ---
 let g:WhichKeyDesc_recent = "<leader><leader> Recent files"
 map <leader><leader> <Action>(RecentFiles)
-
-" Close current tab
-let g:WhichKeyDesc_close_tab = "<leader>q Close current tab"
-nnoremap <leader>q :action CloseContent<CR>
-
-" Close all OTHER tabs
-let g:WhichKeyDesc_close_others = "<leader>Q Close other tabs"
-nnoremap <leader>Q :action CloseAllEditorsButActive<CR>
-
-" Reopen closed tab (Changed from 'tr' to 'tu' to avoid conflict with Tool-Run)
-let g:WhichKeyDesc_reopen_tab = "<leader>tu Reopen closed tab (Undo)"
-nnoremap <leader>tu :action ReopenClosedTab<CR>
 
 " --- General Actions ---
 map <C-q> <Action>(CloseContent)
@@ -98,25 +97,24 @@ map U <Action>(Redo)
 nnoremap Q @q  " Enable macros with Q
 
 " ==================================================================================================
-" PLUGIN CONFIGURATION: EasyMotion
+" GROUP: EasyMotion & Motions (<leader>m...)
 " ==================================================================================================
 " Disable default mappings to avoid conflicts
 let g:EasyMotion_do_mapping = 0
 " Enable smartcase (abc finds ABC, but Abc finds only Abc)
 let g:EasyMotion_smartcase = 1
 
-" --- S-Key Navigation (2-char search) ---
-" Usage: Press s, then type 2 chars to jump anywhere
-let g:WhichKeyDesc_easymotion_s = "<leader>s Jump to Char (EasyMotion)"
-nmap s <Plug>(easymotion-s2)
-vmap s <Plug>(easymotion-s2)
+let g:WhichKeyDesc_motion = "<leader>m EasyMotion menu"
 
-" --- Vertical Line Navigation ---
-let g:WhichKeyDesc_easymotion_j = "<leader>j Jump Line Down"
-map <leader>j <Plug>(easymotion-j)
+let g:WhichKeyDesc_easymotion_s = "<leader>ms Jump to character (2 chars)"
+nmap <leader>ms <Plug>(easymotion-s2)
+vmap <leader>ms <Plug>(easymotion-s2)
 
-let g:WhichKeyDesc_easymotion_k = "<leader>k Jump Line Up"
-map <leader>k <Plug>(easymotion-k)
+let g:WhichKeyDesc_easymotion_j = "<leader>mj Jump line down"
+map <leader>mj <Plug>(easymotion-j)
+
+let g:WhichKeyDesc_easymotion_k = "<leader>mk Jump line up"
+map <leader>mk <Plug>(easymotion-k)
 
 " ==================================================================================================
 " GROUP: Tool Windows (<leader>t...)
@@ -225,6 +223,9 @@ map <leader>rn <Action>(RenameElement)
 let g:WhichKeyDesc_refactor_reformat_code = "<leader>rf Reformat code"
 map <leader>rf <Action>(ReformatCode)
 
+let g:WhichKeyDesc_refactor_reformat_code = "<leader>rF Reformat code"
+map <leader>rF <Action>(ShowReformatFileDialog)
+
 let g:WhichKeyDesc_refactor_action_list = "<leader>rr Actions list"
 map <leader>rr <Action>(Refactorings.QuickListPopupAction)
 
@@ -251,12 +252,27 @@ let g:WhichKeyDesc_comment_block = "<leader>cb Comment block"
 map <leader>cb <Action>(CommentByBlockComment)
 
 " ==================================================================================================
-" GROUP: Splits (<leader>w...)
+" GROUP: Windows, Splits & Tabs (<leader>w...)
 " ==================================================================================================
-let g:WhichKeyDesc_split = "<leader>w Split menu"
+let g:WhichKeyDesc_split = "<leader>w Window and tab management"
 
+" --- Splits ---
 let g:WhichKeyDesc_split_vertically = "<leader>ws Split vertically"
 map <leader>ws <Action>(SplitVertically)
 
 let g:WhichKeyDesc_split_horizontally = "<leader>wS Split horizontally"
 map <leader>wS <Action>(SplitHorizontally)
+
+" --- Tabs Management ---
+let g:WhichKeyDesc_window_close = "<leader>wq Close current tab"
+nnoremap <leader>wq :action CloseContent<CR>
+
+let g:WhichKeyDesc_window_close_others = "<leader>wQ Close other tabs"
+nnoremap <leader>wQ :action CloseAllEditorsButActive<CR>
+
+let g:WhichKeyDesc_window_undo = "<leader>wu Reopen closed tab"
+nnoremap <leader>wu :action ReopenClosedTab<CR>
+
+" --- Window Actions ---
+let g:WhichKeyDesc_window_maximize = "<leader>wm Maximize current window"
+nnoremap <leader>wm <Action>(HideAllWindows)
