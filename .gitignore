@@ -7,6 +7,7 @@
 !.config/btop/
 .config/btop/btop.log
 !.config/easyeffects/
+.config/easyeffects/db/easyeffectsrc.lock
 !.config/electron-flags.conf
 !.config/environment.d/
 !.config/fastfetch/
