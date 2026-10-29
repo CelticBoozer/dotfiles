@@ -141,8 +141,6 @@ print_log_message $success_color "system configs has been copied."
 
 chsh -s /usr/bin/zsh "$USER"
 
-curl -o .config/OpenRGB/plugins/effects.so https://openrgb.org/releases/plugins/effects/release_0.9/OpenRGBEffectsPlugin_0.9_Bullseye_64_f1411e1.so
-
 # Start some daemons
 print_log_message $info_color "enable the necessary services..."
 sudo systemctl enable transmission.service

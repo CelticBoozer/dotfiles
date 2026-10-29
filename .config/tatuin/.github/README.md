@@ -1,10 +1,12 @@
 # Tatuin
 
-[Tatuin](https://github.com/panter-dsd/tatuin) is a simple, fast and pretty TUIUtask agreagtor.
+[Tatuin](https://github.com/panter-dsd/tatuin) is a simple, fast and pretty
+TUI task aggregator.
 I'm using it to manage my tasks in todoist.
 
 My config contains only theme, that I took from [here](https://github.com/panter-dsd/tatuin/tree/master/assets/themes).
-Please, after the installation, create a new settings.toml file and add the following lines:
+Please, after the installation, create a new settings.toml file and add the
+following lines:
 
 `theme = "gruvbox-material-dark"`
 

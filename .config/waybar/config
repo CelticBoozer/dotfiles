@@ -170,6 +170,9 @@
   },
 
   "temperature": {
+    "thermal-zone": 0,
+    "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+    "input-filename": "temp1_input",
     "tooltip": false,
     "critical-threshold": 80,
     "format": "{temperatureC}°{icon}",

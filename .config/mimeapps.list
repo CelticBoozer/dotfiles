@@ -292,6 +292,7 @@ application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoff
 x-scheme-handler/discord=vesktop.desktop
 x-scheme-handler/about=firefox-developer-edition.desktop
 x-scheme-handler/unknown=firefox-developer-edition.desktop
+x-scheme-handler/jetbrains=jetbrainsd.desktop
 
 [Added Associations]
 x-scheme-handler/tg=userapp-Telegram Desktop-32KTR1.desktop;userapp-Telegram Desktop-KWPCW1.desktop;

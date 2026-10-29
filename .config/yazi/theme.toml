@@ -113,6 +113,7 @@ dirs = [
   { name = "Library", text = "" },
   { name = "Music", text = "󱍙" },
   { name = "Pictures", text = "󰉏" },
+  { name = "Projects", text = "󱋣" },
   { name = "Public", text = "󰉌" },
   { name = "Videos", text = "󱧺" },
 ]

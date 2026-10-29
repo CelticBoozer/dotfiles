@@ -3,7 +3,7 @@ inputDevice=alsa_input.usb-MV-SILICON_fifine_Microphone_20190808-00.mono-fallbac
 visiblePage=pluginsPage
 
 [StreamOutputs]
-outputDevice=alsa_output.pci-0000_00_03.0.hdmi-stereo
+outputDevice=bluez_output.69_BB_79_AC_5D_03.1
 visiblePage=pluginsPage
 
 [TestSignals]
@@ -11,4 +11,7 @@ signalType=pinkNoise
 
 [Window]
 height=718
+inputAutoloadingUsesFallback=true
+visiblePipeWirePage=testSignalsPage
+visiblePresetSheetPage=communityPage
 width=1278

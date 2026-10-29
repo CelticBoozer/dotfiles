@@ -39,6 +39,7 @@ Files list:
 | Move container up                                 | mod+Shift+[Up/k]    |
 | Move container right                              | mod+Shift+[Right/l] |
 | Focus on workspace [0-9]                          | mod+[0-9]           |
+| Focus on previous workspace                       | mod+Tab             |
 | Move container to workspace [0-9]                 | mod+Shift+[0-9]     |
 | Split container horizontally                      | mod+b               |
 | Split container vertically                        | mod+v               |

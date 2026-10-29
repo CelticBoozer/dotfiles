@@ -39,7 +39,7 @@ alias mv="mvg -g"
 alias cat="bat"
 alias find="fd -I -c always"
 
-export PATH=$PATH:/home/celtic/.millennium/ext/bin
+export PATH="$HOME/.local/bin:$PATH"
 export HISTSIZE=50000
 export SAVEHIST=50000
 export TERMCMD='kitty -e "terminal filechooser"'
