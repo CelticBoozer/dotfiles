@@ -62,14 +62,15 @@ image_quality = 50
 
 [opener]
 # Opener to use for opening files
-play = [{ run = "mpv %s", orphan = true, for = "unix" }]
+play_video = [{ run = "mpv %s", orphan = true, for = "unix" }]
+play_music = [{ run = "strawberry %s", orphan = true, for = "unix" }]
 edit = [{ run = "kitty -e $EDITOR %s", orphan = true, for = "unix" }]
 open = [{ run = "xdg-open %s", desc = "Open" }]
 
 [open]
 rules = [
   { mime = "text/*", use = "edit" },
-  { mime = "video/*", use = "play" },
-  { mime = "audio/*", use = "play" },
+  { mime = "video/*", use = "play_video" },
+  { mime = "audio/*", use = "play_music" },
   { mime = "*", use = "open" },
 ]
