@@ -29,7 +29,6 @@ separator = ' '
 # Communication & Social
 # -----------------------
 'org.telegram.desktop' = ''
-'Skype' = '󰒯'
 '/Element/' = '󰯸'
 'vesktop' = ''
 
@@ -65,7 +64,7 @@ separator = ' '
 # ----------------------
 # Productivity & Office
 # ----------------------
-'obsidian' = ''
+'md.obsidian.Obsidian' = ''
 'org.pwmt.zathura' = ''
 'libreoffice-startcenter' = '󰹯'
 'libreoffice-writer' = ''
