@@ -1,7 +1,7 @@
 # Tatuin
 
 [Tatuin](https://github.com/panter-dsd/tatuin) is a simple, fast and pretty
-TUIUtask agreagtor.
+TUI task aggregator.
 I'm using it to manage my tasks in todoist.
 
 My config contains only theme, that I took from [here](https://github.com/panter-dsd/tatuin/tree/master/assets/themes).
